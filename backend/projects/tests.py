@@ -74,6 +74,15 @@ class TestTasks:
         assert response.status_code == 201
         assert response.data['task']['title'] == 'Do a thing'
 
+    def test_search_query_cannot_break_sql(self, auth_client, user):
+        project = Project.objects.create(name='P', owner=user)
+        Membership.objects.create(user=user, project=project, role='admin')
+        Task.objects.create(project=project, title='Real task', created_by=user)
+
+        response = auth_client.get(f"/api/projects/{project.id}/tasks?q=x'")
+        assert response.status_code == 200
+        assert response.data['tasks'] == []
+
     def test_viewers_cannot_create_tasks(self, client, user):
         owner = User.objects.create_user(email='owner@example.com', name='Owner', password='password123')
         project = Project.objects.create(name='P', owner=owner)

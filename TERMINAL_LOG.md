@@ -1,0 +1,7355 @@
+Script started on Fri Sep 11 02:13:30 2026
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mcp .env.example .env[27m
+[K[A[43C[27mc[27mp[27m [27m.[27me[27mn[27mv[27m.[27me[27mx[27ma[27mm[27mp[27ml[27me[27m [27m.[27me[27mn[27mv[1B[K[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hlls -lrt[?2004l
+total 32
+-rw-r--r--   1 pawangoel  staff  4851 11 Sep 01:51 README.md
+drwxr-xr-x   9 pawangoel  staff   288 11 Sep 01:51 backend
+drwxr-xr-x   3 pawangoel  staff    96 11 Sep 01:51 bin
+-rw-r--r--   1 pawangoel  staff   935 11 Sep 01:51 docker-compose.yml
+drwxr-xr-x  11 pawangoel  staff   352 11 Sep 01:51 frontend
+-rw-r--r--   1 pawangoel  staff   417 11 Sep 02:14 TERMINAL_LOG.md
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hddocker --version[?2004l
+Docker version 29.8.0, build 88096ef005
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hppythopn3 --version[?2004l
+zsh: command not found: pythopn3
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hpythopn3 --version[P[12C [13D[?2004l
+Python 3.9.6
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hnnode -- versiob n[?2004l
+node: bad option: -version
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hnode -version-version[?2004l
+v26.8.2
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hggit  g  ppwd[?2004l
+/Users/pawangoel/Documents/q-taskboard
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose up --build -d[27m
+[K[A[43C[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27mu[27mp[27m [27m-[27m-[27mb[27mu[27mi[27ml[27md[27m [27m-[27md[1B[K[?2004l
+[?25l[0G[+] up 0/1
+ [33m⠋[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m0.1s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠙[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m0.2s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠹[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m0.3s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠸[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m0.4s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠼[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m0.5s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠴[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m0.6s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠦[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m0.7s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠧[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m0.8s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠇[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m0.9s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠏[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m1.0s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠋[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m1.1s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠙[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m1.2s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠹[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m1.3s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠸[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m1.4s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠼[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m1.5s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠴[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m1.6s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠦[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m1.7s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠧[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m1.8s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠇[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m1.9s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠏[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m2.0s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠋[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m2.1s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠙[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m2.2s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠹[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m2.3s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠸[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m2.4s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠼[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m2.5s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠴[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m2.6s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠦[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m2.7s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠧[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m2.8s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠇[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m2.9s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠏[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m3.0s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠋[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m3.1s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠙[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m3.2s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠹[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m3.3s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠸[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m3.4s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠼[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m3.5s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠴[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m3.6s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠦[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m3.7s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠧[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m3.8s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠇[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m3.9s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠏[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m4.0s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠋[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m4.1s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠙[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m4.2s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠹[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m4.3s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠸[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m4.4s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠼[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m4.5s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠴[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m4.6s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠦[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m4.7s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠧[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m4.8s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠇[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m4.9s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠏[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m5.0s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠋[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m5.1s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠙[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m5.2s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠹[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m5.3s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠸[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m5.5s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠼[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m5.5s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠴[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m5.6s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠦[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m5.7s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠧[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m5.8s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠇[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m5.9s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠏[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m6.0s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠋[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m6.1s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠙[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m6.2s[0m
+[?25h[?25l[2A[0G[+] up 0/1
+ [33m⠹[0m Image postgres:16-alpine Pulling                                                                                                                                                                     [34m6.3s[0m
+[?25h[?25l[2A[0G[+] up 0/12
+ [33m⠸[0m Image postgres:16-alpine [[32m⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[0m] Pulling                                                                                                                                                       [34m6.4s[0m
+[?25h[?25l[2A[0G[+] up 0/12
+ [33m⠼[0m Image postgres:16-alpine [[32m⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[0m] Pulling                                                                                                                                                       [34m6.5s[0m
+[?25h[?25l[2A[0G[+] up 0/12
+ [33m⠴[0m Image postgres:16-alpine [[32m⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[0m] Pulling                                                                                                                                                       [34m6.6s[0m
+[?25h[?25l[2A[0G[+] up 0/12
+ [33m⠦[0m Image postgres:16-alpine [[32m⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀[0m] Pulling                                                                                                                                                       [34m6.7s[0m
+[?25h[?25l[2A[0G[+] up 2/12
+ [33m⠧[0m Image postgres:16-alpine [[32m⣿⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀[0m] Pulling                                                                                                                                                       [34m6.8s[0m
+[?25h[?25l[2A[0G[+] up 2/12
+ [33m⠇[0m Image postgres:16-alpine [[32m⣿⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀[0m] Pulling                                                                                                                                                       [34m6.9s[0m
+[?25h[?25l[2A[0G[+] up 2/12
+ [33m⠏[0m Image postgres:16-alpine [[32m⣿⠀⣿⠀⠀⠀⠀⠀⠀⠀⠀[0m] Pulling                                                                                                                                                       [34m7.0s[0m
+[?25h[?25l[2A[0G[+] up 3/12
+ [33m⠋[0m Image postgres:16-alpine [[32m⣿⠀⣿⠀⣿⠀⠀⠀⠀⠀⠀[0m] Pulling                                                                                                                                                       [34m7.1s[0m
+[?25h[?25l[2A[0G[+] up 3/12
+ [33m⠙[0m Image postgres:16-alpine [[32m⣿⠀⣿⠀⣿⠀⠀⠀⠀⠀⠀[0m] Pulling                                                                                                                                                       [34m7.2s[0m
+[?25h[?25l[2A[0G[+] up 3/12
+ [33m⠹[0m Image postgres:16-alpine [[32m⣿⠀⣿⠀⣿⠀⠀⠀⠀⠀⠀[0m] Pulling                                                                                                                                                       [34m7.3s[0m
+[?25h[?25l[2A[0G[+] up 3/12
+ [33m⠸[0m Image postgres:16-alpine [[32m⣿⠀⣿⠀⣿⠀⠀⠀⠀⠀⠀[0m] Pulling                                                                                                                                                       [34m7.4s[0m
+[?25h[?25l[2A[0G[+] up 3/12
+ [33m⠼[0m Image postgres:16-alpine [[32m⣿⣀⣿⠀⣿⣿⣿⠀⠀⠀⠀[0m] Pulling                                                                                                                                                       [34m7.5s[0m
+[?25h[?25l[2A[0G[+] up 8/12
+ [33m⠴[0m Image postgres:16-alpine [[32m⣿⣶⣿⠀⣿⣿⣿⠀⣿⣿⣿[0m] Pulling                                                                                                                                                       [34m7.6s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠦[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣿[0m] 7.356MB / 113MB   Pulling                                                                                                                                     [34m7.7s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠧[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣿[0m] 13.65MB / 113MB   Pulling                                                                                                                                     [34m7.8s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠇[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣿[0m] 13.65MB / 113MB   Pulling                                                                                                                                     [34m7.9s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠏[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣿[0m] 15.74MB / 113MB   Pulling                                                                                                                                     [34m8.0s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠋[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣿[0m] 15.74MB / 113MB   Pulling                                                                                                                                     [34m8.1s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠙[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣿[0m] 15.74MB / 113MB   Pulling                                                                                                                                     [34m8.2s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠹[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣿[0m] 15.74MB / 113MB   Pulling                                                                                                                                     [34m8.3s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠸[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣿[0m] 15.74MB / 113MB   Pulling                                                                                                                                     [34m8.4s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠼[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣿[0m] 15.74MB / 113MB   Pulling                                                                                                                                     [34m8.5s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠴[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⠀⣿⣿⣿[0m] 15.74MB / 113MB   Pulling                                                                                                                                     [34m8.6s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠦[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿[0m] 17.84MB / 113MB   Pulling                                                                                                                                     [34m8.7s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠧[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿[0m] 17.84MB / 113MB   Pulling                                                                                                                                     [34m8.8s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠇[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿[0m] 17.84MB / 113MB   Pulling                                                                                                                                     [34m8.9s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠏[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿[0m] 17.84MB / 113MB   Pulling                                                                                                                                     [34m9.0s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠋[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿[0m] 17.84MB / 113MB   Pulling                                                                                                                                     [34m9.2s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠙[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿[0m] 17.84MB / 113MB   Pulling                                                                                                                                     [34m9.3s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠹[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿[0m] 17.84MB / 113MB   Pulling                                                                                                                                     [34m9.4s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠸[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿[0m] 17.84MB / 113MB   Pulling                                                                                                                                     [34m9.5s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠼[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿[0m] 17.84MB / 113MB   Pulling                                                                                                                                     [34m9.6s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠴[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿[0m] 17.84MB / 113MB   Pulling                                                                                                                                     [34m9.7s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠦[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿[0m] 17.84MB / 113MB   Pulling                                                                                                                                     [34m9.8s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠧[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿[0m] 23.08MB / 113MB   Pulling                                                                                                                                     [34m9.9s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠇[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⡀⣿⣿⣿[0m] 26.23MB / 113MB   Pulling                                                                                                                                    [34m10.0s[0m
+[?25h[?25l[2A[0G[+] up 9/12
+ [33m⠏[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣀⣿⣿⣿[0m] 30.42MB / 113MB   Pulling                                                                                                                                    [34m10.1s[0m
+[?25h[?25l[2A[0G[+] up 10/13
+ [33m⠋[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣀⣿⣿⣿⣿[0m] 33.68MB / 113MB   Pulling                                                                                                                                   [34m10.2s[0m
+[?25h[?25l[2A[0G[+] up 10/13
+ [33m⠙[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣀⣿⣿⣿⣿[0m] 40.91MB / 113MB   Pulling                                                                                                                                   [34m10.3s[0m
+[?25h[?25l[2A[0G[+] up 11/13
+ [33m⠹[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣄⣿⣿⣿⣿[0m] 46.15MB / 113MB   Pulling                                                                                                                                   [34m10.4s[0m
+[?25h[?25l[2A[0G[+] up 10/13
+ [33m⠸[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣄⣿⣿⣿⣿[0m] Pulling                                                                                                                                                     [34m10.5s[0m
+[?25h[?25l[2A[0G[+] up 11/13
+ [33m⠼[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣄⣿⣿⣿⣿[0m] 56.64MB / 113MB   Pulling                                                                                                                                   [34m10.6s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠴[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣤⣿⣿⣿⣿⣿[0m] 59.79MB / 113MB   Pulling                                                                                                                                  [34m10.7s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠦[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣤⣿⣿⣿⣿⣿[0m] 63.98MB / 113MB   Pulling                                                                                                                                  [34m10.8s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠧[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣤⣿⣿⣿⣿⣿[0m] 68.17MB / 113MB   Pulling                                                                                                                                  [34m10.9s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠇[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣦⣿⣿⣿⣿⣿[0m] 72.37MB / 113MB   Pulling                                                                                                                                  [34m11.0s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠏[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣦⣿⣿⣿⣿⣿[0m] 76.26MB / 113MB   Pulling                                                                                                                                  [34m11.1s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠋[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣦⣿⣿⣿⣿⣿[0m] 79.71MB / 113MB   Pulling                                                                                                                                  [34m11.2s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠙[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣦⣿⣿⣿⣿⣿[0m]  83.9MB / 113MB   Pulling                                                                                                                                  [34m11.3s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠹[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣶⣿⣿⣿⣿⣿[0m]  88.1MB / 113MB   Pulling                                                                                                                                  [34m11.4s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠸[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣶⣿⣿⣿⣿⣿[0m] 91.74MB / 113MB   Pulling                                                                                                                                  [34m11.5s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠼[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣶⣿⣿⣿⣿⣿[0m] 95.44MB / 113MB   Pulling                                                                                                                                  [34m11.6s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠴[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⣿[0m] 99.63MB / 113MB   Pulling                                                                                                                                  [34m11.7s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠦[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⣿[0m] 102.8MB / 113MB   Pulling                                                                                                                                  [34m11.8s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠧[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⣿[0m]   107MB / 113MB   Pulling                                                                                                                                  [34m11.9s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠇[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣿⣿[0m] 110.1MB / 113MB   Pulling                                                                                                                                  [34m12.0s[0m
+[?25h[?25l[2A[0G[+] up 13/14
+ [33m⠏[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m12.1s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠋[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m12.2s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠙[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m12.3s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠹[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m12.4s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠸[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m12.5s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠼[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m12.6s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠴[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m12.7s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠦[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m12.8s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠧[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m12.9s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠇[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m13.0s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠏[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m13.1s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠋[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m13.2s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠙[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m13.3s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠹[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m13.4s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠸[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m13.5s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠼[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m13.6s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠴[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m13.7s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠦[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m13.8s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠧[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m13.9s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠇[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m14.0s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠏[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m14.1s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠋[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m14.2s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠙[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m14.3s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠹[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m14.4s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠸[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m14.5s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠼[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m14.6s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠴[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m14.7s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠦[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m14.8s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠧[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m14.9s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠇[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m15.0s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠏[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m15.1s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠋[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m15.2s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠙[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m15.3s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠹[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m15.4s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠸[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m15.5s[0m
+[?25h[?25l[2A[0G[+] up 12/14
+ [33m⠼[0m Image postgres:16-alpine [[32m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿[0m]   112MB / 113MB   Pulling                                                                                                                                  [34m15.6s[0m
+[?25h[?25l[2A[0G[+] up 14/14
+ [32m✔[0m Image postgres:16-alpine [32mPulled[0m                                                                                                                                                                     [34m15.6s[0m
+[?25h[33mWARN[0m[0015] buildx Docker CLI plugin not found: falling back to the classic builder. BuildKit-only build features (multi-arch, secrets, ssh, additional contexts, ...) will not be available 
+Sending build context to Docker daemon  9.117kB
+Step 1/9 : FROM python:3.12-slim
+3.12-slim: Pulling from library/python
+
+[1A[2K3550292b2150: Pulling fs layer [1B
+[1A[2Kbf7af0229701: Pulling fs layer [1B
+[1A[2Kab2cb3ee67af: Pulling fs layer [1B
+[1A[2K8aff2d3a9af8: Pulling fs layer [1B[3A[2Kbf7af0229701: Downloading [=>                                                 ]  1.049MB/30.16MB[3B[3A[2Kbf7af0229701: Downloading [=====>                                             ]  3.146MB/30.16MB[3B[1A[2K8aff2d3a9af8: Downloading [====>                                              ]  1.049MB/12.05MB[1B[3A[2Kbf7af0229701: Downloading [========>                                          ]  5.243MB/30.16MB[3B[1A[2K8aff2d3a9af8: Downloading [========>                                          ]  2.097MB/12.05MB[1B[3A[2Kbf7af0229701: Downloading [============>                                      ]   7.34MB/30.16MB[3B[1A[2K8aff2d3a9af8: Downloading [========>                                          ]  2.097MB/12.05MB[1B[3A[2Kbf7af0229701: Downloading [=============>                                     ]  8.389MB/30.16MB[3B[1A[2K8aff2d3a9af8: Downloading [=============>                                     ]  3.146MB/12.05MB[1B[4A[2K3550292b2150: Download complete [4B[3A[2Kbf7af0229701: Downloading [=================>                                 ]  10.49MB/30.16MB[3B[1A[2K8aff2d3a9af8: Downloading [=================>                                 ]  4.194MB/12.05MB[1B[1A[2K8aff2d3a9af8: Downloading [=====================>                             ]  5.243MB/12.05MB[1B[3A[2Kbf7af0229701: Downloading [====================>                              ]  12.58MB/30.16MB[3B[3A[2Kbf7af0229701: Downloading [======================>                            ]  13.63MB/30.16MB[3B[2A[2Kab2cb3ee67af: Downloading [===========>                                       ]  1.049MB/4.606MB[2B[1A[2K8aff2d3a9af8: Downloading [=====================>                             ]  5.243MB/12.05MB[1B[3A[2Kbf7af0229701: Downloading [==========================>                        ]  15.73MB/30.16MB[3B[2A[2Kab2cb3ee67af: Downloading [===========>                                       ]  1.049MB/4.606MB[2B[1A[2K8aff2d3a9af8: Downloading [==========================>                        ]  6.291MB/12.05MB[1B[3A[2Kbf7af0229701: Downloading [===========================>                       ]  16.78MB/30.16MB[3B[2A[2Kab2cb3ee67af: Downloading [===========>                                       ]  1.049MB/4.606MB[2B[1A[2K8aff2d3a9af8: Downloading [==============================>                    ]   7.34MB/12.05MB[1B[3A[2Kbf7af0229701: Downloading [=============================>                     ]  17.83MB/30.16MB[3B[2A[2Kab2cb3ee67af: Downloading [===========>                                       ]  1.049MB/4.606MB[2B[1A[2K8aff2d3a9af8: Downloading [==============================>                    ]   7.34MB/12.05MB[1B[3A[2Kbf7af0229701: Downloading [===============================>                   ]  18.87MB/30.16MB[3B[2A[2Kab2cb3ee67af: Downloading [===========>                                       ]  1.049MB/4.606MB[2B[1A[2K8aff2d3a9af8: Downloading [==================================>                ]  8.389MB/12.05MB[1B[1A[2K8aff2d3a9af8: Downloading [=======================================>           ]  9.437MB/12.05MB[1B
+[1A[2Kf392c22314d9: Downloading [==================================================>]  24.37kB/24.37kB[1B[4A[2Kbf7af0229701: Downloading [==================================>                ]  20.97MB/30.16MB[4B[3A[2Kab2cb3ee67af: Downloading [===========>                                       ]  1.049MB/4.606MB[3B[4A[2Kbf7af0229701: Downloading [====================================>              ]  22.02MB/30.16MB[4B[3A[2Kab2cb3ee67af: Downloading [======================>                            ]  2.097MB/4.606MB[3B[2A[2K8aff2d3a9af8: Downloading [=======================================>           ]  9.437MB/12.05MB[2B[1A[2Kf392c22314d9: Download complete [1B
+[1A[2Kd8d4cdf3552b: Downloading [========================>                          ]  1.049MB/2.147MB[1B[5A[2Kbf7af0229701: Downloading [======================================>            ]  23.07MB/30.16MB[5B[4A[2Kab2cb3ee67af: Downloading [======================>                            ]  2.097MB/4.606MB[4B[3A[2K8aff2d3a9af8: Downloading [===========================================>       ]  10.49MB/12.05MB[3B[1A[2Kd8d4cdf3552b: Downloading [========================>                          ]  1.049MB/2.147MB[1B[1A[2Kd8d4cdf3552b: Downloading [========================>                          ]  1.049MB/2.147MB[1B[5A[2Kbf7af0229701: Downloading [=======================================>           ]  24.12MB/30.16MB[5B[4A[2Kab2cb3ee67af: Downloading [======================>                            ]  2.097MB/4.606MB[4B[3A[2K8aff2d3a9af8: Downloading [===========================================>       ]  10.49MB/12.05MB[3B[3A[2K8aff2d3a9af8: Downloading [===============================================>   ]  11.53MB/12.05MB[3B[1A[2Kd8d4cdf3552b: Downloading [========================>                          ]  1.049MB/2.147MB[1B[5A[2Kbf7af0229701: Downloading [=========================================>         ]  25.17MB/30.16MB[5B[4A[2Kab2cb3ee67af: Downloading [======================>                            ]  2.097MB/4.606MB[4B[5A[2Kbf7af0229701: Downloading [=============================================>     ]  27.26MB/30.16MB[5B[4A[2Kab2cb3ee67af: Downloading [======================>                            ]  2.097MB/4.606MB[4B[3A[2K8aff2d3a9af8: Download complete [3B[1A[2Kd8d4cdf3552b: Download complete [1B[5A[2Kbf7af0229701: Downloading [==============================================>    ]  28.31MB/30.16MB[5B[4A[2Kab2cb3ee67af: Downloading [======================>                            ]  2.097MB/4.606MB[4B[5A[2Kbf7af0229701: Download complete [5B[4A[2Kab2cb3ee67af: Downloading [==================================>                ]  3.146MB/4.606MB[4B[5A[2Kbf7af0229701: Extracting 1 s[5B[4A[2Kab2cb3ee67af: Downloading [==================================>                ]  3.146MB/4.606MB[4B[5A[2Kbf7af0229701: Extracting 1 s[5B[4A[2Kab2cb3ee67af: Downloading [==================================>                ]  3.146MB/4.606MB[4B[5A[2Kbf7af0229701: Extracting 1 s[5B[4A[2Kab2cb3ee67af: Downloading [==================================>                ]  3.146MB/4.606MB[4B[5A[2Kbf7af0229701: Extracting 1 s[5B[4A[2Kab2cb3ee67af: Downloading [=============================================>     ]  4.194MB/4.606MB[4B[5A[2Kbf7af0229701: Extracting 1 s[5B[4A[2Kab2cb3ee67af: Downloading [=============================================>     ]  4.194MB/4.606MB[4B[5A[2Kbf7af0229701: Extracting 1 s[5B[4A[2Kab2cb3ee67af: Download complete [4B[5A[2Kbf7af0229701: Extracting 1 s[5B[5A[2Kbf7af0229701: Extracting 1 s[5B[5A[2Kbf7af0229701: Extracting 1 s[5B[5A[2Kbf7af0229701: Extracting 1 s[5B[5A[2Kbf7af0229701: Pull complete [5B[4A[2Kab2cb3ee67af: Extracting 1 s[4B[3A[2K8aff2d3a9af8: Extracting 1 s[3B[4A[2Kab2cb3ee67af: Pull complete [4B[3A[2K8aff2d3a9af8: Extracting 1 s[3B[3A[2K8aff2d3a9af8: Extracting 1 s[3B[3A[2K8aff2d3a9af8: Extracting 1 s[3B[3A[2K8aff2d3a9af8: Extracting 1 s[3B[3A[2K8aff2d3a9af8: Extracting 1 s[3B[3A[2K8aff2d3a9af8: Extracting 1 s[3B[3A[2K8aff2d3a9af8: Extracting 1 s[3B[6A[2K3550292b2150: Pull complete [6B[3A[2K8aff2d3a9af8: Pull complete [3BDigest: sha256:78387bc3881b8273120a12ebe6c1ab22b018ccc2c9adf565ae1ac9b536e184ea
+Status: Downloaded newer image for python:3.12-slim
+ ---> 78387bc3881b
+Step 2/9 : RUN apt-get update -qq &&     apt-get install -y --no-install-recommends libpq-dev gcc curl &&     rm -rf /var/lib/apt/lists/*
+ ---> Running in 7d0eeb5c235c
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  binutils binutils-aarch64-linux-gnu binutils-common cpp cpp-14
+  cpp-14-aarch64-linux-gnu cpp-aarch64-linux-gnu gcc-14
+  gcc-14-aarch64-linux-gnu gcc-aarch64-linux-gnu libasan8 libatomic1
+  libbinutils libbrotli1 libcc1-0 libcom-err2 libctf-nobfd0 libctf0
+  libcurl4t64 libgcc-14-dev libgnutls30t64 libgomp1 libgprofng0
+  libgssapi-krb5-2 libhwasan0 libidn2-0 libisl23 libitm1 libjansson4
+  libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libldap2 liblsan0
+  libmpc3 libmpfr6 libnghttp2-14 libnghttp3-9 libp11-kit0 libpq5 libpsl5t64
+  librtmp1 libsasl2-2 libsasl2-modules-db libsframe1 libssh2-1t64 libssl-dev
+  libtasn1-6 libtsan2 libubsan1 libunistring5
+Suggested packages:
+  binutils-doc gprofng-gui binutils-gold cpp-doc gcc-14-locales cpp-14-doc
+  gcc-multilib make manpages-dev autoconf automake libtool flex bison gdb
+  gcc-doc gcc-14-doc gdb-aarch64-linux-gnu gnutls-bin krb5-doc krb5-user
+  postgresql-doc-17 libssl-doc
+Recommended packages:
+  bash-completion libc6-dev | libc-dev libc6-dev libc-dev krb5-locales
+  libldap-common publicsuffix libsasl2-modules
+The following NEW packages will be installed:
+  binutils binutils-aarch64-linux-gnu binutils-common cpp cpp-14
+  cpp-14-aarch64-linux-gnu cpp-aarch64-linux-gnu curl gcc gcc-14
+  gcc-14-aarch64-linux-gnu gcc-aarch64-linux-gnu libasan8 libatomic1
+  libbinutils libbrotli1 libcc1-0 libcom-err2 libctf-nobfd0 libctf0
+  libcurl4t64 libgcc-14-dev libgnutls30t64 libgomp1 libgprofng0
+  libgssapi-krb5-2 libhwasan0 libidn2-0 libisl23 libitm1 libjansson4
+  libk5crypto3 libkeyutils1 libkrb5-3 libkrb5support0 libldap2 liblsan0
+  libmpc3 libmpfr6 libnghttp2-14 libnghttp3-9 libp11-kit0 libpq-dev libpq5
+  libpsl5t64 librtmp1 libsasl2-2 libsasl2-modules-db libsframe1 libssh2-1t64
+  libssl-dev libtasn1-6 libtsan2 libubsan1 libunistring5
+0 upgraded, 55 newly installed, 0 to remove and 0 not upgraded.
+Need to get 53.6 MB of archives.
+After this operation, 217 MB of additional disk space will be used.
+Get:1 http://deb.debian.org/debian trixie/main arm64 libsframe1 arm64 2.44-3 [77.8 kB]
+Get:2 http://deb.debian.org/debian trixie/main arm64 binutils-common arm64 2.44-3 [2509 kB]
+Get:3 http://deb.debian.org/debian trixie/main arm64 libbinutils arm64 2.44-3 [660 kB]
+Get:4 http://deb.debian.org/debian trixie/main arm64 libgprofng0 arm64 2.44-3 [668 kB]
+Get:5 http://deb.debian.org/debian trixie/main arm64 libctf-nobfd0 arm64 2.44-3 [152 kB]
+Get:6 http://deb.debian.org/debian trixie/main arm64 libctf0 arm64 2.44-3 [84.2 kB]
+Get:7 http://deb.debian.org/debian trixie/main arm64 libjansson4 arm64 2.14-2+b3 [39.2 kB]
+Get:8 http://deb.debian.org/debian trixie/main arm64 binutils-aarch64-linux-gnu arm64 2.44-3 [820 kB]
+Get:9 http://deb.debian.org/debian trixie/main arm64 binutils arm64 2.44-3 [262 kB]
+Get:10 http://deb.debian.org/debian trixie/main arm64 libisl23 arm64 0.27-1 [601 kB]
+Get:11 http://deb.debian.org/debian trixie/main arm64 libmpfr6 arm64 4.2.2-1 [685 kB]
+Get:12 http://deb.debian.org/debian trixie/main arm64 libmpc3 arm64 1.3.1-1+b3 [50.5 kB]
+Get:13 http://deb.debian.org/debian trixie/main arm64 cpp-14-aarch64-linux-gnu arm64 14.2.0-19 [9169 kB]
+Get:14 http://deb.debian.org/debian trixie/main arm64 cpp-14 arm64 14.2.0-19 [1276 B]
+Get:15 http://deb.debian.org/debian trixie/main arm64 cpp-aarch64-linux-gnu arm64 4:14.2.0-1 [4832 B]
+Get:16 http://deb.debian.org/debian trixie/main arm64 cpp arm64 4:14.2.0-1 [1568 B]
+Get:17 http://deb.debian.org/debian trixie/main arm64 libbrotli1 arm64 1.1.0-2+b7 [308 kB]
+Get:18 http://deb.debian.org/debian trixie/main arm64 libkrb5support0 arm64 1.21.3-5+deb13u1 [32.5 kB]
+Get:19 http://deb.debian.org/debian trixie/main arm64 libcom-err2 arm64 1.47.2-3+b11 [24.9 kB]
+Get:20 http://deb.debian.org/debian trixie/main arm64 libk5crypto3 arm64 1.21.3-5+deb13u1 [81.4 kB]
+Get:21 http://deb.debian.org/debian trixie/main arm64 libkeyutils1 arm64 1.6.3-6 [9716 B]
+Get:22 http://deb.debian.org/debian trixie/main arm64 libkrb5-3 arm64 1.21.3-5+deb13u1 [308 kB]
+Get:23 http://deb.debian.org/debian trixie/main arm64 libgssapi-krb5-2 arm64 1.21.3-5+deb13u1 [128 kB]
+Get:24 http://deb.debian.org/debian trixie/main arm64 libunistring5 arm64 1.3-2 [453 kB]
+Get:25 http://deb.debian.org/debian trixie/main arm64 libidn2-0 arm64 2.3.8-2 [107 kB]
+Get:26 http://deb.debian.org/debian trixie/main arm64 libsasl2-modules-db arm64 2.1.28+dfsg1-9 [20.1 kB]
+Get:27 http://deb.debian.org/debian trixie/main arm64 libsasl2-2 arm64 2.1.28+dfsg1-9 [55.6 kB]
+Get:28 http://deb.debian.org/debian trixie/main arm64 libldap2 arm64 2.6.10+dfsg-1 [179 kB]
+Get:29 http://deb.debian.org/debian trixie/main arm64 libnghttp2-14 arm64 1.64.0-1.1+deb13u1 [71.6 kB]
+Get:30 http://deb.debian.org/debian trixie/main arm64 libnghttp3-9 arm64 1.8.0-1 [63.2 kB]
+Get:31 http://deb.debian.org/debian trixie/main arm64 libpsl5t64 arm64 0.21.2-1.1+b1 [57.1 kB]
+Get:32 http://deb.debian.org/debian trixie/main arm64 libp11-kit0 arm64 0.25.5-3 [409 kB]
+Get:33 http://deb.debian.org/debian trixie/main arm64 libtasn1-6 arm64 4.20.0-2+deb13u1 [47.3 kB]
+Get:34 http://deb.debian.org/debian trixie/main arm64 libgnutls30t64 arm64 3.8.9-3+deb13u4 [1379 kB]
+Get:35 http://deb.debian.org/debian trixie/main arm64 librtmp1 arm64 2.4+20151223.gitfa8646d.1-2+b5 [56.8 kB]
+Get:36 http://deb.debian.org/debian trixie/main arm64 libssh2-1t64 arm64 1.11.1-1+deb13u1 [236 kB]
+Get:37 http://deb.debian.org/debian trixie/main arm64 libcurl4t64 arm64 8.14.1-2+deb13u4 [360 kB]
+Get:38 http://deb.debian.org/debian trixie/main arm64 curl arm64 8.14.1-2+deb13u4 [262 kB]
+Get:39 http://deb.debian.org/debian trixie/main arm64 libcc1-0 arm64 14.2.0-19 [42.2 kB]
+Get:40 http://deb.debian.org/debian trixie/main arm64 libgomp1 arm64 14.2.0-19 [124 kB]
+Get:41 http://deb.debian.org/debian trixie/main arm64 libitm1 arm64 14.2.0-19 [24.2 kB]
+Get:42 http://deb.debian.org/debian trixie/main arm64 libatomic1 arm64 14.2.0-19 [10.1 kB]
+Get:43 http://deb.debian.org/debian trixie/main arm64 libasan8 arm64 14.2.0-19 [2578 kB]
+Get:44 http://deb.debian.org/debian trixie/main arm64 liblsan0 arm64 14.2.0-19 [1161 kB]
+Get:45 http://deb.debian.org/debian trixie/main arm64 libtsan2 arm64 14.2.0-19 [2383 kB]
+Get:46 http://deb.debian.org/debian trixie/main arm64 libubsan1 arm64 14.2.0-19 [1039 kB]
+Get:47 http://deb.debian.org/debian trixie/main arm64 libhwasan0 arm64 14.2.0-19 [1442 kB]
+Get:48 http://deb.debian.org/debian trixie/main arm64 libgcc-14-dev arm64 14.2.0-19 [2359 kB]
+Get:49 http://deb.debian.org/debian trixie/main arm64 gcc-14-aarch64-linux-gnu arm64 14.2.0-19 [17.7 MB]
+Get:50 http://deb.debian.org/debian trixie/main arm64 gcc-14 arm64 14.2.0-19 [529 kB]
+Get:51 http://deb.debian.org/debian trixie/main arm64 gcc-aarch64-linux-gnu arm64 4:14.2.0-1 [1440 B]
+Get:52 http://deb.debian.org/debian trixie/main arm64 gcc arm64 4:14.2.0-1 [5136 B]
+Get:53 http://deb.debian.org/debian-security trixie-security/main arm64 libpq5 arm64 17.11-0+deb13u1 [230 kB]
+Get:54 http://deb.debian.org/debian-security trixie-security/main arm64 libssl-dev arm64 3.5.7-1~deb13u2 [3394 kB]
+Get:55 http://deb.debian.org/debian-security trixie-security/main arm64 libpq-dev arm64 17.11-0+deb13u1 [156 kB]
+[91mdebconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC entries checked: /etc/perl /usr/local/lib/aarch64-linux-gnu/perl/5.40.1 /usr/local/share/perl/5.40.1 /usr/lib/aarch64-linux-gnu/perl5/5.40 /usr/share/perl5 /usr/lib/aarch64-linux-gnu/perl-base /usr/lib/aarch64-linux-gnu/perl/5.40 /usr/share/perl/5.40 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 8, <STDIN> line 55.)
+debconf: falling back to frontend: Teletype
+[0m[91mdebconf: unable to initialize frontend: Teletype
+[0m[91mdebconf: (This frontend requires a controlling tty.)
+[0m[91mdebconf: falling back to frontend: Noninteractive
+[0mFetched 53.6 MB in 5s (10.5 MB/s)
+Selecting previously unselected package libsframe1:arm64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 5649 files and directories currently installed.)
+Preparing to unpack .../00-libsframe1_2.44-3_arm64.deb ...
+Unpacking libsframe1:arm64 (2.44-3) ...
+Selecting previously unselected package binutils-common:arm64.
+Preparing to unpack .../01-binutils-common_2.44-3_arm64.deb ...
+Unpacking binutils-common:arm64 (2.44-3) ...
+Selecting previously unselected package libbinutils:arm64.
+Preparing to unpack .../02-libbinutils_2.44-3_arm64.deb ...
+Unpacking libbinutils:arm64 (2.44-3) ...
+Selecting previously unselected package libgprofng0:arm64.
+Preparing to unpack .../03-libgprofng0_2.44-3_arm64.deb ...
+Unpacking libgprofng0:arm64 (2.44-3) ...
+Selecting previously unselected package libctf-nobfd0:arm64.
+Preparing to unpack .../04-libctf-nobfd0_2.44-3_arm64.deb ...
+Unpacking libctf-nobfd0:arm64 (2.44-3) ...
+Selecting previously unselected package libctf0:arm64.
+Preparing to unpack .../05-libctf0_2.44-3_arm64.deb ...
+Unpacking libctf0:arm64 (2.44-3) ...
+Selecting previously unselected package libjansson4:arm64.
+Preparing to unpack .../06-libjansson4_2.14-2+b3_arm64.deb ...
+Unpacking libjansson4:arm64 (2.14-2+b3) ...
+Selecting previously unselected package binutils-aarch64-linux-gnu.
+Preparing to unpack .../07-binutils-aarch64-linux-gnu_2.44-3_arm64.deb ...
+Unpacking binutils-aarch64-linux-gnu (2.44-3) ...
+Selecting previously unselected package binutils.
+Preparing to unpack .../08-binutils_2.44-3_arm64.deb ...
+Unpacking binutils (2.44-3) ...
+Selecting previously unselected package libisl23:arm64.
+Preparing to unpack .../09-libisl23_0.27-1_arm64.deb ...
+Unpacking libisl23:arm64 (0.27-1) ...
+Selecting previously unselected package libmpfr6:arm64.
+Preparing to unpack .../10-libmpfr6_4.2.2-1_arm64.deb ...
+Unpacking libmpfr6:arm64 (4.2.2-1) ...
+Selecting previously unselected package libmpc3:arm64.
+Preparing to unpack .../11-libmpc3_1.3.1-1+b3_arm64.deb ...
+Unpacking libmpc3:arm64 (1.3.1-1+b3) ...
+Selecting previously unselected package cpp-14-aarch64-linux-gnu.
+Preparing to unpack .../12-cpp-14-aarch64-linux-gnu_14.2.0-19_arm64.deb ...
+Unpacking cpp-14-aarch64-linux-gnu (14.2.0-19) ...
+Selecting previously unselected package cpp-14.
+Preparing to unpack .../13-cpp-14_14.2.0-19_arm64.deb ...
+Unpacking cpp-14 (14.2.0-19) ...
+Selecting previously unselected package cpp-aarch64-linux-gnu.
+Preparing to unpack .../14-cpp-aarch64-linux-gnu_4%3a14.2.0-1_arm64.deb ...
+Unpacking cpp-aarch64-linux-gnu (4:14.2.0-1) ...
+Selecting previously unselected package cpp.
+Preparing to unpack .../15-cpp_4%3a14.2.0-1_arm64.deb ...
+Unpacking cpp (4:14.2.0-1) ...
+Selecting previously unselected package libbrotli1:arm64.
+Preparing to unpack .../16-libbrotli1_1.1.0-2+b7_arm64.deb ...
+Unpacking libbrotli1:arm64 (1.1.0-2+b7) ...
+Selecting previously unselected package libkrb5support0:arm64.
+Preparing to unpack .../17-libkrb5support0_1.21.3-5+deb13u1_arm64.deb ...
+Unpacking libkrb5support0:arm64 (1.21.3-5+deb13u1) ...
+Selecting previously unselected package libcom-err2:arm64.
+Preparing to unpack .../18-libcom-err2_1.47.2-3+b11_arm64.deb ...
+Unpacking libcom-err2:arm64 (1.47.2-3+b11) ...
+Selecting previously unselected package libk5crypto3:arm64.
+Preparing to unpack .../19-libk5crypto3_1.21.3-5+deb13u1_arm64.deb ...
+Unpacking libk5crypto3:arm64 (1.21.3-5+deb13u1) ...
+Selecting previously unselected package libkeyutils1:arm64.
+Preparing to unpack .../20-libkeyutils1_1.6.3-6_arm64.deb ...
+Unpacking libkeyutils1:arm64 (1.6.3-6) ...
+Selecting previously unselected package libkrb5-3:arm64.
+Preparing to unpack .../21-libkrb5-3_1.21.3-5+deb13u1_arm64.deb ...
+Unpacking libkrb5-3:arm64 (1.21.3-5+deb13u1) ...
+Selecting previously unselected package libgssapi-krb5-2:arm64.
+Preparing to unpack .../22-libgssapi-krb5-2_1.21.3-5+deb13u1_arm64.deb ...
+Unpacking libgssapi-krb5-2:arm64 (1.21.3-5+deb13u1) ...
+Selecting previously unselected package libunistring5:arm64.
+Preparing to unpack .../23-libunistring5_1.3-2_arm64.deb ...
+Unpacking libunistring5:arm64 (1.3-2) ...
+Selecting previously unselected package libidn2-0:arm64.
+Preparing to unpack .../24-libidn2-0_2.3.8-2_arm64.deb ...
+Unpacking libidn2-0:arm64 (2.3.8-2) ...
+Selecting previously unselected package libsasl2-modules-db:arm64.
+Preparing to unpack .../25-libsasl2-modules-db_2.1.28+dfsg1-9_arm64.deb ...
+Unpacking libsasl2-modules-db:arm64 (2.1.28+dfsg1-9) ...
+Selecting previously unselected package libsasl2-2:arm64.
+Preparing to unpack .../26-libsasl2-2_2.1.28+dfsg1-9_arm64.deb ...
+Unpacking libsasl2-2:arm64 (2.1.28+dfsg1-9) ...
+Selecting previously unselected package libldap2:arm64.
+Preparing to unpack .../27-libldap2_2.6.10+dfsg-1_arm64.deb ...
+Unpacking libldap2:arm64 (2.6.10+dfsg-1) ...
+Selecting previously unselected package libnghttp2-14:arm64.
+Preparing to unpack .../28-libnghttp2-14_1.64.0-1.1+deb13u1_arm64.deb ...
+Unpacking libnghttp2-14:arm64 (1.64.0-1.1+deb13u1) ...
+Selecting previously unselected package libnghttp3-9:arm64.
+Preparing to unpack .../29-libnghttp3-9_1.8.0-1_arm64.deb ...
+Unpacking libnghttp3-9:arm64 (1.8.0-1) ...
+Selecting previously unselected package libpsl5t64:arm64.
+Preparing to unpack .../30-libpsl5t64_0.21.2-1.1+b1_arm64.deb ...
+Unpacking libpsl5t64:arm64 (0.21.2-1.1+b1) ...
+Selecting previously unselected package libp11-kit0:arm64.
+Preparing to unpack .../31-libp11-kit0_0.25.5-3_arm64.deb ...
+Unpacking libp11-kit0:arm64 (0.25.5-3) ...
+Selecting previously unselected package libtasn1-6:arm64.
+Preparing to unpack .../32-libtasn1-6_4.20.0-2+deb13u1_arm64.deb ...
+Unpacking libtasn1-6:arm64 (4.20.0-2+deb13u1) ...
+Selecting previously unselected package libgnutls30t64:arm64.
+Preparing to unpack .../33-libgnutls30t64_3.8.9-3+deb13u4_arm64.deb ...
+Unpacking libgnutls30t64:arm64 (3.8.9-3+deb13u4) ...
+Selecting previously unselected package librtmp1:arm64.
+Preparing to unpack .../34-librtmp1_2.4+20151223.gitfa8646d.1-2+b5_arm64.deb ...
+Unpacking librtmp1:arm64 (2.4+20151223.gitfa8646d.1-2+b5) ...
+Selecting previously unselected package libssh2-1t64:arm64.
+Preparing to unpack .../35-libssh2-1t64_1.11.1-1+deb13u1_arm64.deb ...
+Unpacking libssh2-1t64:arm64 (1.11.1-1+deb13u1) ...
+Selecting previously unselected package libcurl4t64:arm64.
+Preparing to unpack .../36-libcurl4t64_8.14.1-2+deb13u4_arm64.deb ...
+Unpacking libcurl4t64:arm64 (8.14.1-2+deb13u4) ...
+Selecting previously unselected package curl.
+Preparing to unpack .../37-curl_8.14.1-2+deb13u4_arm64.deb ...
+Unpacking curl (8.14.1-2+deb13u4) ...
+Selecting previously unselected package libcc1-0:arm64.
+Preparing to unpack .../38-libcc1-0_14.2.0-19_arm64.deb ...
+Unpacking libcc1-0:arm64 (14.2.0-19) ...
+Selecting previously unselected package libgomp1:arm64.
+Preparing to unpack .../39-libgomp1_14.2.0-19_arm64.deb ...
+Unpacking libgomp1:arm64 (14.2.0-19) ...
+Selecting previously unselected package libitm1:arm64.
+Preparing to unpack .../40-libitm1_14.2.0-19_arm64.deb ...
+Unpacking libitm1:arm64 (14.2.0-19) ...
+Selecting previously unselected package libatomic1:arm64.
+Preparing to unpack .../41-libatomic1_14.2.0-19_arm64.deb ...
+Unpacking libatomic1:arm64 (14.2.0-19) ...
+Selecting previously unselected package libasan8:arm64.
+Preparing to unpack .../42-libasan8_14.2.0-19_arm64.deb ...
+Unpacking libasan8:arm64 (14.2.0-19) ...
+Selecting previously unselected package liblsan0:arm64.
+Preparing to unpack .../43-liblsan0_14.2.0-19_arm64.deb ...
+Unpacking liblsan0:arm64 (14.2.0-19) ...
+Selecting previously unselected package libtsan2:arm64.
+Preparing to unpack .../44-libtsan2_14.2.0-19_arm64.deb ...
+Unpacking libtsan2:arm64 (14.2.0-19) ...
+Selecting previously unselected package libubsan1:arm64.
+Preparing to unpack .../45-libubsan1_14.2.0-19_arm64.deb ...
+Unpacking libubsan1:arm64 (14.2.0-19) ...
+Selecting previously unselected package libhwasan0:arm64.
+Preparing to unpack .../46-libhwasan0_14.2.0-19_arm64.deb ...
+Unpacking libhwasan0:arm64 (14.2.0-19) ...
+Selecting previously unselected package libgcc-14-dev:arm64.
+Preparing to unpack .../47-libgcc-14-dev_14.2.0-19_arm64.deb ...
+Unpacking libgcc-14-dev:arm64 (14.2.0-19) ...
+Selecting previously unselected package gcc-14-aarch64-linux-gnu.
+Preparing to unpack .../48-gcc-14-aarch64-linux-gnu_14.2.0-19_arm64.deb ...
+Unpacking gcc-14-aarch64-linux-gnu (14.2.0-19) ...
+Selecting previously unselected package gcc-14.
+Preparing to unpack .../49-gcc-14_14.2.0-19_arm64.deb ...
+Unpacking gcc-14 (14.2.0-19) ...
+Selecting previously unselected package gcc-aarch64-linux-gnu.
+Preparing to unpack .../50-gcc-aarch64-linux-gnu_4%3a14.2.0-1_arm64.deb ...
+Unpacking gcc-aarch64-linux-gnu (4:14.2.0-1) ...
+Selecting previously unselected package gcc.
+Preparing to unpack .../51-gcc_4%3a14.2.0-1_arm64.deb ...
+Unpacking gcc (4:14.2.0-1) ...
+Selecting previously unselected package libpq5:arm64.
+Preparing to unpack .../52-libpq5_17.11-0+deb13u1_arm64.deb ...
+Unpacking libpq5:arm64 (17.11-0+deb13u1) ...
+Selecting previously unselected package libssl-dev:arm64.
+Preparing to unpack .../53-libssl-dev_3.5.7-1~deb13u2_arm64.deb ...
+Unpacking libssl-dev:arm64 (3.5.7-1~deb13u2) ...
+Selecting previously unselected package libpq-dev.
+Preparing to unpack .../54-libpq-dev_17.11-0+deb13u1_arm64.deb ...
+Unpacking libpq-dev (17.11-0+deb13u1) ...
+Setting up libkeyutils1:arm64 (1.6.3-6) ...
+Setting up libbrotli1:arm64 (1.1.0-2+b7) ...
+Setting up binutils-common:arm64 (2.44-3) ...
+Setting up libnghttp2-14:arm64 (1.64.0-1.1+deb13u1) ...
+Setting up libctf-nobfd0:arm64 (2.44-3) ...
+Setting up libcom-err2:arm64 (1.47.2-3+b11) ...
+Setting up libgomp1:arm64 (14.2.0-19) ...
+Setting up libsframe1:arm64 (2.44-3) ...
+Setting up libjansson4:arm64 (2.14-2+b3) ...
+Setting up libkrb5support0:arm64 (1.21.3-5+deb13u1) ...
+Setting up libsasl2-modules-db:arm64 (2.1.28+dfsg1-9) ...
+Setting up libmpfr6:arm64 (4.2.2-1) ...
+Setting up libp11-kit0:arm64 (0.25.5-3) ...
+Setting up libunistring5:arm64 (1.3-2) ...
+Setting up libssl-dev:arm64 (3.5.7-1~deb13u2) ...
+Setting up libmpc3:arm64 (1.3.1-1+b3) ...
+Setting up libatomic1:arm64 (14.2.0-19) ...
+Setting up libk5crypto3:arm64 (1.21.3-5+deb13u1) ...
+Setting up libsasl2-2:arm64 (2.1.28+dfsg1-9) ...
+Setting up libnghttp3-9:arm64 (1.8.0-1) ...
+Setting up libubsan1:arm64 (14.2.0-19) ...
+Setting up libhwasan0:arm64 (14.2.0-19) ...
+Setting up libasan8:arm64 (14.2.0-19) ...
+Setting up libtasn1-6:arm64 (4.20.0-2+deb13u1) ...
+Setting up libkrb5-3:arm64 (1.21.3-5+deb13u1) ...
+Setting up libssh2-1t64:arm64 (1.11.1-1+deb13u1) ...
+Setting up libtsan2:arm64 (14.2.0-19) ...
+Setting up libbinutils:arm64 (2.44-3) ...
+Setting up libisl23:arm64 (0.27-1) ...
+Setting up libcc1-0:arm64 (14.2.0-19) ...
+Setting up libldap2:arm64 (2.6.10+dfsg-1) ...
+Setting up liblsan0:arm64 (14.2.0-19) ...
+Setting up libitm1:arm64 (14.2.0-19) ...
+Setting up libctf0:arm64 (2.44-3) ...
+Setting up binutils-aarch64-linux-gnu (2.44-3) ...
+Setting up libidn2-0:arm64 (2.3.8-2) ...
+Setting up libgprofng0:arm64 (2.44-3) ...
+Setting up libgssapi-krb5-2:arm64 (1.21.3-5+deb13u1) ...
+Setting up cpp-14-aarch64-linux-gnu (14.2.0-19) ...
+Setting up libgcc-14-dev:arm64 (14.2.0-19) ...
+Setting up libgnutls30t64:arm64 (3.8.9-3+deb13u4) ...
+Setting up libpsl5t64:arm64 (0.21.2-1.1+b1) ...
+Setting up libpq5:arm64 (17.11-0+deb13u1) ...
+Setting up libpq-dev (17.11-0+deb13u1) ...
+Setting up binutils (2.44-3) ...
+Setting up cpp-aarch64-linux-gnu (4:14.2.0-1) ...
+Setting up librtmp1:arm64 (2.4+20151223.gitfa8646d.1-2+b5) ...
+Setting up cpp-14 (14.2.0-19) ...
+Setting up cpp (4:14.2.0-1) ...
+Setting up gcc-14-aarch64-linux-gnu (14.2.0-19) ...
+Setting up gcc-aarch64-linux-gnu (4:14.2.0-1) ...
+Setting up libcurl4t64:arm64 (8.14.1-2+deb13u4) ...
+Setting up gcc-14 (14.2.0-19) ...
+Setting up curl (8.14.1-2+deb13u4) ...
+Setting up gcc (4:14.2.0-1) ...
+Processing triggers for libc-bin (2.41-12+deb13u3) ...
+ ---> Removed intermediate container 7d0eeb5c235c
+ ---> 46a491884356
+Step 3/9 : WORKDIR /app
+ ---> Running in 629039b20e65
+ ---> Removed intermediate container 629039b20e65
+ ---> 747fa79f45fe
+Step 4/9 : COPY requirements.txt .
+ ---> 99565c976fa4
+Step 5/9 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Running in dd990a1bc4d2
+Collecting django<6.0,>=5.0 (from -r requirements.txt (line 1))
+  Downloading django-5.2.17-py3-none-any.whl.metadata (4.1 kB)
+Collecting djangorestframework<4.0,>=3.15 (from -r requirements.txt (line 2))
+  Downloading djangorestframework-3.18.1-py3-none-any.whl.metadata (7.8 kB)
+Collecting djangorestframework-simplejwt<6.0,>=5.3 (from -r requirements.txt (line 3))
+  Downloading djangorestframework_simplejwt-5.5.1-py3-none-any.whl.metadata (4.6 kB)
+Collecting django-cors-headers<5.0,>=4.3 (from -r requirements.txt (line 4))
+  Downloading django_cors_headers-4.9.0-py3-none-any.whl.metadata (16 kB)
+Collecting psycopg2-binary<3.0,>=2.9 (from -r requirements.txt (line 5))
+  Downloading psycopg2_binary-2.9.13-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl.metadata (4.9 kB)
+Collecting pyairtable<3.0,>=2.3 (from -r requirements.txt (line 6))
+  Downloading pyairtable-2.3.7-py2.py3-none-any.whl.metadata (4.5 kB)
+Collecting pytest-django<5.0,>=4.8 (from -r requirements.txt (line 7))
+  Downloading pytest_django-4.14.0-py3-none-any.whl.metadata (8.1 kB)
+Collecting pytest<9.0,>=8.0 (from -r requirements.txt (line 8))
+  Downloading pytest-8.4.2-py3-none-any.whl.metadata (7.7 kB)
+Collecting asgiref>=3.8.1 (from django<6.0,>=5.0->-r requirements.txt (line 1))
+  Downloading asgiref-3.12.1-py3-none-any.whl.metadata (9.4 kB)
+Collecting sqlparse>=0.3.1 (from django<6.0,>=5.0->-r requirements.txt (line 1))
+  Downloading sqlparse-0.6.0-py3-none-any.whl.metadata (6.0 kB)
+Collecting pyjwt>=1.7.1 (from djangorestframework-simplejwt<6.0,>=5.3->-r requirements.txt (line 3))
+  Downloading pyjwt-2.13.0-py3-none-any.whl.metadata (3.4 kB)
+Collecting inflection (from pyairtable<3.0,>=2.3->-r requirements.txt (line 6))
+  Downloading inflection-0.5.1-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting pydantic (from pyairtable<3.0,>=2.3->-r requirements.txt (line 6))
+  Downloading pydantic-2.13.5-py3-none-any.whl.metadata (110 kB)
+Collecting requests>=2.22.0 (from pyairtable<3.0,>=2.3->-r requirements.txt (line 6))
+  Downloading requests-2.34.2-py3-none-any.whl.metadata (4.8 kB)
+Collecting typing-extensions (from pyairtable<3.0,>=2.3->-r requirements.txt (line 6))
+  Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting urllib3>=1.26 (from pyairtable<3.0,>=2.3->-r requirements.txt (line 6))
+  Downloading urllib3-2.7.0-py3-none-any.whl.metadata (6.9 kB)
+Collecting iniconfig>=1 (from pytest<9.0,>=8.0->-r requirements.txt (line 8))
+  Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting packaging>=20 (from pytest<9.0,>=8.0->-r requirements.txt (line 8))
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pluggy<2,>=1.5 (from pytest<9.0,>=8.0->-r requirements.txt (line 8))
+  Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting pygments>=2.7.2 (from pytest<9.0,>=8.0->-r requirements.txt (line 8))
+  Downloading pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting charset_normalizer<4,>=2 (from requests>=2.22.0->pyairtable<3.0,>=2.3->-r requirements.txt (line 6))
+  Downloading charset_normalizer-3.5.1-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl.metadata (45 kB)
+Collecting idna<4,>=2.5 (from requests>=2.22.0->pyairtable<3.0,>=2.3->-r requirements.txt (line 6))
+  Downloading idna-3.19-py3-none-any.whl.metadata (9.2 kB)
+Collecting certifi>=2023.5.7 (from requests>=2.22.0->pyairtable<3.0,>=2.3->-r requirements.txt (line 6))
+  Downloading certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Collecting annotated-types>=0.6.0 (from pydantic->pyairtable<3.0,>=2.3->-r requirements.txt (line 6))
+  Downloading annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.46.5 (from pydantic->pyairtable<3.0,>=2.3->-r requirements.txt (line 6))
+  Downloading pydantic_core-2.46.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl.metadata (6.6 kB)
+Collecting typing-inspection>=0.4.2 (from pydantic->pyairtable<3.0,>=2.3->-r requirements.txt (line 6))
+  Downloading typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+Downloading django-5.2.17-py3-none-any.whl (8.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.3/8.3 MB 9.8 MB/s eta 0:00:00
+Downloading djangorestframework-3.18.1-py3-none-any.whl (901 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 901.4/901.4 kB 13.4 MB/s eta 0:00:00
+Downloading djangorestframework_simplejwt-5.5.1-py3-none-any.whl (107 kB)
+Downloading django_cors_headers-4.9.0-py3-none-any.whl (12 kB)
+Downloading psycopg2_binary-2.9.13-cp312-cp312-manylinux_2_27_aarch64.manylinux_2_28_aarch64.whl (5.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.9/5.9 MB 4.6 MB/s eta 0:00:00
+Downloading pyairtable-2.3.7-py2.py3-none-any.whl (68 kB)
+Downloading pytest_django-4.14.0-py3-none-any.whl (27 kB)
+Downloading pytest-8.4.2-py3-none-any.whl (365 kB)
+Downloading asgiref-3.12.1-py3-none-any.whl (25 kB)
+Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+Downloading pygments-2.21.0-py3-none-any.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 22.2 MB/s eta 0:00:00
+Downloading pyjwt-2.13.0-py3-none-any.whl (31 kB)
+Downloading requests-2.34.2-py3-none-any.whl (73 kB)
+Downloading sqlparse-0.6.0-py3-none-any.whl (50 kB)
+Downloading urllib3-2.7.0-py3-none-any.whl (131 kB)
+Downloading inflection-0.5.1-py2.py3-none-any.whl (9.5 kB)
+Downloading pydantic-2.13.5-py3-none-any.whl (472 kB)
+Downloading pydantic_core-2.46.5-cp312-cp312-manylinux_2_17_aarch64.manylinux2014_aarch64.whl (2.0 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 23.5 MB/s eta 0:00:00
+Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Downloading annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Downloading certifi-2026.7.22-py3-none-any.whl (136 kB)
+Downloading charset_normalizer-3.5.1-cp312-cp312-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl (238 kB)
+Downloading idna-3.19-py3-none-any.whl (68 kB)
+Downloading typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Installing collected packages: urllib3, typing-extensions, sqlparse, pyjwt, pygments, psycopg2-binary, pluggy, packaging, iniconfig, inflection, idna, charset_normalizer, certifi, asgiref, annotated-types, typing-inspection, requests, pytest, pydantic-core, django, pytest-django, pydantic, djangorestframework, django-cors-headers, pyairtable, djangorestframework-simplejwt
+[91mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+[0mSuccessfully installed annotated-types-0.8.0 asgiref-3.12.1 certifi-2026.7.22 charset_normalizer-3.5.1 django-5.2.17 django-cors-headers-4.9.0 djangorestframework-3.18.1 djangorestframework-simplejwt-5.5.1 idna-3.19 inflection-0.5.1 iniconfig-2.3.0 packaging-26.3 pluggy-1.6.0 psycopg2-binary-2.9.13 pyairtable-2.3.7 pydantic-2.13.5 pydantic-core-2.46.5 pygments-2.21.0 pyjwt-2.13.0 pytest-8.4.2 pytest-django-4.14.0 requests-2.34.2 sqlparse-0.6.0 typing-extensions-4.16.0 typing-inspection-0.4.4 urllib3-2.7.0
+[91m
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+[0m ---> Removed intermediate container dd990a1bc4d2
+ ---> a8b0d0b386e2
+Step 6/9 : COPY . .
+ ---> f54c0d900bea
+Step 7/9 : EXPOSE 8000
+ ---> Running in 34f7e413fc30
+ ---> Removed intermediate container 34f7e413fc30
+ ---> 35ebd066dab8
+Step 8/9 : CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+ ---> Running in f76031adf505
+ ---> Removed intermediate container f76031adf505
+ ---> 058b5f6a8a3d
+Step 9/9 : LABEL com.docker.compose.image.builder=classic
+ ---> Running in 6534c692eab0
+ ---> Removed intermediate container 6534c692eab0
+ ---> 73c1f2948e9e
+Successfully built 73c1f2948e9e
+Successfully tagged q-taskboard-backend:latest
+Sending build context to Docker daemon   8.65kB
+Step 1/8 : FROM node:20-bookworm-slim
+20-bookworm-slim: Pulling from library/node
+
+[1A[2Ked7f19ee07f9: Pulling fs layer [1B
+[1A[2K46ac7a0b9811: Pulling fs layer [1B
+[1A[2Kb007268d7e62: Pulling fs layer [1B
+[1A[2K93f1e44b7642: Pulling fs layer [1B
+[1A[2K791fd1b17847: Pulling fs layer [1B[5A[2Ked7f19ee07f9: Download complete [5B[4A[2K46ac7a0b9811: Downloading [====>                                              ]  2.699MB/28.12MB[4B[4A[2K46ac7a0b9811: Downloading [===========>                                       ]  6.291MB/28.12MB[4B[4A[2K46ac7a0b9811: Downloading [===============>                                   ]  8.901MB/28.12MB[4B[4A[2K46ac7a0b9811: Downloading [====================>                              ]  11.53MB/28.12MB[4B[1A[2K791fd1b17847: Downloading [==============================>                    ]  1.049MB/1.713MB[1B[4A[2K46ac7a0b9811: Downloading [========================>                          ]  13.63MB/28.12MB[4B[1A[2K791fd1b17847: Downloading [==============================>                    ]  1.049MB/1.713MB[1B[4A[2K46ac7a0b9811: Downloading [===========================>                       ]  15.73MB/28.12MB[4B[3A[2Kb007268d7e62: Downloading [=>                                                 ]  1.049MB/41.39MB[3B[3A[2Kb007268d7e62: Downloading [=>                                                 ]  1.049MB/41.39MB[3B[2A[2K93f1e44b7642: Download complete [2B[1A[2K791fd1b17847: Download complete [1B[4A[2K46ac7a0b9811: Downloading [=================================>                 ]  18.87MB/28.12MB[4B[4A[2K46ac7a0b9811: Downloading [=======================================>           ]  22.02MB/28.12MB[4B[3A[2Kb007268d7e62: Downloading [==>                                                ]  2.097MB/41.39MB[3B[4A[2K46ac7a0b9811: Downloading [============================================>      ]  25.17MB/28.12MB[4B[3A[2Kb007268d7e62: Downloading [==>                                                ]  2.097MB/41.39MB[3B[4A[2K46ac7a0b9811: Downloading [================================================>  ]  27.26MB/28.12MB[4B[3A[2Kb007268d7e62: Downloading [===>                                               ]  3.146MB/41.39MB[3B[4A[2K46ac7a0b9811: Download complete [4B[3A[2Kb007268d7e62: Downloading [===>                                               ]  3.146MB/41.39MB[3B[4A[2K46ac7a0b9811: Extracting 1 s[4B[3A[2Kb007268d7e62: Downloading [=====>                                             ]  4.194MB/41.39MB[3B[4A[2K46ac7a0b9811: Extracting 1 s[4B[3A[2Kb007268d7e62: Downloading [======>                                            ]  5.243MB/41.39MB[3B[4A[2K46ac7a0b9811: Extracting 1 s[4B[3A[2Kb007268d7e62: Downloading [=======>                                           ]  6.291MB/41.39MB[3B[4A[2K46ac7a0b9811: Extracting 1 s[4B[3A[2Kb007268d7e62: Downloading [==========>                                        ]  8.389MB/41.39MB[3B[4A[2K46ac7a0b9811: Extracting 1 s[4B[3A[2Kb007268d7e62: Downloading [============>                                      ]  10.49MB/41.39MB[3B[4A[2K46ac7a0b9811: Extracting 1 s[4B[3A[2Kb007268d7e62: Downloading [================>                                  ]  13.63MB/41.39MB[3B[4A[2K46ac7a0b9811: Extracting 1 s[4B[3A[2Kb007268d7e62: Downloading [=================>                                 ]  14.68MB/41.39MB[3B[4A[2K46ac7a0b9811: Extracting 1 s[4B[3A[2Kb007268d7e62: Downloading [=====================>                             ]  17.83MB/41.39MB[3B[4A[2K46ac7a0b9811: Extracting 1 s[4B
+[1A[2K9615975875fe: Download complete [1B
+[1A[2K4cd65ac39cfe: Downloading [===================>                               ]  1.049MB/2.651MB[1B[5A[2Kb007268d7e62: Downloading [========================>                          ]  19.92MB/41.39MB[5B[6A[2K46ac7a0b9811: Extracting 1 s[6B[5A[2Kb007268d7e62: Downloading [==========================>                        ]  22.02MB/41.39MB[5B[1A[2K4cd65ac39cfe: Download complete [1B[6A[2K46ac7a0b9811: Extracting 1 s[6B[5A[2Kb007268d7e62: Downloading [=============================>                     ]  24.74MB/41.39MB[5B[6A[2K46ac7a0b9811: Extracting 2 s[6B[5A[2Kb007268d7e62: Downloading [=================================>                 ]  28.01MB/41.39MB[5B[6A[2K46ac7a0b9811: Extracting 2 s[6B[5A[2Kb007268d7e62: Downloading [=====================================>             ]  31.43MB/41.39MB[5B[6A[2K46ac7a0b9811: Extracting 2 s[6B[5A[2Kb007268d7e62: Downloading [=========================================>         ]   34.6MB/41.39MB[5B[6A[2K46ac7a0b9811: Extracting 2 s[6B[5A[2Kb007268d7e62: Downloading [=============================================>     ]  37.75MB/41.39MB[5B[6A[2K46ac7a0b9811: Extracting 2 s[6B[5A[2Kb007268d7e62: Downloading [=================================================> ]  40.89MB/41.39MB[5B[6A[2K46ac7a0b9811: Extracting 2 s[6B[5A[2Kb007268d7e62: Download complete [5B[6A[2K46ac7a0b9811: Extracting 2 s[6B[6A[2K46ac7a0b9811: Extracting 2 s[6B[6A[2K46ac7a0b9811: Extracting 2 s[6B[4A[2K93f1e44b7642: Extracting 1 s[4B[6A[2K46ac7a0b9811: Pull complete [6B[4A[2K93f1e44b7642: Pull complete [4B[5A[2Kb007268d7e62: Extracting 1 s[5B[5A[2Kb007268d7e62: Extracting 1 s[5B[5A[2Kb007268d7e62: Extracting 1 s[5B[5A[2Kb007268d7e62: Extracting 1 s[5B[5A[2Kb007268d7e62: Extracting 1 s[5B[5A[2Kb007268d7e62: Extracting 1 s[5B[5A[2Kb007268d7e62: Extracting 1 s[5B[5A[2Kb007268d7e62: Extracting 1 s[5B[5A[2Kb007268d7e62: Extracting 1 s[5B[5A[2Kb007268d7e62: Extracting 1 s[5B[5A[2Kb007268d7e62: Extracting 2 s[5B[5A[2Kb007268d7e62: Extracting 2 s[5B[5A[2Kb007268d7e62: Extracting 2 s[5B[5A[2Kb007268d7e62: Extracting 2 s[5B[5A[2Kb007268d7e62: Extracting 2 s[5B[5A[2Kb007268d7e62: Extracting 2 s[5B[5A[2Kb007268d7e62: Extracting 2 s[5B[5A[2Kb007268d7e62: Extracting 2 s[5B[5A[2Kb007268d7e62: Extracting 2 s[5B[3A[2K791fd1b17847: Extracting 1 s[3B[5A[2Kb007268d7e62: Pull complete [5B[7A[2Ked7f19ee07f9: Pull complete [7B[3A[2K791fd1b17847: Pull complete [3BDigest: sha256:2cf067cfed83d5ea958367df9f966191a942351a2df77d6f0193e162b5febfc0
+Status: Downloaded newer image for node:20-bookworm-slim
+ ---> 2cf067cfed83
+Step 2/8 : WORKDIR /app
+ ---> Running in 54a9369a44ff
+ ---> Removed intermediate container 54a9369a44ff
+ ---> c2cfce37c2fe
+Step 3/8 : COPY package*.json ./
+ ---> 6900fedcd1a0
+Step 4/8 : RUN npm install
+ ---> Running in 8574643cebff
+[91mnpm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+[0m
+added 243 packages, and audited 244 packages in 1m
+
+48 packages are looking for funding
+  run `npm fund` for details
+
+7 vulnerabilities (5 moderate, 1 high, 1 critical)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+[91mnpm notice
+npm notice New major version of npm available! 10.8.2 -> 12.0.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.0.2
+npm notice To update run: npm install -g npm@12.0.2
+npm notice
+[0m ---> Removed intermediate container 8574643cebff
+ ---> a47ca0c3f46a
+Step 5/8 : COPY . .
+ ---> 5986bedf5dd4
+Step 6/8 : EXPOSE 3000
+ ---> Running in adf19c4c164a
+ ---> Removed intermediate container adf19c4c164a
+ ---> 516052787313
+Step 7/8 : CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "3000"]
+ ---> Running in 9c25bf6e32d2
+ ---> Removed intermediate container 9c25bf6e32d2
+ ---> d76d4ebe5222
+Step 8/8 : LABEL com.docker.compose.image.builder=classic
+ ---> Running in 73a53888ad1c
+ ---> Removed intermediate container 73a53888ad1c
+ ---> 83c2db6978f1
+Successfully built 83c2db6978f1
+Successfully tagged q-taskboard-frontend:latest
+[?25l[2A[0G[+] up 16/19
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [33m⠋[0m Network q-taskboard_default              Creating                                                                                                                                                  [34m  0.0s[0m
+ [33m⠋[0m Volume q-taskboard_frontend_node_modules Creating                                                                                                                                                  [34m  0.0s[0m
+ [33m⠋[0m Volume q-taskboard_pgdata                Creating                                                                                                                                                  [34m  0.0s[0m
+[?25h[?25l[7A[0G[+] up 19/20
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [33m⠋[0m Container q-taskboard-db-1               Creating                                                                                                                                                  [34m  0.0s[0m
+[?25h[?25l[8A[0G[+] up 20/21
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠋[0m Container q-taskboard-backend-1          Creating                                                                                                                                                  [34m  0.0s[0m
+[?25h[?25l[9A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠋[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  0.1s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠙[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  0.2s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠹[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  0.3s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠸[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  0.4s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠼[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  0.5s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠴[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  0.6s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠦[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  0.7s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠧[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  0.8s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠇[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  0.9s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠏[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  1.0s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠋[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  1.1s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠙[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  1.2s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠹[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  1.3s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠸[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  1.4s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠼[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  1.5s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠴[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  1.6s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠦[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  1.7s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠧[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  1.8s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠇[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  1.9s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠏[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  2.0s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [33m⠋[0m Container q-taskboard-frontend-1         Creating                                                                                                                                                  [34m  2.1s[0m
+[?25h[?25l[10A[0G[+] up 22/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-frontend-1         [32mCreated[0m                                                                                                                                                   [34m  2.1s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [33m⠙[0m Container q-taskboard-db-1               Starting                                                                                                                                                  [34m  2.4s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-frontend-1         [32mCreated[0m                                                                                                                                                   [34m  2.1s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [33m⠹[0m Container q-taskboard-db-1               Starting                                                                                                                                                  [34m  2.5s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-frontend-1         [32mCreated[0m                                                                                                                                                   [34m  2.1s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [33m⠸[0m Container q-taskboard-db-1               Starting                                                                                                                                                  [34m  2.6s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Container q-taskboard-frontend-1         [32mCreated[0m                                                                                                                                                   [34m  2.1s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mStarted[0m                                                                                                                                                   [34m  2.7s[0m
+ [33m⠙[0m Container q-taskboard-backend-1          Starting                                                                                                                                                  [34m  2.6s[0m
+ [32m✔[0m Container q-taskboard-frontend-1         [32mCreated[0m                                                                                                                                                   [34m  2.1s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mStarted[0m                                                                                                                                                   [34m  2.7s[0m
+ [33m⠹[0m Container q-taskboard-backend-1          Starting                                                                                                                                                  [34m  2.7s[0m
+ [32m✔[0m Container q-taskboard-frontend-1         [32mCreated[0m                                                                                                                                                   [34m  2.1s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mStarted[0m                                                                                                                                                   [34m  2.7s[0m
+ [33m⠸[0m Container q-taskboard-backend-1          Starting                                                                                                                                                  [34m  2.8s[0m
+ [32m✔[0m Container q-taskboard-frontend-1         [32mCreated[0m                                                                                                                                                   [34m  2.1s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mStarted[0m                                                                                                                                                   [34m  2.7s[0m
+ [33m⠼[0m Container q-taskboard-backend-1          Starting                                                                                                                                                  [34m  2.9s[0m
+ [32m✔[0m Container q-taskboard-frontend-1         [32mCreated[0m                                                                                                                                                   [34m  2.1s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mStarted[0m                                                                                                                                                   [34m  2.7s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mStarted[0m                                                                                                                                                   [34m  3.0s[0m
+ [33m⠙[0m Container q-taskboard-frontend-1         Starting                                                                                                                                                  [34m  3.0s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mStarted[0m                                                                                                                                                   [34m  2.7s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mStarted[0m                                                                                                                                                   [34m  3.0s[0m
+ [33m⠹[0m Container q-taskboard-frontend-1         Starting                                                                                                                                                  [34m  3.1s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mStarted[0m                                                                                                                                                   [34m  2.7s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mStarted[0m                                                                                                                                                   [34m  3.0s[0m
+ [33m⠸[0m Container q-taskboard-frontend-1         Starting                                                                                                                                                  [34m  3.2s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mStarted[0m                                                                                                                                                   [34m  2.7s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mStarted[0m                                                                                                                                                   [34m  3.0s[0m
+ [33m⠼[0m Container q-taskboard-frontend-1         Starting                                                                                                                                                  [34m  3.3s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mStarted[0m                                                                                                                                                   [34m  2.7s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mStarted[0m                                                                                                                                                   [34m  3.0s[0m
+ [33m⠴[0m Container q-taskboard-frontend-1         Starting                                                                                                                                                  [34m  3.4s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mStarted[0m                                                                                                                                                   [34m  2.7s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mStarted[0m                                                                                                                                                   [34m  3.0s[0m
+ [33m⠦[0m Container q-taskboard-frontend-1         Starting                                                                                                                                                  [34m  3.5s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mStarted[0m                                                                                                                                                   [34m  2.7s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mStarted[0m                                                                                                                                                   [34m  3.0s[0m
+ [33m⠧[0m Container q-taskboard-frontend-1         Starting                                                                                                                                                  [34m  3.6s[0m
+[?25h[?25l[10A[0G[+] up 21/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mStarted[0m                                                                                                                                                   [34m  2.7s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mStarted[0m                                                                                                                                                   [34m  3.0s[0m
+ [33m⠇[0m Container q-taskboard-frontend-1         Starting                                                                                                                                                  [34m  3.7s[0m
+[?25h[?25l[10A[0G[+] up 22/22
+ [32m✔[0m Image postgres:16-alpine                 [32mPulled[0m                                                                                                                                                    [34m 15.6s[0m
+ [32m✔[0m Image q-taskboard-backend                [32mBuilt[0m                                                                                                                                                     [34m 83.1s[0m
+ [32m✔[0m Image q-taskboard-frontend               [32mBuilt[0m                                                                                                                                                     [34m124.1s[0m
+ [32m✔[0m Network q-taskboard_default              [32mCreated[0m                                                                                                                                                   [34m  0.1s[0m
+ [32m✔[0m Volume q-taskboard_frontend_node_modules [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Volume q-taskboard_pgdata                [32mCreated[0m                                                                                                                                                   [34m  0.0s[0m
+ [32m✔[0m Container q-taskboard-db-1               [32mStarted[0m                                                                                                                                                   [34m  2.7s[0m
+ [32m✔[0m Container q-taskboard-backend-1          [32mStarted[0m                                                                                                                                                   [34m  3.0s[0m
+ [32m✔[0m Container q-taskboard-frontend-1         [32mStarted[0m                                                                                                                                                   [34m  3.7s[0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose exec backend python manage.py migrate[27m
+[K[A[43C[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27mm[27ma[27mn[27ma[27mg[27me[27m.[27mp[27my[27m [27mm[27mi[27mg[27mr[27ma[27mt[27me[1B[K[?2004l
+[36;1mOperations to perform:[0m
+[1m  Apply all migrations: [0mauth, contenttypes, projects, users
+[36;1mRunning migrations:[0m
+  Applying contenttypes.0001_initial...[32;1m OK[0m
+  Applying contenttypes.0002_remove_content_type_name...[32;1m OK[0m
+  Applying auth.0001_initial...[32;1m OK[0m
+  Applying auth.0002_alter_permission_name_max_length...[32;1m OK[0m
+  Applying auth.0003_alter_user_email_max_length...[32;1m OK[0m
+  Applying auth.0004_alter_user_username_opts...[32;1m OK[0m
+  Applying auth.0005_alter_user_last_login_null...[32;1m OK[0m
+  Applying auth.0006_require_contenttypes_0002...[32;1m OK[0m
+  Applying auth.0007_alter_validators_add_error_messages...[32;1m OK[0m
+  Applying auth.0008_alter_user_username_max_length...[32;1m OK[0m
+  Applying auth.0009_alter_user_last_name_max_length...[32;1m OK[0m
+  Applying auth.0010_alter_group_name_max_length...[32;1m OK[0m
+  Applying auth.0011_update_proxy_permissions...[32;1m OK[0m
+  Applying auth.0012_alter_user_first_name_max_length...[32;1m OK[0m
+  Applying users.0001_initial...[32;1m OK[0m
+  Applying projects.0001_initial...[32;1m OK[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose exec backend python manage.py seed[27m
+[K[A[43C[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27mm[27ma[27mn[27ma[27mg[27me[27m.[27mp[27my[27m [27ms[27me[27me[27md[1B[K[?2004l
+seeding...
+[32;1mseed complete.[0m
+login with any of these (password: password123):
+  meera@taskboard.dev   — admin on Q3 Launch, Internal Tools
+  arjun@taskboard.dev   — admin on Onboarding, member on Q3 Launch
+  kavya@example.com     — member on Q3 Launch
+  dev@example.com       — viewer on Q3 Launch
+  lina@example.com      — member on Onboarding
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose exec backend python -m pytest[27m
+[K[A[43C[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mm[27m [27mp[27my[27mt[27me[27ms[27mt[1B[K[?2004l
+[1m=========================================================================================== test session starts ============================================================================================[0m
+platform linux -- Python 3.12.14, pytest-8.4.2, pluggy-1.6.0
+django: version: 5.2.17, settings: taskboard.settings (from ini)
+rootdir: /app
+configfile: pytest.ini
+plugins: django-4.14.0
+[1mcollecting ... [0m[1mcollected 15 items                                                                                                                                                                                         [0m
+
+projects/tests.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m                                                                                                                                                                            [ 46%][0m
+users/tests.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m                                                                                                                                                                              [100%][0m
+
+[33m============================================================================================= warnings summary =============================================================================================[0m
+projects/tests.py::TestProjects::test_create_project
+projects/tests.py::TestProjects::test_list_only_returns_member_projects
+projects/tests.py::TestProjects::test_get_project_detail
+projects/tests.py::TestProjects::test_non_member_cannot_view_project
+projects/tests.py::TestTasks::test_create_task
+projects/tests.py::TestTasks::test_viewers_cannot_create_tasks
+projects/tests.py::TestTasks::test_delete_task_requires_membership
+users/tests.py::TestRegister::test_creates_user_and_returns_token
+users/tests.py::TestLogin::test_returns_token_on_valid_credentials
+  /usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+    return self._jws.encode(
+
+projects/tests.py::TestProjects::test_create_project
+projects/tests.py::TestProjects::test_list_only_returns_member_projects
+projects/tests.py::TestProjects::test_get_project_detail
+projects/tests.py::TestProjects::test_non_member_cannot_view_project
+projects/tests.py::TestTasks::test_create_task
+projects/tests.py::TestTasks::test_viewers_cannot_create_tasks
+projects/tests.py::TestTasks::test_delete_task_requires_membership
+  /usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+    decoded = self.decode_complete(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[33m===================================================================================== [32m15 passed[0m, [33m[1m16 warnings[0m[33m in 10.36s[0m[33m =====================================================================================[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose exec frontend npm test[27m[37D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mf[27mr[27mo[27mn[27mt[27me[27mn[27md[27m [27mn[27mp[27mm[27m [27mt[27me[27ms[27mt[?2004l
+
+> taskboard-frontend@1.0.0 test
+> vitest run
+
+[1G[0K[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90m/app[39m
+
+(node:56) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///app/postcss.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /app/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[?25l [90m·[39m [2msrc/tests/[22mschemas[2m.test.ts[22m[2m (6)[22m
+[?25l[?25l[2K[1A[2K[G [32m✓[39m [2msrc/tests/[22mschemas[2m.test.ts[22m[2m (6)[22m
+[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[2K[1A[2K[G [32m✓[39m [2msrc/tests/[22mschemas[2m.test.ts[22m[2m (6)[22m
+ [90m·[39m [2msrc/tests/[22mTaskCard[2m.test.tsx[22m[2m (3)[22m
+[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/tests/[22mschemas[2m.test.ts[22m[2m (6)[22m
+ [32m✓[39m [2msrc/tests/[22mTaskCard[2m.test.tsx[22m[2m (3)[22m[33m 347[2mms[22m[39m
+[?25l[?25l[?25l[?25l[?25l[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/tests/[22mTaskCard[2m.test.tsx[22m[2m (3)[22m[33m 347[2mms[22m[39m
+ [32m✓[39m [2msrc/tests/[22mschemas[2m.test.ts[22m[2m (6)[22m
+
+[2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[32m9 passed[39m[22m[90m (9)[39m
+[2m   Start at [22m 20:53:33
+[2m   Duration [22m 6.96s[2m (transform 526ms, setup 513ms, collect 760ms, tests 366ms, environment 2.41s, prepare 589ms)[22m
+
+[?25h[?25h[1G[0K\[1G[0K[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose ps[27m
+[K[A[43C[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27mp[27ms[1B[K[?2004l
+NAME                     IMAGE                  COMMAND                  SERVICE    CREATED          STATUS          PORTS
+q-taskboard-backend-1    q-taskboard-backend    "python manage.py ru…"   backend    14 minutes ago   Up 14 minutes   0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+q-taskboard-db-1         postgres:16-alpine     "docker-entrypoint.s…"   db         14 minutes ago   Up 14 minutes   0.0.0.0:5432->5432/tcp, [::]:5432->5432/tcp
+q-taskboard-frontend-1   q-taskboard-frontend   "docker-entrypoint.s…"   frontend   14 minutes ago   Up 14 minutes   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose logs backend --tail=50[27m[37D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27ml[27mo[27mg[27ms[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27m-[27m-[27mt[27ma[27mi[27ml[27m=[27m5[27m0[?2004l
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/executor.py", line 18, in __init__
+[36mbackend-1  | [0m    self.loader = MigrationLoader(self.connection)
+[36mbackend-1  | [0m                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/loader.py", line 58, in __init__
+[36mbackend-1  | [0m    self.build_graph()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/loader.py", line 235, in build_graph
+[36mbackend-1  | [0m    self.applied_migrations = recorder.applied_migrations()
+[36mbackend-1  | [0m                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/recorder.py", line 89, in applied_migrations
+[36mbackend-1  | [0m    if self.has_table():
+[36mbackend-1  | [0m       ^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/recorder.py", line 63, in has_table
+[36mbackend-1  | [0m    with self.connection.cursor() as cursor:
+[36mbackend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 320, in cursor
+[36mbackend-1  | [0m    return self._cursor()
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 296, in _cursor
+[36mbackend-1  | [0m    self.ensure_connection()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 278, in ensure_connection
+[36mbackend-1  | [0m    with self.wrap_database_errors:
+[36mbackend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+[36mbackend-1  | [0m    raise dj_exc_value.with_traceback(traceback) from exc_value
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 279, in ensure_connection
+[36mbackend-1  | [0m    self.connect()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 256, in connect
+[36mbackend-1  | [0m    self.connection = self.get_new_connection(conn_params)
+[36mbackend-1  | [0m                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/postgresql/base.py", line 332, in get_new_connection
+[36mbackend-1  | [0m    connection = self.Database.connect(**conn_params)
+[36mbackend-1  | [0m                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+[36mbackend-1  | [0m    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mdjango.db.utils.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: Connection refused
+[36mbackend-1  | [0m	Is the server running on that host and accepting TCP/IP connections?
+[36mbackend-1  | [0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose logs db --tail=30[27m
+[7mdocker-compose exec backend python manage.py migrate[27m[K
+[7mdocker-compose exec backend python manage.py seed[27m[K[A[A[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27ml[27mo[27mg[27ms[27m [27md[27mb[27m [27m-[27m-[27mt[27ma[27mi[27ml[27m=[27m3[27m0[1B[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27mm[27ma[27mn[27ma[27mg[27me[27m.[27mp[27my[27m [27mm[27mi[27mg[27mr[27ma[27mt[27me[1B[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27mm[27ma[27mn[27ma[27mg[27me[27m.[27mp[27my[27m [27ms[27me[27me[27md[?2004l
+[36mdb-1  | [0m2026-09-10 20:50:44.590 UTC [39] LOG:  database system is ready to accept connections
+[36mdb-1  | [0m done
+[36mdb-1  | [0mserver started
+[36mdb-1  | [0mCREATE DATABASE
+[36mdb-1  | [0m
+[36mdb-1  | [0m
+[36mdb-1  | [0m/usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+[36mdb-1  | [0m
+[36mdb-1  | [0mwaiting for server to shut down....2026-09-10 20:50:44.880 UTC [39] LOG:  received fast shutdown request
+[36mdb-1  | [0m2026-09-10 20:50:44.886 UTC [39] LOG:  aborting any active transactions
+[36mdb-1  | [0m2026-09-10 20:50:44.899 UTC [39] LOG:  background worker "logical replication launcher" (PID 45) exited with exit code 1
+[36mdb-1  | [0m2026-09-10 20:50:44.899 UTC [40] LOG:  shutting down
+[36mdb-1  | [0m2026-09-10 20:50:44.900 UTC [40] LOG:  checkpoint starting: shutdown immediate
+[36mdb-1  | [0m2026-09-10 20:50:44.967 UTC [40] LOG:  checkpoint complete: wrote 926 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.029 s, sync=0.033 s, total=0.068 s; sync files=301, longest=0.009 s, average=0.001 s; distance=4283 kB, estimate=4283 kB; lsn=0/1925D20, redo lsn=0/1925D20
+[36mdb-1  | [0m2026-09-10 20:50:44.981 UTC [39] LOG:  database system is shut down
+[36mdb-1  | [0m done
+[36mdb-1  | [0mserver stopped
+[36mdb-1  | [0m
+[36mdb-1  | [0mPostgreSQL init process complete; ready for start up.
+[36mdb-1  | [0m
+[36mdb-1  | [0m2026-09-10 20:50:44.942 UTC [1] LOG:  starting PostgreSQL 16.15 on aarch64-unknown-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+[36mdb-1  | [0m2026-09-10 20:50:44.944 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mdb-1  | [0m2026-09-10 20:50:44.945 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mdb-1  | [0m2026-09-10 20:50:44.951 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mdb-1  | [0m2026-09-10 20:50:44.956 UTC [55] LOG:  database system was shut down at 2026-09-10 20:50:44 UTC
+[36mdb-1  | [0m2026-09-10 20:50:44.963 UTC [1] LOG:  database system is ready to accept connections
+[36mdb-1  | [0m2026-09-10 20:52:27.539 UTC [53] LOG:  checkpoint starting: immediate force wait
+[36mdb-1  | [0m2026-09-10 20:52:27.672 UTC [53] LOG:  checkpoint complete: wrote 168 buffers (1.0%); 1 WAL file(s) added, 0 removed, 0 recycled; write=0.027 s, sync=0.011 s, total=0.134 s; sync files=101, longest=0.003 s, average=0.001 s; distance=5172 kB, estimate=5172 kB; lsn=0/1E33060, redo lsn=0/1E33028
+[36mdb-1  | [0m2026-09-10 20:57:27.607 UTC [53] LOG:  checkpoint starting: time
+[36mdb-1  | [0m2026-09-10 20:57:27.832 UTC [53] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.132 s, sync=0.005 s, total=0.225 s; sync files=2, longest=0.004 s, average=0.003 s; distance=0 kB, estimate=4655 kB; lsn=0/1E331D8, redo lsn=0/1E331A0
+[36;1mOperations to perform:[0m
+[1m  Apply all migrations: [0mauth, contenttypes, projects, users
+[36;1mRunning migrations:[0m
+  No migrations to apply.
+[31m  Your models in app(s): 'projects' have changes that are not yet reflected in a migration, and so won't be applied.[0m
+[31m  Run 'manage.py makemigrations' to make new migrations, and then re-run 'manage.py migrate' to apply them.[0m
+seeding...
+[32;1mseed complete.[0m
+login with any of these (password: password123):
+  meera@taskboard.dev   — admin on Q3 Launch, Internal Tools
+  arjun@taskboard.dev   — admin on Onboarding, member on Q3 Launch
+  kavya@example.com     — member on Q3 Launch
+  dev@example.com       — viewer on Q3 Launch
+  lina@example.com      — member on Onboarding
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose logs backend --tail=0 -f[27m[39D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27ml[27mo[27mg[27ms[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27m-[27m-[27mt[27ma[27mi[27ml[27m=[27m0[27m [27m-[27mf[?2004l
+
+
+docker-compose ps
+docker-compose logs backend --tail=100
+^C
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose ps[27m
+[7mdocker-compose logs backend --tail=100[27m[K[A[5C[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27mp[27ms[1B[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27ml[27mo[27mg[27ms[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27m-[27m-[27mt[27ma[27mi[27ml[27m=[27m1[27m0[27m0[?2004l
+NAME                     IMAGE                  COMMAND                  SERVICE    CREATED          STATUS          PORTS
+q-taskboard-backend-1    q-taskboard-backend    "python manage.py ru…"   backend    19 minutes ago   Up 19 minutes   0.0.0.0:8000->8000/tcp, [::]:8000->8000/tcp
+q-taskboard-db-1         postgres:16-alpine     "docker-entrypoint.s…"   db         19 minutes ago   Up 19 minutes   0.0.0.0:5432->5432/tcp, [::]:5432->5432/tcp
+q-taskboard-frontend-1   q-taskboard-frontend   "docker-entrypoint.s…"   frontend   19 minutes ago   Up 19 minutes   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0mException in thread django-main-thread:
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 279, in ensure_connection
+[36mbackend-1  | [0m    self.connect()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 256, in connect
+[36mbackend-1  | [0m    self.connection = self.get_new_connection(conn_params)
+[36mbackend-1  | [0m                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/postgresql/base.py", line 332, in get_new_connection
+[36mbackend-1  | [0m    connection = self.Database.connect(**conn_params)
+[36mbackend-1  | [0m                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+[36mbackend-1  | [0m    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mpsycopg2.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: Connection refused
+[36mbackend-1  | [0m	Is the server running on that host and accepting TCP/IP connections?
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mThe above exception was the direct cause of the following exception:
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+[36mbackend-1  | [0m    self.run()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/threading.py", line 1012, in run
+[36mbackend-1  | [0m    self._target(*self._args, **self._kwargs)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+[36mbackend-1  | [0m    fn(*args, **kwargs)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 137, in inner_run
+[36mbackend-1  | [0m    self.check_migrations()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/management/base.py", line 591, in check_migrations
+[36mbackend-1  | [0m    executor = MigrationExecutor(connections[DEFAULT_DB_ALIAS])
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/executor.py", line 18, in __init__
+[36mbackend-1  | [0m    self.loader = MigrationLoader(self.connection)
+[36mbackend-1  | [0m                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/loader.py", line 58, in __init__
+[36mbackend-1  | [0m    self.build_graph()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/loader.py", line 235, in build_graph
+[36mbackend-1  | [0m    self.applied_migrations = recorder.applied_migrations()
+[36mbackend-1  | [0m                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/recorder.py", line 89, in applied_migrations
+[36mbackend-1  | [0m    if self.has_table():
+[36mbackend-1  | [0m       ^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/recorder.py", line 63, in has_table
+[36mbackend-1  | [0m    with self.connection.cursor() as cursor:
+[36mbackend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 320, in cursor
+[36mbackend-1  | [0m    return self._cursor()
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 296, in _cursor
+[36mbackend-1  | [0m    self.ensure_connection()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 278, in ensure_connection
+[36mbackend-1  | [0m    with self.wrap_database_errors:
+[36mbackend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+[36mbackend-1  | [0m    raise dj_exc_value.with_traceback(traceback) from exc_value
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 279, in ensure_connection
+[36mbackend-1  | [0m    self.connect()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 256, in connect
+[36mbackend-1  | [0m    self.connection = self.get_new_connection(conn_params)
+[36mbackend-1  | [0m                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/postgresql/base.py", line 332, in get_new_connection
+[36mbackend-1  | [0m    connection = self.Database.connect(**conn_params)
+[36mbackend-1  | [0m                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+[36mbackend-1  | [0m    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mdjango.db.utils.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: Connection refused
+[36mbackend-1  | [0m	Is the server running on that host and accepting TCP/IP connections?
+[36mbackend-1  | [0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose restart backend[27m
+[K[A[43C[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27mr[27me[27ms[27mt[27ma[27mr[27mt[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[1B[K[?2004l
+[?25l[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.5s[0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose logs backend -f[27m[30D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27ml[27mo[27mg[27ms[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27m-[27mf[?2004l
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0mException in thread django-main-thread:
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 279, in ensure_connection
+[36mbackend-1  | [0m    self.connect()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 256, in connect
+[36mbackend-1  | [0m    self.connection = self.get_new_connection(conn_params)
+[36mbackend-1  | [0m                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/postgresql/base.py", line 332, in get_new_connection
+[36mbackend-1  | [0m    connection = self.Database.connect(**conn_params)
+[36mbackend-1  | [0m                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+[36mbackend-1  | [0m    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mpsycopg2.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: Connection refused
+[36mbackend-1  | [0m	Is the server running on that host and accepting TCP/IP connections?
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mThe above exception was the direct cause of the following exception:
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+[36mbackend-1  | [0m    self.run()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/threading.py", line 1012, in run
+[36mbackend-1  | [0m    self._target(*self._args, **self._kwargs)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+[36mbackend-1  | [0m    fn(*args, **kwargs)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 137, in inner_run
+[36mbackend-1  | [0m    self.check_migrations()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/management/base.py", line 591, in check_migrations
+[36mbackend-1  | [0m    executor = MigrationExecutor(connections[DEFAULT_DB_ALIAS])
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/executor.py", line 18, in __init__
+[36mbackend-1  | [0m    self.loader = MigrationLoader(self.connection)
+[36mbackend-1  | [0m                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/loader.py", line 58, in __init__
+[36mbackend-1  | [0m    self.build_graph()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/loader.py", line 235, in build_graph
+[36mbackend-1  | [0m    self.applied_migrations = recorder.applied_migrations()
+[36mbackend-1  | [0m                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/recorder.py", line 89, in applied_migrations
+[36mbackend-1  | [0m    if self.has_table():
+[36mbackend-1  | [0m       ^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/recorder.py", line 63, in has_table
+[36mbackend-1  | [0m    with self.connection.cursor() as cursor:
+[36mbackend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 320, in cursor
+[36mbackend-1  | [0m    return self._cursor()
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 296, in _cursor
+[36mbackend-1  | [0m    self.ensure_connection()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 278, in ensure_connection
+[36mbackend-1  | [0m    with self.wrap_database_errors:
+[36mbackend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+[36mbackend-1  | [0m    raise dj_exc_value.with_traceback(traceback) from exc_value
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 279, in ensure_connection
+[36mbackend-1  | [0m    self.connect()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 256, in connect
+[36mbackend-1  | [0m    self.connection = self.get_new_connection(conn_params)
+[36mbackend-1  | [0m                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/postgresql/base.py", line 332, in get_new_connection
+[36mbackend-1  | [0m    connection = self.Database.connect(**conn_params)
+[36mbackend-1  | [0m                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+[36mbackend-1  | [0m    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mdjango.db.utils.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: Connection refused
+[36mbackend-1  | [0m	Is the server running on that host and accepting TCP/IP connections?
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+
+
+
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  return self._jws.encode(
+[36mbackend-1  | [0m[10/Sep/2026 21:16:04] "POST /api/auth/login HTTP/1.1" 200 392
+[36mbackend-1  | [0mNot Found: /
+[36mbackend-1  | [0m[10/Sep/2026 21:16:51] "GET / HTTP/1.1" 404 2456
+[36mbackend-1  | [0mNot Found: /favicon.ico
+[36mbackend-1  | [0m[10/Sep/2026 21:16:52] "GET /favicon.ico HTTP/1.1" 404 2507
+[36mbackend-1  | [0m[10/Sep/2026 21:17:03] "POST /api/auth/login HTTP/1.1" 200 392
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0m[10/Sep/2026 21:17:03] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[10/Sep/2026 21:17:32] "POST /api/auth/login HTTP/1.1" 200 392
+[36mbackend-1  | [0m[10/Sep/2026 21:17:55] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[10/Sep/2026 21:18:15] "GET /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27+OR+%271%27%3d%271 HTTP/1.1" 200 12
+[36mbackend-1  | [0mInternal Server Error: /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 103, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mpsycopg2.errors.AmbiguousFunction: operator is not unique: unknown % unknown
+[36mbackend-1  | [0mLINE 1: ...2de4-42bd-80f4-bab99dab6370' AND (title ILIKE '%x'%' OR desc...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0mHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mThe above exception was the direct cause of the following exception:
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+[36mbackend-1  | [0m    response = get_response(request)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+[36mbackend-1  | [0m    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+[36mbackend-1  | [0m    return view_func(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+[36mbackend-1  | [0m    return self.dispatch(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 526, in dispatch
+[36mbackend-1  | [0m    response = self.handle_exception(exc)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 474, in handle_exception
+[36mbackend-1  | [0m    self.raise_uncaught_exception(exc)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 485, in raise_uncaught_exception
+[36mbackend-1  | [0m    raise exc
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 523, in dispatch
+[36mbackend-1  | [0m    response = handler(request, *args, **kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/app/projects/views.py", line 120, in get
+[36mbackend-1  | [0m    cursor.execute(sql)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+[36mbackend-1  | [0m    return super().execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+[36mbackend-1  | [0m    return self._execute_with_wrappers(
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+[36mbackend-1  | [0m    return executor(sql, params, many, context)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+[36mbackend-1  | [0m    with self.db.wrap_database_errors:
+[36mbackend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+[36mbackend-1  | [0m    raise dj_exc_value.with_traceback(traceback) from exc_value
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 103, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mdjango.db.utils.ProgrammingError: operator is not unique: unknown % unknown
+[36mbackend-1  | [0mLINE 1: ...2de4-42bd-80f4-bab99dab6370' AND (title ILIKE '%x'%' OR desc...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0mHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m[10/Sep/2026 21:22:49] "GET /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27 HTTP/1.1" 500 122086
+[36mbackend-1  | [0m[10/Sep/2026 21:24:13] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 08:24:05] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 11:56:38] "GET /api/projects HTTP/1.1" 200 1023
+^C
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hTTOKEN[?2004l
+zsh: command not found: TOKEN
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hTOKENdocker-compose logs backend -f[15Drestart backend
+[K[K[?2004l
+[?25l[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.5s[0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose restart backend
+[K[K[A[43CTOKEN                         [1B[K[A[48Cdocker-compose logs backend -f[?2004l[1B[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0mException in thread django-main-thread:
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 279, in ensure_connection
+[36mbackend-1  | [0m    self.connect()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 256, in connect
+[36mbackend-1  | [0m    self.connection = self.get_new_connection(conn_params)
+[36mbackend-1  | [0m                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/postgresql/base.py", line 332, in get_new_connection
+[36mbackend-1  | [0m    connection = self.Database.connect(**conn_params)
+[36mbackend-1  | [0m                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+[36mbackend-1  | [0m    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mpsycopg2.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: Connection refused
+[36mbackend-1  | [0m	Is the server running on that host and accepting TCP/IP connections?
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mThe above exception was the direct cause of the following exception:
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+[36mbackend-1  | [0m    self.run()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/threading.py", line 1012, in run
+[36mbackend-1  | [0m    self._target(*self._args, **self._kwargs)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/autoreload.py", line 64, in wrapper
+[36mbackend-1  | [0m    fn(*args, **kwargs)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/management/commands/runserver.py", line 137, in inner_run
+[36mbackend-1  | [0m    self.check_migrations()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/management/base.py", line 591, in check_migrations
+[36mbackend-1  | [0m    executor = MigrationExecutor(connections[DEFAULT_DB_ALIAS])
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/executor.py", line 18, in __init__
+[36mbackend-1  | [0m    self.loader = MigrationLoader(self.connection)
+[36mbackend-1  | [0m                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/loader.py", line 58, in __init__
+[36mbackend-1  | [0m    self.build_graph()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/loader.py", line 235, in build_graph
+[36mbackend-1  | [0m    self.applied_migrations = recorder.applied_migrations()
+[36mbackend-1  | [0m                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/recorder.py", line 89, in applied_migrations
+[36mbackend-1  | [0m    if self.has_table():
+[36mbackend-1  | [0m       ^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/migrations/recorder.py", line 63, in has_table
+[36mbackend-1  | [0m    with self.connection.cursor() as cursor:
+[36mbackend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 320, in cursor
+[36mbackend-1  | [0m    return self._cursor()
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 296, in _cursor
+[36mbackend-1  | [0m    self.ensure_connection()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 278, in ensure_connection
+[36mbackend-1  | [0m    with self.wrap_database_errors:
+[36mbackend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+[36mbackend-1  | [0m    raise dj_exc_value.with_traceback(traceback) from exc_value
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 279, in ensure_connection
+[36mbackend-1  | [0m    self.connect()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/base/base.py", line 256, in connect
+[36mbackend-1  | [0m    self.connection = self.get_new_connection(conn_params)
+[36mbackend-1  | [0m                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/utils/asyncio.py", line 26, in inner
+[36mbackend-1  | [0m    return func(*args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/postgresql/base.py", line 332, in get_new_connection
+[36mbackend-1  | [0m    connection = self.Database.connect(**conn_params)
+[36mbackend-1  | [0m                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+[36mbackend-1  | [0m    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mdjango.db.utils.OperationalError: connection to server at "db" (172.18.0.2), port 5432 failed: Connection refused
+[36mbackend-1  | [0m	Is the server running on that host and accepting TCP/IP connections?
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  return self._jws.encode(
+[36mbackend-1  | [0m[10/Sep/2026 21:16:04] "POST /api/auth/login HTTP/1.1" 200 392
+[36mbackend-1  | [0mNot Found: /
+[36mbackend-1  | [0m[10/Sep/2026 21:16:51] "GET / HTTP/1.1" 404 2456
+[36mbackend-1  | [0mNot Found: /favicon.ico
+[36mbackend-1  | [0m[10/Sep/2026 21:16:52] "GET /favicon.ico HTTP/1.1" 404 2507
+[36mbackend-1  | [0m[10/Sep/2026 21:17:03] "POST /api/auth/login HTTP/1.1" 200 392
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0m[10/Sep/2026 21:17:03] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[10/Sep/2026 21:17:32] "POST /api/auth/login HTTP/1.1" 200 392
+[36mbackend-1  | [0m[10/Sep/2026 21:17:55] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[10/Sep/2026 21:18:15] "GET /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27+OR+%271%27%3d%271 HTTP/1.1" 200 12
+[36mbackend-1  | [0mInternal Server Error: /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 103, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mpsycopg2.errors.AmbiguousFunction: operator is not unique: unknown % unknown
+[36mbackend-1  | [0mLINE 1: ...2de4-42bd-80f4-bab99dab6370' AND (title ILIKE '%x'%' OR desc...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0mHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mThe above exception was the direct cause of the following exception:
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+[36mbackend-1  | [0m    response = get_response(request)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+[36mbackend-1  | [0m    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+[36mbackend-1  | [0m    return view_func(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+[36mbackend-1  | [0m    return self.dispatch(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 526, in dispatch
+[36mbackend-1  | [0m    response = self.handle_exception(exc)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 474, in handle_exception
+[36mbackend-1  | [0m    self.raise_uncaught_exception(exc)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 485, in raise_uncaught_exception
+[36mbackend-1  | [0m    raise exc
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 523, in dispatch
+[36mbackend-1  | [0m    response = handler(request, *args, **kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/app/projects/views.py", line 120, in get
+[36mbackend-1  | [0m    cursor.execute(sql)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+[36mbackend-1  | [0m    return super().execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+[36mbackend-1  | [0m    return self._execute_with_wrappers(
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+[36mbackend-1  | [0m    return executor(sql, params, many, context)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+[36mbackend-1  | [0m    with self.db.wrap_database_errors:
+[36mbackend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+[36mbackend-1  | [0m    raise dj_exc_value.with_traceback(traceback) from exc_value
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 103, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mdjango.db.utils.ProgrammingError: operator is not unique: unknown % unknown
+[36mbackend-1  | [0mLINE 1: ...2de4-42bd-80f4-bab99dab6370' AND (title ILIKE '%x'%' OR desc...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0mHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m[10/Sep/2026 21:22:49] "GET /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27 HTTP/1.1" 500 122086
+[36mbackend-1  | [0m[10/Sep/2026 21:24:13] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 08:24:05] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 11:56:38] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+Script started on Fri Sep 11 17:33:51 2026
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mTOKEN=$(curl -s -X POST http://localhost:8000/api/auth/login \[27m
+[7m  -H 'Content-Type: application/json' \[27m[K
+[7m  -d '{"email":"meera@taskboard.dev","password":"password123"}' \[27m[K
+[7m  | python3 -c "import sys,json;print(json.load(sys.stdin)['token'])")[27m[K
+[K[4A[43C[27mT[27mO[27mK[27mE[27mN[27m=[27m$[27m([27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mX[27m [27mP[27mO[27mS[27mT[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27ma[27mu[27mt[27mh[27m/[27ml[27mo[27mg[27mi[27mn[27m [27m\[1B[27m [27m [27m-[27mH[27m [27m'[27mC[27mo[27mn[27mt[27me[27mn[27mt[27m-[27mT[27my[27mp[27me[27m:[27m [27ma[27mp[27mp[27ml[27mi[27mc[27ma[27mt[27mi[27mo[27mn[27m/[27mj[27ms[27mo[27mn[27m'[27m [27m\[1B[27m [27m [27m-[27md[27m [27m'[27m{[27m"[27me[27mm[27ma[27mi[27ml[27m"[27m:[27m"[27mm[27me[27me[27mr[27ma[27m@[27mt[27ma[27ms[27mk[27mb[27mo[27ma[27mr[27md[27m.[27md[27me[27mv[27m"[27m,[27m"[27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m"[27m:[27m"[27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m1[27m2[27m3[27m"[27m}[27m'[27m [27m\[1B[27m [27m [27m|[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m,[27mj[27ms[27mo[27mn[27m;[27mp[27mr[27mi[27mn[27mt[27m([27mj[27ms[27mo[27mn[27m.[27ml[27mo[27ma[27md[27m([27ms[27my[27ms[27m.[27ms[27mt[27md[27mi[27mn[27m)[27m[[27m'[27mt[27mo[27mk[27me[27mn[27m'[27m][27m)[27m"[27m)[1B[K[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  return self._jws.encode(
+[36mbackend-1  | [0m[11/Sep/2026 12:04:17] "POST /api/auth/login HTTP/1.1" 200 392
+[7mTOKEN[27m[27mT[27mO[27mK[27mE[27mN[?2004l
+zsh: command not found: TOKEN
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mTOKEN[27m[27mT[27mO[27mK[27mE[27mN[?2004l
+zsh: command not found: TOKEN
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0m[11/Sep/2026 12:04:44] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0mInternal Server Error: /api/auth/login
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+[36mbackend-1  | [0m    response = get_response(request)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+[36mbackend-1  | [0m    response = response.render()
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+[36mbackend-1  | [0m    self.content = self.rendered_content
+[36mbackend-1  | [0m                   ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/response.py", line 74, in rendered_content
+[36mbackend-1  | [0m    ret = renderer.render(self.data, accepted_media_type, context)
+[36mbackend-1  | [0m          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/renderers.py", line 760, in render
+[36mbackend-1  | [0m    template = loader.get_template(self.template)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+[36mbackend-1  | [0m    raise TemplateDoesNotExist(template_name, chain=chain)
+[36mbackend-1  | [0mdjango.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+[36mbackend-1  | [0m[11/Sep/2026 12:04:46] "GET /api/auth/login HTTP/1.1" 500 70783
+[36mbackend-1  | [0mNot Found: /favicon.ico
+[36mbackend-1  | [0m[11/Sep/2026 12:04:48] "GET /favicon.ico HTTP/1.1" 404 2509
+[36mbackend-1  | [0m[11/Sep/2026 12:04:49] "GET /api/projects HTTP/1.1" 200 1023
+TOKEN=$(curl -s -X POST http://localhost:8000/api/auth/login \
+  -H 'Content-Type: application/json' \[K
+  -d '{"email":"meera@taskboard.dev","password":"password123"}' \[K
+  | python3 -c "import sys,json;print(json.load(sys.stdin)['token'])")[K
+[K[K[A[70C[A[A[A[105C[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[16C [18D[P[16C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[7mh[7mt[7mt[7mp[7m:[7m/[7m/[7ml[7mo[7mc[7ma[7ml[7mh[7mo[7ms[7mt[7m:[7m3000/dashboard[27m/api/auth/login \[17D[36mbackend-1  | [0m[11/Sep/2026 12:04:57] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 12:05:33] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0mInternal Server Error: /api/auth/login
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+[36mbackend-1  | [0m    response = get_response(request)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 220, in _get_response
+[36mbackend-1  | [0m    response = response.render()
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/template/response.py", line 114, in render
+[36mbackend-1  | [0m    self.content = self.rendered_content
+[36mbackend-1  | [0m                   ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/response.py", line 74, in rendered_content
+[36mbackend-1  | [0m    ret = renderer.render(self.data, accepted_media_type, context)
+[36mbackend-1  | [0m          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/renderers.py", line 760, in render
+[36mbackend-1  | [0m    template = loader.get_template(self.template)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/template/loader.py", line 19, in get_template
+[36mbackend-1  | [0m    raise TemplateDoesNotExist(template_name, chain=chain)
+[36mbackend-1  | [0mdjango.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+[36mbackend-1  | [0m[11/Sep/2026 12:05:41] "GET /api/auth/login HTTP/1.1" 500 70772
+[31D[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m3[27m0[27m0[27m0[27m/[27md[27ma[27ms[27mh[27mb[27mo[27ma[27mr[27md[1C[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[17C [18D[P[16C [18D[?2004l[4B
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hTOKEN=$(curl -s -X POST http://localhost:3000/api/auth/login \
+  -H 'Content-Type: application/json' \[K
+  -d '{"email":"meera@taskboard.dev","password":"password123"}' \[K
+  | python3 -c "import sys,json;print(json.load(sys.stdin)['token'])")[K
+[K[K[A[A[A[A[43C[5C                                                         [1B[K[1B[K[1B[K[1B[K[4A[48C[?2004l[1Bzsh: command not found: TOKEN
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m[11/Sep/2026 12:06:12] "POST /api/auth/login HTTP/1.1" 200 392
+[7mScript started, output file is TERMINAL_LOG.md[27m
+[7mpawangoel@Pawans-MacBook-Air q-taskboard % TOKEN=$(curl -s -X POST http://localhost:8000/api/auth/login \[27m[K
+[7m  -H 'Content-Type: application/json' \[27m[K
+[7m  -d '{"email":"meera@taskboard.dev","password":"password123"}' \[27m[K
+[7m  | python3 -c "import sys,json;print(json.load(sys.stdin)['token'])")[27m[K
+[K
+[7mpawangoel@Pawans-MacBook-Air q-taskboard % TOKEN[27m[K
+[7mzsh: command not found: TOKEN[27m[K
+[7mpawangoel@Pawans-MacBook-Air q-taskboard % TOKEN[27m[K
+[7mzsh: command not found: TOKEN[27m[K
+[7mpawangoel@Pawans-MacBook-Air q-taskboard % TOKEN=$(curl -s -X POST http://localhost:3000/api/auth/login \ [27m[K
+[7m  -H 'Content-Type: application/json' \[27m[K
+[7m  -d '{"email":"meera@taskboard.dev","password":"password123"}' \[27m[K
+[7m  | python3 -c "import sys,json;print(json.load(sys.stdin)['token'])")[27m[K
+[K
+[7mpawangoel@Pawans-MacBook-Air q-taskboard % TOKEN                                                         [27m[K
+[7mzsh: command not found: TOKEN[27m[K
+[7mpawangoel@Pawans-MacBook-Air q-taskboard % [27m[K
+[K[18A[43C[27mS[27mc[27mr[27mi[27mp[27mt[27m [27ms[27mt[27ma[27mr[27mt[27me[27md[27m,[27m [27mo[27mu[27mt[27mp[27mu[27mt[27m [27mf[27mi[27ml[27me[27m [27mi[27ms[27m [27mT[27mE[27mR[27mM[27mI[27mN[27mA[27mL[27m_[27mL[27mO[27mG[27m.[27mm[27md[1B[27mp[27ma[27mw[27ma[27mn[27mg[27mo[27me[27ml[27m@[27mP[27ma[27mw[27ma[27mn[27ms[27m-[27mM[27ma[27mc[27mB[27mo[27mo[27mk[27m-[27mA[27mi[27mr[27m [27mq[27m-[27mt[27ma[27ms[27mk[27mb[27mo[27ma[27mr[27md[27m [27m%[27m [27mT[27mO[27mK[27mE[27mN[27m=[27m$[27m([27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mX[27m [27mP[27mO[27mS[27mT[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27ma[27mu[27mt[27mh[27m/[27ml[27mo[27mg[27mi[27mn[27m [27m\[1B[27m [27m [27m-[27mH[27m [27m'[27mC[27mo[27mn[27mt[27me[27mn[27mt[27m-[27mT[27my[27mp[27me[27m:[27m [27ma[27mp[27mp[27ml[27mi[27mc[27ma[27mt[27mi[27mo[27mn[27m/[27mj[27ms[27mo[27mn[27m'[27m [27m\[1B[27m [27m [27m-[27md[27m [27m'[27m{[27m"[27me[27mm[27ma[27mi[27ml[27m"[27m:[27m"[27mm[27me[27me[27mr[27ma[27m@[27mt[27ma[27ms[27mk[27mb[27mo[27ma[27mr[27md[27m.[27md[27me[27mv[27m"[27m,[27m"[27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m"[27m:[27m"[27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m1[27m2[27m3[27m"[27m}[27m'[27m [27m\[1B[27m [27m [27m|[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m,[27mj[27ms[27mo[27mn[27m;[27mp[27mr[27mi[27mn[27mt[27m([27mj[27ms[27mo[27mn[27m.[27ml[27mo[27ma[27md[27m([27ms[27my[27ms[27m.[27ms[27mt[27md[27mi[27mn[27m)[27m[[27m'[27mt[27mo[27mk[27me[27mn[27m'[27m][27m)[27m"[27m)[2B[27mp[27ma[27mw[27ma[27mn[27mg[27mo[27me[27ml[27m@[27mP[27ma[27mw[27ma[27mn[27ms[27m-[27mM[27ma[27mc[27mB[27mo[27mo[27mk[27m-[27mA[27mi[27mr[27m [27mq[27m-[27mt[27ma[27ms[27mk[27mb[27mo[27ma[27mr[27md[27m [27m%[27m [27mT[27mO[27mK[27mE[27mN[1B[27mz[27ms[27mh[27m:[27m [27mc[27mo[27mm[27mm[27ma[27mn[27md[27m [27mn[27mo[27mt[27m [27mf[27mo[27mu[27mn[27md[27m:[27m [27mT[27mO[27mK[27mE[27mN[1B[27mp[27ma[27mw[27ma[27mn[27mg[27mo[27me[27ml[27m@[27mP[27ma[27mw[27ma[27mn[27ms[27m-[27mM[27ma[27mc[27mB[27mo[27mo[27mk[27m-[27mA[27mi[27mr[27m [27mq[27m-[27mt[27ma[27ms[27mk[27mb[27mo[27ma[27mr[27md[27m [27m%[27m [27mT[27mO[27mK[27mE[27mN[1B[27mz[27ms[27mh[27m:[27m [27mc[27mo[27mm[27mm[27ma[27mn[27md[27m [27mn[27mo[27mt[27m [27mf[27mo[27mu[27mn[27md[27m:[27m [27mT[27mO[27mK[27mE[27mN[1B[27mp[27ma[27mw[27ma[27mn[27mg[27mo[27me[27ml[27m@[27mP[27ma[27mw[27ma[27mn[27ms[27m-[27mM[27ma[27mc[27mB[27mo[27mo[27mk[27m-[27mA[27mi[27mr[27m [27mq[27m-[27mt[27ma[27ms[27mk[27mb[27mo[27ma[27mr[27md[27m [27m%[27m [27mT[27mO[27mK[27mE[27mN[27m=[27m$[27m([27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mX[27m [27mP[27mO[27mS[27mT[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m3[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27ma[27mu[27mt[27mh[27m/[27ml[27mo[27mg[27mi[27mn[27m [27m\[K[1B[27m [27m [27m-[27mH[27m [27m'[27mC[27mo[27mn[27mt[27me[27mn[27mt[27m-[27mT[27my[27mp[27me[27m:[27m [27ma[27mp[27mp[27ml[27mi[27mc[27ma[27mt[27mi[27mo[27mn[27m/[27mj[27ms[27mo[27mn[27m'[27m [27m\[1B[27m [27m [27m-[27md[27m [27m'[27m{[27m"[27me[27mm[27ma[27mi[27ml[27m"[27m:[27m"[27mm[27me[27me[27mr[27ma[27m@[27mt[27ma[27ms[27mk[27mb[27mo[27ma[27mr[27md[27m.[27md[27me[27mv[27m"[27m,[27m"[27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m"[27m:[27m"[27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m1[27m2[27m3[27m"[27m}[27m'[27m [27m\[1B[27m [27m [27m|[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m,[27mj[27ms[27mo[27mn[27m;[27mp[27mr[27mi[27mn[27mt[27m([27mj[27ms[27mo[27mn[27m.[27ml[27mo[27ma[27md[27m([27ms[27my[27ms[27m.[27ms[27mt[27md[27mi[27mn[27m)[27m[[27m'[27mt[27mo[27mk[27me[27mn[27m'[27m][27m)[27m"[27m)[2B[27mp[27ma[27mw[27ma[27mn[27mg[27mo[27me[27ml[27m@[27mP[27ma[27mw[27ma[27mn[27ms[27m-[27mM[27ma[27mc[27mB[27mo[27mo[27mk[27m-[27mA[27mi[27mr[27m [27mq[27m-[27mt[27ma[27ms[27mk[27mb[27mo[27ma[27mr[27md[27m [27m%[27m [27mT[27mO[27mK[27mE[27mN[K[1B[27mz[27ms[27mh[27m:[27m [27mc[27mo[27mm[27mm[27ma[27mn[27md[27m [27mn[27mo[27mt[27m [27mf[27mo[27mu[27mn[27md[27m:[27m [27mT[27mO[27mK[27mE[27mN[1B[27mp[27ma[27mw[27ma[27mn[27mg[27mo[27me[27ml[27m@[27mP[27ma[27mw[27ma[27mn[27ms[27m-[27mM[27ma[27mc[27mB[27mo[27mo[27mk[27m-[27mA[27mi[27mr[27m [27mq[27m-[27mt[27ma[27ms[27mk[27mb[27mo[27ma[27mr[27md[27m [27m%[K[1B[K[A[Aezsh: command not found: TOKEN[29D[?2004l[2B
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hcclear[?2004l
+[3J[H[2J[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004heechi o $TOKEN[?2004l
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzkxNzIwMzcyLCJpYXQiOjE3ODkxMjgzNzIsImp0aSI6IjIxYmQwMTQ0NTI4ZDRlYTRhMmQyYzk4NGE5Nzk0OGJiIiwidXNlcl9pZCI6IjQ1ZDNkMDc4LWM3YmItNDE3ZC1hMTAwLTc3YmI3Mzk1MGJiNiJ9.dRDYDkHZ_PD2btDVmWQ0ZY0tHsmAzEByrMboACAY5w0
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mPID=$(curl -s -H "Authorization: Bearer $TOKEN" http://localhost:8000/api/projects \[27m
+[7m  | python3 -c "import sys,json;print(json.load(sys.stdin)['projects'][0]['id'])")[27m[K[A[39D[27mP[27mI[27mD[27m=[27m$[27m([27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m [27m\[1B[27m [27m [27m|[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m,[27mj[27ms[27mo[27mn[27m;[27mp[27mr[27mi[27mn[27mt[27m([27mj[27ms[27mo[27mn[27m.[27ml[27mo[27ma[27md[27m([27ms[27my[27ms[27m.[27ms[27mt[27md[27mi[27mn[27m)[27m[[27m'[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m'[27m][27m[[27m0[27m][27m[[27m'[27mi[27md[27m'[27m][27m)[27m"[27m)[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            [36mbackend-1  | [0m[11/Sep/2026 12:07:21] "GET /api/projects HTTP/1.1" 200 1023
+]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004heecho $PID[?2004l
+b278a193-2de4-42bd-80f4-bab99dab6370
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mcurl -G "http://localhost:8000/api/projects/$PID/tasks" \[27m
+[7m  --data-urlencode "q=x' OR '1'='1" \[27m[K
+[7m  -H "Authorization: Bearer $TOKEN"[27m[K
+[K[3A[43C[27mc[27mu[27mr[27ml[27m [27m-[27mG[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m/[27m$[27mP[27mI[27mD[27m/[27mt[27ma[27ms[27mk[27ms[27m"[27m [27m\[1B[27m [27m [27m-[27m-[27md[27ma[27mt[27ma[27m-[27mu[27mr[27ml[27me[27mn[27mc[27mo[27md[27me[27m [27m"[27mq[27m=[27mx[27m'[27m [27mO[27mR[27m [27m'[27m1[27m'[27m=[27m'[27m1[27m"[27m [27m\[1B[27m [27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[1B[K[?2004l
+{"tasks":[]}[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m[11/Sep/2026 12:07:42] "GET /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27+OR+%271%27%3d%271 HTTP/1.1" 200 12
+[7mcurl -s -G "http://localhost:8000/api/projects/$PID/tasks" \[27m
+[7m  --data-urlencode "q=x'" \[27m[K
+[7m  -H "Authorization: Bearer $TOKEN"[27m[K[A[A[8C[27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mG[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m/[27m$[27mP[27mI[27mD[27m/[27mt[27ma[27ms[27mk[27ms[27m"[27m [27m\[1B[27m [27m [27m-[27m-[27md[27ma[27mt[27ma[27m-[27mu[27mr[27ml[27me[27mn[27mc[27mo[27md[27me[27m [27m"[27mq[27m=[27mx[27m'[27m"[27m [27m\[1B[27m [27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[?2004l
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <title>ProgrammingError
+          at /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks</title>
+  <style>
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font-family: sans-serif; background-color:#fff; color:#000; }
+    body > :where(header, main, footer) { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; }
+    h2 { margin-bottom:.8em; }
+    h3 { margin:1em 0 .5em 0; }
+    h4 { margin:0 0 .5em 0; font-weight: normal; }
+    code, pre { font-size: 100%; white-space: pre-wrap; word-break: break-word; }
+    summary { cursor: pointer; }
+    table { border:1px solid #ccc; border-collapse: collapse; width:100%; background:white; }
+    tbody td, tbody th { vertical-align:top; padding:2px 3px; }
+    thead th {
+      padding:1px 6px 1px 3px; background:#fefefe; text-align:left;
+      font-weight:normal; font-size: 0.6875rem; border:1px solid #ddd;
+    }
+    tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    table.vars { margin:5px 10px 2px 40px; width: auto; }
+    table.vars td, table.req td { font-family:monospace; }
+    table td.code { width:100%; }
+    table td.code pre { overflow:hidden; }
+    table.source th { color:#666; }
+    table.source td { font-family:monospace; white-space:pre; border-bottom:1px solid #eee; }
+    ul.traceback { list-style-type:none; color: #222; }
+    ul.traceback li.cause { word-break: break-word; }
+    ul.traceback li.frame { padding-bottom:1em; color:#4f4f4f; }
+    ul.traceback li.user { background-color:#e0e0e0; color:#000 }
+    div.context { padding:10px 0; overflow:hidden; }
+    div.context ol { padding-left:30px; margin:0 10px; list-style-position: inside; }
+    div.context ol li { font-family:monospace; white-space:pre; color:#777; cursor:pointer; padding-left: 2px; }
+    div.context ol li pre { display:inline; }
+    div.context ol.context-line li { color:#464646; background-color:#dfdfdf; padding: 3px 2px; }
+    div.context ol.context-line li span { position:absolute; right:32px; }
+    .user div.context ol.context-line li { background-color:#bbb; color:#000; }
+    .user div.context ol li { color:#666; }
+    div.commands, summary.commands { margin-left: 40px; }
+    div.commands a, summary.commands { color:#555; text-decoration:none; }
+    .user div.commands a { color: black; }
+    #summary { background: #ffc; }
+    #summary h2 { font-weight: normal; color: #666; }
+    #info { padding: 0; }
+    #info > * { padding:10px 20px; }
+    #explanation { background:#eee; }
+    #template, #template-not-exist { background:#f6f6f6; }
+    #template-not-exist ul { margin: 0 0 10px 20px; }
+    #template-not-exist .postmortem-section { margin-bottom: 3px; }
+    #unicode-hint { background:#eee; }
+    #traceback { background:#eee; }
+    #requestinfo { background:#f6f6f6; padding-left:120px; }
+    #summary table { border:none; background:transparent; }
+    #requestinfo h2, #requestinfo h3 { position:relative; margin-left:-100px; }
+    #requestinfo h3 { margin-bottom:-1em; }
+    .error { background: #ffc; }
+    .specific { color:#cc3300; font-weight:bold; }
+    h2 span.commands { font-size: 0.7rem; font-weight:normal; }
+    span.commands a:link {color:#5E5694;}
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5rem; margin: 10px 0 10px 0; }
+    .append-bottom { margin-bottom: 10px; }
+    .fname { user-select: all; }
+  </style>
+  
+  <script>
+    function hideAll(elems) {
+      for (var e = 0; e < elems.length; e++) {
+        elems[e].style.display = 'none';
+      }
+    }
+    window.onload = function() {
+      hideAll(document.querySelectorAll('ol.pre-context'));
+      hideAll(document.querySelectorAll('ol.post-context'));
+      hideAll(document.querySelectorAll('div.pastebin'));
+    }
+    function toggle() {
+      for (var i = 0; i < arguments.length; i++) {
+        var e = document.getElementById(arguments[i]);
+        if (e) {
+          e.style.display = e.style.display == 'none' ? 'block': 'none';
+        }
+      }
+      return false;
+    }
+    function switchPastebinFriendly(link) {
+      s1 = "Switch to copy-and-paste view";
+      s2 = "Switch back to interactive view";
+      link.textContent = link.textContent.trim() == s1 ? s2: s1;
+      toggle('browserTraceback', 'pastebinTraceback');
+      return false;
+    }
+  </script>
+  
+</head>
+<body>
+<header id="summary">
+  <h1>ProgrammingError
+       at /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks</h1>
+  <pre class="exception_value">operator is not unique: unknown % unknown
+LINE 1: ...2de4-42bd-80f4-bab99dab6370&#x27; AND (title ILIKE &#x27;%x&#x27;%&#x27; OR desc...
+                                                             ^
+HINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+</pre>
+  <table class="meta">
+
+    <tr>
+      <th scope="row">Request Method:</th>
+      <td>GET</td>
+    </tr>
+    <tr>
+      <th scope="row">Request URL:</th>
+      <td>http://localhost:8000/api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Django Version:</th>
+      <td>5.2.17</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Exception Type:</th>
+      <td>ProgrammingError</td>
+    </tr>
+
+
+    <tr>
+      <th scope="row">Exception Value:</th>
+      <td><pre>operator is not unique: unknown % unknown
+LINE 1: ...2de4-42bd-80f4-bab99dab6370&#x27; AND (title ILIKE &#x27;%x&#x27;%&#x27; OR desc...
+                                                             ^
+HINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+</pre></td>
+    </tr>
+
+
+    <tr>
+      <th scope="row">Exception Location:</th>
+      <td><span class="fname">/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py</span>, line 103, in _execute</td>
+    </tr>
+
+
+    <tr>
+      <th scope="row">Raised during:</th>
+      <td>projects.views.TaskListCreateView</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Python Executable:</th>
+      <td>/usr/local/bin/python</td>
+    </tr>
+    <tr>
+      <th scope="row">Python Version:</th>
+      <td>3.12.14</td>
+    </tr>
+    <tr>
+      <th scope="row">Python Path:</th>
+      <td><pre><code>[&#x27;/app&#x27;,
+ &#x27;/usr/local/lib/python312.zip&#x27;,
+ &#x27;/usr/local/lib/python3.12&#x27;,
+ &#x27;/usr/local/lib/python3.12/lib-dynload&#x27;,
+ &#x27;/usr/local/lib/python3.12/site-packages&#x27;]</code></pre></td>
+    </tr>
+    <tr>
+      <th scope="row">Server time:</th>
+      <td>Fri, 11 Sep 2026 12:08:55 +0000</td>
+    </tr>
+  </table>
+</header>
+
+<main id="info">
+
+
+
+
+<div id="traceback">
+  <h2>Traceback <span class="commands"><a href="#" role="button" onclick="return switchPastebinFriendly(this);">
+    Switch to copy-and-paste view</a></span>
+  </h2>
+  <div id="browserTraceback">
+    <ul class="traceback">
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py</code>, line 103, in _execute
+          
+
+          
+            <div class="context" id="c267413692704640">
+              
+                <ol start="96" class="pre-context" id="pre267413692704640">
+                
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>        # ever set during testing).</pre></li>
+                
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>        if not apps.ready and not apps.stored_app_configs:</pre></li>
+                
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>            warnings.warn(self.APPS_NOT_READY_WARNING_MSG, category=RuntimeWarning)</pre></li>
+                
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>        self.db.validate_no_broken_transaction()</pre></li>
+                
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>        with self.db.wrap_database_errors:</pre></li>
+                
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>            if params is None:</pre></li>
+                
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>                # params default might be backend specific.</pre></li>
+                
+                </ol>
+              
+              <ol start="103" class="context-line">
+                <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>                return self.cursor.execute(sql)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='104' class="post-context" id="post267413692704640">
+                  
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>            else:</pre></li>
+                  
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>                return self.cursor.execute(sql, params)</pre></li>
+                  
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>    def _executemany(self, sql, param_list, *ignored_wrapper_args):</pre></li>
+                  
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>        # Raise a warning during app initialization (stored_app_configs is only</pre></li>
+                  
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>        # ever set during testing).</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v267413692704640">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>ignored_wrapper_args</td>
+                    <td class="code"><pre>(False,
+ {&#x27;connection&#x27;: &lt;DatabaseWrapper vendor=&#x27;postgresql&#x27; alias=&#x27;default&#x27;&gt;,
+  &#x27;cursor&#x27;: &lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xf3361abfaab0&gt;})</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xf3361abfaab0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT id, project_id, title, description, status, assignee_id, &#x27;
+ &#x27;created_by_id, position, created_at, updated_at FROM tasks WHERE project_id &#x27;
+ &quot;= &#x27;b278a193-2de4-42bd-80f4-bab99dab6370&#x27; AND (title ILIKE &#x27;%x&#x27;%&#x27; OR &quot;
+ &quot;description ILIKE &#x27;%x&#x27;%&#x27;) ORDER BY position ASC&quot;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+          <li class="cause"><h3>
+          
+            The above exception (operator is not unique: unknown % unknown
+LINE 1: ...2de4-42bd-80f4-bab99dab6370&#x27; AND (title ILIKE &#x27;%x&#x27;%&#x27; OR desc...
+                                                             ^
+HINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+) was the direct cause of the following exception:
+          
+        </h3></li>
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py</code>, line 55, in inner
+          
+
+          
+            <div class="context" id="c267413692846464">
+              
+                <ol start="48" class="pre-context" id="pre267413692846464">
+                
+                  <li onclick="toggle('pre267413692846464', 'post267413692846464')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre267413692846464', 'post267413692846464')"><pre>        return inner</pre></li>
+                
+                  <li onclick="toggle('pre267413692846464', 'post267413692846464')"><pre>    else:</pre></li>
+                
+                  <li onclick="toggle('pre267413692846464', 'post267413692846464')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre267413692846464', 'post267413692846464')"><pre>        @wraps(get_response)</pre></li>
+                
+                  <li onclick="toggle('pre267413692846464', 'post267413692846464')"><pre>        def inner(request):</pre></li>
+                
+                  <li onclick="toggle('pre267413692846464', 'post267413692846464')"><pre>            try:</pre></li>
+                
+                </ol>
+              
+              <ol start="55" class="context-line">
+                <li onclick="toggle('pre267413692846464', 'post267413692846464')"><pre>                response = get_response(request)
+                               ^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='56' class="post-context" id="post267413692846464">
+                  
+                  <li onclick="toggle('pre267413692846464', 'post267413692846464')"><pre>            except Exception as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre267413692846464', 'post267413692846464')"><pre>                response = response_for_exception(request, exc)</pre></li>
+                  
+                  <li onclick="toggle('pre267413692846464', 'post267413692846464')"><pre>            return response</pre></li>
+                  
+                  <li onclick="toggle('pre267413692846464', 'post267413692846464')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413692846464', 'post267413692846464')"><pre>        return inner</pre></li>
+                  
+                  <li onclick="toggle('pre267413692846464', 'post267413692846464')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v267413692846464">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>ProgrammingError(&quot;operator is not unique: unknown % unknown\nLINE 1: ...2de4-42bd-80f4-bab99dab6370&#x27; AND (title ILIKE &#x27;%x&#x27;%&#x27; OR desc...\n                                                             ^\nHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.\n&quot;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>get_response</td>
+                    <td class="code"><pre>&lt;bound method BaseHandler._get_response of &lt;django.core.handlers.wsgi.WSGIHandler object at 0xf3361d98da30&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: GET &#x27;/api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27&#x27;&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py</code>, line 197, in _get_response
+          
+
+          
+            <div class="context" id="c267413692850496">
+              
+                <ol start="190" class="pre-context" id="pre267413692850496">
+                
+                  <li onclick="toggle('pre267413692850496', 'post267413692850496')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre267413692850496', 'post267413692850496')"><pre>        if response is None:</pre></li>
+                
+                  <li onclick="toggle('pre267413692850496', 'post267413692850496')"><pre>            wrapped_callback = self.make_view_atomic(callback)</pre></li>
+                
+                  <li onclick="toggle('pre267413692850496', 'post267413692850496')"><pre>            # If it is an asynchronous view, run it in a subthread.</pre></li>
+                
+                  <li onclick="toggle('pre267413692850496', 'post267413692850496')"><pre>            if iscoroutinefunction(wrapped_callback):</pre></li>
+                
+                  <li onclick="toggle('pre267413692850496', 'post267413692850496')"><pre>                wrapped_callback = async_to_sync(wrapped_callback)</pre></li>
+                
+                  <li onclick="toggle('pre267413692850496', 'post267413692850496')"><pre>            try:</pre></li>
+                
+                </ol>
+              
+              <ol start="197" class="context-line">
+                <li onclick="toggle('pre267413692850496', 'post267413692850496')"><pre>                response = wrapped_callback(request, *callback_args, **callback_kwargs)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='198' class="post-context" id="post267413692850496">
+                  
+                  <li onclick="toggle('pre267413692850496', 'post267413692850496')"><pre>            except Exception as e:</pre></li>
+                  
+                  <li onclick="toggle('pre267413692850496', 'post267413692850496')"><pre>                response = self.process_exception_by_middleware(e, request)</pre></li>
+                  
+                  <li onclick="toggle('pre267413692850496', 'post267413692850496')"><pre>                if response is None:</pre></li>
+                  
+                  <li onclick="toggle('pre267413692850496', 'post267413692850496')"><pre>                    raise</pre></li>
+                  
+                  <li onclick="toggle('pre267413692850496', 'post267413692850496')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413692850496', 'post267413692850496')"><pre>        # Complain if the view returned None (a common error).</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v267413692850496">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>callback</td>
+                    <td class="code"><pre>&lt;function View.as_view.&lt;locals&gt;.view at 0xf3361aca2de0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_kwargs</td>
+                    <td class="code"><pre>{&#x27;project_id&#x27;: UUID(&#x27;b278a193-2de4-42bd-80f4-bab99dab6370&#x27;)}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: GET &#x27;/api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0xf3361d98da30&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>wrapped_callback</td>
+                    <td class="code"><pre>&lt;function View.as_view.&lt;locals&gt;.view at 0xf3361aca2de0&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py</code>, line 65, in _view_wrapper
+          
+
+          
+            <div class="context" id="c267413692853376">
+              
+                <ol start="58" class="pre-context" id="pre267413692853376">
+                
+                  <li onclick="toggle('pre267413692853376', 'post267413692853376')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre267413692853376', 'post267413692853376')"><pre>        async def _view_wrapper(request, *args, **kwargs):</pre></li>
+                
+                  <li onclick="toggle('pre267413692853376', 'post267413692853376')"><pre>            return await view_func(request, *args, **kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre267413692853376', 'post267413692853376')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre267413692853376', 'post267413692853376')"><pre>    else:</pre></li>
+                
+                  <li onclick="toggle('pre267413692853376', 'post267413692853376')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre267413692853376', 'post267413692853376')"><pre>        def _view_wrapper(request, *args, **kwargs):</pre></li>
+                
+                </ol>
+              
+              <ol start="65" class="context-line">
+                <li onclick="toggle('pre267413692853376', 'post267413692853376')"><pre>            return view_func(request, *args, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='66' class="post-context" id="post267413692853376">
+                  
+                  <li onclick="toggle('pre267413692853376', 'post267413692853376')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413692853376', 'post267413692853376')"><pre>    _view_wrapper.csrf_exempt = True</pre></li>
+                  
+                  <li onclick="toggle('pre267413692853376', 'post267413692853376')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413692853376', 'post267413692853376')"><pre>    return wraps(view_func)(_view_wrapper)</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v267413692853376">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{&#x27;project_id&#x27;: UUID(&#x27;b278a193-2de4-42bd-80f4-bab99dab6370&#x27;)}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: GET &#x27;/api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>view_func</td>
+                    <td class="code"><pre>&lt;function View.as_view.&lt;locals&gt;.view at 0xf3361aca2480&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/views/generic/base.py</code>, line 105, in view
+          
+
+          
+            <div class="context" id="c267413693248512">
+              
+                <ol start="98" class="pre-context" id="pre267413693248512">
+                
+                  <li onclick="toggle('pre267413693248512', 'post267413693248512')"><pre>            self = cls(**initkwargs)</pre></li>
+                
+                  <li onclick="toggle('pre267413693248512', 'post267413693248512')"><pre>            self.setup(request, *args, **kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre267413693248512', 'post267413693248512')"><pre>            if not hasattr(self, &quot;request&quot;):</pre></li>
+                
+                  <li onclick="toggle('pre267413693248512', 'post267413693248512')"><pre>                raise AttributeError(</pre></li>
+                
+                  <li onclick="toggle('pre267413693248512', 'post267413693248512')"><pre>                    &quot;%s instance has no &#x27;request&#x27; attribute. Did you override &quot;</pre></li>
+                
+                  <li onclick="toggle('pre267413693248512', 'post267413693248512')"><pre>                    &quot;setup() and forget to call super()?&quot; % cls.__name__</pre></li>
+                
+                  <li onclick="toggle('pre267413693248512', 'post267413693248512')"><pre>                )</pre></li>
+                
+                </ol>
+              
+              <ol start="105" class="context-line">
+                <li onclick="toggle('pre267413693248512', 'post267413693248512')"><pre>            return self.dispatch(request, *args, **kwargs)
+                       [36mbackend-1  | [0mInternal Server Error: /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 103, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mpsycopg2.errors.AmbiguousFunction: operator is not unique: unknown % unknown
+[36mbackend-1  | [0mLINE 1: ...2de4-42bd-80f4-bab99dab6370' AND (title ILIKE '%x'%' OR desc...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0mHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mThe above exception was the direct cause of the following exception:
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+[36mbackend-1  | [0m    response = get_response(request)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+[36mbackend-1  | [0m    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+[36mbackend-1  | [0m    return view_func(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+[36mbackend-1  | [0m    return self.dispatch(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 526, in dispatch
+[36mbackend-1  | [0m    response = self.handle_exception(exc)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 474, in handle_exception
+[36mbackend-1  | [0m    self.raise_uncaught_exception(exc)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 485, in raise_uncaught_exception
+[36mbackend-1  | [0m    raise exc
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 523, in dispatch
+[36mbackend-1  | [0m    response = handler(request, *args, **kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/app/projects/views.py", line 120, in get
+[36mbackend-1  | [0m    cursor.execute(sql)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+[36mbackend-1  | [0m    return super().execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+[36mbackend-1  | [0m    return self._execute_with_wrappers(
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+[36mbackend-1  | [0m    return executor(sql, params, many, context)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+[36mbackend-1  | [0m    with self.db.wrap_database_errors:
+[36mback ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='106' class="post-context" id="post267413693248512">
+                  
+                  <li onclick="toggle('pre267413693248512', 'post267413693248512')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413693248512', 'post267413693248512')"><pre>        view.view_class = cls</pre></li>
+                  
+                  <li onclick="toggle('pre267413693248512', 'post267413693248512')"><pre>        view.view_initkwargs = initkwargs</pre></li>
+                  
+                  <li onclick="toggle('pre267413693248512', 'post267413693248512')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413693248512', 'post267413693248512')"><pre>        # __name__ and __qualname__ are intentionally left unchanged as</pre></li>
+                  
+                  <li onclick="toggle('pre267413693248512', 'post267413693248512')"><pre>        # view_class should be used to robustly determine the name of the view</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v267413693248512">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>cls</td>
+                    <td class="code"><pre>&lt;class &#x27;projects.views.TaskListCreateView&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>initkwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{&#x27;project_id&#x27;: UUID(&#x27;b278a193-2de4-42bd-80f4-bab99dab6370&#x27;)}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: GET &#x27;/api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;projects.views.TaskListCreateView object at 0xf3361abfbc50&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/rest_framework/views.py</code>, line 526, in dispatch
+          
+
+          
+            <div class="context" id="c267413692843456">
+              
+                <ol start="519" class="pre-context" id="pre267413692843456">
+                
+                  <li onclick="toggle('pre267413692843456', 'post267413692843456')"><pre>                                  self.http_method_not_allowed)</pre></li>
+                
+                  <li onclick="toggle('pre267413692843456', 'post267413692843456')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre267413692843456', 'post267413692843456')"><pre>                handler = self.http_method_not_allowed</pre></li>
+                
+                  <li onclick="toggle('pre267413692843456', 'post267413692843456')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre267413692843456', 'post267413692843456')"><pre>            response = handler(request, *args, **kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre267413692843456', 'post267413692843456')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre267413692843456', 'post267413692843456')"><pre>        except Exception as exc:</pre></li>
+                
+                </ol>
+              
+              <ol start="526" class="context-line">
+                <li onclick="toggle('pre267413692843456', 'post267413692843456')"><pre>            response = self.handle_exception(exc)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='527' class="post-context" id="post267413692843456">
+                  
+                  <li onclick="toggle('pre267413692843456', 'post267413692843456')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413692843456', 'post267413692843456')"><pre>        self.response = self.finalize_response(request, response, *args, **kwargs)</pre></li>
+                  
+                  <li onclick="toggle('pre267413692843456', 'post267413692843456')"><pre>        return self.response</pre></li>
+                  
+                  <li onclick="toggle('pre267413692843456', 'post267413692843456')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413692843456', 'post267413692843456')"><pre>    def options(self, request, *args, **kwargs):</pre></li>
+                  
+                  <li onclick="toggle('pre267413692843456', 'post267413692843456')"><pre>        &quot;&quot;&quot;</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v267413692843456">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>handler</td>
+                    <td class="code"><pre>&lt;bound method TaskListCreateView.get of &lt;projects.views.TaskListCreateView object at 0xf3361abfbc50&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{&#x27;project_id&#x27;: UUID(&#x27;b278a193-2de4-42bd-80f4-bab99dab6370&#x27;)}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: GET &#x27;/api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;projects.views.TaskListCreateView object at 0xf3361abfbc50&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/rest_framework/views.py</code>, line 474, in handle_exception
+          
+
+          
+            <div class="context" id="c267413692844736">
+              
+                <ol start="467" class="pre-context" id="pre267413692844736">
+                
+                  <li onclick="toggle('pre267413692844736', 'post267413692844736')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre267413692844736', 'post267413692844736')"><pre>        exception_handler = self.get_exception_handler()</pre></li>
+                
+                  <li onclick="toggle('pre267413692844736', 'post267413692844736')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre267413692844736', 'post267413692844736')"><pre>        context = self.get_exception_handler_context()</pre></li>
+                
+                  <li onclick="toggle('pre267413692844736', 'post267413692844736')"><pre>        response = exception_handler(exc, context)</pre></li>
+                
+                  <li onclick="toggle('pre267413692844736', 'post267413692844736')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre267413692844736', 'post267413692844736')"><pre>        if response is None:</pre></li>
+                
+                </ol>
+              
+              <ol start="474" class="context-line">
+                <li onclick="toggle('pre267413692844736', 'post267413692844736')"><pre>            self.raise_uncaught_exception(exc)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='475' class="post-context" id="post267413692844736">
+                  
+                  <li onclick="toggle('pre267413692844736', 'post267413692844736')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413692844736', 'post267413692844736')"><pre>        response.exception = True</pre></li>
+                  
+                  <li onclick="toggle('pre267413692844736', 'post267413692844736')"><pre>        return response</pre></li>
+                  
+                  <li onclick="toggle('pre267413692844736', 'post267413692844736')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413692844736', 'post267413692844736')"><pre>    def raise_uncaught_exception(self, exc):</pre></li>
+                  
+                  <li onclick="toggle('pre267413692844736', 'post267413692844736')"><pre>        if settings.DEBUG:</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v267413692844736">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>{&#x27;args&#x27;: (),
+ &#x27;kwargs&#x27;: {&#x27;project_id&#x27;: UUID(&#x27;b278a193-2de4-42bd-80f4-bab99dab6370&#x27;)},
+ &#x27;request&#x27;: &lt;rest_framework.request.Request: GET &#x27;/api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27&#x27;&gt;,
+ &#x27;view&#x27;: &lt;projects.views.TaskListCreateView object at 0xf3361abfbc50&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>ProgrammingError(&quot;operator is not unique: unknown % unknown\nLINE 1: ...2de4-42bd-80f4-bab99dab6370&#x27; AND (title ILIKE &#x27;%x&#x27;%&#x27; OR desc...\n                                                             ^\nHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.\n&quot;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>exception_handler</td>
+                    <td class="code"><pre>&lt;function exception_handler at 0xf3361ae81b20&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;projects.views.TaskListCreateView object at 0xf3361abfbc50&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/rest_framework/views.py</code>, line 485, in raise_uncaught_exception
+          
+
+          
+            <div class="context" id="c267413702832512">
+              
+                <ol start="478" class="pre-context" id="pre267413702832512">
+                
+                  <li onclick="toggle('pre267413702832512', 'post267413702832512')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre267413702832512', 'post267413702832512')"><pre>    def raise_uncaught_exception(self, exc):</pre></li>
+                
+                  <li onclick="toggle('pre267413702832512', 'post267413702832512')"><pre>        if settings.DEBUG:</pre></li>
+                
+                  <li onclick="toggle('pre267413702832512', 'post267413702832512')"><pre>            request = self.request</pre></li>
+                
+                  <li onclick="toggle('pre267413702832512', 'post267413702832512')"><pre>            renderer_format = getattr(request.accepted_renderer, &#x27;format&#x27;)</pre></li>
+                
+                  <li onclick="toggle('pre267413702832512', 'post267413702832512')"><pre>            use_plaintext_traceback = renderer_format not in (&#x27;html&#x27;, &#x27;api&#x27;, &#x27;admin&#x27;)</pre></li>
+                
+                  <li onclick="toggle('pre267413702832512', 'post267413702832512')"><pre>            request.force_plaintext_errors(use_plaintext_traceback)</pre></li>
+                
+                </ol>
+              
+              <ol start="485" class="context-line">
+                <li onclick="toggle('pre267413702832512', 'post267413702832512')"><pre>        raise exc
+             ^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='486' class="post-context" id="post267413702832512">
+                  
+                  <li onclick="toggle('pre267413702832512', 'post267413702832512')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413702832512', 'post267413702832512')"><pre>    # Note: Views are made CSRF exempt from within `as_view` as to prevent</pre></li>
+                  
+                  <li onclick="toggle('pre267413702832512', 'post267413702832512')"><pre>    # accidental removal of this exemption in cases where `dispatch` needs to</pre></li>
+                  
+                  <li onclick="toggle('pre267413702832512', 'post267413702832512')"><pre>    # be overridden.</pre></li>
+                  
+                  <li onclick="toggle('pre267413702832512', 'post267413702832512')"><pre>    def dispatch(self, request, *args, **kwargs):</pre></li>
+                  
+                  <li onclick="toggle('pre267413702832512', 'post267413702832512')"><pre>        &quot;&quot;&quot;</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v267413702832512">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>ProgrammingError(&quot;operator is not unique: unknown % unknown\nLINE 1: ...2de4-42bd-80f4-bab99dab6370&#x27; AND (title ILIKE &#x27;%x&#x27;%&#x27; OR desc...\n                                                             ^\nHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.\n&quot;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>renderer_format</td>
+                    <td class="code"><pre>&#x27;json&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: GET &#x27;/api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;projects.views.TaskListCreateView object at 0xf3361abfbc50&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>use_plaintext_traceback</td>
+                    <td class="code"><pre>True</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/rest_framework/views.py</code>, line 523, in dispatch
+          
+
+          
+            <div class="context" id="c267413692709312">
+              
+                <ol start="516" class="pre-context" id="pre267413692709312">
+                
+                  <li onclick="toggle('pre267413692709312', 'post267413692709312')"><pre>            # Get the appropriate handler method</pre></li>
+                
+                  <li onclick="toggle('pre267413692709312', 'post267413692709312')"><pre>            if request.method.lower() in self.http_method_names:</pre></li>
+                
+                  <li onclick="toggle('pre267413692709312', 'post267413692709312')"><pre>                handler = getattr(self, request.method.lower(),</pre></li>
+                
+                  <li onclick="toggle('pre267413692709312', 'post267413692709312')"><pre>                                  self.http_method_not_allowed)</pre></li>
+                
+                  <li onclick="toggle('pre267413692709312', 'post267413692709312')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre267413692709312', 'post267413692709312')"><pre>                handler = self.http_method_not_allowed</pre></li>
+                
+                  <li onclick="toggle('pre267413692709312', 'post267413692709312')"><pre></pre></li>
+                
+                </ol>
+              
+              <ol start="523" class="context-line">
+                <li onclick="toggle('pre267413692709312', 'post267413692709312')"><pre>            response = handler(request, *args, **kwargs)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='524' class="post-context" id="post267413692709312">
+                  
+                  <li onclick="toggle('pre267413692709312', 'post267413692709312')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413692709312', 'post267413692709312')"><pre>        except Exception as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre267413692709312', 'post267413692709312')"><pre>            response = self.handle_exception(exc)</pre></li>
+                  
+                  <li onclick="toggle('pre267413692709312', 'post267413692709312')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413692709312', 'post267413692709312')"><pre>        self.response = self.finalize_response(request, response, *args, **kwargs)</pre></li>
+                  
+                  <li onclick="toggle('pre267413692709312', 'post267413692709312')"><pre>        return self.response</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v267413692709312">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>handler</td>
+                    <td class="code"><pre>&lt;bound method TaskListCreateView.get of &lt;projects.views.TaskListCreateView object at 0xf3361abfbc50&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{&#x27;project_id&#x27;: UUID(&#x27;b278a193-2de4-42bd-80f4-bab99dab6370&#x27;)}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: GET &#x27;/api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;projects.views.TaskListCreateView object at 0xf3361abfbc50&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/app/projects/views.py</code>, line 120, in get
+          
+
+          
+            <div class="context" id="c267413692696000">
+              
+                <ol start="113" class="pre-context" id="pre267413692696000">
+                
+                  <li onclick="toggle('pre267413692696000', 'post267413692696000')"><pre>                sql = (</pre></li>
+                
+                  <li onclick="toggle('pre267413692696000', 'post267413692696000')"><pre>                    f&quot;SELECT id, project_id, title, description, status, assignee_id, created_by_id, position, created_at, updated_at &quot;</pre></li>
+                
+                  <li onclick="toggle('pre267413692696000', 'post267413692696000')"><pre>                    f&quot;FROM tasks &quot;</pre></li>
+                
+                  <li onclick="toggle('pre267413692696000', 'post267413692696000')"><pre>                    f&quot;WHERE project_id = &#x27;{project_id}&#x27; &quot;</pre></li>
+                
+                  <li onclick="toggle('pre267413692696000', 'post267413692696000')"><pre>                    f&quot;AND (title ILIKE &#x27;%{q}%&#x27; OR description ILIKE &#x27;%{q}%&#x27;) &quot;</pre></li>
+                
+                  <li onclick="toggle('pre267413692696000', 'post267413692696000')"><pre>                    f&quot;ORDER BY position ASC&quot;</pre></li>
+                
+                  <li onclick="toggle('pre267413692696000', 'post267413692696000')"><pre>                )</pre></li>
+                
+                </ol>
+              
+              <ol start="120" class="context-line">
+                <li onclick="toggle('pre267413692696000', 'post267413692696000')"><pre>                cursor.execute(sql)
+                     ^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='121' class="post-context" id="post267413692696000">
+                  
+                  <li onclick="toggle('pre267413692696000', 'post267413692696000')"><pre>                columns = [col[0] for col in cursor.description]</pre></li>
+                  
+                  <li onclick="toggle('pre267413692696000', 'post267413692696000')"><pre>                rows = [dict(zip(columns, row)) for row in cursor.fetchall()]</pre></li>
+                  
+                  <li onclick="toggle('pre267413692696000', 'post267413692696000')"><pre>            return Response({&#x27;tasks&#x27;: rows})</pre></li>
+                  
+                  <li onclick="toggle('pre267413692696000', 'post267413692696000')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413692696000', 'post267413692696000')"><pre>        tasks = (</pre></li>
+                  
+                  <li onclick="toggle('pre267413692696000', 'post267413692696000')"><pre>            Task.objects</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v267413692696000">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>cursor</td>
+                    <td class="code"><pre>&lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xf3361abfaab0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>membership</td>
+                    <td class="code"><pre>&lt;Membership: Membership object (444d7fa3-e912-4c92-89c7-c34343eb7ba5)&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>project_id</td>
+                    <td class="code"><pre>UUID(&#x27;b278a193-2de4-42bd-80f4-bab99dab6370&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>q</td>
+                    <td class="code"><pre>&quot;x&#x27;&quot;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: GET &#x27;/api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;projects.views.TaskListCreateView object at 0xf3361abfbc50&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT id, project_id, title, description, status, assignee_id, &#x27;
+ &#x27;created_by_id, position, created_at, updated_at FROM tasks WHERE project_id &#x27;
+ &quot;= &#x27;b278a193-2de4-42bd-80f4-bab99dab6370&#x27; AND (title ILIKE &#x27;%x&#x27;%&#x27; OR &quot;
+ &quot;description ILIKE &#x27;%x&#x27;%&#x27;) ORDER BY position ASC&quot;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py</code>, line 122, in execute
+          
+
+          
+            <div class="context" id="c267413692705280">
+              
+                <ol start="115" class="pre-context" id="pre267413692705280">
+                
+                  <li onclick="toggle('pre267413692705280', 'post267413692705280')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre267413692705280', 'post267413692705280')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre267413692705280', 'post267413692705280')"><pre>class CursorDebugWrapper(CursorWrapper):</pre></li>
+                
+                  <li onclick="toggle('pre267413692705280', 'post267413692705280')"><pre>    # XXX callproc isn&#x27;t instrumented at this time.</pre></li>
+                
+                  <li onclick="toggle('pre267413692705280', 'post267413692705280')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre267413692705280', 'post267413692705280')"><pre>    def execute(self, sql, params=None):</pre></li>
+                
+                  <li onclick="toggle('pre267413692705280', 'post267413692705280')"><pre>        with self.debug_sql(sql, params, use_last_executed_query=True):</pre></li>
+                
+                </ol>
+              
+              <ol start="122" class="context-line">
+                <li onclick="toggle('pre267413692705280', 'post267413692705280')"><pre>            return super().execute(sql, params)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='123' class="post-context" id="post267413692705280">
+                  
+                  <li onclick="toggle('pre267413692705280', 'post267413692705280')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413692705280', 'post267413692705280')"><pre>    def executemany(self, sql, param_list):</pre></li>
+                  
+                  <li onclick="toggle('pre267413692705280', 'post267413692705280')"><pre>        with self.debug_sql(sql, param_list, many=True):</pre></li>
+                  
+                  <li onclick="toggle('pre267413692705280', 'post267413692705280')"><pre>            return super().executemany(sql, param_list)</pre></li>
+                  
+                  <li onclick="toggle('pre267413692705280', 'post267413692705280')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413692705280', 'post267413692705280')"><pre>    @contextmanager</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v267413692705280">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>__class__</td>
+                    <td class="code"><pre>&lt;class &#x27;django.db.backends.utils.CursorDebugWrapper&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xf3361abfaab0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT id, project_id, title, description, status, assignee_id, &#x27;
+ &#x27;created_by_id, position, created_at, updated_at FROM tasks WHERE project_id &#x27;
+ &quot;= &#x27;b278a193-2de4-42bd-80f4-bab99dab6370&#x27; AND (title ILIKE &#x27;%x&#x27;%&#x27; OR &quot;
+ &quot;description ILIKE &#x27;%x&#x27;%&#x27;) ORDER BY position ASC&quot;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py</code>, line 79, in execute
+          
+
+          
+            <div class="context" id="c267413692709952">
+              
+                <ol start="72" class="pre-context" id="pre267413692709952">
+                
+                  <li onclick="toggle('pre267413692709952', 'post267413692709952')"><pre>            elif kparams is None:</pre></li>
+                
+                  <li onclick="toggle('pre267413692709952', 'post267413692709952')"><pre>                return self.cursor.callproc(procname, params)</pre></li>
+                
+                  <li onclick="toggle('pre267413692709952', 'post267413692709952')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre267413692709952', 'post267413692709952')"><pre>                params = params or ()</pre></li>
+                
+                  <li onclick="toggle('pre267413692709952', 'post267413692709952')"><pre>                return self.cursor.callproc(procname, params, kparams)</pre></li>
+                
+                  <li onclick="toggle('pre267413692709952', 'post267413692709952')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre267413692709952', 'post267413692709952')"><pre>    def execute(self, sql, params=None):</pre></li>
+                
+                </ol>
+              
+              <ol start="79" class="context-line">
+                <li onclick="toggle('pre267413692709952', 'post267413692709952')"><pre>        return self._execute_with_wrappers(
+                   </pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='80' class="post-context" id="post267413692709952">
+                  
+                  <li onclick="toggle('pre267413692709952', 'post267413692709952')"><pre>            sql, params, many=False, executor=self._execute</pre></li>
+                  
+                  <li onclick="toggle('pre267413692709952', 'post267413692709952')"><pre>        )</pre></li>
+                  
+                  <li onclick="toggle('pre267413692709952', 'post267413692709952')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413692709952', 'post267413692709952')"><pre>    def executemany(self, sql, param_list):</pre></li>
+                  
+                  <li onclick="toggle('pre267413692709952', 'post267413692709952')"><pre>        return self._execute_with_wrappers(</pre></li>
+                  
+                  <li onclick="toggle('pre267413692709952', 'post267413692709952')"><pre>            sql, param_list, many=True, executor=self._executemany</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v267413692709952">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xf3361abfaab0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT id, project_id, title, description, status, assignee_id, &#x27;
+ &#x27;created_by_id, position, created_at, updated_at FROM tasks WHERE project_id &#x27;
+ &quot;= &#x27;b278a193-2de4-42bd-80f4-bab99dab6370&#x27; AND (title ILIKE &#x27;%x&#x27;%&#x27; OR &quot;
+ &quot;description ILIKE &#x27;%x&#x27;%&#x27;) ORDER BY position ASC&quot;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py</code>, line 92, in _execute_with_wrappers
+          
+
+          
+            <div class="context" id="c267413692697856">
+              
+                <ol start="85" class="pre-context" id="pre267413692697856">
+                
+                  <li onclick="toggle('pre267413692697856', 'post267413692697856')"><pre>            sql, param_list, many=True, executor=self._executemany</pre></li>
+                
+                  <li onclick="toggle('pre267413692697856', 'post267413692697856')"><pre>        )</pre></li>
+                
+                  <li onclick="toggle('pre267413692697856', 'post267413692697856')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre267413692697856', 'post267413692697856')"><pre>    def _execute_with_wrappers(self, sql, params, many, executor):</pre></li>
+                
+                  <li onclick="toggle('pre267413692697856', 'post267413692697856')"><pre>        context = {&quot;connection&quot;: self.db, &quot;cursor&quot;: self}</pre></li>
+                
+                  <li onclick="toggle('pre267413692697856', 'post267413692697856')"><pre>        for wrapper in reversed(self.db.execute_wrappers):</pre></li>
+                
+                  <li onclick="toggle('pre267413692697856', 'post267413692697856')"><pre>            executor = functools.partial(wrapper, executor)</pre></li>
+                
+                </ol>
+              
+              <ol start="92" class="context-line">
+                <li onclick="toggle('pre267413692697856', 'post267413692697856')"><pre>        return executor(sql, params, many, context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='93' class="post-context" id="post267413692697856">
+                  
+                  <li onclick="toggle('pre267413692697856', 'post267413692697856')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413692697856', 'post267413692697856')"><pre>    def _execute(self, sql, params, *ignored_wrapper_args):</pre></li>
+                  
+                  <li onclick="toggle('pre267413692697856', 'post267413692697856')"><pre>        # Raise a warning during app initialization (stored_app_configs is only</pre></li>
+                  
+                  <li onclick="toggle('pre267413692697856', 'post267413692697856')"><pre>        # ever set during testing).</pre></li>
+                  
+                  <li onclick="toggle('pre267413692697856', 'post267413692697856')"><pre>        if not apps.ready and not apps.stored_app_configs:</pre></li>
+                  
+                  <li onclick="toggle('pre267413692697856', 'post267413692697856')"><pre>            warnings.warn(self.APPS_NOT_READY_WARNING_MSG, category=RuntimeWarning)</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v267413692697856">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>{&#x27;connection&#x27;: &lt;DatabaseWrapper vendor=&#x27;postgresql&#x27; alias=&#x27;default&#x27;&gt;,
+ &#x27;cursor&#x27;: &lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xf3361abfaab0&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>executor</td>
+                    <td class="code"><pre>&lt;bound method CursorWrapper._execute of &lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xf3361abfaab0&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>many</td>
+                    <td class="code"><pre>False</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xf3361abfaab0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT id, project_id, title, description, status, assignee_id, &#x27;
+ &#x27;created_by_id, position, created_at, updated_at FROM tasks WHERE project_id &#x27;
+ &quot;= &#x27;b278a193-2de4-42bd-80f4-bab99dab6370&#x27; AND (title ILIKE &#x27;%x&#x27;%&#x27; OR &quot;
+ &quot;description ILIKE &#x27;%x&#x27;%&#x27;) ORDER BY position ASC&quot;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py</code>, line 100, in _execute
+          
+
+          
+            <div class="context" id="c267413692707520">
+              
+                <ol start="93" class="pre-context" id="pre267413692707520">
+                
+                  <li onclick="toggle('pre267413692707520', 'post267413692707520')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre267413692707520', 'post267413692707520')"><pre>    def _execute(self, sql, params, *ignored_wrapper_args):</pre></li>
+                
+                  <li onclick="toggle('pre267413692707520', 'post267413692707520')"><pre>        # Raise a warning during app initialization (stored_app_configs is only</pre></li>
+                
+                  <li onclick="toggle('pre267413692707520', 'post267413692707520')"><pre>        # ever set during testing).</pre></li>
+                
+                  <li onclick="toggle('pre267413692707520', 'post267413692707520')"><pre>        if not apps.ready and not apps.stored_app_configs:</pre></li>
+                
+                  <li onclick="toggle('pre267413692707520', 'post267413692707520')"><pre>            warnings.warn(self.APPS_NOT_READY_WARNING_MSG, category=RuntimeWarning)</pre></li>
+                
+                  <li onclick="toggle('pre267413692707520', 'post267413692707520')"><pre>        self.db.validate_no_broken_transaction()</pre></li>
+                
+                </ol>
+              
+              <ol start="100" class="context-line">
+                <li onclick="toggle('pre267413692707520', 'post267413692707520')"><pre>        with self.db.wrap_database_errors:
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='101' class="post-context" id="post267413692707520">
+                  
+                  <li onclick="toggle('pre267413692707520', 'post267413692707520')"><pre>            if params is None:</pre></li>
+                  
+                  <li onclick="toggle('pre267413692707520', 'post267413692707520')"><pre>                # params default might be backend specific.</pre></li>
+                  
+                  <li onclick="toggle('pre267413692707520', 'post267413692707520')"><pre>                return self.cursor.execute(sql)</pre></li>
+                  
+                  <li onclick="toggle('pre267413692707520', 'post267413692707520')"><pre>            else:</pre></li>
+                  
+                  <li onclick="toggle('pre267413692707520', 'post267413692707520')"><pre>                return self.cursor.execute(sql, params)</pre></li>
+                  
+                  <li onclick="toggle('pre267413692707520', 'post267413692707520')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v267413692707520">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>ignored_wrapper_args</td>
+                    <td class="code"><pre>(False,
+ {&#x27;connection&#x27;: &lt;DatabaseWrapper vendor=&#x27;postgresql&#x27; alias=&#x27;default&#x27;&gt;,
+  &#x27;cursor&#x27;: &lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xf3361abfaab0&gt;})</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xf3361abfaab0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT id, project_id, title, description, status, assignee_id, &#x27;
+ &#x27;created_by_id, position, created_at, updated_at FROM tasks WHERE project_id &#x27;
+ &quot;= &#x27;b278a193-2de4-42bd-80f4-bab99dab6370&#x27; AND (title ILIKE &#x27;%x&#x27;%&#x27; OR &quot;
+ &quot;description ILIKE &#x27;%x&#x27;%&#x27;) ORDER BY position ASC&quot;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/db/utils.py</code>, line 91, in __exit__
+          
+
+          
+            <div class="context" id="c267413692703104">
+              
+                <ol start="84" class="pre-context" id="pre267413692703104">
+                
+                  <li onclick="toggle('pre267413692703104', 'post267413692703104')"><pre>            db_exc_type = getattr(self.wrapper.Database, dj_exc_type.__name__)</pre></li>
+                
+                  <li onclick="toggle('pre267413692703104', 'post267413692703104')"><pre>            if issubclass(exc_type, db_exc_type):</pre></li>
+                
+                  <li onclick="toggle('pre267413692703104', 'post267413692703104')"><pre>                dj_exc_value = dj_exc_type(*exc_value.args)</pre></li>
+                
+                  <li onclick="toggle('pre267413692703104', 'post267413692703104')"><pre>                # Only set the &#x27;errors_occurred&#x27; flag for errors that may make</pre></li>
+                
+                  <li onclick="toggle('pre267413692703104', 'post267413692703104')"><pre>                # the connection unusable.</pre></li>
+                
+                  <li onclick="toggle('pre267413692703104', 'post267413692703104')"><pre>                if dj_exc_type not in (DataError, IntegrityError):</pre></li>
+                
+                  <li onclick="toggle('pre267413692703104', 'post267413692703104')"><pre>                    self.wrapper.errors_occurred = True</pre></li>
+                
+                </ol>
+              
+              <ol start="91" class="context-line">
+                <li onclick="toggle('pre267413692703104', 'post267413692703104')"><pre>                raise dj_exc_value.with_traceback(traceback) from exc_value
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='92' class="post-context" id="post267413692703104">
+                  
+                  <li onclick="toggle('pre267413692703104', 'post267413692703104')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413692703104', 'post267413692703104')"><pre>    def __call__(self, func):</pre></li>
+                  
+                  <li onclick="toggle('pre267413692703104', 'post267413692703104')"><pre>        # Note that we are intentionally not using @wraps here for performance</pre></li>
+                  
+                  <li onclick="toggle('pre267413692703104', 'post267413692703104')"><pre>        # reasons. Refs #21109.</pre></li>
+                  
+                  <li onclick="toggle('pre267413692703104', 'post267413692703104')"><pre>        def inner(*args, **kwargs):</pre></li>
+                  
+                  <li onclick="toggle('pre267413692703104', 'post267413692703104')"><pre>            with self:</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v267413692703104">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>db_exc_type</td>
+                    <td class="code"><pre>&lt;class &#x27;psycopg2.ProgrammingError&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>dj_exc_type</td>
+                    <td class="code"><pre>&lt;class &#x27;django.db.utils.ProgrammingError&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>dj_exc_value</td>
+                    <td class="code"><pre>ProgrammingError(&quot;operator is not unique: unknown % unknown\nLINE 1: ...2de4-42bd-80f4-bab99dab6370&#x27; AND (title ILIKE &#x27;%x&#x27;%&#x27; OR desc...\n                                                             ^\nHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.\n&quot;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>exc_type</td>
+                    <td class="code"><pre>&lt;class &#x27;psycopg2.errors.AmbiguousFunction&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>exc_value</td>
+                    <td class="code"><pre>AmbiguousFunction(&quot;operator is not unique: unknown % unknown\nLINE 1: ...2de4-42bd-80f4-bab99dab6370&#x27; AND (title ILIKE &#x27;%x&#x27;%&#x27; OR desc...\n                                                             ^\nHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.\n&quot;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.utils.DatabaseErrorWrapper object at 0xf3361a3018e0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>traceback</td>
+                    <td class="code"><pre>&lt;traceback object at 0xf3361a296780&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py</code>, line 103, in _execute
+          
+
+          
+            <div class="context" id="c267413692704640">
+              
+                <ol start="96" class="pre-context" id="pre267413692704640">
+                
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>        # ever set during testing).</pre></li>
+                
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>        if not apps.ready and not apps.stored_app_configs:</pre></li>
+                
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>            warnings.warn(self.APPS_NOT_READY_WARNING_MSG, category=RuntimeWarning)</pre></li>
+                
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>        self.db.validate_no_broken_transaction()</pre></li>
+                
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>        with self.db.wrap_database_errors:</pre></li>
+                
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>            if params is None:</pre></li>
+                
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>                # params default might be backend specific.</pre></li>
+                
+                </ol>
+              
+              <ol start="103" class="context-line">
+                <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>                return self.cursor.execute(sql)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='104' class="post-context" id="post267413692704640">
+                  
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>            else:</pre></li>
+                  
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>                return self.cursor.execute(sql, params)</pre></li>
+                  
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>    def _executemany(self, sql, param_list, *ignored_wrapper_args):</pre></li>
+                  
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>        # Raise a warning during app initialization (stored_app_configs is only</pre></li>
+                  
+                  <li onclick="toggle('pre267413692704640', 'post267413692704640')"><pre>        # ever set during testing).</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v267413692704640">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>ignored_wrapper_args</td>
+                    <td class="code"><pre>(False,
+ {&#x27;connection&#x27;: &lt;DatabaseWrapper vendor=&#x27;postgresql&#x27; alias=&#x27;default&#x27;&gt;,
+  &#x27;cursor&#x27;: &lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xf3361abfaab0&gt;})</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xf3361abfaab0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT id, project_id, title, description, status, assignee_id, &#x27;
+ &#x27;created_by_id, position, created_at, updated_at FROM tasks WHERE project_id &#x27;
+ &quot;= &#x27;b278a193-2de4-42bd-80f4-bab99dab6370&#x27; AND (title ILIKE &#x27;%x&#x27;%&#x27; OR &quot;
+ &quot;description ILIKE &#x27;%x&#x27;%&#x27;) ORDER BY position ASC&quot;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+    </ul>
+  </div>
+
+  <form action="https://dpaste.com/" name="pasteform" id="pasteform" method="post">
+  <div id="pastebinTraceback" class="pastebin">
+    <input type="hidden" name="language" value="PythonConsole">
+    <input type="hidden" name="title"
+      value="ProgrammingError at /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks">
+    <input type="hidden" name="source" value="Django Dpaste Agent">
+    <input type="hidden" name="poster" value="Django">
+    <textarea name="content" id="traceback_area" cols="140" rows="25">
+Environment:
+
+
+Request Method: GET
+Request URL: http://localhost:8000/api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27
+
+Django Version: 5.2.17
+Python Version: 3.12.14
+Installed Applications:
+[&#x27;django.contrib.contenttypes&#x27;,
+ &#x27;django.contrib.auth&#x27;,
+ &#x27;rest_framework&#x27;,
+ &#x27;corsheaders&#x27;,
+ &#x27;users&#x27;,
+ &#x27;projects&#x27;]
+Installed Middleware:
+[&#x27;corsheaders.middleware.CorsMiddleware&#x27;,
+ &#x27;django.middleware.common.CommonMiddleware&#x27;]
+
+
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 103, in _execute
+    return self.cursor.execute(sql)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+
+The above exception (operator is not unique: unknown % unknown
+LINE 1: ...2de4-42bd-80f4-bab99dab6370&#x27; AND (title ILIKE &#x27;%x&#x27;%&#x27; OR desc...
+                                                             ^
+HINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+) was the direct cause of the following exception:
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 526, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 474, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 485, in raise_uncaught_exception
+    raise exc
+    ^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/projects/views.py", line 120, in get
+    cursor.execute(sql)
+    ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 103, in _execute
+    return self.cursor.execute(sql)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+
+Exception Type: ProgrammingError at /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks
+Exception Value: operator is not unique: unknown % unknown
+LINE 1: ...2de4-42bd-80f4-bab99dab6370&#x27; AND (title ILIKE &#x27;%x&#x27;%&#x27; OR desc...
+                                                             ^
+HINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+
+</textarea>
+  <br><br>
+  <input type="submit" value="Share this traceback on a public website">
+  </div>
+</form>
+
+</div>
+
+
+<div id="requestinfo">
+  <h2>Request information</h2>
+
+
+  
+    <h3 id="user-info">USER</h3>
+    <p>meera@taskboard.dev</p>
+  
+
+  <h3 id="get-info">GET</h3>
+  
+    <table class="req">
+      <thead>
+        <tr>
+          <th scope="col">Variable</th>
+          <th scope="col">Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <td>q</td>
+            <td class="code"><pre>&quot;x&#x27;&quot;</pre></td>
+          </tr>
+        
+      </tbody>
+    </table>
+  
+
+  <h3 id="post-info">POST</h3>
+  
+    <p>No POST data</p>
+  
+
+  <h3 id="files-info">FILES</h3>
+  
+    <p>No FILES data</p>
+  
+
+  <h3 id="cookie-info">COOKIES</h3>
+  
+    <p>No cookie data</p>
+  
+
+  <h3 id="meta-info">META</h3>
+  <table class="req">
+    <thead>
+      <tr>
+        <th scope="col">Variable</th>
+        <th scope="col">Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>CONTENT_LENGTH</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CONTENT_TYPE</td>
+          <td class="code"><pre>&#x27;text/plain&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG</td>
+          <td class="code"><pre>&#x27;true&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DJANGO_SECRET_KEY</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DJANGO_SETTINGS_MODULE</td>
+          <td class="code"><pre>&#x27;taskboard.settings&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GATEWAY_INTERFACE</td>
+          <td class="code"><pre>&#x27;CGI/1.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GPG_KEY</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HOME</td>
+          <td class="code"><pre>&#x27;/root&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HOSTNAME</td>
+          <td class="code"><pre>&#x27;9569d60dfb49&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_ACCEPT</td>
+          <td class="code"><pre>&#x27;*/*&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_AUTHORIZATION</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_HOST</td>
+          <td class="code"><pre>&#x27;localhost:8000&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_USER_AGENT</td>
+          <td class="code"><pre>&#x27;curl/8.7.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANG</td>
+          <td class="code"><pre>&#x27;C.UTF-8&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATH</td>
+          <td class="code"><pre>&#x27;/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATH_INFO</td>
+          <td class="code"><pre>&#x27;/api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>POSTGRES_DB</td>
+          <td class="code"><pre>&#x27;taskboard&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>POSTGRES_HOST</td>
+          <td class="code"><pre>&#x27;db&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>POSTGRES_PASSWORD</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>POSTGRES_PORT</td>
+          <td class="code"><pre>&#x27;5432&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>POSTGRES_USER</td>
+          <td class="code"><pre>&#x27;taskboard&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PYTHON_SHA256</td>
+          <td class="code"><pre>&#x27;5c8462af5790baf43a321a1559dbe0db06d1be4300fb85fb53c40060668e548a&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PYTHON_VERSION</td>
+          <td class="code"><pre>&#x27;3.12.14&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>QUERY_STRING</td>
+          <td class="code"><pre>&#x27;q=x%27&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REMOTE_ADDR</td>
+          <td class="code"><pre>&#x27;172.18.0.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REMOTE_HOST</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REQUEST_METHOD</td>
+          <td class="code"><pre>&#x27;GET&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>RUN_MAIN</td>
+          <td class="code"><pre>&#x27;true&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SCRIPT_NAME</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_NAME</td>
+          <td class="code"><pre>&#x27;9569d60dfb49&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_PORT</td>
+          <td class="code"><pre>&#x27;8000&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_PROTOCOL</td>
+          <td class="code"><pre>&#x27;HTTP/1.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_SOFTWARE</td>
+          <td class="code"><pre>&#x27;WSGIServer/0.2&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TZ</td>
+          <td class="code"><pre>&#x27;UTC&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.errors</td>
+          <td class="code"><pre>&lt;_io.TextIOWrapper name=&#x27;&lt;stderr&gt;&#x27; mode=&#x27;w&#x27; encoding=&#x27;utf-8&#x27;&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.file_wrapper</td>
+          <td class="code"><pre>&lt;class &#x27;wsgiref.util.FileWrapper&#x27;&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.input</td>
+          <td class="code"><pre>&lt;django.core.handlers.wsgi.LimitedStream object at 0xf3361abfbbb0&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.multiprocess</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.multithread</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.run_once</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.url_scheme</td>
+          <td class="code"><pre>&#x27;http&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.version</td>
+          <td class="code"><pre>(1, 0)</pre></td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+  <h3 id="settings-info">Settings</h3>
+  <h4>Using settings module <code>taskboard.settings</code></h4>
+  <table class="req">
+    <thead>
+      <tr>
+        <th scope="col">Setting</th>
+        <th scope="col">Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>ABSOLUTE_URL_OVERRIDES</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ADMINS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ALLOWED_HOSTS</td>
+          <td class="code"><pre>[&#x27;*&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>APPEND_SLASH</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTHENTICATION_BACKENDS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTH_PASSWORD_VALIDATORS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTH_USER_MODEL</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>BASE_DIR</td>
+          <td class="code"><pre>PosixPath(&#x27;/app&#x27;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHES</td>
+          <td class="code"><pre>{&#x27;default&#x27;: {&#x27;BACKEND&#x27;: &#x27;django.core.cache.backends.locmem.LocMemCache&#x27;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_ALIAS</td>
+          <td class="code"><pre>&#x27;default&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_KEY_PREFIX</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_SECONDS</td>
+          <td class="code"><pre>600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CORS_ALLOW_ALL_ORIGINS</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_AGE</td>
+          <td class="code"><pre>31449600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_NAME</td>
+          <td class="code"><pre>&#x27;csrftoken&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_PATH</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_SAMESITE</td>
+          <td class="code"><pre>&#x27;Lax&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_FAILURE_VIEW</td>
+          <td class="code"><pre>&#x27;django.views.csrf.csrf_failure&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_HEADER_NAME</td>
+          <td class="code"><pre>&#x27;HTTP_X_CSRFTOKEN&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_TRUSTED_ORIGINS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_USE_SESSIONS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATABASES</td>
+          <td class="code"><pre>{&#x27;default&#x27;: {&#x27;ATOMIC_REQUESTS&#x27;: False,
+             &#x27;AUTOCOMMIT&#x27;: True,
+             &#x27;CONN_HEALTH_CHECKS&#x27;: False,
+             &#x27;CONN_MAX_AGE&#x27;: 0,
+             &#x27;ENGINE&#x27;: &#x27;django.db.backends.postgresql&#x27;,
+             &#x27;HOST&#x27;: &#x27;db&#x27;,
+             &#x27;NAME&#x27;: &#x27;taskboard&#x27;,
+             &#x27;OPTIONS&#x27;: {},
+             &#x27;PASSWORD&#x27;: &#x27;********************&#x27;,
+             &#x27;PORT&#x27;: &#x27;5432&#x27;,
+             &#x27;TEST&#x27;: {&#x27;CHARSET&#x27;: None,
+                      &#x27;COLLATION&#x27;: None,
+                      &#x27;MIGRATE&#x27;: True,
+                      &#x27;MIRROR&#x27;: None,
+                      &#x27;NAME&#x27;: None},
+             &#x27;TIME_ZONE&#x27;: None,
+             &#x27;USER&#x27;: &#x27;taskboard&#x27;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATABASE_ROUTERS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATA_UPLOAD_MAX_MEMORY_SIZE</td>
+          <td class="code"><pre>2621440</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATA_UPLOAD_MAX_NUMBER_FIELDS</td>
+          <td class="code"><pre>1000</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATA_UPLOAD_MAX_NUMBER_FILES</td>
+          <td class="code"><pre>100</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATETIME_FORMAT</td>
+          <td class="code"><pre>&#x27;N j, Y, P&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATETIME_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#x27;%Y-%m-%d %H:%M:%S&#x27;,
+ &#x27;%Y-%m-%d %H:%M:%S.%f&#x27;,
+ &#x27;%Y-%m-%d %H:%M&#x27;,
+ &#x27;%m/%d/%Y %H:%M:%S&#x27;,
+ &#x27;%m/%d/%Y %H:%M:%S.%f&#x27;,
+ &#x27;%m/%d/%Y %H:%M&#x27;,
+ &#x27;%m/%d/%y %H:%M:%S&#x27;,
+ &#x27;%m/%d/%y %H:%M:%S.%f&#x27;,
+ &#x27;%m/%d/%y %H:%M&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATE_FORMAT</td>
+          <td class="code"><pre>&#x27;N j, Y&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATE_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#x27;%Y-%m-%d&#x27;,
+ &#x27;%m/%d/%Y&#x27;,
+ &#x27;%m/%d/%y&#x27;,
+ &#x27;%b %d %Y&#x27;,
+ &#x27;%b %d, %Y&#x27;,
+ &#x27;%d %b %Y&#x27;,
+ &#x27;%d %b, %Y&#x27;,
+ &#x27;%B %d %Y&#x27;,
+ &#x27;%B %d, %Y&#x27;,
+ &#x27;%d %B %Y&#x27;,
+ &#x27;%d %B, %Y&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG_PROPAGATE_EXCEPTIONS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DECIMAL_SEPARATOR</td>
+          <td class="code"><pre>&#x27;.&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_AUTO_FIELD</td>
+          <td class="code"><pre>&#x27;django.db.models.BigAutoField&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_CHARSET</td>
+          <td class="code"><pre>&#x27;utf-8&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_EXCEPTION_REPORTER</td>
+          <td class="code"><pre>&#x27;django.views.debug.ExceptionReporter&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_EXCEPTION_REPORTER_FILTER</td>
+          <td class="code"><pre>&#x27;django.views.debug.SafeExceptionReporterFilter&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_FROM_EMAIL</td>
+          <td class="code"><pre>&#x27;webmaster@localhost&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_INDEX_TABLESPACE</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_TABLESPACE</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DISALLOWED_USER_AGENTS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_BACKEND</td>
+          <td class="code"><pre>&#x27;django.core.mail.backends.smtp.EmailBackend&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST</td>
+          <td class="code"><pre>&#x27;localhost&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST_PASSWORD</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST_USER</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_PORT</td>
+          <td class="code"><pre>25</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SSL_CERTFILE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SSL_KEYFILE</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SUBJECT_PREFIX</td>
+          <td class="code"><pre>&#x27;[Django] &#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_TIMEOUT</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_LOCALTIME</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_SSL</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_TLS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_DIRECTORY_PERMISSIONS</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_HANDLERS</td>
+          <td class="code"><pre>[&#x27;django.core.files.uploadhandler.MemoryFileUploadHandler&#x27;,
+ &#x27;django.core.files.uploadhandler.TemporaryFileUploadHandler&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_MAX_MEMORY_SIZE</td>
+          <td class="code"><pre>2621440</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_PERMISSIONS</td>
+          <td class="code"><pre>420</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_TEMP_DIR</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FIRST_DAY_OF_WEEK</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FIXTURE_DIRS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORCE_SCRIPT_NAME</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORMAT_MODULE_PATH</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORMS_URLFIELD_ASSUME_HTTPS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORM_RENDERER</td>
+          <td class="code"><pre>&#x27;django.forms.renderers.DjangoTemplates&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>IGNORABLE_404_URLS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>INSTALLED_APPS</td>
+          <td class="code"><pre>[&#x27;django.contrib.contenttypes&#x27;,
+ &#x27;django.contrib.auth&#x27;,
+ &#x27;rest_framework&#x27;,
+ &#x27;corsheaders&#x27;,
+ &#x27;users&#x27;,
+ &#x27;projects&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>INTERNAL_IPS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGES</td>
+          <td class="code"><pre>[(&#x27;af&#x27;, &#x27;Afrikaans&#x27;),
+ (&#x27;ar&#x27;, &#x27;Arabic&#x27;),
+ (&#x27;ar-dz&#x27;, &#x27;Algerian Arabic&#x27;),
+ (&#x27;ast&#x27;, &#x27;Asturian&#x27;),
+ (&#x27;az&#x27;, &#x27;Azerbaijani&#x27;),
+ (&#x27;bg&#x27;, &#x27;Bulgarian&#x27;),
+ (&#x27;be&#x27;, &#x27;Belarusian&#x27;),
+ (&#x27;bn&#x27;, &#x27;Bengali&#x27;),
+ (&#x27;br&#x27;, &#x27;Breton&#x27;),
+ (&#x27;bs&#x27;, &#x27;Bosnian&#x27;),
+ (&#x27;ca&#x27;, &#x27;Catalan&#x27;),
+ (&#x27;ckb&#x27;, &#x27;Central Kurdish (Sorani)&#x27;),
+ (&#x27;cs&#x27;, &#x27;Czech&#x27;),
+ (&#x27;cy&#x27;, &#x27;Welsh&#x27;),
+ (&#x27;da&#x27;, &#x27;Danish&#x27;),
+ (&#x27;de&#x27;, &#x27;German&#x27;),
+ (&#x27;dsb&#x27;, &#x27;Lower Sorbian&#x27;),
+ (&#x27;el&#x27;, &#x27;Greek&#x27;),
+ (&#x27;en&#x27;, &#x27;English&#x27;),
+ (&#x27;en-au&#x27;, &#x27;Australian English&#x27;),
+ (&#x27;en-gb&#x27;, &#x27;British English&#x27;),
+ (&#x27;eo&#x27;, &#x27;Esperanto&#x27;),
+ (&#x27;es&#x27;, &#x27;Spanish&#x27;),
+ (&#x27;es-ar&#x27;, &#x27;Argentinian Spanish&#x27;),
+ (&#x27;es-co&#x27;, &#x27;Colombian Spanish&#x27;),
+ (&#x27;es-mx&#x27;, &#x27;Mexican Spanish&#x27;),
+ (&#x27;es-ni&#x27;, &#x27;Nicaraguan Spanish&#x27;),
+ (&#x27;es-ve&#x27;, &#x27;Venezuelan Spanish&#x27;),
+ (&#x27;et&#x27;, &#x27;Estonian&#x27;),
+ (&#x27;eu&#x27;, &#x27;Basque&#x27;),
+ (&#x27;fa&#x27;, &#x27;Persian&#x27;),
+ (&#x27;fi&#x27;, &#x27;Finnish&#x27;),
+ (&#x27;fr&#x27;, &#x27;French&#x27;),
+ (&#x27;fy&#x27;, &#x27;Frisian&#x27;),
+ (&#x27;ga&#x27;, &#x27;Irish&#x27;),
+ (&#x27;gd&#x27;, &#x27;Scottish Gaelic&#x27;),
+ (&#x27;gl&#x27;, &#x27;Galician&#x27;),
+ (&#x27;he&#x27;, &#x27;Hebrew&#x27;),
+ (&#x27;hi&#x27;, &#x27;Hindi&#x27;),
+ (&#x27;hr&#x27;, &#x27;Croatian&#x27;),
+ (&#x27;hsb&#x27;, &#x27;Upper Sorbian&#x27;),
+ (&#x27;hu&#x27;, &#x27;Hungarian&#x27;),
+ (&#x27;hy&#x27;, &#x27;Armenian&#x27;),
+ (&#x27;ia&#x27;, &#x27;Interlingua&#x27;),
+ (&#x27;id&#x27;, &#x27;Indonesian&#x27;),
+ (&#x27;ig&#x27;, &#x27;Igbo&#x27;),
+ (&#x27;io&#x27;, &#x27;Ido&#x27;),
+ (&#x27;is&#x27;, &#x27;Icelandic&#x27;),
+ (&#x27;it&#x27;, &#x27;Italian&#x27;),
+ (&#x27;ja&#x27;, &#x27;Japanese&#x27;),
+ (&#x27;ka&#x27;, &#x27;Georgian&#x27;),
+ (&#x27;kab&#x27;, &#x27;Kabyle&#x27;),
+ (&#x27;kk&#x27;, &#x27;Kazakh&#x27;),
+ (&#x27;km&#x27;, &#x27;Khmer&#x27;),
+ (&#x27;kn&#x27;, &#x27;Kannada&#x27;),
+ (&#x27;ko&#x27;, &#x27;Korean&#x27;),
+ (&#x27;ky&#x27;, &#x27;Kyrgyz&#x27;),
+ (&#x27;lb&#x27;, &#x27;Luxembourgish&#x27;),
+ (&#x27;lt&#x27;, &#x27;Lithuanian&#x27;),
+ (&#x27;lv&#x27;, &#x27;Latvian&#x27;),
+ (&#x27;mk&#x27;, &#x27;Macedonian&#x27;),
+ (&#x27;ml&#x27;, &#x27;Malayalam&#x27;),
+ (&#x27;mn&#x27;, &#x27;Mongolian&#x27;),
+ (&#x27;mr&#x27;, &#x27;Marathi&#x27;),
+ (&#x27;ms&#x27;, &#x27;Malay&#x27;),
+ (&#x27;my&#x27;, &#x27;Burmese&#x27;),
+ (&#x27;nb&#x27;, &#x27;Norwegian Bokmål&#x27;),
+ (&#x27;ne&#x27;, &#x27;Nepali&#x27;),
+ (&#x27;nl&#x27;, &#x27;Dutch&#x27;),
+ (&#x27;nn&#x27;, &#x27;Norwegian Nynorsk&#x27;),
+ (&#x27;os&#x27;, &#x27;Ossetic&#x27;),
+ (&#x27;pa&#x27;, &#x27;Punjabi&#x27;),
+ (&#x27;pl&#x27;, &#x27;Polish&#x27;),
+ (&#x27;pt&#x27;, &#x27;Portuguese&#x27;),
+ (&#x27;pt-br&#x27;, &#x27;Brazilian Portuguese&#x27;),
+ (&#x27;ro&#x27;, &#x27;Romanian&#x27;),
+ (&#x27;ru&#x27;, &#x27;Russian&#x27;),
+ (&#x27;sk&#x27;, &#x27;Slovak&#x27;),
+ (&#x27;sl&#x27;, &#x27;Slovenian&#x27;),
+ (&#x27;sq&#x27;, &#x27;Albanian&#x27;),
+ (&#x27;sr&#x27;, &#x27;Serbian&#x27;),
+ (&#x27;sr-latn&#x27;, &#x27;Serbian Latin&#x27;),
+ (&#x27;sv&#x27;, &#x27;Swedish&#x27;),
+ (&#x27;sw&#x27;, &#x27;Swahili&#x27;),
+ (&#x27;ta&#x27;, &#x27;Tamil&#x27;),
+ (&#x27;te&#x27;, &#x27;Telugu&#x27;),
+ (&#x27;tg&#x27;, &#x27;Tajik&#x27;),
+ (&#x27;th&#x27;, &#x27;Thai&#x27;),
+ (&#x27;tk&#x27;, &#x27;Turkmen&#x27;),
+ (&#x27;tr&#x27;, &#x27;Turkish&#x27;),
+ (&#x27;tt&#x27;, &#x27;Tatar&#x27;),
+ (&#x27;udm&#x27;, &#x27;Udmurt&#x27;),
+ (&#x27;ug&#x27;, &#x27;Uyghur&#x27;),
+ (&#x27;uk&#x27;, &#x27;Ukrainian&#x27;),
+ (&#x27;ur&#x27;, &#x27;Urdu&#x27;),
+ (&#x27;uz&#x27;, &#x27;Uzbek&#x27;),
+ (&#x27;vi&#x27;, &#x27;Vietnamese&#x27;),
+ (&#x27;zh-hans&#x27;, &#x27;Simplified Chinese&#x27;),
+ (&#x27;zh-hant&#x27;, &#x27;Traditional Chinese&#x27;)]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGES_BIDI</td>
+          <td class="code"><pre>[&#x27;he&#x27;, &#x27;ar&#x27;, &#x27;ar-dz&#x27;, &#x27;ckb&#x27;, &#x27;fa&#x27;, &#x27;ug&#x27;, &#x27;ur&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_CODE</td>
+          <td class="code"><pre>&#x27;en-us&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_AGE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_NAME</td>
+          <td class="code"><pre>&#x27;django_language&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_PATH</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_SAMESITE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOCALE_PATHS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGGING</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGGING_CONFIG</td>
+          <td class="code"><pre>&#x27;logging.config.dictConfig&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGIN_REDIRECT_URL</td>
+          <td class="code"><pre>&#x27;/accounts/profile/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGIN_URL</td>
+          <td class="code"><pre>&#x27;/accounts/login/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGOUT_REDIRECT_URL</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MANAGERS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MEDIA_ROOT</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MEDIA_URL</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MESSAGE_STORAGE</td>
+          <td class="code"><pre>&#x27;django.contrib.messages.storage.fallback.FallbackStorage&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MIDDLEWARE</td>
+          <td class="code"><pre>[&#x27;corsheaders.middleware.CorsMiddleware&#x27;,
+ &#x27;django.middleware.common.CommonMiddleware&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MIGRATION_MODULES</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MONTH_DAY_FORMAT</td>
+          <td class="code"><pre>&#x27;F j&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>NUMBER_GROUPING</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PASSWORD_HASHERS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PASSWORD_RESET_TIMEOUT</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PREPEND_WWW</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REST_FRAMEWORK</td>
+          <td class="code"><pre>{&#x27;DEFAULT_AUTHENTICATION_CLASSES&#x27;: &#x27;********************&#x27;,
+ &#x27;DEFAULT_PERMISSION_CLASSES&#x27;: [&#x27;rest_framework.permissions.IsAuthenticated&#x27;]}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ROOT_URLCONF</td>
+          <td class="code"><pre>&#x27;taskboard.urls&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECRET_KEY</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECRET_KEY_FALLBACKS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_CONTENT_TYPE_NOSNIFF</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_CROSS_ORIGIN_OPENER_POLICY</td>
+          <td class="code"><pre>&#x27;same-origin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_INCLUDE_SUBDOMAINS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_PRELOAD</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_SECONDS</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_PROXY_SSL_HEADER</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_REDIRECT_EXEMPT</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_REFERRER_POLICY</td>
+          <td class="code"><pre>&#x27;same-origin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_SSL_HOST</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_SSL_REDIRECT</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_EMAIL</td>
+          <td class="code"><pre>&#x27;root@localhost&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_CACHE_ALIAS</td>
+          <td class="code"><pre>&#x27;default&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_AGE</td>
+          <td class="code"><pre>1209600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_NAME</td>
+          <td class="code"><pre>&#x27;sessionid&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_PATH</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_SAMESITE</td>
+          <td class="code"><pre>&#x27;Lax&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_ENGINE</td>
+          <td class="code"><pre>&#x27;django.contrib.sessions.backends.db&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_EXPIRE_AT_BROWSER_CLOSE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_FILE_PATH</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_SAVE_EVERY_REQUEST</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_SERIALIZER</td>
+          <td class="code"><pre>&#x27;django.contrib.sessions.serializers.JSONSerializer&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SETTINGS_MODULE</td>
+          <td class="code"><pre>&#x27;taskboard.settings&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHORT_DATETIME_FORMAT</td>
+          <td class="code"><pre>&#x27;m/d/Y P&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHORT_DATE_FORMAT</td>
+          <td class="code"><pre>&#x27;m/d/Y&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SIGNED_COOKIE_LEGACY_SALT_FALLBACK</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SIGNING_BACKEND</td>
+          <td class="code"><pre>&#x27;django.core.signing.TimestampSigner&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SILENCED_SYSTEM_CHECKS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SIMPLE_JWT</td>
+          <td class="code"><pre>{&#x27;ACCESS_TOKEN_LIFETIME&#x27;: &#x27;********************&#x27;,
+ &#x27;AUTH_HEADER_TYPES&#x27;: &#x27;********************&#x27;}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_DIRS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_FINDERS</td>
+          <td class="code"><pre>[&#x27;django.contrib.staticfiles.finders.FileSystemFinder&#x27;,
+ &#x27;django.contrib.staticfiles.finders.AppDirectoriesFinder&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATIC_ROOT</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATIC_URL</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STORAGES</td>
+          <td class="code"><pre>{&#x27;default&#x27;: {&#x27;BACKEND&#x27;: &#x27;django.core.files.storage.FileSystemStorage&#x27;},
+ &#x27;staticfiles&#x27;: {&#x27;BACKEND&#x27;: &#x27;django.contrib.staticfiles.storage.StaticFilesStorage&#x27;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMPLATES</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEST_NON_SERIALIZED_APPS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEST_RUNNER</td>
+          <td class="code"><pre>&#x27;django.test.runner.DiscoverRunner&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>THOUSAND_SEPARATOR</td>
+          <td class="code"><pre>&#x27;,&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_FORMAT</td>
+          <td class="code"><pre>&#x27;P&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#x27;%H:%M:%S&#x27;, &#x27;%H:%M:%S.%f&#x27;, &#x27;%H:%M&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_ZONE</td>
+          <td class="code"><pre>&#x27;UTC&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_I18N</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_THOUSAND_SEPARATOR</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_TZ</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_X_FORWARDED_HOST</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_X_FORWARDED_PORT</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>WSGI_APPLICATION</td>
+          <td class="code"><pre>&#x27;taskboard.wsgi.application&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>X_FRAME_OPTIONS</td>
+          <td class="code"><pre>&#x27;DENY&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>YEAR_MONTH_FORMAT</td>
+          <td class="code"><pre>&#x27;F Y&#x27;</pre></td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+</div>
+</main>
+
+
+  <footer id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in your
+      Django settings file. Change that to <code>False</code>, and Django will
+      display a standard page generated by the handler for this status code.
+    </p>
+  </footer>
+
+</body>
+</html>
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+[36mbackend-1  | [0m    raise dj_exc_value.with_traceback(traceback) from exc_value
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 103, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mdjango.db.utils.ProgrammingError: operator is not unique: unknown % unknown
+[36mbackend-1  | [0mLINE 1: ...2de4-42bd-80f4-bab99dab6370' AND (title ILIKE '%x'%' OR desc...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0mHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m[11/Sep/2026 12:08:55] "GET /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27 HTTP/1.1" 500 122086
+[36mbackend-1  | [0mInternal Server Error: /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 103, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mpsycopg2.errors.AmbiguousFunction: operator is not unique: unknown % unknown
+[36mbackend-1  | [0mLINE 1: ...2de4-42bd-80f4-bab99dab6370' AND (title ILIKE '%x'%' OR desc...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0mHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mThe above exception was the direct cause of the following exception:
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+[36mbackend-1  | [0m    response = get_response(request)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+[36mbackend-1  | [0m    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+[36mbackend-1  | [0m    return view_func(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+[36mbackend-1  | [0m    return self.dispatch(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 526, in dispatch
+[36mbackend-1  | [0m    response = self.handle_exception(exc)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 474, in handle_exception
+[36mbackend-1  | [0m    self.raise_uncaught_exception(exc)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 485, in raise_uncaught_exception
+[36mbackend-1  | [0m    raise exc
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 523, in dispatch
+[36mbackend-1  | [0m    response = handler(request, *args, **kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/app/projects/views.py", line 120, in get
+[36mbackend-1  | [0m    cursor.execute(sql)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+[36mbackend-1  | [0m    return super().execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+[36mbackend-1  | [0m    return self._execute_with_wrappers(
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+[36mbackend-1  | [0m    return executor(sql, params, many, context)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+[36mbackend-1  | [0m    with self.db.wrap_database_errors:
+[36mbackend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+[36mbackend-1  | [0m    raise dj_exc_value.with_traceback(traceback) from exc_value
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 103, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mdjango.db.utils.ProgrammingError: operator is not unique: unknown % unknown
+[36mbackend-1  | [0mLINE 1: ...2de4-42bd-80f4-bab99dab6370' AND (title ILIKE '%x'%' OR desc...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0mHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m[11/Sep/2026 12:10:03] "GET /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27 HTTP/1.1" 500 122086
+[36mbackend-1  | [0mInternal Server Error: /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 103, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mpsycopg2.errors.AmbiguousFunction: operator is not unique: unknown % unknown
+[36mbackend-1  | [0mLINE 1: ...2de4-42bd-80f4-bab99dab6370' AND (title ILIKE '%x'%' OR desc...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0mHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mThe above exception was the direct cause of the following exception:
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+[36mbackend-1  | [0m    response = get_response(request)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+[36mbackend-1  | [0m    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+[36mbackend-1  | [0m    return view_func(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+[36mbackend-1  | [0m    return self.dispatch(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 526, in dispatch
+[36mbackend-1  | [0m    response = self.handle_exception(exc)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 474, in handle_exception
+[36mbackend-1  | [0m    self.raise_uncaught_exception(exc)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 485, in raise_uncaught_exception
+[36mbackend-1  | [0m    raise exc
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 523, in dispatch
+[36mbackend-1  | [0m    response = handler(request, *args, **kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/app[7mcurl -s -G "http://localhost:8000/api/projects/$PID/tasks" \[27m
+[7m  --data-urlencode "q=x'" \[27m[K
+[7m  -H "Authorization: Bearer $TOKEN" \[27m[K
+[7m  | grep -o 'syntax error[^<]*'[27m[K[3A[12C[27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mG[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m/[27m$[27mP[27mI[27mD[27m/[27mt[27ma[27ms[27mk[27ms[27m"[27m [27m\[1B[27m [27m [27m-[27m-[27md[27ma[27mt[27ma[27m-[27mu[27mr[27ml[27me[27mn[27mc[27mo[27md[27me[27m [27m"[27mq[27m=[27mx[27m'[27m"[27m [27m\[1B[27m [27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[27m [27m\[1B[27m [27m [27m|[27m [27mg[27mr[27me[27mp[27m [27m-[27mo[27m [27m'[27ms[27my[27mn[27mt[27ma[27mx[27m [27me[27mr[27mr[27mo[27mr[27m[[27m^[27m<[27m][27m*[27m'[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mcurl -s -G "http://localhost:8000/api/projects/$PID/tasks" \[27m
+[7m  --data-urlencode "q=x'" \[27m[K
+[7m  -H "Authorization: Bearer $TOKEN" \[27m[K
+[7m  | grep -o 'syntax error[^<]*'[27m[K[3A[12C[27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mG[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m/[27m$[27mP[27mI[27mD[27m/[27mt[27ma[27ms[27mk[27ms[27m"[27m [27m\[1B[27m [27m [27m-[27m-[27md[27ma[27mt[27ma[27m-[27mu[27mr[27ml[27me[27mn[27mc[27mo[27md[27me[27m [27m"[27mq[27m=[27mx[27m'[27m"[27m [27m\[1B[27m [27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[27m [27m\[1B[27m [27m [27m|[27m [27mg[27mr[27me[27mp[27m [27m-[27mo[27m [27m'[27ms[27my[27mn[27mt[27ma[27mx[27m [27me[27mr[27mr[27mo[27mr[27m[[27m^[27m<[27m][27m*[27m'[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h/projects/views.py", line 120, in get
+[36mbackend-1  | [0m    cursor.execute(sql)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+[36mbackend-1  | [0m    return super().execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+[36mbackend-1  | [0m    return self._execute_with_wrappers(
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+[36mbackend-1  | [0m    return executor(sql, params, many, context)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+[36mbackend-1  | [0m    with self.db.wrap_database_errors:
+[36mbackend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+[36mbackend-1  | [0m    raise dj_exc_value.with_traceback(traceback) from exc_value
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 103, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mdjango.db.utils.ProgrammingError: operator is not unique: unknown % unknown
+[36mbackend-1  | [0mLINE 1: ...2de4-42bd-80f4-bab99dab6370' AND (title ILIKE '%x'%' OR desc...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0mHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m[11/Sep/2026 12:10:21] "GET /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27 HTTP/1.1" 500 122086
+[36mbackend-1  | [0mInternal Server Error: /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 103, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mpsycopg2.errors.AmbiguousFunction: operator is not unique: unknown % unknown
+[36mbackend-1  | [0mLINE 1: ...2de4-42bd-80f4-bab99dab6370' AND (title ILIKE '%x'%' OR desc...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0mHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mThe above exception was the direct cause of the following exception:
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+[36mbackend-1  | [0m    response = get_response(request)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+[36mbackend-1  | [0m    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+[36mbackend-1  | [0m    return view_func(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+[36mbackend-1  | [0m    return self.dispatch(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 526, in dispatch
+[36mbackend-1  | [0m    response = self.handle_exception(exc)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 474, in handle_exception
+[36mbackend-1  | [0m    self.raise_uncaught_exception(exc)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 485, in raise_uncaught_exception
+[36mbackend-1  | [0m    raise exc
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 523, in dispatch
+[36mbackend-1  | [0m    response = handler(request, *args, **kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/app/projects/views.py", line 120, in get
+[36mbackend-1  | [0m    cursor.execute(sql)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+[36mbackend-1  | [0m    return super().execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+[36mbackend-1  | [0m    return self._execute_with_wrappers(
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+[36mbackend-1  | [0m    return executor(sql, params, many, context)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+[36mbackend-1  | [0m    with self.db.wrap_database_errors:
+[36mback[7mcurl -s -o /tmp/resp.html -w "HTTP_STATUS:%{http_code}\n" -G "http://localhost:8000/api/projects/$PID/tasks" \[27m
+[7m  --data-urlencode "q=x'" \[27m[K
+[7m  -H "Authorization: Bearer $TOKEN"[27m[K
+[K
+[7mgrep -o '<title>[^<]*</title>' /tmp/resp.html[27m[K
+[7mgrep -io 'error[^<]\{0,80\}' /tmp/resp.html | head -5[27m[K[5A[10D[27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mo[27m [27m/[27mt[27mm[27mp[27m/[27mr[27me[27ms[27mp[27m.[27mh[27mt[27mm[27ml[27m [27m-[27mw[27m [27m"[27mH[27mT[27mT[27mP[27m_[27mS[27mT[27mA[27mT[27mU[27mS[27m:[27m%[27m{[27mh[27mt[27mt[27mp[27m_[27mc[27mo[27md[27me[27m}[27m\[27mn[27m"[27m [27m-[27mG[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m/[27m$[27mP[27mI[27mD[27m/[27mt[27ma[27ms[27mk[27ms[27m"[27m [27m\[1B[27m [27m [27m-[27m-[27md[27ma[27mt[27ma[27m-[27mu[27mr[27ml[27me[27mn[27mc[27mo[27md[27me[27m [27m"[27mq[27m=[27mx[27m'[27m"[27m [27m\[1B[27m [27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[2B[27mg[27mr[27me[27mp[27m [27m-[27mo[27m [27m'[27m<[27mt[27mi[27mt[27ml[27me[27m>[27m[[27m^[27m<[27m][27m*[27m<[27m/[27mt[27mi[27mt[27ml[27me[27m>[27m'[27m [27m/[27mt[27mm[27mp[27m/[27mr[27me[27ms[27mp[27m.[27mh[27mt[27mm[27ml[1B[27mg[27mr[27me[27mp[27m [27m-[27mi[27mo[27m [27m'[27me[27mr[27mr[27mo[27mr[27m[[27m^[27m<[27m][27m\[27m{[27m0[27m,[27m8[27m0[27m\[27m}[27m'[27m [27m/[27mt[27mm[27mp[27m/[27mr[27me[27ms[27mp[27m.[27mh[27mt[27mm[27ml[27m [27m|[27m [27mh[27me[27ma[27md[27m [27m-[27m5[?2004l
+HTTP_STATUS:500
+Error
+error { background: #ffc; }
+Error
+Error
+errors:
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+[36mbackend-1  | [0m    raise dj_exc_value.with_traceback(traceback) from exc_value
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 103, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mdjango.db.utils.ProgrammingError: operator is not unique: unknown % unknown
+[36mbackend-1  | [0mLINE 1: ...2de4-42bd-80f4-bab99dab6370' AND (title ILIKE '%x'%' OR desc...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0mHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m[11/Sep/2026 12:10:47] "GET /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks?q=x%27 HTTP/1.1" 500 122086
+[7mgrep -A2 '<h1>' /tmp/resp.html | head -10[27m
+[7mpython3 -c "[27m[K
+[7mimport re[27m[K
+[7mhtml = open('/tmp/resp.html').read()[27m[K
+[7mm = re.search(r'exception_value.{0,300}', html, re.S)[27m[K
+[7mprint(m.group(0) if m else 'not found')[27m[K
+[7m"[27m[K[6A[42C[27mg[27mr[27me[27mp[27m [27m-[27mA[27m2[27m [27m'[27m<[27mh[27m1[27m>[27m'[27m [27m/[27mt[27mm[27mp[27m/[27mr[27me[27ms[27mp[27m.[27mh[27mt[27mm[27ml[27m [27m|[27m [27mh[27me[27ma[27md[27m [27m-[27m1[27m0[1B[27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mc[27m [27m"[1B[27mi[27mm[27mp[27mo[27mr[27mt[27m [27mr[27me[1B[27mh[27mt[27mm[27ml[27m [27m=[27m [27mo[27mp[27me[27mn[27m([27m'[27m/[27mt[27mm[27mp[27m/[27mr[27me[27ms[27mp[27m.[27mh[27mt[27mm[27ml[27m'[27m)[27m.[27mr[27me[27ma[27md[27m([27m)[1B[27mm[27m [27m=[27m [27mr[27me[27m.[27ms[27me[27ma[27mr[27mc[27mh[27m([27mr[27m'[27me[27mx[27mc[27me[27mp[27mt[27mi[27mo[27mn[27m_[27mv[27ma[27ml[27mu[27me[27m.[27m{[27m0[27m,[27m3[27m0[27m0[27m}[27m'[27m,[27m [27mh[27mt[27mm[27ml[27m,[27m [27mr[27me[27m.[27mS[27m)[1B[27mp[27mr[27mi[27mn[27mt[27m([27mm[27m.[27mg[27mr[27mo[27mu[27mp[27m([27m0[27m)[27m [27mi[27mf[27m [27mm[27m [27me[27ml[27ms[27me[27m [27m'[27mn[27mo[27mt[27m [27mf[27mo[27mu[27mn[27md[27m'[27m)[1B[27m"[?2004l
+  <h1>ProgrammingError
+       at /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks</h1>
+  <pre class="exception_value">operator is not unique: unknown % unknown
+exception_value { font-family: sans-serif; color: #575757; font-size: 1.5rem; margin: 10px 0 10px 0; }
+    .append-bottom { margin-bottom: 10px; }
+    .fname { user-select: all; }
+  </style>
+  
+  <script>
+    function hideAll(elems) {
+      for (var e = 0; e < elems.length; e++) {
+        elems[e].style.display = 
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m[11/Sep/2026 12:14:16] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 12:14:16] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 12:38:34] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 12:38:34] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 12:42:10] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 12:42:10] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 12:44:21] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 12:44:21] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 13:11:17] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 13:11:17] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 13:26:52] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 13:26:52] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 14:14:52] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 14:14:52] "GET /api/projects HTTP/1.1" 200 1023
+[7mTOOLS_PID=$(curl -s -H "Authorization: Bearer $TOKEN" http://localhost:8000/api/projects \[27m
+[7m  | python3 -c "import sys,json; d=json.load(sys.stdin)['projects']; print([p['id'] for p in d if p['name']=='Internal Tools Cleanup'][0])")[27m[K[A[97D[27mT[27mO[27mO[27mL[27mS[27m_[27mP[27mI[27mD[27m=[27m$[27m([27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m [27m\[1B[27m [27m [27m|[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m,[27mj[27ms[27mo[27mn[27m;[27m [27md[27m=[27mj[27ms[27mo[27mn[27m.[27ml[27mo[27ma[27md[27m([27ms[27my[27ms[27m.[27ms[27mt[27md[27mi[27mn[27m)[27m[[27m'[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m'[27m][27m;[27m [27mp[27mr[27mi[27mn[27mt[27m([27m[[27mp[27m[[27m'[27mi[27md[27m'[27m][27m [27mf[27mo[27mr[27m [27mp[27m [27mi[27mn[27m [27md[27m [27mi[27mf[27m [27mp[27m[[27m'[27mn[27ma[27mm[27me[27m'[27m][27m=[27m=[27m'[27mI[27mn[27mt[27me[27mr[27mn[27ma[27ml[27m [27mT[27mo[27mo[27ml[27ms[27m [27mC[27ml[27me[27ma[27mn[27mu[27mp[27m'[27m][27m[[27m0[27m][27m)[27m"[27m)[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004heecho [36mbackend-1  | [0m[11/Sep/2026 14:18:44] "GET /api/projects HTTP/1.1" 200 1023
+& $[7mTOOLS_PID=$(curl -s -H "Authorization: Bearer $TOKEN" http://localhost:8000/api/projects \[27m
+[7m  | python3 -c "import sys,json; d=json.load(sys.stdin)['projects']; print([p['id'] for p in d if p['name']=='Internal Tools Cleanup'][0])")[27m[K[A[91D[27mT[27mO[27mO[27mL[27mS[27m_[27mP[27mI[27mD[27m=[27m$[27m([27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m [27m\[1B[27m [27m [27m|[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m,[27mj[27ms[27mo[27mn[27m;[27m [27md[27m=[27mj[27ms[27mo[27mn[27m.[27ml[27mo[27ma[27md[27m([27ms[27my[27ms[27m.[27ms[27mt[27md[27mi[27mn[27m)[27m[[27m'[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m'[27m][27m;[27m [27mp[27mr[27mi[27mn[27mt[27m([27m[[27mp[27m[[27m'[27mi[27md[27m'[27m][27m [27mf[27mo[27mr[27m [27mp[27m [27mi[27mn[27m [27md[27m [27mi[27mf[27m [27mp[27m[[27m'[27mn[27ma[27mm[27me[27m'[27m][27m=[27m=[27m'[27mI[27mn[27mt[27me[27mr[27mn[27ma[27ml[27m [27mT[27mo[27mo[27ml[27ms[27m [27mC[27ml[27me[27ma[27mn[27mu[27mp[27m'[27m][27m[[27m0[27m][27m)[27m"[27m)[A[96D[6P[90C      [1B[1C[A[97Decho $TOOLS_PID=$(curl -s -H "Authorization: Bearer $TOKEN" http://localhost:8000/api/projects \[1B[1C====                                                                                                                                [K[K[A[139C                                                                          [?2004l[1Bb278a193-2de4-42bd-80f4-bab99dab6370
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mTASK_ID=$(curl -s -H "Authorization: Bearer $TOKEN" "http://localhost:8000/api/projects/$TOOLS_PID/tasks" \[27m
+[7m  | python3 -c "import sys,json;print(json.load(sys.stdin)['tasks'][0]['id'])")[27m[K
+[K[A[A[43C[27mT[27mA[27mS[27mK[27m_[27mI[27mD[27m=[27m$[27m([27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m/[27m$[27mT[27mO[27mO[27mL[27mS[27m_[27mP[27mI[27mD[27m/[27mt[27ma[27ms[27mk[27ms[27m"[27m [27m\[1B[27m [27m [27m|[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m,[27mj[27ms[27mo[27mn[27m;[27mp[27mr[27mi[27mn[27mt[27m([27mj[27ms[27mo[27mn[27m.[27ml[27mo[27ma[27md[27m([27ms[27my[27ms[27m.[27ms[27mt[27md[27mi[27mn[27m)[27m[[27m'[27mt[27ma[27ms[27mk[27ms[27m'[27m][27m[[27m0[27m][27m[[27m'[27mi[27md[27m'[27m][27m)[27m"[27m)[1B[K[?2004l
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+IndexError: list index out of range
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hTASK_ID=$(curl -s -H "Authorization: Bearer $TOKEN" "http://localhost:8000/api/projects/$TOOLS_PID/tasks" \
+  | python3 -c "import sys,json;print(json.load(sys.stdin)['tasks'][0]['id'])")[K
+[K[K[A[79C[?2004l[1BTraceback (most recent call last):
+  File "<string>", line 1, in <module>
+IndexError: list index out of range
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m[11/Sep/2026 14:19:40] "GET /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks HTTP/1.1" 200 12
+[36mbackend-1  | [0m[11/Sep/2026 14:19:48] "GET /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks HTTP/1.1" 200 12
+TASK_ID=$(curl -s -H "Authorization: Bearer $TOKEN" "http://localhost:8000/api/projects/$TOOLS_PID/tasks" \
+  | python3 -c "import sys,json;print(json.load(sys.stdin)['tasks'][0]['id'])")[K[7me[7mc[7mh[7mo[7m [7m"[7mT[7mO[7mO[7mL[7mS[7m_[7mP[7mI[7mD[7m=[7m$[7mT[7mO[7mO[7mL[7mS[7m_[7mP[7mI[7mD[7m"[27m[27D[27me[27mc[27mh[27mo[27m [27m"[27mT[27mO[27mO[27mL[27mS[27m_[27mP[27mI[27mD[27m=[27m$[27mT[27mO[27mO[27mL[27mS[27m_[27mP[27mI[27mD[27m"[A[43C[1B[70D                           
+[K[K[A[79C[A[70C[106Decho [83P[10C                                                                                            [1B[K[1B[K[A[A[58C            e  [7mecho "TOOLS_PID=$TOOLS_PID"[27m[27D[27me[27mc[27mh[27mo[27m [27m"[27mT[27mO[27mO[27mL[27mS[27m_[27mP[27mI[27mD[27m=[27m$[27mT[27mO[27mO[27mL[27mS[27m_[27mP[27mI[27mD[27m"[?2004l[1BTOOLS_PID=b278a193-2de4-42bd-80f4-bab99dab6370
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mcurl -s -H "Authorization: Bearer $TOKEN" http://localhost:8000/api/projects \[27m
+[7m  | python3 -m json.tool[27m[K[A[19C[27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m [27m\[1B[27m [27m [27m|[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mm[27m [27mj[27ms[27mo[27mn[27m.[27mt[27mo[27mo[27ml[?2004l
+{
+    "projects": [
+        {
+            "id": "b278a193-2de4-42bd-80f4-bab99dab6370",
+            "name": "Internal Tools Cleanup",
+            "description": "Retire legacy admin tools and consolidate into the new console.",
+            "role": "admin",
+            "owner": {
+                "id": "45d3d078-c7bb-417d-a100-77bb73950bb6",
+                "email": "meera@taskboard.dev",
+                "name": "Meera Iyer"
+            },
+            "taskCount": 0,
+            "createdAt": "2026-09-10T21:06:02.701316+00:00"
+        },
+        {
+            "id": "b537e65e-40af-4a78-83e8-6e7d4c2b8155",
+            "name": "Customer Onboarding Revamp",
+            "description": "Reduce time-to-first-value from 9 days to under 3 days.",
+            "role": "member",
+            "owner": {
+                "id": "78ce4a58-78ae-4be4-afde-024b111cf2b1",
+                "email": "arjun@taskboard.dev",
+                "name": "Arjun Rao"
+            },
+            "taskCount": 5,
+            "createdAt": "2026-09-10T21:06:02.699568+00:00"
+        },
+        {
+            "id": "2063bd57-9b41-4b21-af58-6a855552c63b",
+            "name": "Q3 Launch",
+            "description": "Coordinate the Q3 product launch across engineering, design, and marketing.",
+            "role": "admin",
+            "owner": {
+                "id": "45d3d078-c7bb-417d-a100-77bb73950bb6",
+                "email": "meera@taskboard.dev",
+                "name": "Meera Iyer"
+            },
+            "taskCount": 7,
+            "createdAt": "2026-09-10T21:06:02.695336+00:00"
+        }
+    ]
+}
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m[11/Sep/2026 14:22:31] "GET /api/projects HTTP/1.1" 200 1023
+[7mcurl -s -H "Authorization: Bearer $TOKEN" "http://localhost:8000/api/projects/$TOOLS_PID/tasks"[27m[95D[27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m/[27m$[27mT[27mO[27mO[27mL[27mS[27m_[27mP[27mI[27mD[27m/[27mt[27ma[27ms[27mk[27ms[27m"[?2004l
+{"tasks":[]}[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m[11/Sep/2026 14:23:04] "GET /api/projects/b278a193-2de4-42bd-80f4-bab99dab6370/tasks HTTP/1.1" 200 12
+[7mTOOLS_PID="b537e65e-40af-4a78-83e8-6e7d4c2b8155"[27m
+[K
+[7mTASK_ID=$(curl -s -H "Authorization: Bearer $TOKEN" "http://localhost:8000/api/projects/$TOOLS_PID/tasks" \[27m[K
+[7m  | python3 -c "import sys,json;print(json.load(sys.stdin)['tasks'][0]['id'])")[27m[K
+[K
+[7mecho "TASK_ID=$TASK_ID"[27m[K[5A[20C[27mT[27mO[27mO[27mL[27mS[27m_[27mP[27mI[27mD[27m=[27m"[27mb[27m5[27m3[27m7[27me[27m6[27m5[27me[27m-[27m4[27m0[27ma[27mf[27m-[27m4[27ma[27m7[27m8[27m-[27m8[27m3[27me[27m8[27m-[27m6[27me[27m7[27md[27m4[27mc[27m2[27mb[27m8[27m1[27m5[27m5[27m"[2B[27mT[27mA[27mS[27mK[27m_[27mI[27mD[27m=[27m$[27m([27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m/[27m$[27mT[27mO[27mO[27mL[27mS[27m_[27mP[27mI[27mD[27m/[27mt[27ma[27ms[27mk[27ms[27m"[27m [27m\[1B[27m [27m [27m|[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m,[27mj[27ms[27mo[27mn[27m;[27mp[27mr[27mi[27mn[27mt[27m([27mj[27ms[27mo[27mn[27m.[27ml[27mo[27ma[27md[27m([27ms[27my[27ms[27m.[27ms[27mt[27md[27mi[27mn[27m)[27m[[27m'[27mt[27ma[27ms[27mk[27ms[27m'[27m][27m[[27m0[27m][27m[[27m'[27mi[27md[27m'[27m][27m)[27m"[27m)[2B[27me[27mc[27mh[27mo[27m [27m"[27mT[27mA[27mS[27mK[27m_[27mI[27mD[27m=[27m$[27mT[27mA[27mS[27mK[27m_[27mI[27mD[27m"[?2004l
+TASK_ID=37421aa0-e3ea-49cf-ac80-45064613ee50
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m[11/Sep/2026 14:24:24] "GET /api/projects/b537e65e-40af-4a78-83e8-6e7d4c2b8155/tasks HTTP/1.1" 200 2680
+[7mecho "TASK_ID=$TASK_ID"[27m[23D[27me[27mc[27mh[27mo[27m [27m"[27mT[27mA[27mS[27mK[27m_[27mI[27mD[27m=[27m$[27mT[27mA[27mS[27mK[27m_[27mI[27mD[27m"[?2004l
+TASK_ID=37421aa0-e3ea-49cf-ac80-45064613ee50
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mDEV_TOKEN=$(curl -s -X POST http://localhost:8000/api/auth/login \[27m
+[7m  -H 'Content-Type: application/json' \[27m[K
+[7m  -d '{"email":"dev@example.com","password":"password123"}' \[27m[K
+[7m  | python3 -c "import sys,json;print(json.load(sys.stdin)['token'])")[27m[K[3A[27D[27mD[27mE[27mV[27m_[27mT[27mO[27mK[27mE[27mN[27m=[27m$[27m([27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mX[27m [27mP[27mO[27mS[27mT[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27ma[27mu[27mt[27mh[27m/[27ml[27mo[27mg[27mi[27mn[27m [27m\[1B[27m [27m [27m-[27mH[27m [27m'[27mC[27mo[27mn[27mt[27me[27mn[27mt[27m-[27mT[27my[27mp[27me[27m:[27m [27ma[27mp[27mp[27ml[27mi[27mc[27ma[27mt[27mi[27mo[27mn[27m/[27mj[27ms[27mo[27mn[27m'[27m [27m\[1B[27m [27m [27m-[27md[27m [27m'[27m{[27m"[27me[27mm[27ma[27mi[27ml[27m"[27m:[27m"[27md[27me[27mv[27m@[27me[27mx[27ma[27mm[27mp[27ml[27me[27m.[27mc[27mo[27mm[27m"[27m,[27m"[27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m"[27m:[27m"[27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m1[27m2[27m3[27m"[27m}[27m'[27m [27m\[1B[27m [27m [27m|[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m,[27mj[27ms[27mo[27mn[27m;[27mp[27mr[27mi[27mn[27mt[27m([27mj[27ms[27mo[27mn[27m.[27ml[27mo[27ma[27md[27m([27ms[27my[27ms[27m.[27ms[27mt[27md[27mi[27mn[27m)[27m[[27m'[27mt[27mo[27mk[27me[27mn[27m'[27m][27m)[27m"[27m)[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004heechi o $DEV_[36mbackend-1  | [0m[11/Sep/2026 14:26:09] "POST /api/auth/login HTTP/1.1" 200 388
+TOKEN[?2004l
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzkxNzI4NzY5LCJpYXQiOjE3ODkxMzY3NjksImp0aSI6IjdhZTM4NWU3NjI4OTQ0MjQ5MDRjNmM4NGE0ZDRlYTM3IiwidXNlcl9pZCI6ImMzOThhZjhkLTZmYjAtNGViMy1iNjI1LThlNzM5ZDEwMTRlZCJ9.PQoDadTSp9Uvt_Y0_zuUH25XY5xB59uQy9E6_hF7KOM
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mcurl -i -X PATCH "http://localhost:8000/api/tasks/$TASK_ID" \[27m
+[7m  -H "Authorization: Bearer $DEV_TOKEN" -H 'Content-Type: application/json' \[27m[K
+[7m  -d '{"title":"hijacked by a non-member"}'[27m[K[A[A[27mc[27mu[27mr[27ml[27m [27m-[27mi[27m [27m-[27mX[27m [27mP[27mA[27mT[27mC[27mH[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mt[27ma[27ms[27mk[27ms[27m/[27m$[27mT[27mA[27mS[27mK[27m_[27mI[27mD[27m"[27m [27m\[1B[27m [27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mD[27mE[27mV[27m_[27mT[27mO[27mK[27mE[27mN[27m"[27m [27m-[27mH[27m [27m'[27mC[27mo[27mn[27mt[27me[27mn[27mt[27m-[27mT[27my[27mp[27me[27m:[27m [27ma[27mp[27mp[27ml[27mi[27mc[27ma[27mt[27mi[27mo[27mn[27m/[27mj[27ms[27mo[27mn[27m'[27m [27m\[1B[27m [27m [27m-[27md[27m [27m'[27m{[27m"[27mt[27mi[27mt[27ml[27me[27m"[27m:[27m"[27mh[27mi[27mj[27ma[27mc[27mk[27me[27md[27m [27mb[27my[27m [27ma[27m [27mn[27mo[27mn[27m-[27mm[27me[27mm[27mb[27me[27mr[27m"[27m}[27m'[?2004l
+HTTP/1.1 200 OK
+[1mDate[0m: Fri, 11 Sep 2026 14:26:33 GMT
+[1mServer[0m: WSGIServer/0.2 CPython/3.12.14
+[1mContent-Type[0m: application/json
+[1mVary[0m: Accept, origin
+[1mAllow[0m: PATCH, DELETE, OPTIONS
+[1mContent-Length[0m: 528
+
+{"task":{"id":"37421aa0-e3ea-49cf-ac80-45064613ee50","project_id":"b537e65e-40af-4a78-83e8-6e7d4c2b8155","title":"hijacked by a non-member","description":"Detail for: Map current onboarding funnel","status":"done","assignee_id":"78ce4a58-78ae-4be4-afde-024b111cf2b1","created_by_id":"78ce4a58-78ae-4be4-afde-024b111cf2b1","position":0,"created_at":"2026-09-10T21:06:02.706271Z","updated_at":"2026-09-11T14:26:33.273748Z","assignee":{"id":"78ce4a58-78ae-4be4-afde-024b111cf2b1","email":"arjun@taskboard.dev","name":"Arjun Rao"}}}[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m[11/Sep/2026 14:26:33] "PATCH /api/tasks/37421aa0-e3ea-49cf-ac80-45064613ee50 HTTP/1.1" 200 528
+[36mbackend-1  | [0m[11/Sep/2026 15:09:46] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 15:09:47] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 15:23:56] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 15:23:56] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 15:30:58] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 15:30:58] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 15:54:44] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 15:54:44] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 16:09:13] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 16:09:13] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 16:23:48] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 16:23:48] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 16:29:31] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 16:29:31] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 17:39:09] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 17:39:10] "GET /api/projects HTTP/1.1" 200 1023
+Script started on Sat Sep 12 01:05:23 2026
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mcp .env.example .env[27m[20D[27mc[27mp[27m [27m.[27me[27mn[27mv[27m.[27me[27mx[27ma[27mm[27mp[27ml[27me[27m [27m.[27me[27mn[27mv[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose up --bui[27m
+[7mld-d[27m[K[A[39C[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27mu[27mp[27m [27m-[27m-[27mb[27mu[27mi[1B[27ml[27md[27m-[27md[?2004l
+unknown flag: --bui
+zsh: command not found: ld-d
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose up --bui
+ld-d[K[A[66Cld-d[1B[K[A[66C[?2004l[1Bunknown flag: --build-d
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose up --build-d -d[?2004l
+[33mWARN[0m[0000] buildx Docker CLI plugin not found: falling back to the classic builder. BuildKit-only build features (multi-arch, secrets, ssh, additional contexts, ...) will not be available 
+Sending build context to Docker daemon  35.45kB
+Step 1/9 : FROM python:3.12-slim
+ ---> 78387bc3881b
+Step 2/9 : RUN apt-get update -qq &&     apt-get install -y --no-install-recommends libpq-dev gcc curl &&     rm -rf /var/lib/apt/lists/*
+ ---> Using cache
+ ---> 46a491884356
+Step 3/9 : WORKDIR /app
+ ---> Using cache
+ ---> 747fa79f45fe
+Step 4/9 : COPY requirements.txt .
+ ---> Using cache
+ ---> 99565c976fa4
+Step 5/9 : RUN pip install --no-cache-dir -r requirements.txt
+ ---> Using cache
+ ---> a8b0d0b386e2
+Step 6/9 : COPY . .
+ ---> 4f494b39fdc8
+Step 7/9 : EXPOSE 8000
+ ---> Running in da374f5e6c5b
+ ---> Removed intermediate container da374f5e6c5b
+ ---> 5b38a93f9dc7
+Step 8/9 : CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+ ---> Running in a5602bfe1c77
+ ---> Removed intermediate container a5602bfe1c77
+ ---> 1d1fc9991392
+Step 9/9 : LABEL com.docker.compose.image.builder=classic
+ ---> Running in e130ef3077ba
+ ---> Removed intermediate container e130ef3077ba
+ ---> 7fbba1b75dcd
+Successfully built 7fbba1b75dcd
+Successfully tagged q-taskboard-backend:latest
+[?25l[0G[+] up 1/1
+ [32m✔[0m Image q-taskboard-backend [32mBuilt[0m                                                                                                                                                                     [34m28.2s[0m
+[?25hSending build context to Docker daemon  8.679kB
+Step 1/8 : FROM node:20-bookworm-slim
+ ---> 2cf067cfed83
+Step 2/8 : WORKDIR /app
+ ---> Using cache
+ ---> c2cfce37c2fe
+Step 3/8 : COPY package*.json ./
+ ---> Using cache
+ ---> 6900fedcd1a0
+Step 4/8 : RUN npm install
+ ---> Using cache
+ ---> a47ca0c3f46a
+Step 5/8 : COPY . .
+ ---> 52a4ece2e075
+Step 6/8 : EXPOSE 3000
+ ---> Running in b09250180aad
+ ---> Removed intermediate container b09250180aad
+ ---> 1ad45e50c1b6
+Step 7/8 : CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "3000"]
+ ---> Running in 4b643e1caf8b
+ ---> Removed intermediate container 4b643e1caf8b
+ ---> 3f3261bea8f7
+Step 8/8 : LABEL com.docker.compose.image.builder=classic
+ ---> Running in 1a238fa0230c
+ ---> Removed intermediate container 1a238fa0230c
+ ---> 3c28a3783a31
+Successfully built 3c28a3783a31
+Successfully tagged q-taskboard-frontend:latest
+[?25l[2A[0G[+] up 2/2
+ [32m✔[0m Image q-taskboard-backend  [32mBuilt[0m                                                                                                                                                                    [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend [32mBuilt[0m                                                                                                                                                                    [34m27.8s[0m
+[?25h[?25l[3A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠋[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 0.0s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠙[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 0.1s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠹[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 0.2s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠸[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 0.3s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠼[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 0.4s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠴[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 0.5s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠦[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 0.6s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠧[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 0.7s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠇[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 0.8s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠏[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 0.9s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠋[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 1.0s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠙[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 1.1s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠹[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 1.2s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠸[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 1.3s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠼[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 1.4s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠴[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 1.5s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠦[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 1.6s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠧[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 1.7s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠇[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 1.8s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠏[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 1.9s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠋[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 2.0s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠙[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 2.1s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠹[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 2.2s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠸[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 2.3s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠼[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 2.4s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠴[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 2.5s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠦[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 2.6s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠧[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 2.7s[0m
+[?25h[?25l[5A[0G[+] up 3/4
+ [32m✔[0m Image q-taskboard-backend       [32mBuilt[0m                                                                                                                                                               [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend      [32mBuilt[0m                                                                                                                                                               [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                             [34m 0.0s[0m
+ [33m⠇[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                            [34m 2.8s[0m
+[?25h[?25l[5A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1  [32mRecreated[0m                                                                                                                                                          [34m 2.9s[0m
+ [33m⠋[0m Container q-taskboard-frontend-1 Recreate                                                                                                                                                           [34m 0.1s[0m
+[?25h[?25l[6A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1  [32mRecreated[0m                                                                                                                                                          [34m 2.9s[0m
+ [33m⠙[0m Container q-taskboard-frontend-1 Recreate                                                                                                                                                           [34m 0.2s[0m
+[?25h[?25l[6A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1  [32mRecreated[0m                                                                                                                                                          [34m 2.9s[0m
+ [33m⠹[0m Container q-taskboard-frontend-1 Recreate                                                                                                                                                           [34m 0.3s[0m
+[?25h[?25l[6A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1  [32mRecreated[0m                                                                                                                                                          [34m 2.9s[0m
+ [33m⠸[0m Container q-taskboard-frontend-1 Recreate                                                                                                                                                           [34m 0.4s[0m
+[?25h[?25l[6A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1  [32mRecreated[0m                                                                                                                                                          [34m 2.9s[0m
+ [33m⠼[0m Container q-taskboard-frontend-1 Recreate                                                                                                                                                           [34m 0.5s[0m
+[?25h[?25l[6A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1  [32mRecreated[0m                                                                                                                                                          [34m 2.9s[0m
+ [33m⠴[0m Container q-taskboard-frontend-1 Recreate                                                                                                                                                           [34m 0.6s[0m
+[?25h[?25l[6A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1  [32mRecreated[0m                                                                                                                                                          [34m 2.9s[0m
+ [33m⠦[0m Container q-taskboard-frontend-1 Recreate                                                                                                                                                           [34m 0.7s[0m
+[?25h[?25l[6A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1  [32mRecreated[0m                                                                                                                                                          [34m 2.9s[0m
+ [33m⠧[0m Container q-taskboard-frontend-1 Recreate                                                                                                                                                           [34m 0.8s[0m
+[?25h[?25l[6A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1  [32mRecreated[0m                                                                                                                                                          [34m 2.9s[0m
+ [33m⠇[0m Container q-taskboard-frontend-1 Recreate                                                                                                                                                           [34m 0.9s[0m
+[?25h[?25l[6A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1  [32mRecreated[0m                                                                                                                                                          [34m 2.9s[0m
+ [33m⠏[0m Container q-taskboard-frontend-1 Recreate                                                                                                                                                           [34m 1.0s[0m
+[?25h[?25l[6A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1  [32mRecreated[0m                                                                                                                                                          [34m 2.9s[0m
+ [33m⠋[0m Container q-taskboard-frontend-1 Recreate                                                                                                                                                           [34m 1.1s[0m
+[?25h[?25l[6A[0G[+] up 5/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1  [32mRecreated[0m                                                                                                                                                          [34m 2.9s[0m
+ [32m✔[0m Container q-taskboard-frontend-1 [32mRecreated[0m                                                                                                                                                          [34m 1.2s[0m
+[?25h[?25l[6A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [33m⠏[0m Container q-taskboard-backend-1  Starting                                                                                                                                                           [34m 4.1s[0m
+ [32m✔[0m Container q-taskboard-frontend-1 [32mRecreated[0m                                                                                                                                                          [34m 1.2s[0m
+[?25h[?25l[6A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [33m⠋[0m Container q-taskboard-backend-1  Starting                                                                                                                                                           [34m 4.2s[0m
+ [32m✔[0m Container q-taskboard-frontend-1 [32mRecreated[0m                                                                                                                                                          [34m 1.2s[0m
+[?25h[?25l[6A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [33m⠙[0m Container q-taskboard-backend-1  Starting                                                                                                                                                           [34m 4.3s[0m
+ [32m✔[0m Container q-taskboard-frontend-1 [32mRecreated[0m                                                                                                                                                          [34m 1.2s[0m
+[?25h[?25l[6A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [33m⠹[0m Container q-taskboard-backend-1  Starting                                                                                                                                                           [34m 4.4s[0m
+ [32m✔[0m Container q-taskboard-frontend-1 [32mRecreated[0m                                                                                                                                                          [34m 1.2s[0m
+[?25h[?25l[6A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1  [32mStarted[0m                                                                                                                                                            [34m 4.5s[0m
+ [33m⠙[0m Container q-taskboard-frontend-1 Starting                                                                                                                                                           [34m 1.7s[0m
+[?25h[?25l[6A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1  [32mStarted[0m                                                                                                                                                            [34m 4.5s[0m
+ [33m⠹[0m Container q-taskboard-frontend-1 Starting                                                                                                                                                           [34m 1.8s[0m
+[?25h[?25l[6A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1  [32mStarted[0m                                                                                                                                                            [34m 4.5s[0m
+ [33m⠸[0m Container q-taskboard-frontend-1 Starting                                                                                                                                                           [34m 1.9s[0m
+[?25h[?25l[6A[0G[+] up 4/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                                                                                                                                                              [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1  [32mStarted[0m                                                                                                                                                            [34m 4.5s[0m
+ [33m⠼[0m Container q-taskboard-frontend-1 Starting                                                                                                                                                           [34m 2.0s[0m
+[?25h[?25l[6A[0G[+] up 5/5
+ [32m✔[0m Image q-taskboard-backend        [32mBuilt[0m                                                                                                                                                              [34m28.2s[0m
+ [32m✔[0m Image q-taskboard-frontend       [32mBuilt[0m                             [36m[Kbackend-1 has been recreated
+[0m[36m[Kbackend-1 exited with code 0
+[0m[36mbackend-1  | [0mWatching for file changes with StatReloader
+                                                                                                                                 [34m27.8s[0m
+ [32m✔[0m Container q-taskboard-db-1       [32mRunning[0m                                                                                                                                                            [34m 0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1  [32mStarted[0m                                                                                                                                                            [34m 4.5s[0m
+ [32m✔[0m Container q-taskboard-frontend-1 [32mStarted[0m                                                                                                                                                            [34m 2.0s[0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose exec backend python manage.py migrate[27m[52D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27mm[27ma[27mn[27ma[27mg[27me[27m.[27mp[27my[27m [27mm[27mi[27mg[27mr[27ma[27mt[27me[?2004l
+[36;1mOperations to perform:[0m
+[1m  Apply all migrations: [0mauth, contenttypes, projects, users
+[36;1mRunning migrations:[0m
+  No migrations to apply.
+[31m  Your models in app(s): 'projects' have changes that are not yet reflected in a migration, and so won't be applied.[0m
+[31m  Run 'manage.py makemigrations' to make new migrations, and then re-run 'manage.py migrate' to apply them.[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose exec backend python manage.py seed[27m[49D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27mm[27ma[27mn[27ma[27mg[27me[27m.[27mp[27my[27m [27ms[27me[27me[27md[?2004l
+seeding...
+[32;1mseed complete.[0m
+login with any of these (password: password123):
+  meera@taskboard.dev   — admin on Q3 Launch, Internal Tools
+  arjun@taskboard.dev   — admin on Onboarding, member on Q3 Launch
+  kavya@example.com     — member on Q3 Launch
+  dev@example.com       — viewer on Q3 Launch
+  lina@example.com      — member on Onboarding
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose exec backend python -m pytest[27m[44D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mm[27m [27mp[27my[27mt[27me[27ms[27mt[?2004l
+[1m=========================================================================================== test session starts ============================================================================================[0m
+platform linux -- Python 3.12.14, pytest-8.4.2, pluggy-1.6.0
+django: version: 5.2.17, settings: taskboard.settings (from ini)
+rootdir: /app
+configfile: pytest.ini
+plugins: django-4.14.0
+[1mcollecting ... [0m[1mcollected 15 items                                                                                                                                                                                         [0m
+
+projects/tests.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m                                                                                                                                                                            [ 46%][0m
+users/tests.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m                                                                                                                                                                              [100%][0m
+
+[33m============================================================================================= warnings summary =============================================================================================[0m
+projects/tests.py::TestProjects::test_create_project
+projects/tests.py::TestProjects::test_list_only_returns_member_projects
+projects/tests.py::TestProjects::test_get_project_detail
+projects/tests.py::TestProjects::test_non_member_cannot_view_project
+projects/tests.py::TestTasks::test_create_task
+projects/tests.py::TestTasks::test_viewers_cannot_create_tasks
+projects/tests.py::TestTasks::test_delete_task_requires_membership
+users/tests.py::TestRegister::test_creates_user_and_returns_token
+users/tests.py::TestLogin::test_returns_token_on_valid_credentials
+  /usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+    return self._jws.encode(
+
+projects/tests.py::TestProjects::test_create_project
+projects/tests.py::TestProjects::test_list_only_returns_member_projects
+projects/tests.py::TestProjects::test_get_project_detail
+projects/tests.py::TestProjects::test_non_member_cannot_view_project
+projects/tests.py::TestTasks::test_create_task
+projects/tests.py::TestTasks::test_viewers_cannot_create_tasks
+projects/tests.py::TestTasks::test_delete_task_requires_membership
+  /usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+    decoded = self.decode_complete(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[33m===================================================================================== [32m15 passed[0m, [33m[1m16 warnings[0m[33m in 9.69s[0m[33m ======================================================================================[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose exec frontend npm test[27m[37D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mf[27mr[27mo[27mn[27mt[27me[27mn[27md[27m [27mn[27mp[27mm[27m [27mt[27me[27ms[27mt[?2004l
+
+> taskboard-frontend@1.0.0 test
+> vitest run
+
+[1G[0K[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+[1m[7m[36m RUN [39m[27m[22m [36mv2.1.9 [39m[90m/app[39m
+
+(node:53) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///app/postcss.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /app/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[?25l [32m✓[39m [2msrc/tests/[22mschemas[2m.test.ts[22m[2m (6)[22m
+[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[2K[1A[2K[G [32m✓[39m [2msrc/tests/[22mschemas[2m.test.ts[22m[2m (6)[22m
+ [90m·[39m [2msrc/tests/[22mTaskCard[2m.test.tsx[22m[2m (3)[22m
+[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[?25l[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/tests/[22mschemas[2m.test.ts[22m[2m (6)[22m
+ [32m✓[39m [2msrc/tests/[22mTaskCard[2m.test.tsx[22m[2m (3)[22m[33m 455[2mms[22m[39m
+[?25l[?25l[?25l[2K[1A[2K[1A[2K[G [32m✓[39m [2msrc/tests/[22mTaskCard[2m.test.tsx[22m[2m (3)[22m[33m 455[2mms[22m[39m
+ [32m✓[39m [2msrc/tests/[22mschemas[2m.test.ts[22m[2m (6)[22m
+
+[2m Test Files [22m [1m[32m2 passed[39m[22m[90m (2)[39m
+[2m      Tests [22m [1m[32m9 passed[39m[22m[90m (9)[39m
+[2m   Start at [22m 19:39:06
+[2m   Duration [22m 6.76s[2m (transform 637ms, setup 449ms, collect 1.14s, tests 463ms, environment 2.57s, prepare 419ms)[22m
+
+[?25h[?25h[1G[0K\[1G[0K[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-composelogs backend--tai[27m
+[7ml=30[27m[K[A[39C[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27ml[27mo[27mg[27ms[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m-[27m-[27mt[27ma[27mi[1B[27ml[27m=[27m3[27m0[?2004l
+zsh: command not found: docker-composelogs
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-composelogs backend--tai
+l=30[K[A[74Cl=30[1B[K[A[74C[1C =30=30 [?2004l[1Bzsh: command not found: docker-composelogs
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-composelogs backend--tail=30 --tail=30[9D[?2004l
+zsh: command not found: docker-composelogs
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-composelogs backend --tail=30[1C logs backend --tail=30[22D[?2004l
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose restart backend[27m[30D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27mr[27me[27ms[27mt[27ma[27mr[27mt[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[?2004l
+[?25l[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-back[36m[Kbackend-1 exited with code 0 (restarting)
+[0m[36mbackend-1  | [0mWatching for file changes with StatReloader
+end-1 Restarting                                                                                                                                                           [34m3.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.2s[0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-composelogs backend-[27m
+[7mf[27m[K[A[42C[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27ml[27mo[27mg[27ms[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m-[1B[27mf[?2004l
+zsh: command not found: docker-composelogs
+zsh: command not found: f
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-composelogs backend-
+f[K[A[70C[1C[1C[1C[1C[1C[1B[1C[A[70Cf[1B[K[A[70C -f logs backend -f[15D[?2004l[1B[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:46:49] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:46:49] "POST /api/auth/login HTTP/1.1" 401 51
+^Z
+zsh: suspended  docker-compose logs backend -f
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose restart backend[27m
+[K[A[43C[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27mr[27me[27ms[27mt[27ma[27mr[27mt[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[1B[K[?2004l
+[?25l[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                   [36m[Kbackend-1 exited with code 0 (restarting)
+[0m[36mbackend-1  | [0mWatching for file changes with StatReloader
+                                                                                        [34m2.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.9s[0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose logs backend -f[27m[30D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27ml[27mo[27mg[27ms[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27m-[27mf[?2004l
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:46:49] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:51:23] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:51:27] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:51:23] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:51:27] "POST /api/auth/login HTTP/1.1" 401 51
+^Z
+zsh: suspended  docker-compose logs backend -f
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose exec backend python manage.py migrate[27m[52D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27mm[27ma[27mn[27ma[27mg[27me[27m.[27mp[27my[27m [27mm[27mi[27mg[27mr[27ma[27mt[27me[?2004l
+[36;1mOperations to perform:[0m
+[1m  Apply all migrations: [0mauth, contenttypes, projects, users
+[36;1mRunning migrations:[0m
+  No migrations to apply.
+[31m  Your models in app(s): 'projects' have changes that are not yet reflected in a migration, and so won't be applied.[0m
+[31m  Run 'manage.py makemigrations' to make new migrations, and then re-run 'manage.py migrate' to apply them.[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose exec backend python manage.py seed[27m[49D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27mm[27ma[27mn[27ma[27mg[27me[27m.[27mp[27my[27m [27ms[27me[27me[27md[?2004l
+seeding...
+[32;1mseed complete.[0m
+login with any of these (password: password123):
+  meera@taskboard.dev   — admin on Q3 Launch, Internal Tools
+  arjun@taskboard.dev   — admin on Onboarding, member on Q3 Launch
+  kavya@example.com     — member on Q3 Launch
+  dev@example.com       — viewer on Q3 Launch
+  lina@example.com      — member on Onboarding
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose logs backend --tail=30[27m[37D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27ml[27mo[27mg[27ms[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27m-[27m-[27mt[27ma[27mi[27ml[27m=[27m3[27m0[?2004l
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:46:49] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:51:23] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:51:27] "POST /api/auth/login HTTP/1.1" 401 51
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose restart backend[27m[30D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27mr[27me[27ms[27mt[27ma[27mr[27mt[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[?2004l
+[?25l[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.6s[0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose logs backend -f[27m[30D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27ml[27mo[27mg[27ms[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27m-[27mf[?2004l
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:46:49] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:51:23] "POST /api/auth/login HTTP/1.1" 401 51[36m[Kbackend-1 exited with code 0 (restarting)
+[0m[36mbackend-1  | [0mWatching for file changes with StatReloader
+
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:51:27] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:55:01] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:55:01] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:57:55] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:57:55] "POST /api/auth/login HTTP/1.1" 401 51
+^Z
+zsh: suspended  docker-compose logs backend -f
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose exec backend python manage.py migrate[27m[52D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27mm[27ma[27mn[27ma[27mg[27me[27m.[27mp[27my[27m [27mm[27mi[27mg[27mr[27ma[27mt[27me\ [?2004l
+[36;1mOperations to perform:[0m
+[1m  Apply all migrations: [0mauth, contenttypes, projects, users
+[36;1mRunning migrations:[0m
+  No migrations to apply.
+[31m  Your models in app(s): 'projects' have changes that are not yet reflected in a migration, and so won't be applied.[0m
+[31m  Run 'manage.py makemigrations' to make new migrations, and then re-run 'manage.py migrate' to apply them.[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mmanage.py makemigrations[27m[24D[27mm[27ma[27mn[27ma[27mg[27me[27m.[27mp[27my[27m [27mm[27ma[27mk[27me[27mm[27mi[27mg[27mr[27ma[27mt[27mi[27mo[27mn[27ms[?2004l
+zsh: command not found: manage.py
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose exec backend python manage.py seed[27m[49D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27mm[27ma[27mn[27ma[27mg[27me[27m.[27mp[27my[27m [27ms[27me[27me[27md[?2004l
+seeding...
+[32;1mseed complete.[0m
+login with any of these (password: password123):
+  meera@taskboard.dev   — admin on Q3 Launch, Internal Tools
+  arjun@taskboard.dev   — admin on Onboarding, member on Q3 Launch
+  kavya@example.com     — member on Q3 Launch
+  dev@example.com       — viewer on Q3 Launch
+  lina@example.com      — member on Onboarding
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mmakemigrations[27m[14D[27mm[27ma[27mk[27me[27mm[27mi[27mg[27mr[27ma[27mt[27mi[27mo[27mn[27ms[?2004l
+zsh: command not found: makemigrations
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose exec backend python manage.py makemigrations projects[27m[68D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27mm[27ma[27mn[27ma[27mg[27me[27m.[27mp[27my[27m [27mm[27ma[27mk[27me[27mm[27mi[27mg[27mr[27ma[27mt[27mi[27mo[27mn[27ms[27m [27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[?2004l
+[36;1mMigrations for 'projects':[0m
+  [1mprojects/migrations/0002_rename_tasks_project_status_idx_tasks_project_fe19a5_idx.py[0m
+    ~ Rename index tasks_project_status_idx on task to tasks_project_fe19a5_idx
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose exec backend python manage.py migrate[27m[52D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27mm[27ma[27mn[27ma[27mg[27me[27m.[27mp[27my[27m [27mm[27mi[27mg[27mr[27ma[27mt[27me[?2004l
+[36;1mOperations to perform:[0m
+[1m  Apply all migrations: [0mauth, contenttypes, projects, users
+[36;1mRunning migrations:[0m
+  Applying projects.0002_rename_tasks_project_status_idx_tasks_project_fe19a5_idx...[32;1m OK[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose exec backend python manage.py migrateakemigrations projects[68D[45P[15C                                                     [54D[14Ddocker-compose exec backend python manage.py seed[49D[35P[10Cmakemigrations                         [25D[24Ddocker-compose exec backend python manage.py migrate[37Dlogs[9C-f                      [22D[15Drestart backend[15Dlogs backend -f[?2004l
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:46:49] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:51:23] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:51:27] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:55:01] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:57:55] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 20:03:20] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 20:03:20] "POST /api/auth/login HTTP/1.1" 401 51
+^Z
+zsh: suspended  docker-compose logs backend -f
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose restart backend[27m[30D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27mr[27me[27ms[27mt[27ma[27mr[27mt[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[?2004l
+[?25l[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m15.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m15.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m15.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m15.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m15.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m15.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m15.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m15.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m15.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m15.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m16.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m16.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m16.2s[0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose logs backend -f[27m[30D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27ml[27mo[27mg[27ms[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27m-[27mf[?2004l
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarni[36m[Kbackend-1 exited with code 0 (restarting)
+[0m[36mbackend-1  | [0mWatching for file changes with StatReloader
+ng: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:46:49] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:51:23] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:51:27] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:55:01] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:57:55] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 20:03:20] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  return self._jws.encode(
+[36mbackend-1  | [0m[11/Sep/2026 20:06:11] "POST /api/auth/login HTTP/1.1" 200 392
+^Z
+zsh: suspended  docker-compose logs backend -f
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mcurl -s -X POST http://localhost:8000/api/auth/login -H 'Content-Type: application/json' -d '{"email":"meera@taskboard.dev", "password": "password123"}'[27m[152D[27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mX[27m [27mP[27mO[27mS[27mT[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27ma[27mu[27mt[27mh[27m/[27ml[27mo[27mg[27mi[27mn[27m [27m-[27mH[27m [27m'[27mC[27mo[27mn[27mt[27me[27mn[27mt[27m-[27mT[27my[27mp[27me[27m:[27m [27ma[27mp[27mp[27ml[27mi[27mc[27ma[27mt[27mi[27mo[27mn[27m/[27mj[27ms[27mo[27mn[27m'[27m [27m-[27md[27m [27m'[27m{[27m"[27me[27mm[27ma[27mi[27ml[27m"[27m:[27m"[27mm[27me[27me[27mr[27ma[27m@[27mt[27ma[27ms[27mk[27mb[27mo[27ma[27mr[27md[27m.[27md[27me[27mv[27m"[27m,[27m [27m"[27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m"[27m:[27m [27m"[27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m1[27m2[27m3[27m"[27m}[27m'[?2004l
+{"user":{"id":"76ea4de2-5559-4e89-9915-e5a6daad5db4","email":"meera@taskboard.dev","name":"Meera Iyer"},"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzkxNzQ5MTcxLCJpYXQiOjE3ODkxNTcxNzEsImp0aSI6IjllNzZiYTBjZTg4ZjRhODBhMDM1NWE0NTYyOTI4YzE2IiwidXNlcl9pZCI6Ijc2ZWE0ZGUyLTU1NTktNGU4OS05OTE1LWU1YTZkYWFkNWRiNCJ9.c-43p1Ss5IoY-DxQ26BmWrCEvXbD-NSrrAxNPRh9G5A"}[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hcurl -s -X POST http://localhost:8000/api/auth/login -H 'Content-Type: application/json' -d '{"email":"meera@taskboard.dev", "password": "password123"}'[152Ddocker-compose logs backend -f                                                                                                                          [122D[?2004l
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:46:49] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:51:23] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:51:27] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:55:01] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 19:57:55] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 20:03:20] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  return self._jws.encode(
+[36mbackend-1  | [0m[11/Sep/2026 20:06:11] "POST /api/auth/login HTTP/1.1" 200 392
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 20:07:21] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 20:07:21] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 20:08:58] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 20:08:58] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 20:10:10] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 20:10:10] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 20:10:51] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 20:10:51] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0m[11/Sep/2026 20:12:31] "POST /api/auth/login HTTP/1.1" 200 392
+[36mbackend-1  | [0m[11/Sep/2026 20:12:32] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 20:12:31] "POST /api/auth/login HTTP/1.1" 200 392
+[36mbackend-1  | [0m[11/Sep/2026 20:12:32] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 20:13:00] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0mUnauthorized: /api/auth/login
+[36mbackend-1  | [0m[11/Sep/2026 20:13:00] "POST /api/auth/login HTTP/1.1" 401 51
+[36mbackend-1  | [0m[11/Sep/2026 20:14:01] "POST /api/auth/login HTTP/1.1" 200 392
+[36mbackend-1  | [0m[11/Sep/2026 20:14:01] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 20:14:01] "POST /api/auth/login HTTP/1.1" 200 392
+[36mbackend-1  | [0m[11/Sep/2026 20:14:01] "GET /api/projects HTTP/1.1" 200 1023
+Script started on Sat Sep 12 01:45:08 2026
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mTOKEN=$(curl[27m
+[7m-s -[27m[K
+[7m-H 'Content-Type: appl[27m[K
+[7mX POST http://loca[27m[K
+[7mlhost:8000/api/auth/login \[27m[K
+[7mication/json' \[27m[K
+[7m-d '{"emai[27m[K
+[7ml":"meera@taskboard.dev","password":"password123"}' \[27m[K
+[7m| python3[27m[K
+[7m-c "import sys,json;print(json.load(sys.stdin)['token'])")[27m[K
+[7mecho "TOKEN=$TOKEN" [27m[K[10A[23C[27mT[27mO[27mK[27mE[27mN[27m=[27m$[27m([27mc[27mu[27mr[27ml[1B[27m-[27ms[27m [27m-[1B[27m-[27mH[27m [27m'[27mC[27mo[27mn[27mt[27me[27mn[27mt[27m-[27mT[27my[27mp[27me[27m:[27m [27ma[27mp[27mp[27ml[1B[27mX[27m [27mP[27mO[27mS[27mT[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[1B[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27ma[27mu[27mt[27mh[27m/[27ml[27mo[27mg[27mi[27mn[27m [27m\[1B[27mi[27mc[27ma[27mt[27mi[27mo[27mn[27m/[27mj[27ms[27mo[27mn[27m'[27m [27m\[1B[27m-[27md[27m [27m'[27m{[27m"[27me[27mm[27ma[27mi[1B[27ml[27m"[27m:[27m"[27mm[27me[27me[27mr[27ma[27m@[27mt[27ma[27ms[27mk[27mb[27mo[27ma[27mr[27md[27m.[27md[27me[27mv[27m"[27m,[27m"[27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m"[27m:[27m"[27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m1[27m2[27m3[27m"[27m}[27m'[27m [27m\[1B[27m|[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[1B[27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m,[27mj[27ms[27mo[27mn[27m;[27mp[27mr[27mi[27mn[27mt[27m([27mj[27ms[27mo[27mn[27m.[27ml[27mo[27ma[27md[27m([27ms[27my[27ms[27m.[27ms[27mt[27md[27mi[27mn[27m)[27m[[27m'[27mt[27mo[27mk[27me[27mn[27m'[27m][27m)[27m"[27m)[1B[27me[27mc[27mh[27mo[27m [27m"[27mT[27mO[27mK[27mE[27mN[27m=[27m$[27mT[27mO[27mK[27mE[27mN[27m"[K[1C[?2004l
+curl: try 'curl --help' or 'curl --manual' for more information
+zsh: command not found: -s
+zsh: command not found: -H
+zsh: command not found: -c
+TOKEN=
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004heechi o $TOKEN[?2004l
+
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hecho $TOKEN[11DTOKEN=$(curl
+-s -[K
+-H 'Content-Type: appl[K
+X POST http://loca[K
+lhost:8000/api/auth/login \[K
+ication/json' \[K
+-d '{"emai[K
+l":"meera@taskboard.dev","password":"password123"}' \[K
+| python3[K
+-c "import sys,json;print(json.load(sys.stdin)['token'])")[K
+echo "TOKEN=$TOKEN"[K[1C[A[A[A[A[A[A[A[A[A[4C[A[55C[12Dipconfig getifaddr en0[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[10A[65C                  i  [7mTOKEN=$(curl -s -X POST http://localhost:8000/api/auth/login \[1B[27m[7m  -H 'Content-Type: application/json' \[27m[K[1B[7m  -d '{"email":"meera@taskboard.dev","password":"password123"}' \[27m[K[1B[7m  | python3 -c "import sys,json;print(json.load(sys.stdin)['token'])")[27m[K[1B[7mecho "TOKEN=$TOKEN"[27m[K[4A[24C[27mT[27mO[27mK[27mE[27mN[27m=[27m$[27m([27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mX[27m [27mP[27mO[27mS[27mT[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27ma[27mu[27mt[27mh[27m/[27ml[27mo[27mg[27mi[27mn[27m [27m\[1B[27m [27m [27m-[27mH[27m [27m'[27mC[27mo[27mn[27mt[27me[27mn[27mt[27m-[27mT[27my[27mp[27me[27m:[27m [27ma[27mp[27mp[27ml[27mi[27mc[27ma[27mt[27mi[27mo[27mn[27m/[27mj[27ms[27mo[27mn[27m'[27m [27m\[1B[27m [27m [27m-[27md[27m [27m'[27m{[27m"[27me[27mm[27ma[27mi[27ml[27m"[27m:[27m"[27mm[27me[27me[27mr[27ma[27m@[27mt[27ma[27ms[27mk[27mb[27mo[27ma[27mr[27md[27m.[27md[27me[27mv[27m"[27m,[27m"[27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m"[27m:[27m"[27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m1[27m2[27m3[27m"[27m}[27m'[27m [27m\[1B[27m [27m [27m|[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m,[27mj[27ms[27mo[27mn[27m;[27mp[27mr[27mi[27mn[27mt[27m([27mj[27ms[27mo[27mn[27m.[27ml[27mo[27ma[27md[27m([27ms[27my[27ms[27m.[27ms[27mt[27md[27mi[27mn[27m)[27m[[27m'[27mt[27mo[27mk[27me[27mn[27m'[27m][27m)[27m"[27m)[1B[27me[27mc[27mh[27mo[27m [27m"[27mT[27mO[27mK[27mE[27mN[27m=[27m$[27mT[27mO[27mK[27mE[27mN[27m"[?2004l[1BTOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzkxNzQ5ODQzLCJpYXQiOjE3ODkxNTc4NDMsImp0aSI6IjdmNTNkOGQ2Y2I3MDRjY2U4Zjc4Mjc1ZTUwYzZkMzFmIiwidXNlcl9pZCI6Ijc2ZWE0ZGUyLTU1NTktNGU4OS05OTE1LWU1YTZkYWFkNWRiNCJ9.Pxi69cABf_2HkuiLLblXMvgbCqTVHQSrtKP4L3tAJWM
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004heecho & $TOKEB N[?2004l
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzkxNzQ5ODQzLCJpYXQiOjE3ODkxNTc4NDMsImp0aSI6IjdmNTNkOGQ2Y2I3MDRjY2U4Zjc4Mjc1ZTUwYzZkMzFmIiwidXNlcl9pZCI6Ijc2ZWE0ZGUyLTU1NTktNGU4OS05OTE1LWU1YTZkYWFkNWRiNCJ9.Pxi69cABf_2HkuiLLblXMvgbCqTVHQSrtKP4L3tAJWM
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m[11/Sep/2026 20:17:23] "POST /api/auth/login HTTP/1.1" 200 392
+[36mbackend-1  | [0m[11/Sep/2026 20:17:23] "POST /api/auth/login HTTP/1.1" 200 392
+[7mPID=$(curl -s -H "Authorization: Bearer $TOKEN" http://localhost:8000/api/projects \[27m
+[7m  | python3 -c "import sys,json;print(json.load(sys.stdin)['projects'][0]['id'])")[27m[K
+[7mecho "PID=$PID"[27m[K[A[A[28C[27mP[27mI[27mD[27m=[27m$[27m([27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m [27m\[1B[27m [27m [27m|[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m,[27mj[27ms[27mo[27mn[27m;[27mp[27mr[27mi[27mn[27mt[27m([27mj[27ms[27mo[27mn[27m.[27ml[27mo[27ma[27md[27m([27ms[27my[27ms[27m.[27ms[27mt[27md[27mi[27mn[27m)[27m[[27m'[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m'[27m][27m[[27m0[27m][27m[[27m'[27mi[27md[27m'[27m][27m)[27m"[27m)[1B[27me[27mc[27mh[27mo[27m [27m"[27mP[27mI[27mD[27m=[27m$[27mP[27mI[27mD[27m"[?2004l
+[36mbackend-1  | [0m[11/Sep/2026 20:18:09] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 20:18:09] "GET /api/projects HTTP/1.1" 200 1023
+PID=1b557d3e-738d-47f7-9ed2-b616ab2371d9
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004heecho $PID[?2004l
+1b557d3e-738d-47f7-9ed2-b616ab2371d9
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mcurl -s -o /tmp/resp.html -w "HTTP_STATUS:%{http_code}\n" -G "http://localhost:8000/api/projects/$PID/tasks" \[27m
+[7m  --data-urlencode "q=x'" \[27m[K
+[7m  -H "Authorization: Bearer $TOKEN"[27m[K
+[K[36mbackend-1  | [0mInternal Server Error: /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/tasks
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 103, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mpsycopg2.errors.AmbiguousFunction: operator is not unique: unknown % unknown
+[36mbackend-1  | [0mLINE 1: ...738d-47f7-9ed2-b616ab2371d9' AND (title ILIKE '%x'%' OR desc...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0mHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mThe above exception was the direct cause of the following exception:
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+[36mbackend-1  | [0m    response = get_response(request)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+[36mbackend-1  | [0m    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+[36mbackend-1  | [0m    return view_func(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+[36mbackend-1  | [0m    return self.dispatch(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 526, in dispatch
+[36mbackend-1  | [0m    response = self.handle_exception(exc)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 474, in handle_exception
+[36mbackend-1  | [0m    self.raise_uncaught_exception(exc)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 485, in raise_uncaught_exception
+[36mbackend-1  | [0m    raise exc
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 523, in dispatch
+[36mbackend-1  | [0m    response = handler(request, *args, **kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/app/projects/views.py", line 120, in get
+[36mbackend-1  | [0m    cursor.execute(sql)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+[36mbackend-1  | [0m    return super().execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+[36mbackend-1  | [0m    return self._execute_with_wrappers(
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+[36mbackend-1  | [0m    return executor(sql, params, many, context)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+[36mbackend-1  | [0m    with self.db.wrap_database_errors:
+[36mback[36mbackend-1  | [0mInternal Server Error: /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/tasks
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 103, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mpsycopg2.errors.AmbiguousFunction: operator is not unique: unknown % unknown
+[36mbackend-1  | [0mLINE 1: ...738d-47f7-9ed2-b616ab2371d9' AND (title ILIKE '%x'%' OR desc...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0mHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mThe above exception was the direct cause of the following exception:
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+[36mbackend-1  | [0m    response = get_response(request)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+[36mbackend-1  | [0m    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+[36mbackend-1  | [0m    return view_func(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+[36mbackend-1  | [0m    return self.dispatch(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 526, in dispatch
+[36mbackend-1  | [0m    response = self.handle_exception(exc)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 474, in handle_exception
+[36mbackend-1  | [0m    self.raise_uncaught_exception(exc)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 485, in raise_uncaught_exception
+[36mbackend-1  | [0m    raise exc
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 523, in dispatch
+[36mbackend-1  | [0m    response = handler(request, *args, **kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/app/projects/views.py", line 120, in get
+[36mbackend-1  | [0m    cursor.execute(sql)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+[36mbackend-1  | [0m    return super().execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+[36mbackend-1  | [0m    return self._execute_with_wrappers(
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+[36mbackend-1  | [0m    return executor(sql, params, many, context)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+[36mbackend-1  | [0m    with self.db.wrap_database_errors:
+[36mbackend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+[36mbackend-1  | [0m    raise dj_exc_value.with_traceback(traceback) from exc_value
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 103, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mdjango.db.utils.ProgrammingError: operator is not unique: unknown % unknown
+[36mbackend-1  | [0mLINE 1: ...738d-47f7-9ed2-b616ab2371d9' AND (title ILIKE '%x'%' OR desc...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0mHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m[11/Sep/2026 20:20:10] "GET /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/tasks?q=x%27 HTTP/1.1" 500 122086
+end-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+[36mbackend-1  | [0m    raise dj_exc_value.with_traceback(traceback) from exc_value
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 103, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mdjango.db.utils.ProgrammingError: operator is not unique: unknown % unknown
+[36mbackend-1  | [0mLINE 1: ...738d-47f7-9ed2-b616ab2371d9' AND (title ILIKE '%x'%' OR desc...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0mHINT:  Could not choose a best candidate operator. You might need to add explicit type casts.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m[11/Sep/2026 20:20:10] "GET /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/tasks?q=x%27 HTTP/1.1" 500 122086
+[3A[43C[27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mo[27m [27m/[27mt[27mm[27mp[27m/[27mr[27me[27ms[27mp[27m.[27mh[27mt[27mm[27ml[27m [27m-[27mw[27m [27m"[27mH[27mT[27mT[27mP[27m_[27mS[27mT[27mA[27mT[27mU[27mS[27m:[27m%[27m{[27mh[27mt[27mt[27mp[27m_[27mc[27mo[27md[27me[27m}[27m\[27mn[27m"[27m [27m-[27mG[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m/[27m$[27mP[27mI[27mD[27m/[27mt[27ma[27ms[27mk[27ms[27m"[27m [27m\[1B[27m [27m [27m-[27m-[27md[27ma[27mt[27ma[27m-[27mu[27mr[27ml[27me[27mn[27mc[27mo[27md[27me[27m [27m"[27mq[27m=[27mx[27m'[27m"[27m [27m\[1B[27m [27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[1B[K[?2004l
+HTTP_STATUS:500
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hxx'x  [7mgrep -[27m
+[7mA2 '[27m[K
+[7mh1>' /tmp/resp.html[27m[K[A[A[24C[27mg[27mr[27me[27mp[27m [27m-[1B[27mA[27m2[27m [27m'[1B[27mh[27m1[27m>[27m'[27m [27m/[27mt[27mm[27mp[27m/[27mr[27me[27ms[27mp[27m.[27mh[27mt[27mm[27ml[A[4C[1C[1B[1C[A[4Ch1>' /tmp/resp.html[1B[K[A[4C[A[49CA2 'h1>' /tmp/resp.html[1B[K[A[49C[1C[1C[?2004l[1B  <h1>ProgrammingError
+       at /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/tasks</h1>
+  <pre class="exception_value">operator is not unique: unknown % unknown
+LINE 1: ...738d-47f7-9ed2-b616ab2371d9&#x27; AND (title ILIKE &#x27;%x&#x27;%&#x27; OR desc...
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mmkdir -p docs[27m[13D[27mm[27mk[27md[27mi[27mr[27m [27m-[27mp[27m [27md[27mo[27mc[27ms[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mcp /tmp/resp.html docs/sql[27m
+[7mgrep -[27m[K
+[7mA2 '[27m[K
+[7mh1>' /tmp/resp.html[27m[K
+[7m<[27m[K
+[7mi[27m[K
+[7m-proof-before.html[27m[K
+[7m> docs/sql[27m[K
+[7mi[27m[K
+[7m-proof-before.txt[27m[K[9A[26C[27mc[27mp[27m [27m/[27mt[27mm[27mp[27m/[27mr[27me[27ms[27mp[27m.[27mh[27mt[27mm[27ml[27m [27md[27mo[27mc[27ms[27m/[27ms[27mq[27ml[1B[27mg[27mr[27me[27mp[27m [27m-[1B[27mA[27m2[27m [27m'[1B[27mh[27m1[27m>[27m'[27m [27m/[27mt[27mm[27mp[27m/[27mr[27me[27ms[27mp[27m.[27mh[27mt[27mm[27ml[1B[27m<[1B[27mi[1B[27m-[27mp[27mr[27mo[27mo[27mf[27m-[27mb[27me[27mf[27mo[27mr[27me[27m.[27mh[27mt[27mm[27ml[1B[27m>[27m [27md[27mo[27mc[27ms[27m/[27ms[27mq[27ml[1B[27mi[1B[27m-[27mp[27mr[27mo[27mo[27mf[27m-[27mb[27me[27mf[27mo[27mr[27me[27m.[27mt[27mx[27mt[?2004l
+zsh: parse error near `\n'
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hcp /tmp/resp.html docs/sql
+grep -[K
+A2 '[K
+h1>' /tmp/resp.html[K
+<[K
+i[K
+-proof-before.html[K
+> docs/sql[K
+i[K
+-proof-before.txt[K[9A[26C                          [1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[9A[43C[7mcp /tmp/resp.html[27m[17D[27mc[27mp[27m [27m/[27mt[27mm[27mp[27m/[27mr[27me[27ms[27mp[27m.[27mh[27mt[27mm[27ml [7mdocs/sql[1B[27m[7mgrep -[27m[K[1B[7mA2 '[27m[K[1B[7mh1>' /tmp/resp.html[27m[K[1B[7m<[27m[K[1B[7mi[27m[K[1B[7m-proof-before.html[27m[K[6A[43C[27md[27mo[27mc[27ms[27m/[27ms[27mq[27ml[1B[27mg[27mr[27me[27mp[27m [27m-[1B[27mA[27m2[27m [27m'[1B[27mh[27m1[27m>[27m'[27m [27m/[27mt[27mm[27mp[27m/[27mr[27me[27ms[27mp[27m.[27mh[27mt[27mm[27ml[1B[27m<[1B[27mi[1B[27m-[27mp[27mr[27mo[27mo[27mf[27m-[27mb[27me[27mf[27mo[27mr[27me[27m.[27mh[27mt[27mm[27ml                - [K[K[A[1C[K[K[A[1C[K[K[A[19C                h [K[K[A[4C A [K[K[A[6C   g [K[K[A[69C                      c  [7mcp /tmp/resp.html docs/sqli-proof-before.html[27m[45D[27mc[27mp[27m [27m/[27mt[27mm[27mp[27m/[27mr[27me[27ms[27mp[27m.[27mh[27mt[27mm[27ml[27m [27md[27mo[27mc[27ms[27m/[27ms[27mq[27ml[27mi[27m-[27mp[27mr[27mo[27mo[27mf[27m-[27mb[27me[27mf[27mo[27mr[27me[27m.[27mh[27mt[27mm[27ml[?2004l[1B[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mgrep -A2 '<h1>' /tmp/resp.html > docs/sqli-proof-before.txt[27m[59D[27mg[27mr[27me[27mp[27m [27m-[27mA[27m2[27m [27m'[27m<[27mh[27m1[27m>[27m'[27m [27m/[27mt[27mm[27mp[27m/[27mr[27me[27ms[27mp[27m.[27mh[27mt[27mm[27ml[27m [27m>[27m [27md[27mo[27mc[27ms[27m/[27ms[27mq[27ml[27mi[27m-[27mp[27mr[27mo[27mo[27mf[27m-[27mb[27me[27mf[27mo[27mr[27me[27m.[27mt[27mx[27mt[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mOTHER_PID=$(curl -s -H "Authorization: Bearer $TOKEN" http://localhost:8000/api/projects \[27m
+[7m  | python3 -c "import sys,json; d=json.load(sys.stdin)['projects']; print([p['id'] for p in d if p['name']!='Q3 Launch' and p['taskCount']>0][0])")[27m[K
+[7mecho "OTHER_PID=$OTHER_PID"[27m[K[A[A[16C[27mO[27mT[27mH[27mE[27mR[27m_[27mP[27mI[27mD[27m=[27m$[27m([27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m [27m\[1B[27m [27m [27m|[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m,[27mj[27ms[27mo[27mn[27m;[27m [27md[27m=[27mj[27ms[27mo[27mn[27m.[27ml[27mo[27ma[27md[27m([27ms[27my[27ms[27m.[27ms[27mt[27md[27mi[27mn[27m)[27m[[27m'[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m'[27m][27m;[27m [27mp[27mr[27mi[27mn[27mt[27m([27m[[27mp[27m[[27m'[27mi[27md[27m'[27m][27m [27mf[27mo[27mr[27m [27mp[27m [27mi[27mn[27m [27md[27m [27mi[27mf[27m [27mp[27m[[27m'[27mn[27ma[27mm[27me[27m'[27m][27m![27m=[27m'[27mQ[27m3[27m [27mL[27ma[27mu[27mn[27mc[27mh[27m'[27m [27ma[27mn[27md[27m [27mp[27m[[27m'[27mt[27ma[27ms[27mk[27mC[27mo[27mu[27mn[27mt[27m'[27m][27m>[27m0[27m][27m[[27m0[27m][27m)[27m"[27m)[1B[27me[27mc[27mh[27mo[27m [27m"[27mO[27mT[27mH[27mE[27mR[27m_[27mP[27mI[27mD[27m=[27m$[27mO[27mT[27mH[27mE[27mR[27m_[27mP[27mI[27mD[27m"[?2004l
+OTHER_PID=895f5a8e-1771-4ea9-8535-04c1967e6e4b
+[36mbackend-1  | [0m[11/Sep/2026 20:29:38] "GET /api/projects HTTP/1.1" 200 1023
+[36mbackend-1  | [0m[11/Sep/2026 20:29:38] "GET /api/projects HTTP/1.1" 200 1023
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mTASK_ID=$(curl -s -H "Authorization: Bearer $TOKEN" "http://localhost:8000/api/projects/$OTHER_PID/tasks" \[27m
+[7m  | python3 -c "import sys,json;print(json.load(sys.stdin)['tasks'][0]['id'])")[27m[K
+[7mecho "TASK_ID=$TASK_ID"[27m[K[A[A[20C[27mT[27mA[27mS[27mK[27m_[27mI[27mD[27m=[27m$[27m([27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m/[27m$[27mO[27mT[27mH[27mE[27mR[27m_[27mP[27mI[27mD[27m/[27mt[27ma[27ms[27mk[27ms[27m"[27m [27m\[1B[27m [27m [27m|[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m,[27mj[27ms[27mo[27mn[27m;[27mp[27mr[27mi[27mn[27mt[27m([27mj[27ms[27mo[27mn[27m.[27ml[27mo[27ma[27md[27m([27ms[27my[27ms[27m.[27ms[27mt[27md[27mi[27mn[27m)[27m[[27m'[27mt[27ma[27ms[27mk[27ms[27m'[27m][27m[[27m0[27m][27m[[27m'[27mi[27md[27m'[27m][27m)[27m"[27m)[1B[27me[27mc[27mh[27mo[27m [27m"[27mT[27mA[27mS[27mK[27m_[27mI[27mD[27m=[27m$[27mT[27mA[27mS[27mK[27m_[27mI[27mD[27m"[?2004l
+TASK_ID=3af8ba1e-d380-49b9-88d9-f4c28fb95e4a
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m[11/Sep/2026 20:29:56] "GET /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/tasks HTTP/1.1" 200 2680
+[36mbackend-1  | [0m[11/Sep/2026 20:29:56] "GET /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/tasks HTTP/1.1" 200 2680
+[36mbackend-1  | [0m[11/Sep/2026 20:30:21] "POST /api/auth/login HTTP/1.1" 200 388
+[7mDEV_TOKEN=$(curl -s -X POST http://localhost:8000/api/auth/login \[27m
+[7m  -H 'Content-Type: application/json' \[27m[K
+[7m  -d '{"email":"dev@example.com","password":"password123"}' \[27m[K
+[7m  | python3 -c "import sys,json;print(json.load(sys.stdin)['token'])")[27m[K[3A[27D[27mD[27mE[27mV[27m_[27mT[27mO[27mK[27mE[27mN[27m=[27m$[27m([27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mX[27m [27mP[27mO[27mS[27mT[27m [27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27ma[27mu[27mt[27mh[27m/[27ml[27mo[27mg[27mi[27mn[27m [27m\[1B[27m [27m [27m-[27mH[27m [27m'[27mC[27mo[27mn[27mt[27me[27mn[27mt[27m-[27mT[27my[27mp[27me[27m:[27m [27ma[27mp[27mp[27ml[27mi[27mc[27ma[27mt[27mi[27mo[27mn[27m/[27mj[27ms[27mo[27mn[27m'[27m [27m\[1B[27m [27m [27m-[27md[27m [27m'[27m{[27m"[27me[27mm[27ma[27mi[27ml[27m"[27m:[27m"[27md[27me[27mv[27m@[27me[27mx[27ma[27mm[27mp[27ml[27me[27m.[27mc[27mo[27mm[27m"[27m,[27m"[27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m"[27m:[27m"[27mp[27ma[27ms[27ms[27mw[27mo[27mr[27md[27m1[27m2[27m3[27m"[27m}[27m'[27m [27m\[1B[27m [27m [27m|[27m [27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m,[27mj[27ms[27mo[27mn[27m;[27mp[27mr[27mi[27mn[27mt[27m([27mj[27ms[27mo[27mn[27m.[27ml[27mo[27ma[27md[27m([27ms[27my[27ms[27m.[27ms[27mt[27md[27mi[27mn[27m)[27m[[27m'[27mt[27mo[27mk[27me[27mn[27m'[27m][27m)[27m"[27m)[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m[11/Sep/2026 20:30:21] "POST /api/auth/login HTTP/1.1" 200 388
+[7mcurl -i -X PATCH "http://localhost:8000/api/tasks/$TASK_ID" \[27m
+[7m  -H "Authorization: Bearer $DEV_TOKEN" -H 'Content-Type: application/json' \[27m[K
+[7m  -d '{"title":"hijacked by a non-member"}' \[27m[K
+[7m  | tee docs/access-control-proof-before.txt[27m[K[3A[27mc[27mu[27mr[27ml[27m [27m-[27mi[27m [27m-[27mX[27m [27mP[27mA[27mT[27mC[27mH[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mt[27ma[27ms[27mk[27ms[27m/[27m$[27mT[27mA[27mS[27mK[27m_[27mI[27mD[27m"[27m [27m\[1B[27m [27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mD[27mE[27mV[27m_[27mT[27mO[27mK[27mE[27mN[27m"[27m [27m-[27mH[27m [27m'[27mC[27mo[27mn[27mt[27me[27mn[27mt[27m-[27mT[27my[27mp[27me[27m:[27m [27ma[27mp[27mp[27ml[27mi[27mc[27ma[27mt[27mi[27mo[27mn[27m/[27mj[27ms[27mo[27mn[27m'[27m [27m\[1B[27m [27m [27m-[27md[27m [27m'[27m{[27m"[27mt[27mi[27mt[27ml[27me[27m"[27m:[27m"[27mh[27mi[27mj[27ma[27mc[27mk[27me[27md[27m [27mb[27my[27m [27ma[27m [27mn[27mo[27mn[27m-[27mm[27me[27mm[27mb[27me[27mr[27m"[27m}[27m'[27m [27m\[1B[27m [27m [27m|[27m [27mt[27me[27me[27m [27md[27mo[27mc[27ms[27m/[27ma[27mc[27mc[27me[27ms[27ms[27m-[27mc[27mo[27mn[27mt[27mr[27mo[27ml[27m-[27mp[27mr[27mo[27mo[27mf[27m-[27mb[27me[27mf[27mo[27mr[27me[27m.[27mt[27mx[27mt                                        [K[K[A[45C                                      [K[K[A[77C                                                                    [K[K[A[104C                                                      c  [7mcurl -i -X PATCH "http://localhost:8000/api/tasks/$TASK_ID" \[1B[27m[7m  -H "Authorization: Bearer $DEV_TOKEN" -H 'Content-Type: application/json' \[27m[K[1B[7m  -d '{"title":"hijacked by a non-member"}' \[27m[K[1B[7m  | tee docs/access-control-proof-before.txt[27m[K[3A[27mc[27mu[27mr[27ml[27m [27m-[27mi[27m [27m-[27mX[27m [27mP[27mA[27mT[27mC[27mH[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mt[27ma[27ms[27mk[27ms[27m/[27m$[27mT[27mA[27mS[27mK[27m_[27mI[27mD[27m"[27m [27m\[1B[27m [27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mD[27mE[27mV[27m_[27mT[27mO[27mK[27mE[27mN[27m"[27m [27m-[27mH[27m [27m'[27mC[27mo[27mn[27mt[27me[27mn[27mt[27m-[27mT[27my[27mp[27me[27m:[27m [27ma[27mp[27mp[27ml[27mi[27mc[27ma[27mt[27mi[27mo[27mn[27m/[27mj[27ms[27mo[27mn[27m'[27m [27m\[1B[27m [27m [27m-[27md[27m [27m'[27m{[27m"[27mt[27mi[27mt[27ml[27me[27m"[27m:[27m"[27mh[27mi[27mj[27ma[27mc[27mk[27me[27md[27m [27mb[27my[27m [27ma[27m [27mn[27mo[27mn[27m-[27mm[27me[27mm[27mb[27me[27mr[27m"[27m}[27m'[27m [27m\[1B[27m [27m [27m|[27m [27mt[27me[27me[27m [27md[27mo[27mc[27ms[27m/[27ma[27mc[27mc[27me[27ms[27ms[27m-[27mc[27mo[27mn[27mt[27mr[27mo[27ml[27m-[27mp[27mr[27mo[27mo[27mf[27m-[27mb[27me[27mf[27mo[27mr[27me[27m.[27mt[27mx[27mt[?2004l
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   564  100   528  100    36    949     64 --:--:-- --:--:-- --:--:--  1014
+HTTP/1.1 200 OK
+Date: Fri, 11 Sep 2026 20:34:03 GMT
+Server: WSGIServer/0.2 CPython/3.12.14
+Content-Type: application/json
+Vary: Accept, origin
+Allow: PATCH, DELETE, OPTIONS
+Content-Length: 528
+
+{"task":{"id":"3af8ba1e-d380-49b9-88d9-f4c28fb95e4a","project_id":"895f5a8e-1771-4ea9-8535-04c1967e6e4b","title":"hijacked by a non-member","description":"Detail for: Map current onboarding funnel","status":"done","assignee_id":"9b452ae3-edbf-4af8-b78d-4067ab0eccac","created_by_id":"9b452ae3-edbf-4af8-b78d-4067ab0eccac","position":0,"created_at":"2026-09-11T20:00:30.063353Z","updated_at":"2026-09-11T20:34:03.640311Z","assignee":{"id":"9b452ae3-edbf-4af8-b78d-4067ab0eccac","email":"arjun@taskboard.dev","name":"Arjun Rao"}}}[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m[11/Sep/2026 20:34:03] "PATCH /api/tasks/3af8ba1e-d380-49b9-88d9-f4c28fb95e4a HTTP/1.1" 200 528
+[36mbackend-1  | [0m[11/Sep/2026 20:34:03] "PATCH /api/tasks/3af8ba1e-d380-49b9-88d9-f4c28fb95e4a HTTP/1.1" 200 528
+[36mbackend-1  | [0m/app/projects/views.py changed, reloading.
+[36mbackend-1  | [0mPerforming system checks...
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mSystem check identified no issues (0 silenced).
+[36mbackend-1  | [0mSeptember 11, 2026 - 20:05:42
+[36mbackend-1  | [0mDjango version 5.2.17, using settings 'taskboard.settings'
+[36mbackend-1  | [0mStarting development server at http://0.0.0.0:8000/
+[36mbackend-1  | [0mQuit the server with CONTROL-C.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mWARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+[36mbackend-1  | [0mFor more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[36mbackend-1  | [0m/app/projects/views.py changed, reloading.
+[36mbackend-1  | [0mPerforming system checks...
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mSystem check identified no issues (0 silenced).
+[36mbackend-1  | [0mSeptember 11, 2026 - 20:05:42
+[36mbackend-1  | [0mDjango version 5.2.17, using settings 'taskboard.settings'
+[36mbackend-1  | [0mStarting development server at http://0.0.0.0:8000/
+[36mbackend-1  | [0mQuit the server with CONTROL-C.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mWARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+[36mbackend-1  | [0mFor more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[7mdocker-compose exec backend python -m pytest[27m
+[7mdocker-compose restart backend[27m[K
+[K
+[7mcurl -s -o /tmp/resp2.html -w "HTTP_STATUS:%{http_code}\n" -G "http://localhost:8000/api/projects/$PID/tasks" \[27m[K
+[7m  --data-urlencode "q=x'" \[27m[K
+[7m  -H "Authorization: Bearer $TOKEN"[27m[K
+[7mcp /tmp/resp2.html docs/sqli-proof-after.txt[27m[K
+[7m# Expected: HTTP_STATUS:200 and {"tasks":[]}, no crash[27m[K
+[K
+[7mgit add -A && git commit -m "fix: parameterize task search to eliminate SQL injection"[27m[K[9A[43D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mm[27m [27mp[27my[27mt[27me[27ms[27mt[1B[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27mr[27me[27ms[27mt[27ma[27mr[27mt[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[2B[27mc[27mu[27mr[27ml[27m [27m-[27ms[27m [27m-[27mo[27m [27m/[27mt[27mm[27mp[27m/[27mr[27me[27ms[27mp[27m2[27m.[27mh[27mt[27mm[27ml[27m [27m-[27mw[27m [27m"[27mH[27mT[27mT[27mP[27m_[27mS[27mT[27mA[27mT[27mU[27mS[27m:[27m%[27m{[27mh[27mt[27mt[27mp[27m_[27mc[27mo[27md[27me[27m}[27m\[27mn[27m"[27m [27m-[27mG[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m/[27m$[27mP[27mI[27mD[27m/[27mt[27ma[27ms[27mk[27ms[27m"[27m [27m\[1B[27m [27m [27m-[27m-[27md[27ma[27mt[27ma[27m-[27mu[27mr[27ml[27me[27mn[27mc[27mo[27md[27me[27m [27m"[27mq[27m=[27mx[27m'[27m"[27m [27m\[1B[27m [27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[1B[27mc[27mp[27m [27m/[27mt[27mm[27mp[27m/[27mr[27me[27ms[27mp[27m2[27m.[27mh[27mt[27mm[27ml[27m [27md[27mo[27mc[27ms[27m/[27ms[27mq[27ml[27mi[27m-[27mp[27mr[27mo[27mo[27mf[27m-[27ma[27mf[27mt[27me[27mr[27m.[27mt[27mx[27mt[1B[27m#[27m [27mE[27mx[27mp[27me[27mc[27mt[27me[27md[27m:[27m [27mH[27mT[27mT[27mP[27m_[27mS[27mT[27mA[27mT[27mU[27mS[27m:[27m2[27m0[27m0[27m [27ma[27mn[27md[27m [27m{[27m"[27mt[27ma[27ms[27mk[27ms[27m"[27m:[27m[[27m][27m}[27m,[27m [27mn[27mo[27m [27mc[27mr[27ma[27ms[27mh[2B[27mg[27mi[27mt[27m [27ma[27md[27md[27m [27m-[27mA[27m [27m&[27m&[27m [27mg[27mi[27mt[27m [27mc[27mo[27mm[27mm[27mi[27mt[27m [27m-[27mm[27m [27m"[27mf[27mi[27mx[27m:[27m [27mp[27ma[27mr[27ma[27mm[27me[27mt[27me[27mr[27mi[27mz[27me[27m [27mt[27ma[27ms[27mk[27m [27ms[27me[27ma[27mr[27mc[27mh[27m [27mt[27mo[27m [27me[27ml[27mi[27mm[27mi[27mn[27ma[27mt[27me[27m [27mS[27mQ[27mL[27m [27mi[27mn[27mj[27me[27mc[27mt[27mi[27mo[27mn[27m"[?2004l
+[1m=========================================================================================== test session starts ============================================================================================[0m
+platform linux -- Python 3.12.14, pytest-8.4.2, pluggy-1.6.0
+django: version: 5.2.17, settings: taskboard.settings (from ini)
+rootdir: /app
+configfile: pytest.ini
+plugins: django-4.14.0
+[1mcollecting ... [0m[1mcollected 16 items                                                                                                                                                                                         [0m
+
+projects/tests.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m                                                                                                                                                                           [ 50%][0m
+users/tests.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m                                                                                                                                                                              [100%][0m
+
+[33m============================================================================================= warnings summary =============================================================================================[0m
+projects/tests.py: 8 warnings
+users/tests.py: 2 warnings
+  /usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+    return self._jws.encode(
+
+projects/tests.py::TestProjects::test_create_project
+projects/tests.py::TestProjects::test_list_only_returns_member_projects
+projects/tests.py::TestProjects::test_get_project_detail
+projects/tests.py::TestProjects::test_non_member_cannot_view_project
+projects/tests.py::TestTasks::test_create_task
+projects/tests.py::TestTasks::test_search_query_cannot_break_sql
+projects/tests.py::TestTasks::test_viewers_cannot_create_tasks
+projects/tests.py::TestTasks::test_delete_task_requires_membership
+  /usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+    decoded = self.decode_complete(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[33m===================================================================================== [32m16 passed[0m, [33m[1m18 warnings[0m[33m in 19.93s[0m[33m =====================================================================================[0m
+[?25l[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 R
