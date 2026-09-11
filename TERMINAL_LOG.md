@@ -14708,3 +14708,185 @@ plugins: django-4.14.0
 
 projects/tests.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[36m[Kbackend-1 exited with code 0 (restarting)
 [0m[36mbackend-1  | [0mWatching for file changes with StatReloader
+[32m.[0m[32m.[0m[32m.[0m[33m                                                                                                                                                                          [ 52%][0m
+users/tests.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m                                                                                                                                                                              [100%][0m
+
+[33m============================================================================================= warnings summary =============================================================================================[0m
+projects/tests.py: 9 warnings
+users/tests.py: 2 warnings
+  /usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+    return self._jws.encode(
+
+projects/tests.py::TestProjects::test_create_project
+projects/tests.py::TestProjects::test_list_only_returns_member_projects
+projects/tests.py::TestProjects::test_get_project_detail
+projects/tests.py::TestProjects::test_non_member_cannot_view_project
+projects/tests.py::TestTasks::test_create_task
+projects/tests.py::TestTasks::test_search_query_cannot_break_sql
+projects/tests.py::TestTasks::test_viewers_cannot_create_tasks
+projects/tests.py::TestTasks::test_delete_task_requires_membership
+projects/tests.py::TestTasks::test_member_can_comment_viewer_cannot
+  /usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+    decoded = self.decode_complete(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[33m===================================================================================== [32m17 passed[0m, [33m[1m20 warnings[0m[33m in 15.57s[0m[33m =====================================================================================[0m
+zsh: command not found: #
+{"comment":{"id":"6a210cca-e8dd-4e19-bda0-049363a543a7","task_id":"3af8ba1e-d380-49b9-88d9-f4c28fb95e4a","author":{"id":"76ea4de2-5559-4e89-9915-e5a6daad5db4","email":"meera@taskboard.dev","name":"Meera Iyer"},"body":"Looks good, shipping this.","created_at":"2026-09-11T21:53:19.649450Z"}}{"comments":[{"id":"6a210cca-e8dd-4e19-bda0-049363a543a7","task_id":"3af8ba1e-d380-49b9-88d9-f4c28fb95e4a","author":{"id":"76ea4de2-5559-4e89-9915-e5a6daad5db4","email":"meera@taskboard.dev","name":"Meera Iyer"},"body":"Looks good, shipping this.","created_at":"2026-09-11T21:53:19.649450Z"}]}HTTP/1.1 403 Forbidden
+[1mDate[0m: Fri, 11 Sep 2026 21:53:20 GMT
+[1mServer[0m: WSGIServer/0.2 CPython/3.12.14
+[1mContent-Type[0m: application/json
+[1mVary[0m: Accept, origin
+[1mAllow[0m: GET, POST, HEAD, OPTIONS
+[1mContent-Length[0m: 21
+
+{"error":"forbidden"}zsh: number expected
+[master dbafaa3] feat: append-only task comments with membership-based authorization
+ Committer: Pawan Goel <pawangoel@Pawans-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 7 files changed, 278 insertions(+), 5 deletions(-)
+ create mode 100644 backend/projects/migrations/0004_comment.py
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0m[11/Sep/2026 21:53:19] "POST /api/tasks/3af8ba1e-d380-49b9-88d9-f4c28fb95e4a/comments HTTP/1.1" 201 290
+[36mbackend-1  | [0m[11/Sep/2026 21:53:20] "GET /api/tasks/3af8ba1e-d380-49b9-88d9-f4c28fb95e4a/comments HTTP/1.1" 200 293
+[36mbackend-1  | [0mForbidden: /api/tasks/3af8ba1e-d380-49b9-88d9-f4c28fb95e4a/comments
+[36mbackend-1  | [0m[11/Sep/2026 21:53:20] "POST /api/tasks/3af8ba1e-d380-49b9-88d9-f4c28fb95e4a/comments HTTP/1.1" 403 21
+/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0m[11/Sep/2026 21:53:19] "POST /api/tasks/3af8ba1e-d380-49b9-88d9-f4c28fb95e4a/comments HTTP/1.1" 201 290
+[36mbackend-1  | [0m[11/Sep/2026 21:53:20] "GET /api/tasks/3af8ba1e-d380-49b9-88d9-f4c28fb95e4a/comments HTTP/1.1" 200 293
+[36mbackend-1  | [0mForbidden: /api/tasks/3af8ba1e-d380-49b9-88d9-f4c28fb95e4a/comments
+[36mbackend-1  | [0m[11/Sep/2026 21:53:20] "POST /api/tasks/3af8ba1e-d380-49b9-88d9-f4c28fb95e4a/comments HTTP/1.1" 403 21
+[7mdocker-compose exec backend python -m pytest | tee -a TERMINAL_LOG.md[27m
+[7mdocker-compose exec frontend npm test | tee -a TERMINAL_LOG.md[27m[K
+[K
+[7mgit log --oneline   # sanity check: real incremental commits, nothing squashed[27m[K
+[K
+[7mexit   # ends the `script` session — TERMINAL_LOG.md is now complete[27m[K
+[K
+[7mgit add -A && git commit -m "docs: add REVIEW.md and finalize terminal log"[27m[K
+[7mgit push[27m[K============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-8.4.2, pluggy-1.6.0
+django: version: 5.2.17, settings: taskboard.settings (from ini)
+rootdir: /app
+configfile: pytest.ini
+plugins: django-4.14.0
+collected 17 items
+
+projects/tests.py .........                                              [ 52%]
+users/tests.py ........                                                  [100%]
+
+=============================== warnings summary ===============================
+projects/tests.py: 9 warnings
+users/tests.py: 2 warnings
+  /usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+    return self._jws.encode(
+
+projects/tests.py::TestProjects::test_create_project
+projects/tests.py::TestProjects::test_list_only_returns_member_projects
+projects/tests.py::TestProjects::test_get_project_detail
+projects/tests.py::TestProjects::test_non_member_cannot_view_project
+projects/tests.py::TestTasks::test_create_task
+projects/tests.py::TestTasks::test_search_query_cannot_break_sql
+projects/tests.py::TestTasks::test_viewers_cannot_create_tasks
+projects/tests.py::TestTasks::test_delete_task_requires_membership
+projects/tests.py::TestTasks::test_member_can_comment_viewer_cannot
+  /usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+    decoded = self.decode_complete(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 17 passed, 20 warnings in 8.30s ========================
+
+> taskboard-frontend@1.0.0 test
+> vitest run
+
+[8A[35C[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mm[27m [27mp[27my[27mt[27me[27ms[27mt[27m [27m|[27m [27mt[27me[27me[27m [27m-[27ma[27m [27mT[27mE[27mR[27mM[27mI[27mN[27mA[27mL[27m_[27mL[27mO[27mG[27m.[27mm[27md[1B[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mf[27mr[27mo[27mn[27mt[27me[27mn[27md[27m [27mn[27mp[27mm[27m [27mt[27me[27ms[27mt[27m [27m|[27m [27mt[27me[27me[27m [27m-[27ma[27m [27mT[27mE[27mR[27mM[27mI[27mN[27mA[27mL[27m_[27mL[27mO[27mG[27m.[27mm[27md[2B[27mg[27mi[27mt[27m [27ml[27mo[27mg[27m [27m-[27m-[27mo[27mn[27me[27ml[27mi[27mn[27me[27m [27m [27m [27m#[27m [27ms[27ma[27mn[27mi[27mt[27my[27m [27mc[27mh[27me[27mc[27mk[27m:[27m [27mr[27me[27ma[27ml[27m [27mi[27mn[27mc[27mr[27me[27mm[27me[27mn[27mt[27ma[27ml[27m [27mc[27mo[27mm[27mm[27mi[27mt[27ms[27m,[27m [27mn[27mo[27mt[27mh[27mi[27mn[27mg[27m [27ms[27mq[27mu[27ma[27ms[27mh[27me[27md[2B[27me[27mx[27mi[27mt[27m [27m [27m [27m#[27m [27me[27mn[27md[27ms[27m [27mt[27mh[27me[27m [27m`[27ms[27mc[27mr[27mi[27mp[27mt[27m`[27m [27ms[27me[27ms[27ms[27mi[27mo[27mn[27m [27m—[27m [27mT[27mE[27mR[27mM[27mI[27mN[27mA[27mL[27m_[27mL[27mO[27mG[27m.[27mm[27md[27m [27mi[27ms[27m [27mn[27mo[27mw[27m [27mc[27mo[27mm[27mp[27ml[27me[27mt[27me[2B[27mg[27mi[27mt[27m [27ma[27md[27md[27m [27m-[27mA[27m [27m&[27m&[27m [27mg[27mi[27mt[27m [27mc[27mo[27mm[27mm[27mi[27mt[27m [27m-[27mm[27m [27m"[27md[27mo[27mc[27ms[27m:[27m [27ma[27md[27md[27m [27mR[27mE[27mV[27mI[27mE[27mW[27m.[27mm[27md[27m [27ma[27mn[27md[27m [27mf[27mi[27mn[27ma[27ml[27mi[27mz[27me[27m [27mt[27me[27mr[27mm[27mi[27mn[27ma[27ml[27m [27ml[27mo[27mg[27m"[1B[27mg[27mi[27mt[27m [27mp[27mu[27ms[27mh[?2004l
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-8.4.2, pluggy-1.6.0
+django: version: 5.2.17, settings: taskboard.settings (from ini)
+rootdir: /app
+configfile: pytest.ini
+plugins: django-4.14.0
+collected 17 items
+
+projects/tests.py .........                                              [ 52%]
+users/tests.py ........                                                  [100%]
+
+=============================== warnings summary ===============================
+projects/tests.py: 9 warnings
+users/tests.py: 2 warnings
+  /usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+    return self._jws.encode(
+
+projects/tests.py::TestProjects::test_create_project
+projects/tests.py::TestProjects::test_list_only_returns_member_projects
+projects/tests.py::TestProjects::test_get_project_detail
+projects/tests.py::TestProjects::test_non_member_cannot_view_project
+projects/tests.py::TestTasks::test_create_task
+projects/tests.py::TestTasks::test_search_query_cannot_break_sql
+projects/tests.py::TestTasks::test_viewers_cannot_create_tasks
+projects/tests.py::TestTasks::test_delete_task_requires_membership
+projects/tests.py::TestTasks::test_member_can_comment_viewer_cannot
+  /usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+    decoded = self.decode_complete(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================= 17 passed, 20 warnings in 8.30s ========================
+
+> taskboard-frontend@1.0.0 test
+> vitest run
+
+[33mThe C
+ RUN  v2.1.9 /app
+
+ ✓ src/tests/schemas.test.ts (6 tests) 5ms
+ ✓ src/tests/TaskCard.test.tsx (3 tests) 127ms
+
+ Test Files  2 passed (2)
+      Tests  9 passed (9)
+   Start at  21:58:22
+   Duration  4.21s (transform 301ms, setup 598ms, collect 585ms, tests 132ms, environment 1.66s, prepare 841ms)
+
+JS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+ RUN  v2.1.9 /app
+
+(node:146) [MODULE_TYPELESS_PACKAGE_JSON] Warning: Module type of file:///app/postcss.config.js is not specified and it doesn't parse as CommonJS.
+Reparsing as ES module because module syntax was detected. This incurs a performance overhead.
+To eliminate this warning, add "type": "module" to /app/package.json.
+(Use `node --trace-warnings ...` to show where the warning was created)
+ ✓ src/tests/schemas.test.ts (6 tests) 5ms
+ ✓ src/tests/TaskCard.test.tsx (3 tests) 127ms
+
+ Test Files  2 passed (2)
+      Tests  9 passed (9)
+   Start at  21:58:22
+   Duration  4.21s (transform 301ms, setup 598ms, collect 585ms, tests 132ms, environment 1.66s, prepare 841ms)
+
+fatal: ambiguous argument '#': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+^Z
+zsh: suspended  docker-compose logs backend -f
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mgit log --oneline   # sanity check: real incremental commits, nothing squashed[27m
+[K
+[7mexit   # ends the `script` session — TERMINAL_LOG.md is now complete[27m[K
+[K
+[7mgit add -A && git commit -m "docs: add REVIEW.md and finalize terminal log"[27m[K
+[7mgit push[27m[K[5A[35C[27mg[27mi[27mt[27m [27ml[27mo[27mg[27m [27m-[27m-[27mo[27mn[27me[27ml[27mi[27mn[27me[27m [27m [27m [27m#[27m [27ms[27ma[27mn[27mi[27mt[27my[27m [27mc[27mh[27me[27mc[27mk[27m:[27m [27mr[27me[27ma[27ml[27m [27mi[27mn[27mc[27mr[27me[27mm[27me[27mn[27mt[27ma[27ml[27m [27mc[27mo[27mm[27mm[27mi[27mt[27ms[27m,[27m [27mn[27mo[27mt[27mh[27mi[27mn[27mg[27m [27ms[27mq[27mu[27ma[27ms[27mh[27me[27md[2B[27me[27mx[27mi[27mt[27m [27m [27m [27m#[27m [27me[27mn[27md[27ms[27m [27mt[27mh[27me[27m [27m`[27ms[27mc[27mr[27mi[27mp[27mt[27m`[27m [27ms[27me[27ms[27ms[27mi[27mo[27mn[27m [27m—[27m [27mT[27mE[27mR[27mM[27mI[27mN[27mA[27mL[27m_[27mL[27mO[27mG[27m.[27mm[27md[27m [27mi[27ms[27m [27mn[27mo[27mw[27m [27mc[27mo[27mm[27mp[27ml[27me[27mt[27me[2B[27mg[27mi[27mt[27m [27ma[27md[27md[27m [27m-[27mA[27m [27m&[27m&[27m [27mg[27mi[27mt[27m [27mc[27mo[27mm[27mm[27mi[27mt[27m [27m-[27mm[27m [27m"[27md[27mo[27mc[27ms[27m:[27m [27ma[27md[27md[27m [27mR[27mE[27mV[27mI[27mE[27mW[27m.[27mm[27md[27m [27ma[27mn[27md[27m [27mf[27mi[27mn[27ma[27ml[27mi[27mz[27me[27m [27mt[27me[27mr[27mm[27mi[27mn[27ma[27ml[27m [27ml[27mo[27mg[27m"[1B[27mg[27mi[27mt[27m [27mp[27mu[27ms[27mh[?2004l
+fatal: ambiguous argument '#': unknown revision or path not in the working tree.
+Use '--' to separate paths from revisions, like this:
+'git <command> [<revision>...] -- [<file>...]'
+[36mbackend-1  | [0m[11/Sep/2026 22:00:57] "GET /api/projects HTTP/1.1" 200 1023
