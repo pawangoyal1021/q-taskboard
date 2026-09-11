@@ -14890,3 +14890,26 @@ fatal: ambiguous argument '#': unknown revision or path not in the working tree.
 Use '--' to separate paths from revisions, like this:
 'git <command> [<revision>...] -- [<file>...]'
 [36mbackend-1  | [0m[11/Sep/2026 22:00:57] "GET /api/projects HTTP/1.1" 200 1023
+exit: too many arguments
+[master 8a9bc50] docs: add REVIEW.md and finalize terminal log
+ Committer: Pawan Goel <pawangoel@Pawans-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 3 files changed, 263 insertions(+)
+ create mode 100644 REVIEW.md
+ create mode 100644 typescript
+Enumerating objects: 54, done.
+Counting objects:   1% (1/54)Counting objects:   3% (2/54)Counting objects:   5% (3/54)Counting objects:   7% (4/54)Counting objects:   9% (5/54)Counting objects:  11% (6/54)Counting objects:  12% (7/54)Counting objects:  14% (8/54)Counting objects:  16% (9/54)Counting objects:  18% (10/54)Counting objects:  20% (11/54)Counting objects:  22% (12/54)Counting objects:  24% (13/54)Counting objects:  25% (14/54)Counting objects:  27% (15/54)Counting objects:  29% (16/54)Counting objects:  31% (17/54)Counting objects:  33% (18/54)Counting objects:  35% (19/54)Counting objects:  37% (20/54)Counting objects:  38% (21/54)Counting objects:  40% (22/54)Counting objects:  42% (23/54)Counting objects:  44% (24/54)Counting objects:  46% (25/54)Counting objects:  48% (26/54)Counting objects:  50% (27/54)Counting objects:  51% (28/54)Counting objects:  53% (29/54)Counting objects:  55% (30/54)Counting objects:  57% (31/54)Counting objects:  59% (32/54)Counting objects:  61% (33/54)Counting objects:  62% (34/54)Counting objects:  64% (35/54)Counting objects:  66% (36/54)Counting objects:  68% (37/54)Counting objects:  70% (38/54)Counting objects:  72% (39/54)Counting objects:  74% (40/54)Counting objects:  75% (41/54)Counting objects:  77% (42/54)Counting objects:  79% (43/54)Counting objects:  81% (44/54)Counting objects:  83% (45/54)Counting objects:  85% (46/54)Counting objects:  87% (47/54)Counting objects:  88% (48/54)Counting objects:  90% (49/54)Counting objects:  92% (50/54)Counting objects:  94% (51/54)Counting objects:  96% (52/54)Counting objects:  98% (53/54)Counting objects: 100% (54/54)Counting objects: 100% (54/54), done.
+Delta compression using up to 8 threads
+Compressing objects:   2% (1/44)Compressing objects:   4% (2/44)Compressing objects:   6% (3/44)Compressing objects:   9% (4/44)Compressing objects:  11% (5/44)Compressing objects:  13% (6/44)Compressing objects:  15% (7/44)Compressing objects:  18% (8/44)Compressing objects:  20% (9/44)Compressing objects:  22% (10/44)Compressing objects:  25% (11/44)Compressing objects:  27% (12/44)Compressing objects:  29% (13/44)Compressing objects:  31% (14/44)Compressing objects:  34% (15/44)Compressing objects:  36% (16/44)Compressing objects:  38% (17/44)Compressing objects:  40% (18/44)Compressing objects:  43% (19/44)Compressing objects:  45% (20/44)Compressing objects:  47% (21/44)Compressing objects:  50% (22/44)Compressing objects:  52% (23/44)Compressing objects:  54% (24/44)Compressing objects:  56% (25/44)Compressing objects:  59% (26/44)Compressing objects:  61% (27/44)Compressing objects:  63% (28/44)Compressing objects:  65% (29/44)Compressing objects:  68% (30/44)Compressing objects:  70% (31/44)Compressing objects:  72% (32/44)Compressing objects:  75% (33/44)Compressing objects:  77% (34/44)Compressing objects:  79% (35/44)Compressing objects:  81% (36/44)Compressing objects:  84% (37/44)Compressing objects:  86% (38/44)Compressing objects:  88% (39/44)Compressing objects:  90% (40/44)Compressing objects:  93% (41/44)Compressing objects:  95% (42/44)Compressing objects:  97% (43/44)Compressing objects: 100% (44/44)Compressing objects: 100% (44/44), done.
+Writing objects:   2% (1/44)Writing objects:   4% (2/44)Writing objects:   6% (3/44)Writi
