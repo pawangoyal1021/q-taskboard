@@ -14535,4 +14535,176 @@ curl -X POST "http://localhost:8000/api/projects/895f5a8e-1771-4ea9-8535-04c1967
   -H "Authorization: Bearer $TOKEN"[K[?2004l
 {"exported":5,"failed":[]}[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m[11/Sep/2026 21:32:21] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 26
 [7m# save both screenshots into docs/airtable-run1.png and docs/airtable-run2.png[27m
-[7mgit add -A && git commit -m "feat: real Airtable export with idempotent upsert and retry handling"[27m[K[A[55D[27m#[27m [27ms[27ma[27mv[27me[27m [27mb[27mo[27mt[27mh[27m [27ms[27mc[27mr[27me[27me[27mn[27ms[27mh[27mo[27mt[27ms[27m [27mi[27mn[27mt[27mo[27m [27md[27mo[27mc[27ms[27m/[27ma[27mi[27mr[27mt[27ma[27mb[27ml[27me[27m-[27mr[27mu[27mn[27m1[27m.[27mp[27mn[27mg[27m [27ma[27mn[27md[27m [27md[27mo[27mc[27ms[27m/[27ma[27mi[27mr[27mt[27ma[27mb[27ml[27me[27m-[27mr[27mu[27mn[27m2[27m.[27mp[27mn[27mg[1B[27mg[27mi[27mt[27m [27ma[27md[27md[27m [27m-[27mA[27m [27m&[27m&[27m [27mg[27mi[27mt[27m [27mc[27mo[27mm[27mm[27mi[27mt[27m [27m-[27mm[27m [27m"[27mf[27me[27ma[27mt[27m:[27m [27mr[27me[27ma[27ml[27m [27mA[27mi[27mr[27mt[27ma[27mb[27ml[27me[27m [27me[27mx[27mp[27mo[27mr[27mt[27m [27mw[27mi[27mt[27mh[27m [27mi[27md[27me[27mm[27mp[27mo[27mt[27me[27mn[27mt[27m [27mu[27mp[27ms[27me[27mr[27mt[27m [27ma[27mn[27md[27m [27mr[27me[27mt[27mr[27my[27m [27mh[27ma[27mn[27md[27ml[27mi[27mn[27mg[27m"[A[23C[1B[23D[A[23C[78Dcurl -X POST "http://localhost:8000/api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export" \[1B  -H "Authorization: Bearer $TOKEN"                                                               [63D[A[103C[1B[103D[A[103C[1B[103D[A[103C[1B[103D[A[103C[95Ddocker-compose up -d --force-recreate backend                                                  [1B[K[A[88C[45Dcurl -X POST "http://localhost:8000/api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export" \[1B  -H "Authorization: Bearer $TOKEN"[K[A[8Cdocker-compose up -d --force-recreate backend                                                  [1B[K[A[88C                                       d  
+[7mgit add -A && git commit -m "feat: real Airtable export with idempotent upsert and retry handling"[27m[K[A[55D[27m#[27m [27ms[27ma[27mv[27me[27m [27mb[27mo[27mt[27mh[27m [27ms[27mc[27mr[27me[27me[27mn[27ms[27mh[27mo[27mt[27ms[27m [27mi[27mn[27mt[27mo[27m [27md[27mo[27mc[27ms[27m/[27ma[27mi[27mr[27mt[27ma[27mb[27ml[27me[27m-[27mr[27mu[27mn[27m1[27m.[27mp[27mn[27mg[27m [27ma[27mn[27md[27m [27md[27mo[27mc[27ms[27m/[27ma[27mi[27mr[27mt[27ma[27mb[27ml[27me[27m-[27mr[27mu[27mn[27m2[27m.[27mp[27mn[27mg[1B[27mg[27mi[27mt[27m [27ma[27md[27md[27m [27m-[27mA[27m [27m&[27m&[27m [27mg[27mi[27mt[27m [27mc[27mo[27mm[27mm[27mi[27mt[27m [27m-[27mm[27m [27m"[27mf[27me[27ma[27mt[27m:[27m [27mr[27me[27ma[27ml[27m [27mA[27mi[27mr[27mt[27ma[27mb[27ml[27me[27m [27me[27mx[27mp[27mo[27mr[27mt[27m [27mw[27mi[27mt[27mh[27m [27mi[27md[27me[27mm[27mp[27mo[27mt[27me[27mn[27mt[27m [27mu[27mp[27ms[27me[27mr[27mt[27m [27ma[27mn[27md[27m [27mr[27me[27mt[27mr[27my[27m [27mh[27ma[27mn[27md[27ml[27mi[27mn[27mg[27m"[A[23C[1B[23D[A[23C[78Dcurl -X POST "http://localhost:8000/api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export" \[1B  -H "Authorization: Bearer $TOKEN"                                                               [63D[A[103C[1B[103D[A[103C[1B[103D[A[103C[1B[103D[A[103C[95Ddocker-compose up -d --force-recreate backend                                                  [1B[K[A[88C[45Dcurl -X POST "http://localhost:8000/api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export" \[1B  -H "Authorization: Bearer $TOKEN"[K[A[8Cdocker-compose up -d --force-recreate backend                                                  [1B[K[A[88C                                       d  [7mgit add -A && git commit -m "feat: real Airtable export with idempotent upsert and retry handling"[27m[98D[27mg[27mi[27mt[27m [27ma[27md[27md[27m [27m-[27mA[27m [27m&[27m&[27m [27mg[27mi[27mt[27m [27mc[27mo[27mm[27mm[27mi[27mt[27m [27m-[27mm[27m [27m"[27mf[27me[27ma[27mt[27m:[27m [27mr[27me[27ma[27ml[27m [27mA[27mi[27mr[27mt[27ma[27mb[27ml[27me[27m [27me[27mx[27mp[27mo[27mr[27mt[27m [27mw[27mi[27mt[27mh[27m [27mi[27md[27me[27mm[27mp[27mo[27mt[27me[27mn[27mt[27m [27mu[27mp[27ms[27me[27mr[27mt[27m [27ma[27mn[27md[27m [27mr[27me[27mt[27mr[27my[27m [27mh[27ma[27mn[27md[27ml[27mi[27mn[27mg[27m"[?2004l[1B[master ff32245] feat: real Airtable export with idempotent upsert and retry handling
+ Committer: Pawan Goel <pawangoel@Pawans-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 8 files changed, 7253 insertions(+), 3 deletions(-)
+ create mode 100644 backend/projects/airtable_mock.py
+ create mode 100644 backend/projects/migrations/0003_task_airtable_record_id.py
+ create mode 100644 docs/airtable-run1.png
+ create mode 100644 docs/airtable-run2.png
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose exec backend python manage.py makemigrations projects[27m
+[7mdocker-compose exec backend python manage.py migrate[27m[K[A[9D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27mm[27ma[27mn[27ma[27mg[27me[27m.[27mp[27my[27m [27mm[27ma[27mk[27me[27mm[27mi[27mg[27mr[27ma[27mt[27mi[27mo[27mn[27ms[27m [27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[1B[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27mm[27ma[27mn[27ma[27mg[27me[27m.[27mp[27my[27m [27mm[27mi[27mg[27mr[27ma[27mt[27me[?2004l
+No changes detected in app 'projects'
+[36;1mOperations to perform:[0m
+[1m  Apply all migrations: [0mauth, contenttypes, projects, users
+[36;1mRunning migrations:[0m
+  No migrations to apply.
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0mPerforming system checks...
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mSystem check identified no issues (0 silenced).
+[36mbackend-1  | [0mSeptember 11, 2026 - 21:30:32
+[36mbackend-1  | [0mDjango version 5.2.17, using settings 'taskboard.settings'
+[36mbackend-1  | [0mStarting development server at http://0.0.0.0:8000/
+[36mbackend-1  | [0mQuit the server with CONTROL-C.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mWARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+[36mbackend-1  | [0mFor more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[36mbackend-1  | [0m/app/projects/urls.py changed, reloading.
+[36mbackend-1  | [0mPerforming system checks...
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mSystem check identified no issues (0 silenced).
+[36mbackend-1  | [0mSeptember 11, 2026 - 21:30:32
+[36mbackend-1  | [0mDjango version 5.2.17, using settings 'taskboard.settings'
+[36mbackend-1  | [0mStarting development server at http://0.0.0.0:8000/
+[36mbackend-1  | [0mQuit the server with CONTROL-C.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mWARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+[36mbackend-1  | [0mFor more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[36mbackend-1  | [0m/app/projects/urls.py changed, reloading.
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+^Z
+zsh: suspended  docker-compose logs backend -f
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose logs backend -f[15Dup -d --force-recreate backend[30Dlogs backend -f               [15D[15Dup -d --force-recreate backend[30Dlogs backend -f               [15D[15Drestart backend[15Dexec backend python manage.py migrateakemigrations projects[?2004l
+No changes detected in app 'projects'
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose exec backend python manage.py makemigrations projects[53Dlogs[9C-f                                      [38D[15Dup -d --force-recreate backend[30Dlogs backend -f               [15D[15Dup -d --force-recreate backend[30Dlogs backend -f               [15D[15Drestart backend[15Dexec backend python manage.py migrate[?2004l
+[36;1mOperations to perform:[0m
+[1m  Apply all migrations: [0mauth, contenttypes, projects, users
+[36;1mRunning migrations:[0m
+  No migrations to apply.
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose exec backend python manage.py migrateakemigrations projects[53Dlogs[9C-f                                      [38D[15Dup -d --force-recreate backend[30Dlogs backend -f               [15D[15Dup -d --force-recreate backend[30Dlogs backend -f               [15D[15Drestart backend[?2004l
+[?25l[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.6s[0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose restart backend[15Dexec backend python manage.py migrateakemigrations projects[53Dlogs[9C-f                                      [38D[15Dup -d --force-recreate backend[30Dlogs backend -f               [15D[?2004l
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0m[11/Sep/2026 21:30:42] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 26
+[36mbackend-1  | [0m[11/Sep/2026 21:31:07] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 26
+[36mbackend-1  | [0m[11/Sep/2026 21:32:21] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 26
+[36mbackend-1  | [0mPerforming system checks...
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mSystem check identified no issues (0 silenced).
+[36mbackend-1  | [0mSeptember 11, 2026 - 21:30:32
+[36mbackend-1  | [0mDjango version 5.2.17, using settings 'taskboard.settings'
+[36mbackend-1  | [0mStarting development server at http://0.0.0.0:8000/
+[36mbackend-1  | [0mQuit the server with CONTROL-C.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mWARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+[36mbackend-1  | [0mFor more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[36mbackend-1  | [0m/app/projects/urls.py changed, reloading.
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[7mdocker-compose exec backend python -m pytest[27m
+[K
+[7m# live demo for TERMINAL_LOG.md — use $TASK_ID / $TOKEN / $DEV_TOKEN from Phase 2[27m[K
+[7mcurl -X POST "http://localhost:8000/api/tasks/$TASK_ID/comments" -H "Authorization: Bearer $TOKEN" -H 'Content-Type: application/json' -d '{"body":"Looks good, shipping this."}'[27m[K
+[7mcurl "http://localhost:8000/api/tasks/$TASK_ID/comments" -H "Authorization: Bearer $TOKEN"[27m[K
+[7mcurl -i -X POST "http://localhost:8000/api/tasks/$TASK_ID/comments" -H "Authorization: Bearer $DEV_TOKEN" -H 'Content-Type: application/json' -d '{"body":"should fail"}'[27m[K
+[7m# Expect: 403 for the last one (dev is a viewer, not a member)[27m[K
+[K
+[7mgit add -A && git commit -m "feat: append-only task comments with membership-based authorization"[27m[K[8A[54D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mm[27m [27mp[27my[27mt[27me[27ms[27mt[2B[27m#[27m [27ml[27mi[27mv[27me[27m [27md[27me[27mm[27mo[27m [27mf[27mo[27mr[27m [27mT[27mE[27mR[27mM[27mI[27mN[27mA[27mL[27m_[27mL[27mO[27mG[27m.[27mm[27md[27m [27m—[27m [27mu[27ms[27me[27m [27m$[27mT[27mA[27mS[27mK[27m_[27mI[27mD[27m [27m/[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m [27m/[27m [27m$[27mD[27mE[27mV[27m_[27mT[27mO[27mK[27mE[27mN[27m [27mf[27mr[27mo[27mm[27m [27mP[27mh[27ma[27ms[27me[27m [27m2[1B[27mc[27mu[27mr[27ml[27m [27m-[27mX[27m [27mP[27mO[27mS[27mT[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mt[27ma[27ms[27mk[27ms[27m/[27m$[27mT[27mA[27mS[27mK[27m_[27mI[27mD[27m/[27mc[27mo[27mm[27mm[27me[27mn[27mt[27ms[27m"[27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[27m [27m-[27mH[27m [27m'[27mC[27mo[27mn[27mt[27me[27mn[27mt[27m-[27mT[27my[27mp[27me[27m:[27m [27ma[27mp[27mp[27ml[27mi[27mc[27ma[27mt[27mi[27mo[27mn[27m/[27mj[27ms[27mo[27mn[27m'[27m [27m-[27md[27m [27m'[27m{[27m"[27mb[27mo[27md[27my[27m"[27m:[27m"[27mL[27mo[27mo[27mk[27ms[27m [27mg[27mo[27mo[27md[27m,[27m [27ms[27mh[27mi[27mp[27mp[27mi[27mn[27mg[27m [27mt[27mh[27mi[27ms[27m.[27m"[27m}[27m'[1B[27mc[27mu[27mr[27ml[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mt[27ma[27ms[27mk[27ms[27m/[27m$[27mT[27mA[27mS[27mK[27m_[27mI[27mD[27m/[27mc[27mo[27mm[27mm[27me[27mn[27mt[27ms[27m"[27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[1B[27mc[27mu[27mr[27ml[27m [27m-[27mi[27m [27m-[27mX[27m [27mP[27mO[27mS[27mT[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mt[27ma[27ms[27mk[27ms[27m/[27m$[27mT[27mA[27mS[27mK[27m_[27mI[27mD[27m/[27mc[27mo[27mm[27mm[27me[27mn[27mt[27ms[27m"[27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mD[27mE[27mV[27m_[27mT[27mO[27mK[27mE[27mN[27m"[27m [27m-[27mH[27m [27m'[27mC[27mo[27mn[27mt[27me[27mn[27mt[27m-[27mT[27my[27mp[27me[27m:[27m [27ma[27mp[27mp[27ml[27mi[27mc[27ma[27mt[27mi[27mo[27mn[27m/[27mj[27ms[27mo[27mn[27m'[27m [27m-[27md[27m [27m'[27m{[27m"[27mb[27mo[27md[27my[27m"[27m:[27m"[27ms[27mh[27mo[27mu[27ml[27md[27m [27mf[27ma[27mi[27ml[27m"[27m}[27m'[1B[27m#[27m [27mE[27mx[27mp[27me[27mc[27mt[27m:[27m [27m4[27m0[27m3[27m [27mf[27mo[27mr[27m [27mt[27mh[27me[27m [27ml[27ma[27ms[27mt[27m [27mo[27mn[27me[27m [27m([27md[27me[27mv[27m [27mi[27ms[27m [27ma[27m [27mv[27mi[27me[27mw[27me[27mr[27m,[27m [27mn[27mo[27mt[27m [27ma[27m [27mm[27me[27mm[27mb[27me[27mr[27m)[2B[27mg[27mi[27mt[27m [27ma[27md[27md[27m [27m-[27mA[27m [27m&[27m&[27m [27mg[27mi[27mt[27m [27mc[27mo[27mm[27mm[27mi[27mt[27m [27m-[27mm[27m [27m"[27mf[27me[27ma[27mt[27m:[27m [27ma[27mp[27mp[27me[27mn[27md[27m-[27mo[27mn[27ml[27my[27m [27mt[27ma[27ms[27mk[27m [27mc[27mo[27mm[27mm[27me[27mn[27mt[27ms[27m [27mw[27mi[27mt[27mh[27m [27mm[27me[27mm[27mb[27me[27mr[27ms[27mh[27mi[27mp[27m-[27mb[27ma[27ms[27me[27md[27m [27ma[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m"[?2004l
+[1m=========================================================================================== test session starts ============================================================================================[0m
+platform linux -- Python 3.12.14, pytest-8.4.2, pluggy-1.6.0
+django: version: 5.2.17, settings: taskboard.settings (from ini)
+rootdir: /app
+configfile: pytest.ini
+plugins: django-4.14.0
+[1mcollecting ... [0m[1mcollecting 4 items                                                                                                                                                                                         [0m[1mcollected 17 items                                                                                                                                                                                         [0m
+
+projects/tests.py [32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[36m[Kbackend-1 exited with code 0 (restarting)
+[0m[36mbackend-1  | [0mWatching for file changes with StatReloader

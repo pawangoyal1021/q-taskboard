@@ -106,3 +106,19 @@ class TestTasks:
 
         response = client.delete(f'/api/tasks/{task.id}')
         assert response.status_code == 403
+
+    def test_member_can_comment_viewer_cannot(self, client, user):
+        owner = User.objects.create_user(email='owner3@example.com', name='Owner3', password='password123')
+        project = Project.objects.create(name='P', owner=owner)
+        Membership.objects.create(user=owner, project=project, role='admin')
+        Membership.objects.create(user=user, project=project, role='viewer')
+        task = Task.objects.create(project=project, title='X', created_by=owner)
+
+        resp = client.post('/api/auth/login', {'email': 'meera@taskboard.dev', 'password': 'password123'}, format='json')
+        client.credentials(HTTP_AUTHORIZATION=f"Bearer {resp.data['token']}")
+
+        post_resp = client.post(f'/api/tasks/{task.id}/comments', {'body': 'hi'}, format='json')
+        assert post_resp.status_code == 403
+
+        get_resp = client.get(f'/api/tasks/{task.id}/comments')
+        assert get_resp.status_code == 200
