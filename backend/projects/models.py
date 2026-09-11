@@ -42,6 +42,7 @@ class Task(models.Model):
     title = models.CharField(max_length=500)
     description = models.TextField(blank=True, null=True)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='todo')
+    airtable_record_id = models.CharField(max_length=40, null=True, blank=True)
     assignee = models.ForeignKey(
         settings.AUTH_USER_MODEL,
         on_delete=models.SET_NULL,

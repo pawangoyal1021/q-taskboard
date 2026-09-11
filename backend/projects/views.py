@@ -1,3 +1,7 @@
+import os
+import time
+
+from pyairtable import Api
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
@@ -231,5 +235,34 @@ class ExportView(APIView):
         if not _can_edit_tasks(membership.role):
             return Response({'error': 'only admins and members can export'}, status=status.HTTP_403_FORBIDDEN)
 
-        tasks = Task.objects.filter(project_id=project_id).select_related('assignee', 'created_by')
-        return Response({'exported': 0, 'tasks': TaskSerializer(tasks, many=True).data})
+        api = Api(os.environ['AIRTABLE_API_KEY'])
+        table = api.table(os.environ['AIRTABLE_BASE_ID'], os.environ['AIRTABLE_TABLE_NAME'])
+
+        tasks = Task.objects.filter(project_id=project_id).select_related('assignee')
+        exported, failed = 0, []
+
+        for task in tasks:
+            fields = {
+                'Title': task.title,
+                'Status': task.status,
+                'Assignee': task.assignee.name if task.assignee else '',
+            }
+            for attempt in range(3):
+                try:
+                    if task.airtable_record_id:
+                        table.update(task.airtable_record_id, fields)
+                    else:
+                        record = table.create(fields)
+                        task.airtable_record_id = record['id']
+                        task.save(update_fields=['airtable_record_id'])
+                    exported += 1
+                    break
+                except Exception as e:
+                    code = getattr(getattr(e, 'response', None), 'status_code', None)
+                    if code in (429, 500, 502, 503) and attempt < 2:
+                        time.sleep(2 ** attempt)
+                        continue
+                    failed.append({'task_id': str(task.id), 'error': str(e)})
+                    break
+
+        return Response({'exported': exported, 'failed': failed})

@@ -7352,4 +7352,7187 @@ projects/tests.py::TestTasks::test_delete_task_requires_membership
 [?25h[?25l[2A[0G[+] restart 0/1
  [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.9s[0m
 [?25h[?25l[2A[0G[+] restart 0/1
- [33m⠋[0m Container q-taskboard-backend-1 R
+ [33m⠋[0m Container q-taskboard-backend-1 R[36m[Kbackend-1 exited with code 0 (restarting)
+[0m[36m[Kbackend-1 exited with code 0 (restarting)
+[0m[36mbackend-1  | [0mWatching for file changes with StatReloader
+estarting                                                                                                                                                          [34m10.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.7s[0m
+[?25hHTTP_STATUS:000
+cp: /tmp/resp2.html: No such file or directory
+zsh: no matches found: {tasks:[]},
+[master c942be9] fix: parameterize task search to eliminate SQL injection
+ Committer: Pawan Goel <pawangoel@Pawans-MacBook-Air.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 7 files changed, 10456 insertions(+), 13 deletions(-)
+ create mode 100644 TERMINAL_LOG.md
+ create mode 100644 backend/projects/migrations/0002_rename_tasks_project_status_idx_tasks_project_fe19a5_idx.py
+ create mode 100644 docs/access-control-proof-before.txt
+ create mode 100644 docs/sqli-proof-before.html
+ create mode 100644 docs/sqli-proof-before.txt
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0mWatching for file changes with StatReloader
+[7mdocker-compose restart backend[27m[30D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27mr[27me[27ms[27mt[27ma[27mr[27mt[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[?2004l
+[?25l[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m10.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m11.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m12.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m13.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m14.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                          [34m15.0s[0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose restart backend[27m[30D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27mr[27me[27ms[27mt[27ma[27mr[27mt[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[?2004l
+[?25l[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m3.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m4.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m5.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m6.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m7.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 R[36m[Kbackend-1 exited with code 0 (restarting)
+[0m[36mbackend-1  | [0mWatching for file changes with StatReloader
+estarting                                                                                                                                                           [34m8.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m8.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                              [36m[Kbackend-1 exited with code 0 (restarting)
+[0m[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36m[Kbackend-1 exited with code 0 (restarting)
+[0m             [34m9.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m9.9s[0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose exec backend python manage.py makemigrations projects[27m
+[7mdocker-compose exec backend python manage.py migrate[27m[K[A[9D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27mm[27ma[27mn[27ma[27mg[27me[27m.[27mp[27my[27m [27mm[27ma[27mk[27me[27mm[27mi[27mg[27mr[27ma[27mt[27mi[27mo[27mn[27ms[27m [27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[1B[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27me[27mx[27me[27mc[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[27m [27mp[27my[27mt[27mh[27mo[27mn[27m [27mm[27ma[27mn[27ma[27mg[27me[27m.[27mp[27my[27m [27mm[27mi[27mg[27mr[27ma[27mt[27me[?2004l
+No changes detected in app 'projects'
+[36;1mOperations to perform:[0m
+[1m  Apply all migrations: [0mauth, contenttypes, projects, users
+[36;1mRunning migrations:[0m
+  No migrations to apply.
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36m[Kbackend-1 exited with code 0 (restarting)
+[0m[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/app/projects/views.py changed, reloading.
+[36mbackend-1  | [0mPerforming system checks...
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mSystem check identified no issues (0 silenced).
+[36mbackend-1  | [0mSeptember 11, 2026 - 21:02:34
+[36mbackend-1  | [0mDjango version 5.2.17, using settings 'taskboard.settings'
+[36mbackend-1  | [0mStarting development server at http://0.0.0.0:8000/
+[36mbackend-1  | [0mQuit the server with CONTROL-C.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mWARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+[36mbackend-1  | [0mFor more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/app/projects/views.py changed, reloading.
+[36mbackend-1  | [0mPerforming system checks...
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mSystem check identified no issues (0 silenced).
+[36mbackend-1  | [0mSeptember 11, 2026 - 21:02:34
+[36mbackend-1  | [0mDjango version 5.2.17, using settings 'taskboard.settings'
+[36mbackend-1  | [0mStarting development server at http://0.0.0.0:8000/
+[36mbackend-1  | [0mQuit the server with CONTROL-C.
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mWARNING: This is a development server. Do not use it in a production setting. Use a production WSGI or ASGI server instead.
+[36mbackend-1  | [0mFor more information on production servers see: https://docs.djangoproject.com/en/5.2/howto/deployment/
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[7mcurl -X POST "http://localhost:8000/api/projects/$PID/export" -H "Authorization: Bearer $TOKEN"[27m
+[K[A[43C[27mc[27mu[27mr[27ml[27m [27m-[27mX[27m [27mP[27mO[27mS[27mT[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m/[27m$[27mP[27mI[27mD[27m/[27me[27mx[27mp[27mo[27mr[27mt[27m"[27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[1B[K[?2004l
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <title>KeyError
+          at /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export</title>
+  <style>
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font-family: sans-serif; background-color:#fff; color:#000; }
+    body > :where(header, main, footer) { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; }
+    h2 { margin-bottom:.8em; }
+    h3 { margin:1em 0 .5em 0; }
+    h4 { margin:0 0 .5em 0; font-weight: normal; }
+    code, pre { font-size: 100%; white-space: pre-wrap; word-break: break-word; }
+    summary { cursor: pointer; }
+    table { border:1px solid #ccc; border-collapse: collapse; width:100%; background:white; }
+    tbody td, tbody th { vertical-align:top; padding:2px 3px; }
+    thead th {
+      padding:1px 6px 1px 3px; background:#fefefe; text-align:left;
+      font-weight:normal; font-size: 0.6875rem; border:1px solid #ddd;
+    }
+    tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    table.vars { margin:5px 10px 2px 40px; width: auto; }
+    table.vars td, table.req td { font-family:monospace; }
+    table td.code { width:100%; }
+    table td.code pre { overflow:hidden; }
+    table.source th { color:#666; }
+    table.source td { font-family:monospace; white-space:pre; border-bottom:1px solid #eee; }
+    ul.traceback { list-style-type:none; color: #222; }
+    ul.traceback li.cause { word-break: break-word; }
+    ul.traceback li.frame { padding-bottom:1em; color:#4f4f4f; }
+    ul.traceback li.user { background-color:#e0e0e0; color:#000 }
+    div.context { padding:10px 0; overflow:hidden; }
+    div.context ol { padding-left:30px; margin:0 10px; list-style-position: inside; }
+    div.context ol li { font-family:monospace; white-space:pre; color:#777; cursor:pointer; padding-left: 2px; }
+    div.context ol li pre { display:inline; }
+    div.context ol.context-line li { color:#464646; background-color:#dfdfdf; padding: 3px 2px; }
+    div.context ol.context-line li span { position:absolute; right:32px; }
+    .user div.context ol.context-line li { background-color:#bbb; color:#000; }
+    .user div.context ol li { color:#666; }
+    div.commands, summary.commands { margin-left: 40px; }
+    div.commands a, summary.commands { color:#555; text-decoration:none; }
+    .user div.commands a { color: black; }
+    #summary { background: #ffc; }
+    #summary h2 { font-weight: normal; color: #666; }
+    #info { padding: 0; }
+    #info > * { padding:10px 20px; }
+    #explanation { background:#eee; }
+    #template, #template-not-exist { background:#f6f6f6; }
+    #template-not-exist ul { margin: 0 0 10px 20px; }
+    #template-not-exist .postmortem-section { margin-bottom: 3px; }
+    #unicode-hint { background:#eee; }
+    #traceback { background:#eee; }
+    #requestinfo { background:#f6f6f6; padding-left:120px; }
+    #summary table { border:none; background:transparent; }
+    #requestinfo h2, #requestinfo h3 { position:relative; margin-left:-100px; }
+    #requestinfo h3 { margin-bottom:-1em; }
+    .error { background: #ffc; }
+    .specific { color:#cc3300; font-weight:bold; }
+    h2 span.commands { font-size: 0.7rem; font-weight:normal; }
+    span.commands a:link {color:#5E5694;}
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5rem; margin: 10px 0 10px 0; }
+    .append-bottom { margin-bottom: 10px; }
+    .fname { user-select: all; }
+  </style>
+  
+  <script>
+    function hideAll(elems) {
+      for (var e = 0; e < elems.length; e++) {
+        elems[e].style.display = 'none';
+      }
+    }
+    window.onload = function() {
+      hideAll(document.querySelectorAll('ol.pre-context'));
+      hideAll(document.querySelectorAll('ol.post-context'));
+      hideAll(document.querySelectorAll('div.pastebin'));
+    }
+    function toggle() {
+      for (var i = 0; i < arguments.length; i++) {
+        var e = document.getElementById(arguments[i]);
+        if (e) {
+          e.style.display = e.style.display == 'none' ? 'block': 'none';
+        }
+      }
+      return false;
+    }
+    function switchPastebinFriendly(link) {
+      s1 = "Switch to copy-and-paste view";
+      s2 = "Switch back to interactive view";
+      link.textContent = link.textContent.trim() == s1 ? s2: s1;
+      toggle('browserTraceback', 'pastebinTraceback');
+      return false;
+    }
+  </script>
+  
+</head>
+<body>
+<header id="summary">
+  <h1>KeyError
+       at /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export</h1>
+  <pre class="exception_value">&#x27;AIRTABLE_API_KEY&#x27;</pre>
+  <table class="meta">
+
+    <tr>
+      <th scope="row">Request Method:</th>
+      <td>POST</td>
+    </tr>
+    <tr>
+      <th scope="row">Request URL:</th>
+      <td>http://localhost:8000/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Django Version:</th>
+      <td>5.2.17</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Exception Type:</th>
+      <td>KeyError</td>
+    </tr>
+
+
+    <tr>
+      <th scope="row">Exception Value:</th>
+      <td><pre>&#x27;AIRTABLE_API_KEY&#x27;</pre></td>
+    </tr>
+
+
+    <tr>
+      <th scope="row">Exception Location:</th>
+      <td><span class="fname">&lt;frozen os&gt;</span>, line 714, in __getitem__</td>
+    </tr>
+
+
+    <tr>
+      <th scope="row">Raised during:</th>
+      <td>projects.views.ExportView</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Python Executable:</th>
+      <td>/usr/local/bin/python</td>
+    </tr>
+    <tr>
+      <th scope="row">Python Version:</th>
+      <td>3.12.14</td>
+    </tr>
+    <tr>
+      <th scope="row">Python Path:</th>
+      <td><pre><code>[&#x27;/app&#x27;,
+ &#x27;/usr/local/lib/python312.zip&#x27;,
+ &#x27;/usr/local/lib/python3.12&#x27;,
+ &#x27;/usr/local/lib/python3.12/lib-dynload&#x27;,
+ &#x27;/usr/local/lib/python3.12/site-packages&#x27;]</code></pre></td>
+    </tr>
+    <tr>
+      <th scope="row">Server time:</th>
+      <td>Fri, 11 Sep 2026 21:11:18 +0000</td>
+    </tr>
+  </table>
+</header>
+
+<main id="info">
+
+
+
+
+<div id="traceback">
+  <h2>Traceback <span class="commands"><a href="#" role="button" onclick="return switchPastebinFriendly(this);">
+    Switch to copy-and-paste view</a></span>
+  </h2>
+  <div id="browserTraceback">
+    <ul class="traceback">
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py</code>, line 55, in inner
+          
+
+          
+            <div class="context" id="c259558664216832">
+              
+                <ol start="48" class="pre-context" id="pre259558664216832">
+                
+                  <li onclick="toggle('pre259558664216832', 'post259558664216832')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre259558664216832', 'post259558664216832')"><pre>        return inner</pre></li>
+                
+                  <li onclick="toggle('pre259558664216832', 'post259558664216832')"><pre>    else:</pre></li>
+                
+                  <li onclick="toggle('pre259558664216832', 'post259558664216832')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre259558664216832', 'post259558664216832')"><pre>        @wraps(get_response)</pre></li>
+                
+                  <li onclick="toggle('pre259558664216832', 'post259558664216832')"><pre>        def inner(request):</pre></li>
+                
+                  <li onclick="toggle('pre259558664216832', 'post259558664216832')"><pre>            try:</pre></li>
+                
+                </ol>
+              
+              <ol start="55" class="context-line">
+                <li onclick="toggle('pre259558664216832', 'post259558664216832')"><pre>                response = get_response(request)
+                               ^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='56' class="post-context" id="post259558664216832">
+                  
+                  <li onclick="toggle('pre259558664216832', 'post259558664216832')"><pre>            except Exception as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre259558664216832', 'post259558664216832')"><pre>                response = response_for_exception(request, exc)</pre></li>
+                  
+                  <li onclick="toggle('pre259558664216832', 'post259558664216832')"><pre>            return response</pre></li>
+                  
+                  <li onclick="toggle('pre259558664216832', 'post259558664216832')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre259558664216832', 'post259558664216832')"><pre>        return inner</pre></li>
+                  
+                  <li onclick="toggle('pre259558664216832', 'post259558664216832')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v259558664216832">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>KeyError(&#x27;AIRTABLE_API_KEY&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>get_response</td>
+                    <td class="code"><pre>&lt;bound method BaseHandler._get_response of &lt;django.core.handlers.wsgi.WSGIHandler object at 0xec113940da30&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py</code>, line 197, in _get_response
+          
+
+          
+            <div class="context" id="c259558657509440">
+              
+                <ol start="190" class="pre-context" id="pre259558657509440">
+                
+                  <li onclick="toggle('pre259558657509440', 'post259558657509440')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre259558657509440', 'post259558657509440')"><pre>        if response is None:</pre></li>
+                
+                  <li onclick="toggle('pre259558657509440', 'post259558657509440')"><pre>            wrapped_callback = self.make_view_atomic(callback)</pre></li>
+                
+                  <li onclick="toggle('pre259558657509440', 'post259558657509440')"><pre>            # If it is an asynchronous view, run it in a subthread.</pre></li>
+                
+                  <li onclick="toggle('pre259558657509440', 'post259558657509440')"><pre>            if iscoroutinefunction(wrapped_callback):</pre></li>
+                
+                  <li onclick="toggle('pre259558657509440', 'post259558657509440')"><pre>                wrapped_callback = async_to_sync(wrapped_callback)</pre></li>
+                
+                  <li onclick="toggle('pre259558657509440', 'post259558657509440')"><pre>            try:</pre></li>
+                
+                </ol>
+              
+              <ol start="197" class="context-line">
+                <li onclick="toggle('pre259558657509440', 'post259558657509440')"><pre>                response = wrapped_callback(request, *callback_args, **callback_kwargs)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='198' class="post-context" id="post259558657509440">
+                  
+                  <li onclick="toggle('pre259558657509440', 'post259558657509440')"><pre>            except Exception as e:</pre></li>
+                  
+                  <li onclick="toggle('pre259558657509440', 'post259558657509440')"><pre>                response = self.process_exception_by_middleware(e, request)</pre></li>
+                  
+                  <li onclick="toggle('pre259558657509440', 'post259558657509440')"><pre>                if response is None:</pre></li>
+                  
+                  <li onclick="toggle('pre259558657509440', 'post259558657509440')"><pre>                    raise</pre></li>
+                  
+                  <li onclick="toggle('pre259558657509440', 'post259558657509440')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre259558657509440', 'post259558657509440')"><pre>        # Complain if the view returned None (a common error).</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v259558657509440">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>callback</td>
+                    <td class="code"><pre>&lt;function View.as_view.&lt;locals&gt;.view at 0xec1135b793a0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_kwargs</td>
+                    <td class="code"><pre>{&#x27;project_id&#x27;: UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;)}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0xec113940da30&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>wrapped_callback</td>
+                    <td class="code"><pre>&lt;function View.as_view.&lt;locals&gt;.view at 0xec1135b793a0&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py</code>, line 65, in _view_wrapper
+          
+
+          
+            <div class="context" id="c259558657510976">
+              
+                <ol start="58" class="pre-context" id="pre259558657510976">
+                
+                  <li onclick="toggle('pre259558657510976', 'post259558657510976')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre259558657510976', 'post259558657510976')"><pre>        async def _view_wrapper(request, *args, **kwargs):</pre></li>
+                
+                  <li onclick="toggle('pre259558657510976', 'post259558657510976')"><pre>            return await view_func(request, *args, **kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre259558657510976', 'post259558657510976')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre259558657510976', 'post259558657510976')"><pre>    else:</pre></li>
+                
+                  <li onclick="toggle('pre259558657510976', 'post259558657510976')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre259558657510976', 'post259558657510976')"><pre>        def _view_wrapper(request, *args, **kwargs):</pre></li>
+                
+                </ol>
+              
+              <ol start="65" class="context-line">
+                <li onclick="toggle('pre259558657510976', 'post259558657510976')"><pre>            return view_func(request, *args, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='66' class="post-context" id="post259558657510976">
+                  
+                  <li onclick="toggle('pre259558657510976', 'post259558657510976')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre259558657510976', 'post259558657510976')"><pre>    _view_wrapper.csrf_exempt = True</pre></li>
+                  
+                  <li onclick="toggle('pre259558657510976', 'post259558657510976')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre259558657510976', 'post259558657510976')"><pre>    return wraps(view_func)(_view_wrapper)</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v259558657510976">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{&#x27;project_id&#x27;: UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;)}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>view_func</td>
+                    <td class="code"><pre>&lt;function View.as_view.&lt;locals&gt;.view at 0xec1135b79300&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/views/generic/base.py</code>, line 105, in view
+          
+
+          
+            <div class="context" id="c259558662291264">
+              
+                <ol start="98" class="pre-context" id="pre259558662291264">
+                
+                  <li onclick="toggle('pre259558662291264', 'post259558662291264')"><pre>            self = cls(**initkwargs)</pre></li>
+                
+                  <li onclick="toggle('pre259558662291264', 'post259558662291264')"><pre>            self.setup(request, *args, **kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre259558662291264', 'post259558662291264')"><pre>            if not hasattr(self, &quot;request&quot;):</pre></li>
+                
+                  <li onclick="toggle('pre259558662291264', 'post259558662291264')"><pre>                raise AttributeError(</pre></li>
+                
+                  <li onclick="toggle('pre259558662291264', 'post259558662291264')"><pre>                    &quot;%s instance has no &#x27;request&#x27; attribute. Did you override &quot;</pre></li>
+                
+                  <li onclick="toggle('pre259558662291264', 'post259558662291264')"><pre>                    &quot;setup() and forget to call super()?&quot; % cls.__name__</pre></li>
+                
+                  <li onclick="toggle('pre259558662291264', 'post259558662291264')"><pre>                )</pre></li>
+                
+                </ol>
+              
+              <ol start="105" class="context-line">
+                <li onclick="toggle('pre259558662291264', 'post259558662291264')"><pre>            return self.dispatch(request, *args, **kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='106' class="post-context" id="post259558662291264">
+                  
+                  <li onclick="toggle('pre259558662291264', 'post259558662291264')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre259558662291264', 'post259558662291264')"><pre>        view.view_class = cls</pre></li>
+                  
+                  <li onclick="toggle('pre259558662291264', 'post259558662291264')"><pre>        view.view_initkwargs = initkwargs</pre></li>
+                  
+                  <li onclick="toggle('pre259558662291264', 'post259558662291264')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre259558662291264', 'post259558662291264')"><pre>        # __name__ and __qualname__ are intentionally left unchanged as</pre></li>
+                  
+                  <li onclick="toggle('pre259558662291264', 'post259558662291264')"><pre>        # view_class should be used to robustly determine the name of the view</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v259558662291264">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>cls</td>
+                    <td class="code"><pre>&lt;class &#x27;projects.views.ExportView&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>initkwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{&#x27;project_id&#x27;: UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;)}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;projects.views.ExportView object at 0xec11358f23f0&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/rest_framework/views.py</code>, line 526, in dispatch
+          
+
+          
+            <div class="context" id="c259558662278720">
+              
+                <ol start="519" class="pre-context" id="pre259558662278720">
+                
+                  <li onclick="toggle('pre259558662278720', 'post259558662278720')"><pre>                                  self.http_method_not_allowed)</pre></li>
+                
+                  <li onclick="toggle('pre259558662278720', 'post259558662278720')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre259558662278720', 'post259558662278720')"><pre>                handler = self.http_method_not_allowed</pre></li>
+                
+                  <li onclick="toggle('pre259558662278720', 'post259558662278720')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre259558662278720', 'post259558662278720')"><pre>            response = handler(request, *args, **kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre259558662278720', 'post259558662278720')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre259558662278720', 'post259558662278720')"><pre>        except Exception as exc:</pre></li>
+                
+                </ol>
+              
+              <ol start="526" class="context-line">
+                <li onclick="toggle('pre259558662278720', 'post259558662278720')"><pre>            response = self.handle_exception(exc)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='527' class="post-context" id="post259558662278720">
+                  
+                  <li onclick="toggle('pre259558662278720', 'post259558662278720')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre259558662278720', 'post259558662278720')"><pre>        self.response = self.finalize_response(request, response, *args, **kwargs)</pre></li>
+                  
+                  <li onclick="toggle('pre259558662278720', 'post259558662278720')"><pre>        return self.response</pre></li>
+                  
+                  <li onclick="toggle('pre259558662278720', 'post259558662278720')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre259558662278720', 'post259558662278720')"><pre>    def options(self, request, *args, **kwargs):</pre></li>
+                  
+                  <li onclick="toggle('pre259558662278720', 'post259558662278720')"><pre>        &quot;&quot;&quot;</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v259558662278720">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>handler</td>
+                    <td class="code"><pre>&lt;bound method ExportView.post of &lt;projects.views.ExportView object at 0xec11358f23f0&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{&#x27;project_id&#x27;: UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;)}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: POST &#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;projects.views.ExportView object at 0xec11358f23f0&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/rest_framework/views.py</code>, line 474, in handle_exception
+          
+
+          
+            <div class="context" id="c259558662347328">
+              
+                <ol start="467" class="pre-context" id="pre259558662347328">
+                
+                  <li onclick="toggle('pre259558662347328', 'post259558662347328')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre259558662347328', 'post259558662347328')"><pre>        exception_handler = self.get_exception_handler()</pre></li>
+                
+                  <li onclick="toggle('pre259558662347328', 'post259558662347328')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre259558662347328', 'post259558662347328')"><pre>        context = self.get_exception_handler_context()</pre></li>
+                
+                  <li onclick="toggle('pre259558662347328', 'post259558662347328')"><pre>        response = exception_handler(exc, context)</pre></li>
+                
+                  <li onclick="toggle('pre259558662347328', 'post259558662347328')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre259558662347328', 'post259558662347328')"><pre>        if response is None:</pre></li>
+                
+                </ol>
+              
+              <ol start="474" class="context-line">
+                <li onclick="toggle('pre259558662347328', 'post259558662347328')"><pre>            self.raise_uncaught_exception(exc)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='475' class="post-context" id="post259558662347328">
+                  
+                  <li onclick="toggle('pre259558662347328', 'post259558662347328')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre259558662347328', 'post259558662347328')"><pre>        response.exception = True</pre></li>
+                  
+                  <li onclick="toggle('pre259558662347328', 'post259558662347328')"><pre>        return response</pre></li>
+                  
+                  <li onclick="toggle('pre259558662347328', 'post259558662347328')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre259558662347328', 'post259558662347328')"><pre>    def raise_uncaught_exception(self, exc):</pre></li>
+                  
+                  <li onclick="toggle('pre259558662347328', 'post259558662347328')"><pre>        if settings.DEBUG:</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v259558662347328">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>{&#x27;args&#x27;: (),
+ &#x27;kwargs&#x27;: {&#x27;project_id&#x27;: UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;)},
+ &#x27;request&#x27;: &lt;rest_framework.request.Request: POST &#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;&gt;,
+ &#x27;view&#x27;: &lt;projects.views.ExportView object at 0xec11358f23f0&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>KeyError(&#x27;AIRTABLE_API_KEY&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>exception_handler</td>
+                    <td class="code"><pre>&lt;function exception_handler at 0xec1136901c60&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;projects.views.ExportView object at 0xec11358f23f0&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/rest_framework/views.py</code>, line 485, in raise_uncaught_exception
+          
+
+          
+            <div class="context" id="c259558666135936">
+              
+                <ol start="478" class="pre-context" id="pre259558666135936">
+                
+                  <li onclick="toggle('pre259558666135936', 'post259558666135936')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre259558666135936', 'post259558666135936')"><pre>    def raise_uncaught_exception(self, exc):</pre></li>
+                
+                  <li onclick="toggle('pre259558666135936', 'post259558666135936')"><pre>        if settings.DEBUG:</pre></li>
+                
+                  <li onclick="toggle('pre259558666135936', 'post259558666135936')"><pre>            request = self.request</pre></li>
+                
+                  <li onclick="toggle('pre259558666135936', 'post259558666135936')"><pre>            renderer_format = getattr(request.accepted_renderer, &#x27;format&#x27;)</pre></li>
+                
+                  <li onclick="toggle('pre259558666135936', 'post259558666135936')"><pre>            use_plaintext_traceback = renderer_format not in (&#x27;html&#x27;, &#x27;api&#x27;, &#x27;admin&#x27;)</pre></li>
+                
+                  <li onclick="toggle('pre259558666135936', 'post259558666135936')"><pre>            request.force_plaintext_errors(use_plaintext_traceback)</pre></li>
+                
+                </ol>
+              
+              <ol start="485" class="context-line">
+                <li onclick="toggle('pre259558666135936', 'post259558666135936')"><pre>        raise exc
+             ^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='486' class="post-context" id="post259558666135936">
+                  
+                  <li onclick="toggle('pre259558666135936', 'post259558666135936')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre259558666135936', 'post259558666135936')"><pre>    # Note: Views are made CSRF exempt from within `as_view` as to prevent</pre></li>
+                  
+                  <li onclick="toggle('pre259558666135936', 'post259558666135936')"><pre>    # accidental removal of this exemption in cases where `dispatch` needs to</pre></li>
+                  
+                  <li onclick="toggle('pre259558666135936', 'post259558666135936')"><pre>    # be overridden.</pre></li>
+                  
+                  <li onclick="toggle('pre259558666135936', 'post259558666135936')"><pre>    def dispatch(self, request, *args, **kwargs):</pre></li>
+                  
+                  <li onclick="toggle('pre259558666135936', 'post259558666135936')"><pre>        &quot;&quot;&quot;</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v259558666135936">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>KeyError(&#x27;AIRTABLE_API_KEY&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>renderer_format</td>
+                    <td class="code"><pre>&#x27;json&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: POST &#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;projects.views.ExportView object at 0xec11358f23f0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>use_plaintext_traceback</td>
+                    <td class="code"><pre>True</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/rest_framework/views.py</code>, line 523, in dispatch
+          
+
+          
+            <div class="context" id="c259558663002688">
+              
+                <ol start="516" class="pre-context" id="pre259558663002688">
+                
+                  <li onclick="toggle('pre259558663002688', 'post259558663002688')"><pre>            # Get the appropriate handler method</pre></li>
+                
+                  <li onclick="toggle('pre259558663002688', 'post259558663002688')"><pre>            if request.method.lower() in self.http_method_names:</pre></li>
+                
+                  <li onclick="toggle('pre259558663002688', 'post259558663002688')"><pre>                handler = getattr(self, request.method.lower(),</pre></li>
+                
+                  <li onclick="toggle('pre259558663002688', 'post259558663002688')"><pre>                                  self.http_method_not_allowed)</pre></li>
+                
+                  <li onclick="toggle('pre259558663002688', 'post259558663002688')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre259558663002688', 'post259558663002688')"><pre>                handler = self.http_method_not_allowed</pre></li>
+                
+                  <li onclick="toggle('pre259558663002688', 'post259558663002688')"><pre></pre></li>
+                
+                </ol>
+              
+              <ol start="523" class="context-line">
+                <li onclick="toggle('pre259558663002688', 'post259558663002688')"><pre>            response = handler(request, *args, **kwargs)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='524' class="post-context" id="post259558663002688">
+                  
+                  <li onclick="toggle('pre259558663002688', 'post259558663002688')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre259558663002688', 'post259558663002688')"><pre>        except Exception as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre259558663002688', 'post259558663002688')"><pre>            response = self.handle_exception(exc)</pre></li>
+                  
+                  <li onclick="toggle('pre259558663002688', 'post259558663002688')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre259558663002688', 'post259558663002688')"><pre>        self.response = self.finalize_response(request, response, *args, **kwargs)</pre></li>
+                  
+                  <li onclick="toggle('pre259558663002688', 'post259558663002688')"><pre>        return self.response</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v259558663002688">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>handler</td>
+                    <td class="code"><pre>&lt;bound method ExportView.post of &lt;projects.views.ExportView object at 0xec11358f23f0&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{&#x27;project_id&#x27;: UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;)}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: POST &#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;projects.views.ExportView object at 0xec11358f23f0&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/app/projects/views.py</code>, line 238, in post
+          
+
+          
+            <div class="context" id="c259558663006720">
+              
+                <ol start="231" class="pre-context" id="pre259558663006720">
+                
+                  <li onclick="toggle('pre259558663006720', 'post259558663006720')"><pre>    def post(self, request, project_id):</pre></li>
+                
+                  <li onclick="toggle('pre259558663006720', 'post259558663006720')"><pre>        membership = _get_membership(request.user, project_id)</pre></li>
+                
+                  <li onclick="toggle('pre259558663006720', 'post259558663006720')"><pre>        if not membership:</pre></li>
+                
+                  <li onclick="toggle('pre259558663006720', 'post259558663006720')"><pre>            return Response({&#x27;error&#x27;: &#x27;forbidden&#x27;}, status=status.HTTP_403_FORBIDDEN)</pre></li>
+                
+                  <li onclick="toggle('pre259558663006720', 'post259558663006720')"><pre>        if not _can_edit_tasks(membership.role):</pre></li>
+                
+                  <li onclick="toggle('pre259558663006720', 'post259558663006720')"><pre>            return Response({&#x27;error&#x27;: &#x27;only admins and members can export&#x27;}, status=status.HTTP_403_FORBIDDEN)</pre></li>
+                
+                  <li onclick="toggle('pre259558663006720', 'post259558663006720')"><pre></pre></li>
+                
+                </ol>
+              
+              <ol start="238" class="context-line">
+                <li onclick="toggle('pre259558663006720', 'post259558663006720')"><pre>        api = Api(os.environ[&#x27;AIRTABLE_API_KEY&#x27;])
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='239' class="post-context" id="post259558663006720">
+                  
+                  <li onclick="toggle('pre259558663006720', 'post259558663006720')"><pre>        table = api.table(os.environ[&#x27;AIRTABLE_BASE_ID&#x27;], os.environ[&#x27;AIRTABLE_TABLE_NAME&#x27;])</pre></li>
+                  
+                  <li onclick="toggle('pre259558663006720', 'post259558663006720')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre259558663006720', 'post259558663006720')"><pre>        tasks = Task.objects.filter(project_id=project_id).select_related(&#x27;assignee&#x27;)</pre></li>
+                  
+                  <li onclick="toggle('pre259558663006720', 'post259558663006720')"><pre>        exported, failed = 0, []</pre></li>
+                  
+                  <li onclick="toggle('pre259558663006720', 'post259558663006720')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre259558663006720', 'post259558663006720')"><pre>        for task in tasks:</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v259558663006720">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>membership</td>
+                    <td class="code"><pre>&lt;Membership: Membership object (9e8ba391-1521-40ef-aac1-ad4bc337dbda)&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>project_id</td>
+                    <td class="code"><pre>UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: POST &#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;projects.views.ExportView object at 0xec11358f23f0&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">&lt;frozen os&gt;</code>, line 714, in __getitem__
+          
+
+          
+            <div class="context" id="c259558661841152">
+              
+              <ol start="714" class="context-line">
+                <li onclick="toggle('pre259558661841152', 'post259558661841152')"><pre>&lt;source code not available&gt;
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v259558661841152">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>key</td>
+                    <td class="code"><pre>&#x27;AIRTABLE_API_KEY&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>environ({&#x27;PATH&#x27;: &#x27;/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin&#x27;, &#x27;HOSTNAME&#x27;: &#x27;9beee3ccd6cf&#x27;, &#x27;POSTGRES_PASSWORD&#x27;: &#x27;taskboard&#x27;, &#x27;POSTGRES_HOST&#x27;: &#x27;db&#x27;, &#x27;POSTGRES_PORT&#x27;: &#x27;5432&#x27;, &#x27;DJANGO_SECRET_KEY&#x27;: &#x27;dev-secret-change-me&#x27;, &#x27;DEBUG&#x27;: &#x27;true&#x27;, &#x27;POSTGRES_DB&#x27;: &#x27;taskboard&#x27;, &#x27;POSTGRES_USER&#x27;: &#x27;taskboard&#x27;, &#x27;LANG&#x27;: &#x27;C.UTF-8&#x27;, &#x27;GPG_KEY&#x27;: &#x27;7169605F62C751356D054A26A821E680E5FA6305&#x27;, &#x27;PYTHON_VERSION&#x27;: &#x27;3.12.14&#x27;, &#x27;PYTHON_SHA256&#x27;: &#x27;5c8462af5790baf43a321a1559dbe0db06d1be4300fb85fb53c40060668e548a&#x27;, &#x27;HOME&#x27;: &#x27;/root&#x27;, &#x27;DJANGO_SETTINGS_MODULE&#x27;: &#x27;taskboard.settings&#x27;, &#x27;TZ&#x27;: &#x27;UTC&#x27;, &#x27;RUN_MAIN&#x27;: &#x27;true&#x27;})</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+    </ul>
+  </div>
+
+  <form action="https://dpaste.com/" name="pasteform" id="pasteform" method="post">
+  <div id="pastebinTraceback" class="pastebin">
+    <input type="hidden" name="language" value="PythonConsole">
+    <input type="hidden" name="title"
+      value="KeyError at /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export">
+    <input type="hidden" name="source" value="Django Dpaste Agent">
+    <input type="hidden" name="poster" value="Django">
+    <textarea name="content" id="traceback_area" cols="140" rows="25">
+Environment:
+
+
+Request Method: POST
+Request URL: http://localhost:8000/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export
+
+Django Version: 5.2.17
+Python Version: 3.12.14
+Installed Applications:
+[&#x27;django.contrib.contenttypes&#x27;,
+ &#x27;django.contrib.auth&#x27;,
+ &#x27;rest_framework&#x27;,
+ &#x27;corsheaders&#x27;,
+ &#x27;users&#x27;,
+ &#x27;projects&#x27;]
+Installed Middleware:
+[&#x27;corsheaders.middleware.CorsMiddleware&#x27;,
+ &#x27;django.middleware.common.CommonMiddleware&#x27;]
+
+
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 526, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 474, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 485, in raise_uncaught_exception
+    raise exc
+    ^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/projects/views.py", line 238, in post
+    api = Api(os.environ[&#x27;AIRTABLE_API_KEY&#x27;])
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "&lt;frozen os&gt;", line 714, in __getitem__
+    &lt;source code not available&gt;
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Exception Type: KeyError at /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export
+Exception Value: &#x27;AIRTABLE_API_KEY&#x27;
+</textarea>
+  <br><br>
+  <input type="submit" value="Share this traceback on a public website">
+  </div>
+</form>
+
+</div>
+
+
+<div id="requestinfo">
+  <h2>Request information</h2>
+
+
+  
+    <h3 id="user-info">USER</h3>
+    <p>meera@taskboard.dev</p>
+  
+
+  <h3 id="get-info">GET</h3>
+  
+    <p>No GET data</p>
+  
+
+  <h3 id="post-info">POST</h3>
+  
+    <p>No POST data</p>
+  
+
+  <h3 id="files-info">FILES</h3>
+  
+    <p>No FILES data</p>
+  
+
+  <h3 id="cookie-info">COOKIES</h3>
+  
+    <p>No cookie data</p>
+  
+
+  <h3 id="meta-info">META</h3>
+  <table class="req">
+    <thead>
+      <tr>
+        <th scope="col">Variable</th>
+        <th scope="col">Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>CONTENT_LENGTH</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CONTENT_TYPE</td>
+          <td class="code"><pre>&#x27;text/plain&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG</td>
+          <td class="code"><pre>&#x27;true&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DJANGO_SECRET_KEY</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DJANGO_SETTINGS_MODULE</td>
+          <td class="code"><pre>&#x27;taskboard.settings&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GATEWAY_INTERFACE</td>
+          <td class="code"><pre>&#x27;CGI/1.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GPG_KEY</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HOME</td>
+          <td class="code"><pre>&#x27;/root&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HOSTNAME</td>
+          <td class="code"><pre>&#x27;9beee3ccd6cf&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_ACCEPT</td>
+          <td class="code"><pre>&#x27;*/*&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_AUTHORIZATION</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_HOST</td>
+          <td class="code"><pre>&#x27;localhost:8000&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_USER_AGENT</td>
+          <td class="code"><pre>&#x27;curl/8.7.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANG</td>
+          <td class="code"><pre>&#x27;C.UTF-8&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATH</td>
+          <td class="code"><pre>&#x27;/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATH_INFO</td>
+          <td class="code"><pre>&#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>POSTGRES_DB</td>
+          <td class="code"><pre>&#x27;taskboard&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>POSTGRES_HOST</td>
+          <td class="code"><pre>&#x27;db&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>POSTGRES_PASSWORD</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>POSTGRES_PORT</td>
+          <td class="code"><pre>&#x27;5432&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>POSTGRES_USER</td>
+          <td class="code"><pre>&#x27;taskboard&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PYTHON_SHA256</td>
+          <td class="code"><pre>&#x27;5c8462af5790baf43a321a1559dbe0db06d1be4300fb85fb53c40060668e548a&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PYTHON_VERSION</td>
+          <td class="code"><pre>&#x27;3.12.14&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>QUERY_STRING</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REMOTE_ADDR</td>
+          <td class="code"><pre>&#x27;172.18.0.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REMOTE_HOST</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REQUEST_METHOD</td>
+          <td class="code"><pre>&#x27;POST&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>RUN_MAIN</td>
+          <td class="code"><pre>&#x27;true&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SCRIPT_NAME</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_NAME</td>
+          <td class="code"><pre>&#x27;9beee3ccd6cf&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_PORT</td>
+          <td class="code"><pre>&#x27;8000&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_PROTOCOL</td>
+          <td class="code"><pre>&#x27;HTTP/1.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_SOFTWARE</td>
+          <td class="code"><pre>&#x27;WSGIServer/0.2&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TZ</td>
+          <td class="code"><pre>&#x27;UTC&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.errors</td>
+          <td class="code"><pre>&lt;_io.TextIOWrapper name=&#x27;&lt;stderr&gt;&#x27; mode=&#x27;w&#x27; encoding=&#x27;utf-8&#x27;&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.file_wrapper</td>
+          <td class="code"><pre>&lt;class &#x27;wsgiref.util.FileWrapper&#x27;&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.input</td>
+          <td class="code"><pre>&lt;django.core.handlers.wsgi.LimitedStream object at 0xec11359dd990&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.multiprocess</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.multithread</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.run_once</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.url_scheme</td>
+          <td class="code"><pre>&#x27;http&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.version</td>
+          <td class="code"><pre>(1, 0)</pre></td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+  <h3 id="settings-info">Settings</h3>
+  <h4>Using settings module <code>taskboard.settings</code></h4>
+  <table class="req">
+    <thead>
+      <tr>
+        <th scope="col">Setting</th>
+        <th scope="col">Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>ABSOLUTE_URL_OVERRIDES</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ADMINS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ALLOWED_HOSTS</td>
+          <td class="code"><pre>[&#x27;*&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>APPEND_SLASH</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTHENTICATION_BACKENDS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTH_PASSWORD_VALIDATORS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTH_USER_MODEL</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>BASE_DIR</td>
+          <td class="code"><pre>PosixPath(&#x27;/app&#x27;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHES</td>
+          <td class="code"><pre>{&#x27;default&#x27;: {&#x27;BACKEND&#x27;: &#x27;django.core.cache.backends.locmem.LocMemCache&#x27;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_ALIAS</td>
+          <td class="code"><pre>&#x27;default&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_KEY_PREFIX</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_SECONDS</td>
+          <td class="code"><pre>600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CORS_ALLOW_ALL_ORIGINS</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_AGE</td>
+          <td class="code"><pre>31449600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_NAME</td>
+          <td class="code"><pre>&#x27;csrftoken&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_PATH</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_SAMESITE</td>
+          <td class="code"><pre>&#x27;Lax&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_FAILURE_VIEW</td>
+          <td class="code"><pre>&#x27;django.views.csrf.csrf_failure&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_HEADER_NAME</td>
+          <td class="code"><pre>&#x27;HTTP_X_CSRFTOKEN&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_TRUSTED_ORIGINS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_USE_SESSIONS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATABASES</td>
+          <td class="code"><pre>{&#x27;default&#x27;: {&#x27;ATOMIC_REQUESTS&#x27;: False,
+             &#x27;AUTOCOMMIT&#x27;: True,
+             &#x27;CONN_HEALTH_CHECKS&#x27;: False,
+             &#x27;CONN_MAX_AGE&#x27;: 0,
+             &#x27;ENGINE&#x27;: &#x27;django.db.backends.postgresql&#x27;,
+             &#x27;HOST&#x27;: &#x27;db&#x27;,
+             &#x27;NAME&#x27;: &#x27;taskboard&#x27;,
+             &#x27;OPTIONS&#x27;: {},
+             &#x27;PASSWORD&#x27;: &#x27;********************&#x27;,
+             &#x27;PORT&#x27;: &#x27;5432&#x27;,
+             &#x27;TEST&#x27;: {&#x27;CHARSET&#x27;: None,
+                      &#x27;COLLATION&#x27;: None,
+                      &#x27;MIGRATE&#x27;: True,
+                      &#x27;MIRROR&#x27;: None,
+                      &#x27;NAME&#x27;: None},
+             &#x27;TIME_ZONE&#x27;: None,
+             &#x27;USER&#x27;: &#x27;taskboard&#x27;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATABASE_ROUTERS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATA_UPLOAD_MAX_MEMORY_SIZE</td>
+          <td class="code"><pre>2621440</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATA_UPLOAD_MAX_NUMBER_FIELDS</td>
+          <td class="code"><pre>1000</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATA_UPLOAD_MAX_NUMBER_FILES</td>
+          <td class="code"><pre>100</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATETIME_FORMAT</td>
+          <td class="code"><pre>&#x27;N j, Y, P&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATETIME_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#x27;%Y-%m-%d %H:%M:%S&#x27;,
+ &#x27;%Y-%m-%d %H:%M:%S.%f&#x27;,
+ &#x27;%Y-%m-%d %H:%M&#x27;,
+ &#x27;%m/%d/%Y %H:%M:%S&#x27;,
+ &#x27;%m/%d/%Y %H:%M:%S.%f&#x27;,
+ &#x27;%m/%d/%Y %H:%M&#x27;,
+ &#x27;%m/%d/%y %H:%M:%S&#x27;,
+ &#x27;%m/%d/%y %H:%M:%S.%f&#x27;,
+ &#x27;%m/%d/%y %H:%M&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATE_FORMAT</td>
+          <td class="code"><pre>&#x27;N j, Y&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATE_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#x27;%Y-%m-%d&#x27;,
+ &#x27;%m/%d/%Y&#x27;,
+ &#x27;%m/%d/%y&#x27;,
+ &#x27;%b %d %Y&#x27;,
+ &#x27;%b %d, %Y&#x27;,
+ &#x27;%d %b %Y&#x27;,
+ &#x27;%d %b, %Y&#x27;,
+ &#x27;%B %d %Y&#x27;,
+ &#x27;%B %d, %Y&#x27;,
+ &#x27;%d %B %Y&#x27;,
+ &#x27;%d %B, %Y&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG_PROPAGATE_EXCEPTIONS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DECIMAL_SEPARATOR</td>
+          <td class="code"><pre>&#x27;.&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_AUTO_FIELD</td>
+          <td class="code"><pre>&#x27;django.db.models.BigAutoField&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_CHARSET</td>
+          <td class="code"><pre>&#x27;utf-8&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_EXCEPTION_REPORTER</td>
+          <td class="code"><pre>&#x27;django.views.debug.ExceptionReporter&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_EXCEPTION_REPORTER_FILTER</td>
+          <td class="code"><pre>&#x27;django.views.debug.SafeExceptionReporterFilter&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_FROM_EMAIL</td>
+          <td class="code"><pre>&#x27;webmaster@localhost&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_INDEX_TABLESPACE</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_TABLESPACE</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DISALLOWED_USER_AGENTS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_BACKEND</td>
+          <td class="code"><pre>&#x27;django.core.mail.backends.smtp.EmailBackend&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST</td>
+          <td class="code"><pre>&#x27;localhost&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST_PASSWORD</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST_USER</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_PORT</td>
+          <td class="code"><pre>25</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SSL_CERTFILE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SSL_KEYFILE</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SUBJECT_PREFIX</td>
+          <td class="code"><pre>&#x27;[Django] &#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_TIMEOUT</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_LOCALTIME</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_SSL</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_TLS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_DIRECTORY_PERMISSIONS</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_HANDLERS</td>
+          <td class="code"><pre>[&#x27;django.core.files.uploadhandler.MemoryFileUploadHandler&#x27;,
+ &#x27;django.core.files.uploadhandler.TemporaryFileUploadHandler&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_MAX_MEMORY_SIZE</td>
+          <td class="code"><pre>2621440</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_PERMISSIONS</td>
+          <td class="code"><pre>420</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_TEMP_DIR</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FIRST_DAY_OF_WEEK</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FIXTURE_DIRS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORCE_SCRIPT_NAME</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORMAT_MODULE_PATH</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORMS_URLFIELD_ASSUME_HTTPS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORM_RENDERER</td>
+          <td class="code"><pre>&#x27;django.forms.renderers.DjangoTemplates&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>IGNORABLE_404_URLS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>INSTALLED_APPS</td>
+          <td class="code"><pre>[&#x27;django.contrib.contenttypes&#x27;,
+ &#x27;django.contrib.auth&#x27;,
+ &#x27;rest_framework&#x27;,
+ &#x27;corsheaders&#x27;,
+ &#x27;users&#x27;,
+ &#x27;projects&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>INTERNAL_IPS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGES</td>
+          <td class="code"><pre>[(&#x27;af&#x27;, &#x27;Afrikaans&#x27;),
+ (&#x27;ar&#x27;, &#x27;Arabic&#x27;),
+ (&#x27;ar-dz&#x27;, &#x27;Algerian Arabic&#x27;),
+ (&#x27;ast&#x27;, &#x27;Asturian&#x27;),
+ (&#x27;az&#x27;, &#x27;Azerbaijani&#x27;),
+ (&#x27;bg&#x27;, &#x27;Bulgarian&#x27;),
+ (&#x27;be&#x27;, &#x27;Belarusian&#x27;),
+ (&#x27;bn&#x27;, &#x27;Bengali&#x27;),
+ (&#x27;br&#x27;, &#x27;Breton&#x27;),
+ (&#x27;bs&#x27;, &#x27;Bosnian&#x27;),
+ (&#x27;ca&#x27;, &#x27;Catalan&#x27;),
+ (&#x27;ckb&#x27;, &#x27;Central Kurdish (Sorani)&#x27;),
+ (&#x27;cs&#x27;, &#x27;Czech&#x27;),
+ (&#x27;cy&#x27;, &#x27;Welsh&#x27;),
+ (&#x27;da&#x27;, &#x27;Danish&#x27;),
+ (&#x27;de&#x27;, &#x27;German&#x27;),
+ (&#x27;dsb&#x27;, &#x27;Lower Sorbian&#x27;),
+ (&#x27;el&#x27;, &#x27;Greek&#x27;),
+ (&#x27;en&#x27;, &#x27;English&#x27;),
+ (&#x27;en-au&#x27;, &#x27;Australian English&#x27;),
+ (&#x27;en-gb&#x27;, &#x27;British English&#x27;),
+ (&#x27;eo&#x27;, &#x27;Esperanto&#x27;),
+ (&#x27;es&#x27;, &#x27;Spanish&#x27;),
+ (&#x27;es-ar&#x27;, &#x27;Argentinian Spanish&#x27;),
+ (&#x27;es-co&#x27;, &#x27;Colombian Spanish&#x27;),
+ (&#x27;es-mx&#x27;, &#x27;Mexican Spanish&#x27;),
+ (&#x27;es-ni&#x27;, &#x27;Nicaraguan Spanish&#x27;),
+ (&#x27;es-ve&#x27;, &#x27;Venezuelan Spanish&#x27;),
+ (&#x27;et&#x27;, &#x27;Estonian&#x27;),
+ (&#x27;eu&#x27;, &#x27;Basque&#x27;),
+ (&#x27;fa&#x27;, &#x27;Persian&#x27;),
+ (&#x27;fi&#x27;, &#x27;Finnish&#x27;),
+ (&#x27;fr&#x27;, &#x27;French&#x27;),
+ (&#x27;fy&#x27;, &#x27;Frisian&#x27;),
+ (&#x27;ga&#x27;, &#x27;Irish&#x27;),
+ (&#x27;gd&#x27;, &#x27;Scottish Gaelic&#x27;),
+ (&#x27;gl&#x27;, &#x27;Galician&#x27;),
+ (&#x27;he&#x27;, &#x27;Hebrew&#x27;),
+ (&#x27;hi&#x27;, &#x27;Hindi&#x27;),
+ (&#x27;hr&#x27;, &#x27;Croatian&#x27;),
+ (&#x27;hsb&#x27;, &#x27;Upper Sorbian&#x27;),
+ (&#x27;hu&#x27;, &#x27;Hungarian&#x27;),
+ (&#x27;hy&#x27;, &#x27;Armenian&#x27;),
+ (&#x27;ia&#x27;, &#x27;Interlingua&#x27;),
+ (&#x27;id&#x27;, &#x27;Indonesian&#x27;),
+ (&#x27;ig&#x27;, &#x27;Igbo&#x27;),
+ (&#x27;io&#x27;, &#x27;Ido&#x27;),
+ (&#x27;is&#x27;, &#x27;Icelandic&#x27;),
+ (&#x27;it&#x27;, &#x27;Italian&#x27;),
+ (&#x27;ja&#x27;, &#x27;Japanese&#x27;),
+ (&#x27;ka&#x27;, &#x27;Georgian&#x27;),
+ (&#x27;kab&#x27;, &#x27;Kabyle&#x27;),
+ (&#x27;kk&#x27;, &#x27;Kazakh&#x27;),
+ (&#x27;km&#x27;, &#x27;Khmer&#x27;),
+ (&#x27;kn&#x27;, &#x27;Kannada&#x27;),
+ (&#x27;ko&#x27;, &#x27;Korean&#x27;),
+ (&#x27;ky&#x27;, &#x27;Kyrgyz&#x27;),
+ (&#x27;lb&#x27;, &#x27;Luxembourgish&#x27;),
+ (&#x27;lt&#x27;, &#x27;Lithuanian&#x27;),
+ (&#x27;lv&#x27;, &#x27;Latvian&#x27;),
+ (&#x27;mk&#x27;, &#x27;Macedonian&#x27;),
+ (&#x27;ml&#x27;, &#x27;Malayalam&#x27;),
+ (&#x27;mn&#x27;, &#x27;Mongolian&#x27;),
+ (&#x27;mr&#x27;, &#x27;Marathi&#x27;),
+ (&#x27;ms&#x27;, &#x27;Malay&#x27;),
+ (&#x27;my&#x27;, &#x27;Burmese&#x27;),
+ (&#x27;nb&#x27;, &#x27;Norwegian Bokmål&#x27;),
+ (&#x27;ne&#x27;, &#x27;Nepali&#x27;),
+ (&#x27;nl&#x27;, &#x27;Dutch&#x27;),
+ (&#x27;nn&#x27;, &#x27;Norwegian Nynorsk&#x27;),
+ (&#x27;os&#x27;, &#x27;Ossetic&#x27;),
+ (&#x27;pa&#x27;, &#x27;Punjabi&#x27;),
+ (&#x27;pl&#x27;, &#x27;Polish&#x27;),
+ (&#x27;pt&#x27;, &#x27;Portuguese&#x27;),
+ (&#x27;pt-br&#x27;, &#x27;Brazilian Portuguese&#x27;),
+ (&#x27;ro&#x27;, &#x27;Romanian&#x27;),
+ (&#x27;ru&#x27;, &#x27;Russian&#x27;),
+ (&#x27;sk&#x27;, &#x27;Slovak&#x27;),
+ (&#x27;sl&#x27;, &#x27;Slovenian&#x27;),
+ (&#x27;sq&#x27;, &#x27;Albanian&#x27;),
+ (&#x27;sr&#x27;, &#x27;Serbian&#x27;),
+ (&#x27;sr-latn&#x27;, &#x27;Serbian Latin&#x27;),
+ (&#x27;sv&#x27;, &#x27;Swedish&#x27;),
+ (&#x27;sw&#x27;, &#x27;Swahili&#x27;),
+ (&#x27;ta&#x27;, &#x27;Tamil&#x27;),
+ (&#x27;te&#x27;, &#x27;Telugu&#x27;),
+ (&#x27;tg&#x27;, &#x27;Tajik&#x27;),
+ (&#x27;th&#x27;, &#x27;Thai&#x27;),
+ (&#x27;tk&#x27;, &#x27;Turkmen&#x27;),
+ (&#x27;tr&#x27;, &#x27;Turkish&#x27;),
+ (&#x27;tt&#x27;, &#x27;Tatar&#x27;),
+ (&#x27;udm&#x27;, &#x27;Udmurt&#x27;),
+ (&#x27;ug&#x27;, &#x27;Uyghur&#x27;),
+ (&#x27;uk&#x27;, &#x27;Ukrainian&#x27;),
+ (&#x27;ur&#x27;, &#x27;Urdu&#x27;),
+ (&#x27;uz&#x27;, &#x27;Uzbek&#x27;),
+ (&#x27;vi&#x27;, &#x27;Vietnamese&#x27;),
+ (&#x27;zh-hans&#x27;, &#x27;Simplified Chinese&#x27;),
+ (&#x27;zh-hant&#x27;, &#x27;Traditional Chinese&#x27;)]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGES_BIDI</td>
+          <td class="code"><pre>[&#x27;he&#x27;, &#x27;ar&#x27;, &#x27;ar-dz&#x27;, &#x27;ckb&#x27;, &#x27;fa&#x27;, &#x27;ug&#x27;, &#x27;ur&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_CODE</td>
+          <td class="code"><pre>&#x27;en-us&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_AGE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_NAME</td>
+          <td class="code"><pre>&#x27;django_language&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_PATH</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_SAMESITE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOCALE_PATHS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGGING</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGGING_CONFIG</td>
+          <td class="code"><pre>&#x27;logging.config.dictConfig&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGIN_REDIRECT_URL</td>
+          <td class="code"><pre>&#x27;/accounts/profile/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGIN_URL</td>
+          <td class="code"><pre>&#x27;/accounts/login/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGOUT_REDIRECT_URL</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MANAGERS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MEDIA_ROOT</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MEDIA_URL</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MESSAGE_STORAGE</td>
+          <td class="code"><pre>&#x27;django.contrib.messages.storage.fallback.FallbackStorage&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MIDDLEWARE</td>
+          <td class="code"><pre>[&#x27;corsheaders.middleware.CorsMiddleware&#x27;,
+ &#x27;django.middleware.common.CommonMiddleware&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MIGRATION_MODULES</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MONTH_DAY_FORMAT</td>
+          <td class="code"><pre>&#x27;F j&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>NUMBER_GROUPING</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PASSWORD_HASHERS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PASSWORD_RESET_TIMEOUT</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PREPEND_WWW</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REST_FRAMEWORK</td>
+          <td class="code"><pre>{&#x27;DEFAULT_AUTHENTICATION_CLASSES&#x27;: &#x27;********************&#x27;,
+ &#x27;DEFAULT_PERMISSION_CLASSES&#x27;: [&#x27;rest_framework.permissions.IsAuthenticated&#x27;]}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ROOT_URLCONF</td>
+          <td class="code"><pre>&#x27;taskboard.urls&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECRET_KEY</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECRET_KEY_FALLBACKS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_CONTENT_TYPE_NOSNIFF</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_CROSS_ORIGIN_OPENER_POLICY</td>
+          <td class="code"><pre>&#x27;same-origin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_INCLUDE_SUBDOMAINS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_PRELOAD</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_SECONDS</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_PROXY_SSL_HEADER</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_REDIRECT_EXEMPT</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_REFERRER_POLICY</td>
+          <td class="code"><pre>&#x27;same-origin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_SSL_HOST</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_SSL_REDIRECT</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_EMAIL</td>
+          <td class="code"><pre>&#x27;root@localhost&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_CACHE_ALIAS</td>
+          <td class="code"><pre>&#x27;default&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_AGE</td>
+          <td class="code"><pre>1209600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_NAME</td>
+          <td class="code"><pre>&#x27;sessionid&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_PATH</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_SAMESITE</td>
+          <td class="code"><pre>&#x27;Lax&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_ENGINE</td>
+          <td class="code"><pre>&#x27;django.contrib.sessions.backends.db&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_EXPIRE_AT_BROWSER_CLOSE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_FILE_PATH</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_SAVE_EVERY_REQUEST</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_SERIALIZER</td>
+          <td class="code"><pre>&#x27;django.contrib.sessions.serializers.JSONSerializer&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SETTINGS_MODULE</td>
+          <td class="code"><pre>&#x27;taskboard.settings&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHORT_DATETIME_FORMAT</td>
+          <td class="code"><pre>&#x27;m/d/Y P&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHORT_DATE_FORMAT</td>
+          <td class="code"><pre>&#x27;m/d/Y&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SIGNED_COOKIE_LEGACY_SALT_FALLBACK</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SIGNING_BACKEND</td>
+          <td class="code"><pre>&#x27;django.core.signing.TimestampSigner&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SILENCED_SYSTEM_CHECKS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SIMPLE_JWT</td>
+          <td class="code"><pre>{&#x27;ACCESS_TOKEN_LIFETIME&#x27;: &#x27;********************&#x27;,
+ &#x27;AUTH_HEADER_TYPES&#x27;: &#x27;********************&#x27;}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_DIRS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_FINDERS</td>
+          <td class="code"><pre>[&#x27;django.contrib.staticfiles.finders.FileSystemFinder&#x27;,
+ &#x27;django.contrib.staticfiles.finders.AppDirectoriesFinder&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATIC_ROOT</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATIC_URL</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STORAGES</td>
+          <td class="code"><pre>{&#x27;default&#x27;: {&#x27;BACKEND&#x27;: &#x27;django.core.files.storage.FileSystemStorage&#x27;},
+ &#x27;staticfiles&#x27;: {&#x27;BACKEND&#x27;: &#x27;django.contrib.staticfiles.storage.StaticFilesStorage&#x27;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMPLATES</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mInternal Server Error: /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+[36mbackend-1  | [0m    response = get_response(request)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+[36mbackend-1  | [0m    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+[36mbackend-1  | [0m    return view_func(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+[36mbackend-1  | [0m    return self.dispatch(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 526, in dispatch
+[36mbackend-1  | [0m    response = self.handle_exception(exc)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 474, in handle_exception
+[36mbackend-1  | [0m    self.raise_uncaught_exception(exc)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 485, in raise_uncaught_exception
+[36mbackend-1  | [0m    raise exc
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 523, in dispatch
+[36mbackend-1  | [0m    response = handler(request, *args, **kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/app/projects/views.py", line 238, in post
+[36mbackend-1  | [0m    api = Api(os.environ['AIRTABLE_API_KEY'])
+[36mbackend-1  | [0m              ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "<frozen os>", line 714, in __getitem__
+[36mbackend-1  | [0mKeyError: 'AIRTABLE_API_KEY'
+[36mbackend-1  | [0m[11/Sep/2026 21:11:18] "POST /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export HTTP/1.1" 500 85360
+
+      
+        <tr>
+          <td>TEST_NON_SERIALIZED_APPS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEST_RUNNER</td>
+          <td class="code"><pre>&#x27;django.test.runner.DiscoverRunner&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>THOUSAND_SEPARATOR</td>
+          <td class="code"><pre>&#x27;,&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_FORMAT</td>
+          <td class="code"><pre>&#x27;P&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#x27;%H:%M:%S&#x27;, &#x27;%H:%M:%S.%f&#x27;, &#x27;%H:%M&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_ZONE</td>
+          <td class="code"><pre>&#x27;UTC&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_I18N</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_THOUSAND_SEPARATOR</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_TZ</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_X_FORWARDED_HOST</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_X_FORWARDED_PORT</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>WSGI_APPLICATION</td>
+          <td class="code"><pre>&#x27;taskboard.wsgi.application&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>X_FRAME_OPTIONS</td>
+          <td class="code"><pre>&#x27;DENY&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>YEAR_MONTH_FORMAT</td>
+          <td class="code"><pre>&#x27;F Y&#x27;</pre></td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+</div>
+</main>
+
+
+  <footer id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in your
+      Django settings file. Change that to <code>False</code>, and Django will
+      display a standard page generated by the handler for this status code.
+    </p>
+  </footer>
+
+</body>
+</html>
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mInternal Server Error: /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+[36mbackend-1  | [0m    response = get_response(request)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+[36mbackend-1  | [0m    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+[36mbackend-1  | [0m    return view_func(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+[36mbackend-1  | [0m    return self.dispatch(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 526, in dispatch
+[36mbackend-1  | [0m    response = self.handle_exception(exc)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 474, in handle_exception
+[36mbackend-1  | [0m    self.raise_uncaught_exception(exc)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 485, in raise_uncaught_exception
+[36mbackend-1  | [0m    raise exc
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 523, in dispatch
+[36mbackend-1  | [0m    response = handler(request, *args, **kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/app/projects/views.py", line 238, in post
+[36mbackend-1  | [0m    api = Api(os.environ['AIRTABLE_API_KEY'])
+[36mbackend-1  | [0m              ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "<frozen os>", line 714, in __getitem__
+[36mbackend-1  | [0mKeyError: 'AIRTABLE_API_KEY'
+[36mbackend-1  | [0m[11/Sep/2026 21:11:18] "POST /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export HTTP/1.1" 500 85360
+[36m[Kbackend-1 has been recreated
+[0m[36m[Kbackend-1 has been recreated
+[0m[36m[Kbackend-1 exited with code 137
+[0m[36m[Kbackend-1 exited with code 137
+[0m[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+curl -X POST "http://localhost:8000/api/projects/$PID/export" -H "Authorization: Bearer $TOKEN"
+[K[K[?2004l
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <title>ProgrammingError
+          at /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export</title>
+  <style>
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font-family: sans-serif; background-color:#fff; color:#000; }
+    body > :where(header, main, footer) { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; }
+    h2 { margin-bottom:.8em; }
+    h3 { margin:1em 0 .5em 0; }
+    h4 { margin:0 0 .5em 0; font-weight: normal; }
+    code, pre { font-size: 100%; white-space: pre-wrap; word-break: break-word; }
+    summary { cursor: pointer; }
+    table { border:1px solid #ccc; border-collapse: collapse; width:100%; background:white; }
+    tbody td, tbody th { vertical-align:top; padding:2px 3px; }
+    thead th {
+      padding:1px 6px 1px 3px; background:#fefefe; text-align:left;
+      font-weight:normal; font-size: 0.6875rem; border:1px solid #ddd;
+    }
+    tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    table.vars { margin:5px 10px 2px 40px; width: auto; }
+    table.vars td, table.req td { font-family:monospace; }
+    table td.code { width:100%; }
+    table td.code pre { overflow:hidden; }
+    table.source th { color:#666; }
+    table.source td { font-family:monospace; white-space:pre; border-bottom:1px solid #eee; }
+    ul.traceback { list-style-type:none; color: #222; }
+    ul.traceback li.cause { word-break: break-word; }
+    ul.traceback li.frame { padding-bottom:1em; color:#4f4f4f; }
+    ul.traceback li.user { background-color:#e0e0e0; color:#000 }
+    div.context { padding:10px 0; overflow:hidden; }
+    div.context ol { padding-left:30px; margin:0 10px; list-style-position: inside; }
+    div.context ol li { font-family:monospace; white-space:pre; color:#777; cursor:pointer; padding-left: 2px; }
+    div.context ol li pre { display:inline; }
+    div.context ol.context-line li { color:#464646; background-color:#dfdfdf; padding: 3px 2px; }
+    div.context ol.context-line li span { position:absolute; right:32px; }
+    .user div.context ol.context-line li { background-color:#bbb; color:#000; }
+    .user div.context ol li { color:#666; }
+    div.commands, summary.commands { margin-left: 40px; }
+    div.commands a, summary.commands { color:#555; text-decoration:none; }
+    .user div.commands a { color: black; }
+    #summary { background: #ffc; }
+    #summary h2 { font-weight: normal; color: #666; }
+    #info { padding: 0; }
+    #info > * { padding:10px 20px; }
+    #explanation { background:#eee; }
+    #template, #template-not-exist { background:#f6f6f6; }
+    #template-not-exist ul { margin: 0 0 10px 20px; }
+    #template-not-exist .postmortem-section { margin-bottom: 3px; }
+    #unicode-hint { background:#eee; }
+    #traceback { background:#eee; }
+    #requestinfo { background:#f6f6f6; padding-left:120px; }
+    #summary table { border:none; background:transparent; }
+    #requestinfo h2, #requestinfo h3 { position:relative; margin-left:-100px; }
+    #requestinfo h3 { margin-bottom:-1em; }
+    .error { background: #ffc; }
+    .specific { color:#cc3300; font-weight:bold; }
+    h2 span.commands { font-size: 0.7rem; font-weight:normal; }
+    span.commands a:link {color:#5E5694;}
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5rem; margin: 10px 0 10px 0; }
+    .append-bottom { margin-bottom: 10px; }
+    .fname { user-select: all; }
+  </style>
+  
+  <script>
+    function hideAll(elems) {
+      for (var e = 0; e < elems.length; e++) {
+        elems[e].style.display = 'none';
+      }
+    }
+    window.onload = function() {
+      hideAll(document.querySelectorAll('ol.pre-context'));
+      hideAll(document.querySelectorAll('ol.post-context'));
+      hideAll(document.querySelectorAll('div.pastebin'));
+    }
+    function toggle() {
+      for (var i = 0; i < arguments.length; i++) {
+        var e = document.getElementById(arguments[i]);
+        if (e) {
+          e.style.display = e.style.display == 'none' ? 'block': 'none';
+        }
+      }
+      return false;
+    }
+    function switchPastebinFriendly(link) {
+      s1 = "Switch to copy-and-paste view";
+      s2 = "Switch back to interactive view";
+      link.textContent = link.textContent.trim() == s1 ? s2: s1;
+      toggle('browserTraceback', 'pastebinTraceback');
+      return false;
+    }
+  </script>
+  
+</head>
+<body>
+<header id="summary">
+  <h1>ProgrammingError
+       at /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export</h1>
+  <pre class="exception_value">column tasks.airtable_record_id does not exist
+LINE 1: ...&quot;title&quot;, &quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;a...
+                                                             ^
+</pre>
+  <table class="meta">
+
+    <tr>
+      <th scope="row">Request Method:</th>
+      <td>POST</td>
+    </tr>
+    <tr>
+      <th scope="row">Request URL:</th>
+      <td>http://localhost:8000/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Django Version:</th>
+      <td>5.2.17</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Exception Type:</th>
+      <td>ProgrammingError</td>
+    </tr>
+
+
+    <tr>
+      <th scope="row">Exception Value:</th>
+      <td><pre>column tasks.airtable_record_id does not exist
+LINE 1: ...&quot;title&quot;, &quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;a...
+                                                             ^
+</pre></td>
+    </tr>
+
+
+    <tr>
+      <th scope="row">Exception Location:</th>
+      <td><span class="fname">/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py</span>, line 105, in _execute</td>
+    </tr>
+
+
+    <tr>
+      <th scope="row">Raised during:</th>
+      <td>projects.views.ExportView</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Python Executable:</th>
+      <td>/usr/local/bin/python</td>
+    </tr>
+    <tr>
+      <th scope="row">Python Version:</th>
+      <td>3.12.14</td>
+    </tr>
+    <tr>
+      <th scope="row">Python Path:</th>
+      <td><pre><code>[&#x27;/app&#x27;,
+ &#x27;/usr/local/lib/python312.zip&#x27;,
+ &#x27;/usr/local/lib/python3.12&#x27;,
+ &#x27;/usr/local/lib/python3.12/lib-dynload&#x27;,
+ &#x27;/usr/local/lib/python3.12/site-packages&#x27;]</code></pre></td>
+    </tr>
+    <tr>
+      <th scope="row">Server time:</th>
+      <td>Fri, 11 Sep 2026 21:16:34 +0000</td>
+    </tr>
+  </table>
+</header>
+
+<main id="info">
+
+
+
+
+<div id="traceback">
+  <h2>Traceback <span class="commands"><a href="#" role="button" onclick="return switchPastebinFriendly(this);">
+    Switch to copy-and-paste view</a></span>
+  </h2>
+  <div id="browserTraceback">
+    <ul class="traceback">
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py</code>, line 105, in _execute
+          
+
+          
+            <div class="context" id="c257322790008768">
+              
+                <ol start="98" class="pre-context" id="pre257322790008768">
+                
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>            warnings.warn(self.APPS_NOT_READY_WARNING_MSG, category=RuntimeWarning)</pre></li>
+                
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>        self.db.validate_no_broken_transaction()</pre></li>
+                
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>        with self.db.wrap_database_errors:</pre></li>
+                
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>            if params is None:</pre></li>
+                
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>                # params default might be backend specific.</pre></li>
+                
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>                return self.cursor.execute(sql)</pre></li>
+                
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>            else:</pre></li>
+                
+                </ol>
+              
+              <ol start="105" class="context-line">
+                <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>                return self.cursor.execute(sql, params)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='106' class="post-context" id="post257322790008768">
+                  
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>    def _executemany(self, sql, param_list, *ignored_wrapper_args):</pre></li>
+                  
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>        # Raise a warning during app initialization (stored_app_configs is only</pre></li>
+                  
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>        # ever set during testing).</pre></li>
+                  
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>        if not apps.ready and not apps.stored_app_configs:</pre></li>
+                  
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>            warnings.warn(self.APPS_NOT_READY_WARNING_MSG, category=RuntimeWarning)</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322790008768">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>ignored_wrapper_args</td>
+                    <td class="code"><pre>(False,
+ {&#x27;connection&#x27;: &lt;DatabaseWrapper vendor=&#x27;postgresql&#x27; alias=&#x27;default&#x27;&gt;,
+  &#x27;cursor&#x27;: &lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xea08a17f1670&gt;})</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>(UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;),)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xea08a17f1670&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT &quot;tasks&quot;.&quot;id&quot;, &quot;tasks&quot;.&quot;project_id&quot;, &quot;tasks&quot;.&quot;title&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;airtable_record_id&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;assignee_id&quot;, &quot;tasks&quot;.&quot;created_by_id&quot;, &quot;tasks&quot;.&quot;position&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;created_at&quot;, &quot;tasks&quot;.&quot;updated_at&quot;, &quot;users&quot;.&quot;password&quot;, &#x27;
+ &#x27;&quot;users&quot;.&quot;last_login&quot;, &quot;users&quot;.&quot;id&quot;, &quot;users&quot;.&quot;email&quot;, &quot;users&quot;.&quot;name&quot;, &#x27;
+ &#x27;&quot;users&quot;.&quot;created_at&quot;, &quot;users&quot;.&quot;updated_at&quot; FROM &quot;tasks&quot; LEFT OUTER JOIN &#x27;
+ &#x27;&quot;users&quot; ON (&quot;tasks&quot;.&quot;assignee_id&quot; = &quot;users&quot;.&quot;id&quot;) WHERE &quot;tasks&quot;.&quot;project_id&quot; &#x27;
+ &#x27;= %s&#x27;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+          <li class="cause"><h3>
+          
+            The above exception (column tasks.airtable_record_id does not exist
+LINE 1: ...&quot;title&quot;, &quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;a...
+                                                             ^
+) was the direct cause of the following exception:
+          
+        </h3></li>
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py</code>, line 55, in inner
+          
+
+          
+            <div class="context" id="c257322795337408">
+              
+                <ol start="48" class="pre-context" id="pre257322795337408">
+                
+                  <li onclick="toggle('pre257322795337408', 'post257322795337408')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322795337408', 'post257322795337408')"><pre>        return inner</pre></li>
+                
+                  <li onclick="toggle('pre257322795337408', 'post257322795337408')"><pre>    else:</pre></li>
+                
+                  <li onclick="toggle('pre257322795337408', 'post257322795337408')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322795337408', 'post257322795337408')"><pre>        @wraps(get_response)</pre></li>
+                
+                  <li onclick="toggle('pre257322795337408', 'post257322795337408')"><pre>        def inner(request):</pre></li>
+                
+                  <li onclick="toggle('pre257322795337408', 'post257322795337408')"><pre>            try:</pre></li>
+                
+                </ol>
+              
+              <ol start="55" class="context-line">
+                <li onclick="toggle('pre257322795337408', 'post257322795337408')"><pre>                response = get_response(request)
+                               ^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='56' class="post-context" id="post257322795337408">
+                  
+                  <li onclick="toggle('pre257322795337408', 'post257322795337408')"><pre>            except Exception as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre257322795337408', 'post257322795337408')"><pre>                response = response_for_exception(request, exc)</pre></li>
+                  
+                  <li onclick="toggle('pre257322795337408', 'post257322795337408')"><pre>            return response</pre></li>
+                  
+                  <li onclick="toggle('pre257322795337408', 'post257322795337408')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322795337408', 'post257322795337408')"><pre>        return inner</pre></li>
+                  
+                  <li onclick="toggle('pre257322795337408', 'post257322795337408')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322795337408">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>ProgrammingError(&#x27;column tasks.airtable_record_id does not exist\nLINE 1: ...&quot;title&quot;, &quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;a...\n                                                             ^\n&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>get_response</td>
+                    <td class="code"><pre>&lt;bound method BaseHandler._get_response of &lt;django.core.handlers.wsgi.WSGIHandler object at 0xea08a5647350&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py</code>, line 197, in _get_response
+          
+
+          
+            <div class="context" id="c257322790010368">
+              
+                <ol start="190" class="pre-context" id="pre257322790010368">
+                
+                  <li onclick="toggle('pre257322790010368', 'post257322790010368')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322790010368', 'post257322790010368')"><pre>        if response is None:</pre></li>
+                
+                  <li onclick="toggle('pre257322790010368', 'post257322790010368')"><pre>            wrapped_callback = self.make_view_atomic(callback)</pre></li>
+                
+                  <li onclick="toggle('pre257322790010368', 'post257322790010368')"><pre>            # If it is an asynchronous view, run it in a subthread.</pre></li>
+                
+                  <li onclick="toggle('pre257322790010368', 'post257322790010368')"><pre>            if iscoroutinefunction(wrapped_callback):</pre></li>
+                
+                  <li onclick="toggle('pre257322790010368', 'post257322790010368')"><pre>                wrapped_callback = async_to_sync(wrapped_callback)</pre></li>
+                
+                  <li onclick="toggle('pre257322790010368', 'post257322790010368')"><pre>            try:</pre></li>
+                
+                </ol>
+              
+              <ol start="197" class="context-line">
+                <li onclick="toggle('pre257322790010368', 'post257322790010368')"><pre>                response = wrapped_callback(request, *callback_args, **callback_kwargs)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='198' class="post-context" id="post257322790010368">
+                  
+                  <li onclick="toggle('pre257322790010368', 'post257322790010368')"><pre>            except Exception as e:</pre></li>
+                  
+                  <li onclick="toggle('pre257322790010368', 'post257322790010368')"><pre>                response = self.process_exception_by_middleware(e, request)</pre></li>
+                  
+                  <li onclick="toggle('pre257322790010368', 'post257322790010368')"><pre>                if response is None:</pre></li>
+                  
+                  <li onclick="toggle('pre257322790010368', 'post257322790010368')"><pre>                    raise</pre></li>
+                  
+                  <li onclick="toggle('pre257322790010368', 'post257322790010368')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322790010368', 'post257322790010368')"><pre>        # Complain if the view returned None (a common error).</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322790010368">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>callback</td>
+                    <td class="code"><pre>&lt;function View.as_view.&lt;locals&gt;.view at 0xea08a1a1a7a0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_kwargs</td>
+                    <td class="code"><pre>{&#x27;project_id&#x27;: UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;)}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0xea08a5647350&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>wrapped_callback</td>
+                    <td class="code"><pre>&lt;function View.as_view.&lt;locals&gt;.view at 0xea08a1a1a7a0&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py</code>, line 65, in _view_wrapper
+          
+
+          
+            <div class="context" id="c257322790010048">
+              
+                <ol start="58" class="pre-context" id="pre257322790010048">
+                
+                  <li onclick="toggle('pre257322790010048', 'post257322790010048')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322790010048', 'post257322790010048')"><pre>        async def _view_wrapper(request, *args, **kwargs):</pre></li>
+                
+                  <li onclick="toggle('pre257322790010048', 'post257322790010048')"><pre>            return await view_func(request, *args, **kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre257322790010048', 'post257322790010048')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322790010048', 'post257322790010048')"><pre>    else:</pre></li>
+                
+                  <li onclick="toggle('pre257322790010048', 'post257322790010048')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322790010048', 'post257322790010048')"><pre>        def _view_wrapper(request, *args, **kwargs):</pre></li>
+                
+                </ol>
+              
+              <ol start="65" class="context-line">
+                <li onclick="toggle('pre257322790010048', 'post257322790010048')"><pre>            return view_func(request, *args, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='66' class="post-context" id="post257322790010048">
+                  
+                  <li onclick="toggle('pre257322790010048', 'post257322790010048')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322790010048', 'post257322790010048')"><pre>    _view_wrapper.csrf_exempt = True</pre></li>
+                  
+                  <li onclick="toggle('pre257322790010048', 'post257322790010048')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322790010048', 'post257322790010048')"><pre>    return wraps(view_func)(_view_wrapper)</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322790010048">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{&#x27;project_id&#x27;: UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;)}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>view_func</td>
+                    <td class="code"><pre>&lt;function View.as_view.&lt;locals&gt;.view at 0xea08a1a1a700&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/views/generic/base.py</code>, line 105, in view
+          
+
+          
+            <div class="context" id="c257322794827584">
+              
+                <ol start="98" class="pre-context" id="pre257322794827584">
+                
+                  <li onclick="toggle('pre257322794827584', 'post257322794827584')"><pre>            self = cls(**initkwargs)</pre></li>
+                
+                  <li onclick="toggle('pre257322794827584', 'post257322794827584')"><pre>            self.setup(request, *args, **kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre257322794827584', 'post257322794827584')"><pre>            if not hasattr(self, &quot;request&quot;):</pre></li>
+                
+                  <li onclick="toggle('pre257322794827584', 'post257322794827584')"><pre>                raise AttributeError(</pre></li>
+                
+                  <li onclick="toggle('pre257322794827584', 'post257322794827584')"><pre>                    &quot;%s instance has no &#x27;request&#x27; attribute. Did you override &quot;</pre></li>
+                
+                  <li onclick="toggle('pre257322794827584', 'post257322794827584')"><pre>                    &quot;setup() and forget to call super()?&quot; % cls.__name__</pre></li>
+                
+                  <li onclick="toggle('pre257322794827584', 'post257322794827584')"><pre>                )</pre></li>
+                
+                </ol>
+              
+              <ol start="105" class="context-line">
+                <li onclick="toggle('pre257322794827584', 'post257322794827584')"><pre>            return self.dispatch(request, *args, **kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='106' class="post-context" id="post257322794827584">
+                  
+                  <li onclick="toggle('pre257322794827584', 'post257322794827584')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322794827584', 'post257322794827584')"><pre>        view.view_class = cls</pre></li>
+                  
+                  <li onclick="toggle('pre257322794827584', 'post257322794827584')"><pre>        view.view_initkwargs = initkwargs</pre></li>
+                  
+                  <li onclick="toggle('pre257322794827584', 'post257322794827584')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322794827584', 'post257322794827584')"><pre>        # __name__ and __qualname__ are intentionally left unchanged as</pre></li>
+                  
+                  <li onclick="toggle('pre257322794827584', 'post257322794827584')"><pre>        # view_class should be used to robustly determine the name of the view</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322794827584">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>cls</td>
+                    <td class="code"><pre>&lt;class &#x27;projects.views.ExportView&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>initkwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{&#x27;project_id&#x27;: UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;)}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;projects.views.ExportView object at 0xea08a177b680&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/rest_framework/views.py</code>, line 526, in dispatch
+          
+
+          
+            <div class="context" id="c257322790005312">
+              
+                <ol start="519" class="pre-context" id="pre257322790005312">
+                
+                  <li onclick="toggle('pre257322790005312', 'post257322790005312')"><pre>                                  self.http_method_not_allowed)</pre></li>
+                
+                  <li onclick="toggle('pre257322790005312', 'post257322790005312')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre257322790005312', 'post257322790005312')"><pre>                handler = self.http_method_not_allowed</pre></li>
+                
+                  <li onclick="toggle('pre257322790005312', 'post257322790005312')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322790005312', 'post257322790005312')"><pre>            response = handler(request, *args, **kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre257322790005312', 'post257322790005312')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322790005312', 'post257322790005312')"><pre>        except Exception as exc:</pre></li>
+                
+                </ol>
+              
+              <ol start="526" class="context-line">
+                <li onclick="toggle('pre257322790005312', 'post257322790005312')"><pre>            response = self.handle_exception(exc)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='527' class="post-context" id="post257322790005312">
+                  
+                  <li onclick="toggle('pre257322790005312', 'post257322790005312')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322790005312', 'post257322790005312')"><pre>        self.response = self.finalize_response(request, response, *args, **kwargs)</pre></li>
+                  
+                  <li onclick="toggle('pre257322790005312', 'post257322790005312')"><pre>        return self.response</pre></li>
+                  
+                  <li onclick="toggle('pre257322790005312', 'post257322790005312')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322790005312', 'post257322790005312')"><pre>    def options(self, request, *args, **kwargs):</pre></li>
+                  
+                  <li onclick="toggle('pre257322790005312', 'post257322790005312')"><pre>        &quot;&quot;&quot;</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322790005312">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>handler</td>
+                    <td class="code"><pre>&lt;bound method ExportView.post of &lt;projects.views.ExportView object at 0xea08a177b680&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{&#x27;project_id&#x27;: UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;)}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: POST &#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;projects.views.ExportView object at 0xea08a177b680&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/rest_framework/views.py</code>, line 474, in handle_exception
+          
+
+          
+            <div class="context" id="c257322790007872">
+              
+                <ol start="467" class="pre-context" id="pre257322790007872">
+                
+                  <li onclick="toggle('pre257322790007872', 'post257322790007872')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322790007872', 'post257322790007872')"><pre>        exception_handler = self.get_exception_handler()</pre></li>
+                
+                  <li onclick="toggle('pre257322790007872', 'post257322790007872')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322790007872', 'post257322790007872')"><pre>        context = self.get_exception_handler_context()</pre></li>
+                
+                  <li onclick="toggle('pre257322790007872', 'post257322790007872')"><pre>        response = exception_handler(exc, context)</pre></li>
+                
+                  <li onclick="toggle('pre257322790007872', 'post257322790007872')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322790007872', 'post257322790007872')"><pre>        if response is None:</pre></li>
+                
+                </ol>
+              
+              <ol start="474" class="context-line">
+                <li onclick="toggle('pre257322790007872', 'post257322790007872')"><pre>            self.raise_uncaught_exception(exc)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='475' class="post-context" id="post257322790007872">
+                  
+                  <li onclick="toggle('pre257322790007872', 'post257322790007872')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322790007872', 'post257322790007872')"><pre>        response.exception = True</pre></li>
+                  
+                  <li onclick="toggle('pre257322790007872', 'post257322790007872')"><pre>        return response</pre></li>
+                  
+                  <li onclick="toggle('pre257322790007872', 'post257322790007872')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322790007872', 'post257322790007872')"><pre>    def raise_uncaught_exception(self, exc):</pre></li>
+                  
+                  <li onclick="toggle('pre257322790007872', 'post257322790007872')"><pre>        if settings.DEBUG:</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322790007872">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>{&#x27;args&#x27;: (),
+ &#x27;kwargs&#x27;: {&#x27;project_id&#x27;: UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;)},
+ &#x27;request&#x27;: &lt;rest_framework.request.Request: POST &#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;&gt;,
+ &#x27;view&#x27;: &lt;projects.views.ExportView object at 0xea08a177b680&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>ProgrammingError(&#x27;column tasks.airtable_record_id does not exist\nLINE 1: ...&quot;title&quot;, &quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;a...\n                                                             ^\n&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>exception_handler</td>
+                    <td class="code"><pre>&lt;function exception_handler at 0xea08a263f4c0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;projects.views.ExportView object at 0xea08a177b680&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/rest_framework/views.py</code>, line 485, in raise_uncaught_exception
+          
+
+          
+            <div class="context" id="c257322794974144">
+              
+                <ol start="478" class="pre-context" id="pre257322794974144">
+                
+                  <li onclick="toggle('pre257322794974144', 'post257322794974144')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322794974144', 'post257322794974144')"><pre>    def raise_uncaught_exception(self, exc):</pre></li>
+                
+                  <li onclick="toggle('pre257322794974144', 'post257322794974144')"><pre>        if settings.DEBUG:</pre></li>
+                
+                  <li onclick="toggle('pre257322794974144', 'post257322794974144')"><pre>            request = self.request</pre></li>
+                
+                  <li onclick="toggle('pre257322794974144', 'post257322794974144')"><pre>            renderer_format = getattr(request.accepted_renderer, &#x27;format&#x27;)</pre></li>
+                
+                  <li onclick="toggle('pre257322794974144', 'post257322794974144')"><pre>            use_plaintext_traceback = renderer_format not in (&#x27;html&#x27;, &#x27;api&#x27;, &#x27;admin&#x27;)</pre></li>
+                
+                  <li onclick="toggle('pre257322794974144', 'post257322794974144')"><pre>            request.force_plaintext_errors(use_plaintext_traceback)</pre></li>
+                
+                </ol>
+              
+              <ol start="485" class="context-line">
+                <li onclick="toggle('pre257322794974144', 'post257322794974144')"><pre>        raise exc
+             ^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='486' class="post-context" id="post257322794974144">
+                  
+                  <li onclick="toggle('pre257322794974144', 'post257322794974144')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322794974144', 'post257322794974144')"><pre>    # Note: Views are made CSRF exempt from within `as_view` as to prevent</pre></li>
+                  
+                  <li onclick="toggle('pre257322794974144', 'post257322794974144')"><pre>    # accidental removal of this exemption in cases where `dispatch` needs to</pre></li>
+                  
+                  <li onclick="toggle('pre257322794974144', 'post257322794974144')"><pre>    # be overridden.</pre></li>
+                  
+                  <li onclick="toggle('pre257322794974144', 'post257322794974144')"><pre>    def dispatch(self, request, *args, **kwargs):</pre></li>
+                  
+                  <li onclick="toggle('pre257322794974144', 'post257322794974144')"><pre>        &quot;&quot;&quot;</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322794974144">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>ProgrammingError(&#x27;column tasks.airtable_record_id does not exist\nLINE 1: ...&quot;title&quot;, &quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;a...\n                                                             ^\n&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>renderer_format</td>
+                    <td class="code"><pre>&#x27;json&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: POST &#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;projects.views.ExportView object at 0xea08a177b680&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>use_plaintext_traceback</td>
+                    <td class="code"><pre>True</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/rest_framework/views.py</code>, line 523, in dispatch
+          
+
+          
+            <div class="context" id="c257322790005824">
+              
+                <ol start="516" class="pre-context" id="pre257322790005824">
+                
+                  <li onclick="toggle('pre257322790005824', 'post257322790005824')"><pre>            # Get the appropriate handler method</pre></li>
+                
+                  <li onclick="toggle('pre257322790005824', 'post257322790005824')"><pre>            if request.method.lower() in self.http_method_names:</pre></li>
+                
+                  <li onclick="toggle('pre257322790005824', 'post257322790005824')"><pre>                handler = getattr(self, request.method.lower(),</pre></li>
+                
+                  <li onclick="toggle('pre257322790005824', 'post257322790005824')"><pre>                                  self.http_method_not_allowed)</pre></li>
+                
+                  <li onclick="toggle('pre257322790005824', 'post257322790005824')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre257322790005824', 'post257322790005824')"><pre>                handler = self.http_method_not_allowed</pre></li>
+                
+                  <li onclick="toggle('pre257322790005824', 'post257322790005824')"><pre></pre></li>
+                
+                </ol>
+              
+              <ol start="523" class="context-line">
+                <li onclick="toggle('pre257322790005824', 'post257322790005824')"><pre>            response = handler(request, *args, **kwargs)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='524' class="post-context" id="post257322790005824">
+                  
+                  <li onclick="toggle('pre257322790005824', 'post257322790005824')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322790005824', 'post257322790005824')"><pre>        except Exception as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre257322790005824', 'post257322790005824')"><pre>            response = self.handle_exception(exc)</pre></li>
+                  
+                  <li onclick="toggle('pre257322790005824', 'post257322790005824')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322790005824', 'post257322790005824')"><pre>        self.response = self.finalize_response(request, response, *args, **kwargs)</pre></li>
+                  
+                  <li onclick="toggle('pre257322790005824', 'post257322790005824')"><pre>        return self.response</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322790005824">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>handler</td>
+                    <td class="code"><pre>&lt;bound method ExportView.post of &lt;projects.views.ExportView object at 0xea08a177b680&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{&#x27;project_id&#x27;: UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;)}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: POST &#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;projects.views.ExportView object at 0xea08a177b680&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">/app/projects/views.py</code>, line 244, in post
+          
+
+          
+            <div class="context" id="c257322790009152">
+              
+                <ol start="237" class="pre-context" id="pre257322790009152">
+                
+                  <li onclick="toggle('pre257322790009152', 'post257322790009152')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322790009152', 'post257322790009152')"><pre>        api = Api(os.environ[&#x27;AIRTABLE_API_KEY&#x27;])</pre></li>
+                
+                  <li onclick="toggle('pre257322790009152', 'post257322790009152')"><pre>        table = api.table(os.environ[&#x27;AIRTABLE_BASE_ID&#x27;], os.environ[&#x27;AIRTABLE_TABLE_NAME&#x27;])</pre></li>
+                
+                  <li onclick="toggle('pre257322790009152', 'post257322790009152')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322790009152', 'post257322790009152')"><pre>        tasks = Task.objects.filter(project_id=project_id).select_related(&#x27;assignee&#x27;)</pre></li>
+                
+                  <li onclick="toggle('pre257322790009152', 'post257322790009152')"><pre>        exported, failed = 0, []</pre></li>
+                
+                  <li onclick="toggle('pre257322790009152', 'post257322790009152')"><pre></pre></li>
+                
+                </ol>
+              
+              <ol start="244" class="context-line">
+                <li onclick="toggle('pre257322790009152', 'post257322790009152')"><pre>        for task in tasks:
+                         ^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='245' class="post-context" id="post257322790009152">
+                  
+                  <li onclick="toggle('pre257322790009152', 'post257322790009152')"><pre>            fields = {</pre></li>
+                  
+                  <li onclick="toggle('pre257322790009152', 'post257322790009152')"><pre>                &#x27;Title&#x27;: task.title,</pre></li>
+                  
+                  <li onclick="toggle('pre257322790009152', 'post257322790009152')"><pre>                &#x27;Status&#x27;: task.status,</pre></li>
+                  
+                  <li onclick="toggle('pre257322790009152', 'post257322790009152')"><pre>                &#x27;Assignee&#x27;: task.assignee.name if task.assignee else &#x27;&#x27;,</pre></li>
+                  
+                  <li onclick="toggle('pre257322790009152', 'post257322790009152')"><pre>            }</pre></li>
+                  
+                  <li onclick="toggle('pre257322790009152', 'post257322790009152')"><pre>            for attempt in range(3):</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322790009152">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>api</td>
+                    <td class="code"><pre>&lt;pyairtable.Api&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>exported</td>
+                    <td class="code"><pre>0</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>failed</td>
+                    <td class="code"><pre>[]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>membership</td>
+                    <td class="code"><pre>&lt;Membership: Membership object (9e8ba391-1521-40ef-aac1-ad4bc337dbda)&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>project_id</td>
+                    <td class="code"><pre>UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: POST &#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;projects.views.ExportView object at 0xea08a177b680&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>table</td>
+                    <td class="code"><pre>&lt;Table base=&#x27;PdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV&#x27; name=&#x27;Tasks&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>tasks</td>
+                    <td class="code"><pre>Error in formatting: ProgrammingError: column tasks.airtable_record_id does not exist
+LINE 1: ...&quot;title&quot;, &quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;a...
+                                                             ^
+</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/db/models/query.py</code>, line 386, in __iter__
+          
+
+          
+            <div class="context" id="c257322790004928">
+              
+                <ol start="379" class="pre-context" id="pre257322790004928">
+                
+                  <li onclick="toggle('pre257322790004928', 'post257322790004928')"><pre>            2. sql.compiler.results_iter()</pre></li>
+                
+                  <li onclick="toggle('pre257322790004928', 'post257322790004928')"><pre>               - Returns one row at time. At this point the rows are still just</pre></li>
+                
+                  <li onclick="toggle('pre257322790004928', 'post257322790004928')"><pre>                 tuples. In some cases the return values are converted to</pre></li>
+                
+                  <li onclick="toggle('pre257322790004928', 'post257322790004928')"><pre>                 Python values at this location.</pre></li>
+                
+                  <li onclick="toggle('pre257322790004928', 'post257322790004928')"><pre>            3. self.iterator()</pre></li>
+                
+                  <li onclick="toggle('pre257322790004928', 'post257322790004928')"><pre>               - Responsible for turning the rows into model[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mInternal Server Error: /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mpsycopg2.errors.UndefinedColumn: column tasks.airtable_record_id does not exist
+[36mbackend-1  | [0mLINE 1: ..."title", "tasks"."description", "tasks"."status", "tasks"."a...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mThe above exception was the direct cause of the following exception:
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+[36mbackend-1  | [0m    response = get_response(request)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+[36mbackend-1  | [0m    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+[36mbackend-1  | [0m    return view_func(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+[36mbackend-1  | [0m    return self.dispatch(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 526, in dispatch
+[36mbackend-1  | [0m    response = self.handle_exception(exc)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 474, in handle_exception
+[36mbackend-1  | [0m    self.raise_uncaught_exception(exc)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 485, in raise_uncaught_exception
+[36mbackend-1  | [0m    raise exc
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 523, in dispatch
+[36mbackend-1  | [0m    response = handler(request, *args, **kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/app/projects/views.py", line 244, in post
+[36mbackend-1  | [0m    for task in tasks:
+[36mbackend-1  | [0m                ^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 386, in __iter__
+[36mbackend-1  | [0m    self._fetch_all()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1954, in _fetch_all
+[36mbackend-1  | [0m    self._result_cache = list(self._iterable_class(self))
+[36mbackend-1  | [0m                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 93, in __iter__
+[36mbackend-1  | [0m    results = compiler.execute_sql(
+[36mbackend-1  | [0m              ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/l objects.</pre></li>
+                
+                  <li onclick="toggle('pre257322790004928', 'post257322790004928')"><pre>        &quot;&quot;&quot;</pre></li>
+                
+                </ol>
+              
+              <ol start="386" class="context-line">
+                <li onclick="toggle('pre257322790004928', 'post257322790004928')"><pre>        self._fetch_all()
+             ^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='387' class="post-context" id="post257322790004928">
+                  
+                  <li onclick="toggle('pre257322790004928', 'post257322790004928')"><pre>        return iter(self._result_cache)</pre></li>
+                  
+                  <li onclick="toggle('pre257322790004928', 'post257322790004928')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322790004928', 'post257322790004928')"><pre>    def __aiter__(self):</pre></li>
+                  
+                  <li onclick="toggle('pre257322790004928', 'post257322790004928')"><pre>        # Remember, __aiter__ itself is synchronous, it&#x27;s the thing it returns</pre></li>
+                  
+                  <li onclick="toggle('pre257322790004928', 'post257322790004928')"><pre>        # that is async!</pre></li>
+                  
+                  <li onclick="toggle('pre257322790004928', 'post257322790004928')"><pre>        async def generator():</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322790004928">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>Error in formatting: ProgrammingError: column tasks.airtable_record_id does not exist
+LINE 1: ...&quot;title&quot;, &quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;a...
+                                                             ^
+</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/db/models/query.py</code>, line 1954, in _fetch_all
+          
+
+          
+            <div class="context" id="c257322789925952">
+              
+                <ol start="1947" class="pre-context" id="pre257322789925952">
+                
+                  <li onclick="toggle('pre257322789925952', 'post257322789925952')"><pre>        c._known_related_objects = self._known_related_objects</pre></li>
+                
+                  <li onclick="toggle('pre257322789925952', 'post257322789925952')"><pre>        c._iterable_class = self._iterable_class</pre></li>
+                
+                  <li onclick="toggle('pre257322789925952', 'post257322789925952')"><pre>        c._fields = self._fields</pre></li>
+                
+                  <li onclick="toggle('pre257322789925952', 'post257322789925952')"><pre>        return c</pre></li>
+                
+                  <li onclick="toggle('pre257322789925952', 'post257322789925952')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322789925952', 'post257322789925952')"><pre>    def _fetch_all(self):</pre></li>
+                
+                  <li onclick="toggle('pre257322789925952', 'post257322789925952')"><pre>        if self._result_cache is None:</pre></li>
+                
+                </ol>
+              
+              <ol start="1954" class="context-line">
+                <li onclick="toggle('pre257322789925952', 'post257322789925952')"><pre>            self._result_cache = list(self._iterable_class(self))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='1955' class="post-context" id="post257322789925952">
+                  
+                  <li onclick="toggle('pre257322789925952', 'post257322789925952')"><pre>        if self._prefetch_related_lookups and not self._prefetch_done:</pre></li>
+                  
+                  <li onclick="toggle('pre257322789925952', 'post257322789925952')"><pre>            self._prefetch_related_objects()</pre></li>
+                  
+                  <li onclick="toggle('pre257322789925952', 'post257322789925952')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322789925952', 'post257322789925952')"><pre>    def _next_is_sticky(self):</pre></li>
+                  
+                  <li onclick="toggle('pre257322789925952', 'post257322789925952')"><pre>        &quot;&quot;&quot;</pre></li>
+                  
+                  <li onclick="toggle('pre257322789925952', 'post257322789925952')"><pre>        Indicate that the next filter call and the one following that should</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322789925952">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>Error in formatting: ProgrammingError: column tasks.airtable_record_id does not exist
+LINE 1: ...&quot;title&quot;, &quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;a...
+                                                             ^
+</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/db/models/query.py</code>, line 93, in __iter__
+          
+
+          
+            <div class="context" id="c257322790010176">
+              
+                <ol start="86" class="pre-context" id="pre257322790010176">
+                
+                  <li onclick="toggle('pre257322790010176', 'post257322790010176')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322790010176', 'post257322790010176')"><pre>    def __iter__(self):</pre></li>
+                
+                  <li onclick="toggle('pre257322790010176', 'post257322790010176')"><pre>        queryset = self.queryset</pre></li>
+                
+                  <li onclick="toggle('pre257322790010176', 'post257322790010176')"><pre>        db = queryset.db</pre></li>
+                
+                  <li onclick="toggle('pre257322790010176', 'post257322790010176')"><pre>        compiler = queryset.query.get_compiler(using=db)</pre></li>
+                
+                  <li onclick="toggle('pre257322790010176', 'post257322790010176')"><pre>        # Execute the query. This will also fill compiler.select, klass_info,</pre></li>
+                
+                  <li onclick="toggle('pre257322790010176', 'post257322790010176')"><pre>        # and annotations.</pre></li>
+                
+                </ol>
+              
+              <ol start="93" class="context-line">
+                <li onclick="toggle('pre257322790010176', 'post257322790010176')"><pre>        results = compiler.execute_sql(
+                      </pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='94' class="post-context" id="post257322790010176">
+                  
+                  <li onclick="toggle('pre257322790010176', 'post257322790010176')"><pre>            chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size</pre></li>
+                  
+                  <li onclick="toggle('pre257322790010176', 'post257322790010176')"><pre>        )</pre></li>
+                  
+                  <li onclick="toggle('pre257322790010176', 'post257322790010176')"><pre>        select, klass_info, annotation_col_map = (</pre></li>
+                  
+                  <li onclick="toggle('pre257322790010176', 'post257322790010176')"><pre>            compiler.select,</pre></li>
+                  
+                  <li onclick="toggle('pre257322790010176', 'post257322790010176')"><pre>            compiler.klass_info,</pre></li>
+                  
+                  <li onclick="toggle('pre257322790010176', 'post257322790010176')"><pre>            compiler.annotation_col_map,</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322790010176">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>compiler</td>
+                    <td class="code"><pre>&lt;SQLCompiler model=Task connection=&lt;DatabaseWrapper vendor=&#x27;postgresql&#x27; alias=&#x27;default&#x27;&gt; using=&#x27;default&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>db</td>
+                    <td class="code"><pre>&#x27;default&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>queryset</td>
+                    <td class="code"><pre>Error in formatting: ProgrammingError: column tasks.airtable_record_id does not exist
+LINE 1: ...&quot;title&quot;, &quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;a...
+                                                             ^
+</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.models.query.ModelIterable object at 0xea08a17f0140&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py</code>, line 1623, in execute_sql
+          
+
+          
+            <div class="context" id="c257322790005696">
+              
+                <ol start="1616" class="pre-context" id="pre257322790005696">
+                
+                  <li onclick="toggle('pre257322790005696', 'post257322790005696')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre257322790005696', 'post257322790005696')"><pre>                return</pre></li>
+                
+                  <li onclick="toggle('pre257322790005696', 'post257322790005696')"><pre>        if chunked_fetch:</pre></li>
+                
+                  <li onclick="toggle('pre257322790005696', 'post257322790005696')"><pre>            cursor = self.connection.chunked_cursor()</pre></li>
+                
+                  <li onclick="toggle('pre257322790005696', 'post257322790005696')"><pre>        else:</pre></li>
+                
+                  <li onclick="toggle('pre257322790005696', 'post257322790005696')"><pre>            cursor = self.connection.cursor()</pre></li>
+                
+                  <li onclick="toggle('pre257322790005696', 'post257322790005696')"><pre>        try:</pre></li>
+                
+                </ol>
+              
+              <ol start="1623" class="context-line">
+                <li onclick="toggle('pre257322790005696', 'post257322790005696')"><pre>            cursor.execute(sql, params)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='1624' class="post-context" id="post257322790005696">
+                  
+                  <li onclick="toggle('pre257322790005696', 'post257322790005696')"><pre>        except Exception:</pre></li>
+                  
+                  <li onclick="toggle('pre257322790005696', 'post257322790005696')"><pre>            # Might fail for server-side cursors (e.g. connection closed)</pre></li>
+                  
+                  <li onclick="toggle('pre257322790005696', 'post257322790005696')"><pre>            cursor.close()</pre></li>
+                  
+                  <li onclick="toggle('pre257322790005696', 'post257322790005696')"><pre>            raise</pre></li>
+                  
+                  <li onclick="toggle('pre257322790005696', 'post257322790005696')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322790005696', 'post257322790005696')"><pre>        if result_type == ROW_COUNT:</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322790005696">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>chunk_size</td>
+                    <td class="code"><pre>100</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>chunked_fetch</td>
+                    <td class="code"><pre>False</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>cursor</td>
+                    <td class="code"><pre>&lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xea08a17f1670&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>(UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;),)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>result_type</td>
+                    <td class="code"><pre>&#x27;multi&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;SQLCompiler model=Task connection=&lt;DatabaseWrapper vendor=&#x27;postgresql&#x27; alias=&#x27;default&#x27;&gt; using=&#x27;default&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT &quot;tasks&quot;.&quot;id&quot;, &quot;tasks&quot;.&quot;project_id&quot;, &quot;tasks&quot;.&quot;title&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;airtable_record_id&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;assignee_id&quot;, &quot;tasks&quot;.&quot;created_by_id&quot;, &quot;tasks&quot;.&quot;position&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;created_at&quot;, &quot;tasks&quot;.&quot;updated_at&quot;, &quot;users&quot;.&quot;password&quot;, &#x27;
+ &#x27;&quot;users&quot;.&quot;last_login&quot;, &quot;users&quot;.&quot;id&quot;, &quot;users&quot;.&quot;[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mInternal Server Error: /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mpsycopg2.errors.UndefinedColumn: column tasks.airtable_record_id does not exist
+[36mbackend-1  | [0mLINE 1: ..."title", "tasks"."description", "tasks"."status", "tasks"."a...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mThe above exception was the direct cause of the following exception:
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+[36mbackend-1  | [0m    response = get_response(request)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+[36mbackend-1  | [0m    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+[36mbackend-1  | [0m    return view_func(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+[36mbackend-1  | [0m    return self.dispatch(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 526, in dispatch
+[36mbackend-1  | [0m    response = self.handle_exception(exc)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 474, in handle_exception
+[36mbackend-1  | [0m    self.raise_uncaught_exception(exc)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 485, in raise_uncaught_exception
+[36mbackend-1  | [0m    raise exc
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 523, in dispatch
+[36mbackend-1  | [0m    response = handler(request, *args, **kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/app/projects/views.py", line 244, in post
+[36mbackend-1  | [0m    for task in tasks:
+[36mbackend-1  | [0m                ^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 386, in __iter__
+[36mbackend-1  | [0m    self._fetch_all()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1954, in _fetch_all
+[36mbackend-1  | [0m    self._result_cache = list(self._iterable_class(self))
+[36mbackend-1  | [0m                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 93, in __iter__
+[36mbackend-1  | [0m    results = compiler.execute_sql(
+[36mbackend-1  | [0m              ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/lemail&quot;, &quot;users&quot;.&quot;name&quot;, &#x27;
+ &#x27;&quot;users&quot;.&quot;created_at&quot;, &quot;users&quot;.&quot;updated_at&quot; FROM &quot;tasks&quot; LEFT OUTER JOIN &#x27;
+ &#x27;&quot;users&quot; ON (&quot;tasks&quot;.&quot;assignee_id&quot; = &quot;users&quot;.&quot;id&quot;) WHERE &quot;tasks&quot;.&quot;project_id&quot; &#x27;
+ &#x27;= %s&#x27;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py</code>, line 122, in execute
+          
+
+          
+            <div class="context" id="c257322790010752">
+              
+                <ol start="115" class="pre-context" id="pre257322790010752">
+                
+                  <li onclick="toggle('pre257322790010752', 'post257322790010752')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322790010752', 'post257322790010752')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322790010752', 'post257322790010752')"><pre>class CursorDebugWrapper(CursorWrapper):</pre></li>
+                
+                  <li onclick="toggle('pre257322790010752', 'post257322790010752')"><pre>    # XXX callproc isn&#x27;t instrumented at this time.</pre></li>
+                
+                  <li onclick="toggle('pre257322790010752', 'post257322790010752')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322790010752', 'post257322790010752')"><pre>    def execute(self, sql, params=None):</pre></li>
+                
+                  <li onclick="toggle('pre257322790010752', 'post257322790010752')"><pre>        with self.debug_sql(sql, params, use_last_executed_query=True):</pre></li>
+                
+                </ol>
+              
+              <ol start="122" class="context-line">
+                <li onclick="toggle('pre257322790010752', 'post257322790010752')"><pre>            return super().execute(sql, params)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='123' class="post-context" id="post257322790010752">
+                  
+                  <li onclick="toggle('pre257322790010752', 'post257322790010752')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322790010752', 'post257322790010752')"><pre>    def executemany(self, sql, param_list):</pre></li>
+                  
+                  <li onclick="toggle('pre257322790010752', 'post257322790010752')"><pre>        with self.debug_sql(sql, param_list, many=True):</pre></li>
+                  
+                  <li onclick="toggle('pre257322790010752', 'post257322790010752')"><pre>            return super().executemany(sql, param_list)</pre></li>
+                  
+                  <li onclick="toggle('pre257322790010752', 'post257322790010752')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322790010752', 'post257322790010752')"><pre>    @contextmanager</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322790010752">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>__class__</td>
+                    <td class="code"><pre>&lt;class &#x27;django.db.backends.utils.CursorDebugWrapper&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>(UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;),)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xea08a17f1670&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT &quot;tasks&quot;.&quot;id&quot;, &quot;tasks&quot;.&quot;project_id&quot;, &quot;tasks&quot;.&quot;title&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;airtable_record_id&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;assignee_id&quot;, &quot;tasks&quot;.&quot;created_by_id&quot;, &quot;tasks&quot;.&quot;position&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;created_at&quot;, &quot;tasks&quot;.&quot;updated_at&quot;, &quot;users&quot;.&quot;password&quot;, &#x27;
+ &#x27;&quot;users&quot;.&quot;last_login&quot;, &quot;users&quot;.&quot;id&quot;, &quot;users&quot;.&quot;email&quot;, &quot;users&quot;.&quot;name&quot;, &#x27;
+ &#x27;&quot;users&quot;.&quot;created_at&quot;, &quot;users&quot;.&quot;updated_at&quot; FROM &quot;tasks&quot; LEFT OUTER JOIN &#x27;
+ &#x27;&quot;users&quot; ON (&quot;tasks&quot;.&quot;assignee_id&quot; = &quot;users&quot;.&quot;id&quot;) WHERE &quot;tasks&quot;.&quot;project_id&quot; &#x27;
+ &#x27;= %s&#x27;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py</code>, line 79, in execute
+          
+
+          
+            <div class="context" id="c257322790010432">
+              
+                <ol start="72" class="pre-context" id="pre257322790010432">
+                
+                  <li onclick="toggle('pre257322790010432', 'post257322790010432')"><pre>            elif kparams is None:</pre></li>
+                
+                  <li onclick="toggle('pre257322790010432', 'post257322790010432')"><pre>                return self.cursor.callproc(procname, params)</pre></li>
+                
+                  <li onclick="toggle('pre257322790010432', 'post257322790010432')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre257322790010432', 'post257322790010432')"><pre>                params = params or ()</pre></li>
+                
+                  <li onclick="toggle('pre257322790010432', 'post257322790010432')"><pre>                return self.cursor.callproc(procname, params, kparams)</pre></li>
+                
+                  <li onclick="toggle('pre257322790010432', 'post257322790010432')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322790010432', 'post257322790010432')"><pre>    def execute(self, sql, params=None):</pre></li>
+                
+                </ol>
+              
+              <ol start="79" class="context-line">
+                <li onclick="toggle('pre257322790010432', 'post257322790010432')"><pre>        return self._execute_with_wrappers(
+                   </pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='80' class="post-context" id="post257322790010432">
+                  
+                  <li onclick="toggle('pre257322790010432', 'post257322790010432')"><pre>            sql, params, many=False, executor=self._execute</pre></li>
+                  
+                  <li onclick="toggle('pre257322790010432', 'post257322790010432')"><pre>        )</pre></li>
+                  
+                  <li onclick="toggle('pre257322790010432', 'post257322790010432')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322790010432', 'post257322790010432')"><pre>    def executemany(self, sql, param_list):</pre></li>
+                  
+                  <li onclick="toggle('pre257322790010432', 'post257322790010432')"><pre>        return self._execute_with_wrappers(</pre></li>
+                  
+                  <li onclick="toggle('pre257322790010432', 'post257322790010432')"><pre>            sql, param_list, many=True, executor=self._executemany</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322790010432">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>(UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;),)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xea08a17f1670&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT &quot;tasks&quot;.&quot;id&quot;, &quot;tasks&quot;.&quot;project_id&quot;, &quot;tasks&quot;.&quot;title&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;airtable_record_id&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;assignee_id&quot;, &quot;tasks&quot;.&quot;created_by_id&quot;, &quot;tasks&quot;.&quot;position&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;created_at&quot;, &quot;tasks&quot;.&quot;updated_at&quot;, &quot;users&quot;.&quot;password&quot;, &#x27;
+ &#x27;&quot;users&quot;.&quot;last_login&quot;, &quot;users&quot;.&quot;id&quot;, &quot;users&quot;.&quot;email&quot;, &quot;users&quot;.&quot;name&quot;, &#x27;
+ &#x27;&quot;users&quot;.&quot;created_at&quot;, &quot;users&quot;.&quot;updated_at&quot; FROM &quot;tasks&quot; LEFT OUTER JOIN &#x27;
+ &#x27;&quot;users&quot; ON (&quot;tasks&quot;.&quot;assignee_id&quot; = &quot;users&quot;.&quot;id&quot;) WHERE &quot;tasks&quot;.&quot;project_id&quot; &#x27;
+ &#x27;= %s&#x27;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py</code>, line 92, in _execute_with_wrappers
+          
+
+          
+            <div class="context" id="c257322790006208">
+              
+                <ol start="85" class="pre-context" id="pre257322790006208">
+                
+                  <li onclick="toggle('pre257322790006208', 'post257322790006208')"><pre>            sql, param_list, many=True, executor=self._executemany</pre></li>
+                
+                  <li onclick="toggle('pre257322790006208', 'post257322790006208')"><pre>        )</pre></li>
+                
+                  <li onclick="toggle('pre257322790006208', 'post257322790006208')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322790006208', 'post257322790006208')"><pre>    def _execute_with_wrappers(self, sql, params, many, executor):</pre></li>
+                
+                  <li onclick="toggle('pre257322790006208', 'post257322790006208')"><pre>        context = {&quot;connection&quot;: self.db, &quot;cursor&quot;: self}</pre></li>
+                
+                  <li onclick="toggle('pre257322790006208', 'post257322790006208')"><pre>        for wrapper in reversed(self.db.execute_wrappers):</pre></li>
+                
+                  <li onclick="toggle('pre257322790006208', 'post257322790006208')"><pre>            executor = functools.partial(wrapper, executor)</pre></li>
+                
+                </ol>
+              
+              <ol start="92" class="context-line">
+                <li onclick="toggle('pre257322790006208', 'post257322790006208')"><pre>        return executor(sql, params, many, context)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='93' class="post-context" id="post257322790006208">
+                  
+                  <li onclick="toggle('pre257322790006208', 'post257322790006208')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322790006208', 'post257322790006208')"><pre>    def _execute(self, sql, params, *ignored_wrapper_args):</pre></li>
+                  
+                  <li onclick="toggle('pre257322790006208', 'post257322790006208')"><pre>        # Raise a warning during app initialization (stored_app_configs is only</pre></li>
+                  
+                  <li onclick="toggle('pre257322790006208', 'post257322790006208')"><pre>        # ever set during testing).</pre></li>
+                  
+                  <li onclick="toggle('pre257322790006208', 'post257322790006208')"><pre>        if not apps.ready and not apps.stored_app_configs:</pre></li>
+                  
+                  <li onclick="toggle('pre257322790006208', 'post257322790006208')"><pre>            warnings.warn(self.APPS_NOT_READY_WARNING_MSG, category=RuntimeWarning)</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322790006208">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>{&#x27;connection&#x27;: &lt;DatabaseWrapper vendor=&#x27;postgresql&#x27; alias=&#x27;default&#x27;&gt;,
+ &#x27;cursor&#x27;: &lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xea08a17f1670&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>executor</td>
+                    <td class="code"><pre>&lt;bound method CursorWrapper._execute of &lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xea08a17f1670&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>many</td>
+                    <td class="code"><pre>False</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>(UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;),)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xea08a17f1670&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT &quot;tasks&quot;.&quot;id&quot;, &quot;tasks&quot;.&quot;project_id&quot;, &quot;tasks&quot;.&quot;title&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;airtable_record_id&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;assignee_id&quot;, &quot;tasks&quot;.&quot;created_by_id&quot;, &quot;tasks&quot;.&quot;position&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;created_at&quot;, &quot;tasks&quot;.&quot;updated_at&quot;, &quot;users&quot;.&quot;password&quot;, &#x27;
+ &#x27;&quot;users&quot;.&quot;last_login&quot;, &quot;users&quot;.&quot;id&quot;, &quot;users&quot;.&quot;email&quot;, &quot;users&quot;.&quot;name&quot;, &#x27;
+ &#x27;&quot;users&quot;.&quot;created_at&quot;, &quot;users&quot;.&quot;updated_at&quot; FROM &quot;tasks&quot; LEFT OUTER JOIN &#x27;
+ &#x27;&quot;users&quot; ON (&quot;tasks&quot;.&quot;assignee_id&quot; = &quot;users&quot;.&quot;id&quot;) WHERE &quot;tasks&quot;.&quot;project_id&quot; &#x27;
+ &#x27;= %s&#x27;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py</code>, line 100, in _execute
+          
+
+          
+            <div class="context" id="c257322798700480">
+              
+                <ol start="93" class="pre-context" id="pre257322798700480">
+                
+                  <li onclick="toggle('pre257322798700480', 'post257322798700480')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre257322798700480', 'post257322798700480')"><pre>    def _execute(self, sql, params, *ignored_wrapper_args):</pre></li>
+                
+                  <li onclick="toggle('pre257322798700480', 'post257322798700480')"><pre>        # Raise a warning during app initialization (stored_app_configs is only</pre></li>
+                
+                  <li onclick="toggle('pre257322798700480', 'post257322798700480')"><pre>        # ever set during testing).</pre></li>
+                
+                  <li onclick="toggle('pre257322798700480', 'post257322798700480')"><pre>        if not apps.ready and not apps.stored_app_configs:</pre></li>
+                
+                  <li onclick="toggle('pre257322798700480', 'post257322798700480')"><pre>            warnings.warn(self.APPS_NOT_READY_WARNING_MSG, category=RuntimeWarning)</pre></li>
+                
+                  <li onclick="toggle('pre257322798700480', 'post257322798700480')"><pre>        self.db.validate_no_broken_transaction()</pre></li>
+                
+                </ol>
+              
+              <ol start="100" class="context-line">
+                <li onclick="toggle('pre257322798700480', 'post257322798700480')"><pre>        with self.db.wrap_database_errors:
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='101' class="post-context" id="post257322798700480">
+                  
+                  <li onclick="toggle('pre257322798700480', 'post257322798700480')"><pre>            if params is None:</pre></li>
+                  
+                  <li onclick="toggle('pre257322798700480', 'post257322798700480')"><pre>                # params default might be backend specific.</pre></li>
+                  
+                  <li onclick="toggle('pre257322798700480', 'post257322798700480')"><pre>                return self.cursor.execute(sql)</pre></li>
+                  
+                  <li onclick="toggle('pre257322798700480', 'post257322798700480')"><pre>            else:</pre></li>
+                  
+                  <li onclick="toggle('pre257322798700480', 'post257322798700480')"><pre>                return self.cursor.execute(sql, params)</pre></li>
+                  
+                  <li onclick="toggle('pre257322798700480', 'post257322798700480')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322798700480">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>ignored_wrapper_args</td>
+                    <td class="code"><pre>(False,
+ {&#x27;connection&#x27;: &lt;DatabaseWrapper vendor=&#x27;postgresql&#x27; alias=&#x27;default&#x27;&gt;,
+  &#x27;cursor&#x27;: &lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xea08a17f1670&gt;})</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>(UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;),)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xea08a17f1670&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT &quot;tasks&quot;.&quot;id&quot;, &quot;tasks&quot;.&quot;project_id&quot;, &quot;tasks&quot;.&quot;title&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;airtable_record_id&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;assignee_id&quot;, &quot;tasks&quot;.&quot;created_by_id&quot;, &quot;tasks&quot;.&quot;position&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;created_at&quot;, &quot;tasks&quot;.&quot;updated_at&quot;, &quot;users&quot;.&quot;password&quot;, &#x27;
+ &#x27;&quot;users&quot;.&quot;last_login&quot;, &quot;users&quot;.&quot;id&quot;, &quot;users&quot;.&quot;email&quot;, &quot;users&quot;.&quot;name&quot;, &#x27;
+ &#x27;&quot;users&quot;.&quot;created_at&quot;, &quot;users&quot;.&quot;updated_at&quot; FROM &quot;tasks&quot; LEFT OUTER JOIN &#x27;
+ &#x27;&quot;users&quot; ON (&quot;tasks&quot;.&quot;assignee_id&quot; = &quot;users&quot;.&quot;id&quot;) WHERE &quot;tasks&quot;.&quot;project_id&quot; &#x27;
+ &#x27;= %s&#x27;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/db/utils.py</code>, line 91, in __exit__
+          
+
+          
+            <div class="context" id="c257322793703360">
+              
+                <ol start="84" class="pre-context" id="pre257322793703360">
+                
+                  <li onclick="toggle('pre257322793703360', 'post257322793703360')"><pre>            db_exc_type = getattr(self.wrapper.Database, dj_exc_type.__name__)</pre></li>
+                
+                  <li onclick="toggle('pre257322793703360', 'post257322793703360')"><pre>            if issubclass(exc_type, db_exc_type):</pre></li>
+                
+                  <li onclick="toggle('pre257322793703360', 'post257322793703360')"><pre>                dj_exc_value = dj_exc_type(*exc_value.args)</pre></li>
+                
+                  <li onclick="toggle('pre257322793703360', 'post257322793703360')"><pre>                # Only set the &#x27;errors_occurred&#x27; flag for errors that may make</pre></li>
+                
+                  <li onclick="toggle('pre257322793703360', 'post257322793703360')"><pre>                # the connection unusable.</pre></li>
+                
+                  <li onclick="toggle('pre257322793703360', 'post257322793703360')"><pre>                if dj_exc_type not in (DataError, IntegrityError):</pre></li>
+                
+                  <li onclick="toggle('pre257322793703360', 'post257322793703360')"><pre>                    self.wrapper.errors_occurred = True</pre></li>
+                
+                </ol>
+              
+              <ol start="91" class="context-line">
+                <li onclick="toggle('pre257322793703360', 'post257322793703360')"><pre>                raise dj_exc_value.with_traceback(traceback) from exc_value
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='92' class="post-context" id="post257322793703360">
+                  
+                  <li onclick="toggle('pre257322793703360', 'post257322793703360')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322793703360', 'post257322793703360')"><pre>    def __call__(self, func):</pre></li>
+                  
+                  <li onclick="toggle('pre257322793703360', 'post257322793703360')"><pre>        # Note that we are intentionally not using @wraps here for performance</pre></li>
+                  
+                  <li onclick="toggle('pre257322793703360', 'post257322793703360')"><pre>        # reasons. Refs #21109.</pre></li>
+                  
+                  <li onclick="toggle('pre257322793703360', 'post257322793703360')"><pre>        def inner(*args, **kwargs):</pre></li>
+                  
+                  <li onclick="toggle('pre257322793703360', 'post257322793703360')"><pre>            with self:</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322793703360">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>db_exc_type</td>
+                    <td class="code"><pre>&lt;class &#x27;psycopg2.ProgrammingError&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>dj_exc_type</td>
+                    <td class="code"><pre>&lt;class &#x27;django.db.utils.ProgrammingError&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>dj_exc_value</td>
+                    <td class="code"><pre>ProgrammingError(&#x27;column tasks.airtable_record_id does not exist\nLINE 1: ...&quot;title&quot;, &quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;a...\n                                                             ^\n&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>exc_type</td>
+                    <td class="code"><pre>&lt;class &#x27;psycopg2.errors.UndefinedColumn&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>exc_value</td>
+                    <td class="code"><pre>UndefinedColumn(&#x27;column tasks.airtable_record_id does not exist\nLINE 1: ...&quot;title&quot;, &quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;a...\n                                                             ^\n&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.utils.DatabaseErrorWrapper object at 0xea08a179fe90&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>traceback</td>
+                    <td class="code"><pre>&lt;traceback object at 0xea08a17db7c0&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py</code>, line 105, in _execute
+          
+
+          
+            <div class="context" id="c257322790008768">
+              
+                <ol start="98" class="pre-context" id="pre257322790008768">
+                
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>            warnings.warn(self.APPS_NOT_READY_WARNING_MSG, category=RuntimeWarning)</pre></li>
+                
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>        self.db.validate_no_broken_transaction()</pre></li>
+                
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>        with self.db.wrap_database_errors:</pre></li>
+                
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>            if params is None:</pre></li>
+                
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>                # params default might be backend specific.</pre></li>
+                
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>                return self.cursor.execute(sql)</pre></li>
+                
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>            else:</pre></li>
+                
+                </ol>
+              
+              <ol start="105" class="context-line">
+                <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>                return self.cursor.execute(sql, params)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='106' class="post-context" id="post257322790008768">
+                  
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>    def _executemany(self, sql, param_list, *ignored_wrapper_args):</pre></li>
+                  
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>        # Raise a warning during app initialization (stored_app_configs is only</pre></li>
+                  
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>        # ever set during testing).</pre></li>
+                  
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>        if not apps.ready and not apps.stored_app_configs:</pre></li>
+                  
+                  <li onclick="toggle('pre257322790008768', 'post257322790008768')"><pre>            warnings.warn(self.APPS_NOT_READY_WARNING_MSG, category=RuntimeWarning)</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v257322790008768">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>ignored_wrapper_args</td>
+                    <td class="code"><pre>(False,
+ {&#x27;connection&#x27;: &lt;DatabaseWrapper vendor=&#x27;postgresql&#x27; alias=&#x27;default&#x27;&gt;,
+  &#x27;cursor&#x27;: &lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xea08a17f1670&gt;})</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>params</td>
+                    <td class="code"><pre>(UUID(&#x27;1b557d3e-738d-47f7-9ed2-b616ab2371d9&#x27;),)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.db.backends.postgresql.base.CursorDebugWrapper object at 0xea08a17f1670&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>sql</td>
+                    <td class="code"><pre>(&#x27;SELECT &quot;tasks&quot;.&quot;id&quot;, &quot;tasks&quot;.&quot;project_id&quot;, &quot;tasks&quot;.&quot;title&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;airtable_record_id&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;assignee_id&quot;, &quot;tasks&quot;.&quot;created_by_id&quot;, &quot;tasks&quot;.&quot;position&quot;, &#x27;
+ &#x27;&quot;tasks&quot;.&quot;created_at&quot;, &quot;tasks&quot;.&quot;updated_at&quot;, &quot;users&quot;.&quot;password&quot;, &#x27;
+ &#x27;&quot;users&quot;.&quot;last_login&quot;, &quot;users&quot;.&quot;id&quot;, &quot;users&quot;.&quot;email&quot;, &quot;users&quot;.&quot;name&quot;, &#x27;
+ &#x27;&quot;users&quot;.&quot;created_at&quot;, &quot;users&quot;.&quot;updated_at&quot; FROM &quot;tasks&quot; LEFT OUTER JOIN &#x27;
+ &#x27;&quot;users&quot; ON (&quot;tasks&quot;.&quot;assignee_id&quot; = &quot;users&quot;.&quot;id&quot;) WHERE &quot;tasks&quot;.&quot;project_id&quot; &#x27;
+ &#x27;= %s&#x27;)</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+    </ul>
+  </div>
+
+  <form action="https://dpaste.com/" name="pasteform" id="pasteform" method="post">
+  <div id="pastebinTraceback" class="pastebin">
+    <input type="hidden" name="language" value="PythonConsole">
+    <input type="hidden" name="title"
+      value="ProgrammingError at /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export">
+    <input type="hidden" name="source" value="Django Dpaste Agent">
+    <input type="hidden" name="poster" value="Django">
+    <textarea name="content" id="traceback_area" cols="140" rows="25">
+Environment:
+
+
+Request Method: POST
+Request URL: http://localhost:8000/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export
+
+Django Version: 5.2.17
+Python Version: 3.12.14
+Installed Applications:
+[&#x27;django.contrib.contenttypes&#x27;,
+ &#x27;django.contrib.auth&#x27;,
+ &#x27;rest_framework&#x27;,
+ &#x27;corsheaders&#x27;,
+ &#x27;users&#x27;,
+ &#x27;projects&#x27;]
+Installed Middleware:
+[&#x27;corsheaders.middleware.CorsMiddleware&#x27;,
+ &#x27;django.middleware.common.CommonMiddleware&#x27;]
+
+
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The above exception (column tasks.airtable_record_id does not exist
+LINE 1: ...&quot;title&quot;, &quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;a...
+                                                             ^
+) was the direct cause of the following exception:
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 526, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 474, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 485, in raise_uncaught_exception
+    raise exc
+    ^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/projects/views.py", line 244, in post
+    for task in tasks:
+                ^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 386, in __iter__
+    self._fetch_all()
+    ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1954, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 93, in __iter__
+    results = compiler.execute_sql(
+              
+  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Exception Type: ProgrammingError at /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export
+Exception Value: column tasks.airtable_record_id does not exist
+LINE 1: ...&quot;title&quot;, &quot;tasks&quot;.&quot;description&quot;, &quot;tasks&quot;.&quot;status&quot;, &quot;tasks&quot;.&quot;a...
+                                                             ^
+
+</textarea>
+  <br><br>
+  <input type="submit" value="Share this traceback on a public website">
+  </div>
+</form>
+
+</div>
+
+
+<div id="requestinfo">
+  <h2>Request information</h2>
+
+
+  
+    <h3 id="user-info">USER</h3>
+    <p>meera@taskboard.dev</p>
+  
+
+  <h3 id="get-info">GET</h3>
+  
+    <p>No GET data</p>
+  
+
+  <h3 id="post-info">POST</h3>
+  
+    <p>No POST data</p>
+  
+
+  <h3 id="files-info">FILES</h3>
+  
+    <p>No FILES data</p>
+  
+
+  <h3 id="cookie-info">COOKIES</h3>
+  
+    <p>No cookie data</p>
+  
+
+  <h3 id="meta-info">META</h3>
+  <table class="req">
+    <thead>
+      <tr>
+        <th scope="col">Variable</th>
+        <th scope="col">Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>AIRTABLE_API_KEY</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AIRTABLE_BASE_ID</td>
+          <td class="code"><pre>&#x27;PdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AIRTABLE_TABLE_NAME</td>
+          <td class="code"><pre>&#x27;Tasks&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CONTENT_LENGTH</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CONTENT_TYPE</td>
+          <td class="code"><pre>&#x27;text/plain&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG</td>
+          <td class="code"><pre>&#x27;true&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DJANGO_SECRET_KEY</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DJANGO_SETTINGS_MODULE</td>
+          <td class="code"><pre>&#x27;taskboard.settings&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GATEWAY_INTERFACE</td>
+          <td class="code"><pre>&#x27;CGI/1.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GPG_KEY</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HOME</td>
+          <td class="code"><pre>&#x27;/root&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HOSTNAME</td>
+          <td class="code"><pre>&#x27;40a3be010d8a&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_ACCEPT</td>
+          <td class="code"><pre>&#x27;*/*&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_AUTHORIZATION</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_HOST</td>
+          <td class="code"><pre>&#x27;localhost:8000&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_USER_AGENT</td>
+          <td class="code"><pre>&#x27;curl/8.7.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANG</td>
+          <td class="code"><pre>&#x27;C.UTF-8&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATH</td>
+          <td class="code"><pre>&#x27;/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATH_INFO</td>
+          <td class="code"><pre>&#x27;/api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>POSTGRES_DB</td>
+          <td class="code"><pre>&#x27;taskboard&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>POSTGRES_HOST</td>
+          <td class="code"><pre>&#x27;db&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>POSTGRES_PASSWORD</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>POSTGRES_PORT</td>
+          <td class="code"><pre>&#x27;5432&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>POSTGRES_USER</td>
+          <td class="code"><pre>&#x27;taskboard&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PYTHON_SHA256</td>
+          <td class="code"><pre>&#x27;5c8462af5790baf43a321a1559dbe0db06d1be4300fb85fb53c40060668e548a&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PYTHON_VERSION</td>
+          <td class="code"><pre>&#x27;3.12.14&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>QUERY_STRING</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REMOTE_ADDR</td>
+          <td class="code"><pre>&#x27;172.18.0.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REMOTE_HOST</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REQUEST_METHOD</td>
+          <td class="code"><pre>&#x27;POST&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>RUN_MAIN</td>
+          <td class="code"><pre>&#x27;true&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SCRIPT_NAME</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_NAME</td>
+          <td class="code"><pre>&#x27;40a3be010d8a&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_PORT</td>
+          <td class="code"><pre>&#x27;8000&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_PROTOCOL</td>
+          <td class="code"><pre>&#x27;HTTP/1.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_SOFTWARE</td>
+          <td class="code"><pre>&#x27;WSGIServer/0.2&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TZ</td>
+          <td class="code"><pre>&#x27;UTC&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.errors</td>
+          <td class="code"><pre>&lt;_io.TextIOWrapper name=&#x27;&lt;stderr&gt;&#x27; mode=&#x27;w&#x27; encoding=&#x27;utf-8&#x27;&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.file_wrapper</td>
+          <td class="code"><pre>&lt;class &#x27;wsgiref.util.FileWrapper&#x27;&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.input</td>
+          <td class="code"><pre>&lt;django.core.handlers.wsgi.LimitedStream object at 0xea08a177b1c0&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.multiprocess</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.multithread</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.run_once</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.url_scheme</td>
+          <td class="code"><pre>&#x27;http&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.version</td>
+          <td class="code"><pre>(1, 0)</pre></td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+  <h3 id="settings-info">Settings</h3>
+  <h4>Using settings module <code>taskboard.settings</code></h4>
+  <table class="req">
+    <thead>
+      <tr>
+        <th scope="col">Setting</th>
+        <th scope="col">Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>ABSOLUTE_URL_OVERRIDES</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ADMINS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ALLOWED_HOSTS</td>
+          <td class="code"><pre>[&#x27;*&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>APPEND_SLASH</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTHENTICATION_BACKENDS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTH_PASSWORD_VALIDATORS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTH_USER_MODEL</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>BASE_DIR</td>
+          <td class="code"><pre>PosixPath(&#x27;/app&#x27;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHES</td>
+          <td class="code"><pre>{&#x27;default&#x27;: {&#x27;BACKEND&#x27;: &#x27;django.core.cache.backends.locmem.LocMemCache&#x27;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_ALIAS</td>
+          <td class="code"><pre>&#x27;default&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_KEY_PREFIX</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_SECONDS</td>
+          <td class="code"><pre>600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CORS_ALLOW_ALL_ORIGINS</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_AGE</td>
+          <td class="code"><pre>31449600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_NAME</td>
+          <td class="code"><pre>&#x27;csrftoken&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_PATH</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_SAMESITE</td>
+          <td class="code"><pre>&#x27;Lax&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_FAILURE_VIEW</td>
+          <td class="code"><pre>&#x27;django.views.csrf.csrf_failure&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_HEADER_NAME</td>
+          <td class="code"><pre>&#x27;HTTP_X_CSRFTOKEN&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_TRUSTED_ORIGINS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_USE_SESSIONS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATABASES</td>
+          <td class="code"><pre>{&#x27;default&#x27;: {&#x27;ATOMIC_REQUESTS&#x27;: False,
+             &#x27;AUTOCOMMIT&#x27;: True,
+             &#x27;CONN_HEALTH_CHECKS&#x27;: False,
+             &#x27;CONN_MAX_AGE&#x27;: 0,
+             &#x27;ENGINE&#x27;: &#x27;django.db.backends.postgresql&#x27;,
+             &#x27;HOST&#x27;: &#x27;db&#x27;,
+             &#x27;NAME&#x27;: &#x27;taskboard&#x27;,
+             &#x27;OPTIONS&#x27;: {},
+             &#x27;PASSWORD&#x27;: &#x27;********************&#x27;,
+             &#x27;PORT&#x27;: &#x27;5432&#x27;,
+             &#x27;TEST&#x27;: {&#x27;CHARSET&#x27;: None,
+                      &#x27;COLLATION&#x27;: None,
+                      &#x27;MIGRATE&#x27;: True,
+                      &#x27;MIRROR&#x27;: None,
+                      &#x27;NAME&#x27;: None},
+             &#x27;TIME_ZONE&#x27;: None,
+             &#x27;USER&#x27;: &#x27;taskboard&#x27;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATABASE_ROUTERS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATA_UPLOAD_MAX_MEMORY_SIZE</td>
+          <td class="code"><pre>2621440</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATA_UPLOAD_MAX_NUMBER_FIELDS</td>
+          <td class="code"><pre>1000</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATA_UPLOAD_MAX_NUMBER_FILES</td>
+          <td class="code"><pre>100</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATETIME_FORMAT</td>
+          <td class="code"><pre>&#x27;N j, Y, P&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATETIME_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#x27;%Y-%m-%d %H:%M:%S&#x27;,
+ &#x27;%Y-%m-%d %H:%M:%S.%f&#x27;,
+ &#x27;%Y-%m-%d %H:%M&#x27;,
+ &#x27;%m/%d/%Y %H:%M:%S&#x27;,
+ &#x27;%m/%d/%Y %H:%M:%S.%f&#x27;,
+ &#x27;%m/%d/%Y %H:%M&#x27;,
+ &#x27;%m/%d/%y %H:%M:%S&#x27;,
+ &#x27;%m/%d/%y %H:%M:%S.%f&#x27;,
+ &#x27;%m/%d/%y %H:%M&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATE_FORMAT</td>
+          <td class="code"><pre>&#x27;N j, Y&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATE_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#x27;%Y-%m-%d&#x27;,
+ &#x27;%m/%d/%Y&#x27;,
+ &#x27;%m/%d/%y&#x27;,
+ &#x27;%b %d %Y&#x27;,
+ &#x27;%b %d, %Y&#x27;,
+ &#x27;%d %b %Y&#x27;,
+ &#x27;%d %b, %Y&#x27;,
+ &#x27;%B %d %Y&#x27;,
+ &#x27;%B %d, %Y&#x27;,
+ &#x27;%d %B %Y&#x27;,
+ &#x27;%d %B, %Y&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG_PROPAGATE_EXCEPTIONS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DECIMAL_SEPARATOR</td>
+          <td class="code"><pre>&#x27;.&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_AUTO_FIELD</td>
+          <td class="code"><pre>&#x27;django.db.models.BigAutoField&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_CHARSET</td>
+          <td class="code"><pre>&#x27;utf-8&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_EXCEPTION_REPORTER</td>
+          <td class="code"><pre>&#x27;django.views.debug.ExceptionReporter&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_EXCEPTION_REPORTER_FILTER</td>
+          <td class="code"><pre>&#x27;django.views.debug.SafeExceptionReporterFilter&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_FROM_EMAIL</td>
+          <td class="code"><pre>&#x27;webmaster@localhost&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_INDEX_TABLESPACE</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_TABLESPACE</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DISALLOWED_USER_AGENTS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_BACKEND</td>
+          <td class="code"><pre>&#x27;django.core.mail.backends.smtp.EmailBackend&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST</td>
+          <td class="code"><pre>&#x27;localhost&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST_PASSWORD</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST_USER</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_PORT</td>
+          <td class="code"><pre>25</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SSL_CERTFILE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SSL_KEYFILE</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SUBJECT_PREFIX</td>
+          <td class="code"><pre>&#x27;[Django] &#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_TIMEOUT</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_LOCALTIME</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_SSL</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_TLS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_DIRECTORY_PERMISSIONS</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_HANDLERS</td>
+          <td class="code"><pre>[&#x27;django.core.files.uploadhandler.MemoryFileUploadHandler&#x27;,
+ &#x27;django.core.files.uploadhandler.TemporaryFileUploadHandler&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_MAX_MEMORY_SIZE</td>
+          <td class="code"><pre>2621440</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_PERMISSIONS</td>
+          <td class="code"><pre>420</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_TEMP_DIR</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FIRST_DAY_OF_WEEK</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FIXTURE_DIRS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORCE_SCRIPT_NAME</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORMAT_MODULE_PATH</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORMS_URLFIELD_ASSUME_HTTPS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORM_RENDERER</td>
+          <td class="code"><pre>&#x27;django.forms.renderers.DjangoTemplates&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>IGNORABLE_404_URLS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>INSTALLED_APPS</td>
+          <td class="code"><pre>[&#x27;django.contrib.contenttypes&#x27;,
+ &#x27;django.contrib.auth&#x27;,
+ &#x27;rest_framework&#x27;,
+ &#x27;corsheaders&#x27;,
+ &#x27;users&#x27;,
+ &#x27;projects&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>INTERNAL_IPS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGES</td>
+          <td class="code"><pre>[(&#x27;af&#x27;, &#x27;Afrikaans&#x27;),
+ (&#x27;ar&#x27;, &#x27;Arabic&#x27;),
+ (&#x27;ar-dz&#x27;, &#x27;Algerian Arabic&#x27;),
+ (&#x27;ast&#x27;, &#x27;Asturian&#x27;),
+ (&#x27;az&#x27;, &#x27;Azerbaijani&#x27;),
+ (&#x27;bg&#x27;, &#x27;Bulgarian&#x27;),
+ (&#x27;be&#x27;, &#x27;Belarusian&#x27;),
+ (&#x27;bn&#x27;, &#x27;Bengali&#x27;),
+ (&#x27;br&#x27;, &#x27;Breton&#x27;),
+ (&#x27;bs&#x27;, &#x27;Bosnian&#x27;),
+ (&#x27;ca&#x27;, &#x27;Catalan&#x27;),
+ (&#x27;ckb&#x27;, &#x27;Central Kurdish (Sorani)&#x27;),
+ (&#x27;cs&#x27;, &#x27;Czech&#x27;),
+ (&#x27;cy&#x27;, &#x27;Welsh&#x27;),
+ (&#x27;da&#x27;, &#x27;Danish&#x27;),
+ (&#x27;de&#x27;, &#x27;German&#x27;),
+ (&#x27;dsb&#x27;, &#x27;Lower Sorbian&#x27;),
+ (&#x27;el&#x27;, &#x27;Greek&#x27;),
+ (&#x27;en&#x27;, &#x27;English&#x27;),
+ (&#x27;en-au&#x27;, &#x27;Australian English&#x27;),
+ (&#x27;en-gb&#x27;, &#x27;British English&#x27;),
+ (&#x27;eo&#x27;, &#x27;Esperanto&#x27;),
+ (&#x27;es&#x27;, &#x27;Spanish&#x27;),
+ (&#x27;es-ar&#x27;, &#x27;Argentinian Spanish&#x27;),
+ (&#x27;es-co&#x27;, &#x27;Colombian Spanish&#x27;),
+ (&#x27;es-mx&#x27;, &#x27;Mexican Spanish&#x27;),
+ (&#x27;es-ni&#x27;, &#x27;Nicaraguan Spanish&#x27;),
+ (&#x27;es-ve&#x27;, &#x27;Venezuelan Spanish&#x27;),
+ (&#x27;et&#x27;, &#x27;Estonian&#x27;),
+ (&#x27;eu&#x27;, &#x27;Basque&#x27;),
+ (&#x27;fa&#x27;, &#x27;Persian&#x27;),
+ (&#x27;fi&#x27;, &#x27;Finnish&#x27;),
+ (&#x27;fr&#x27;, &#x27;French&#x27;),
+ (&#x27;fy&#x27;, &#x27;Frisian&#x27;),
+ (&#x27;ga&#x27;, &#x27;Irish&#x27;),
+ (&#x27;gd&#x27;, &#x27;Scottish Gaelic&#x27;),
+ (&#x27;gl&#x27;, &#x27;Galician&#x27;),
+ (&#x27;he&#x27;, &#x27;Hebrew&#x27;),
+ (&#x27;hi&#x27;, &#x27;Hindi&#x27;),
+ (&#x27;hr&#x27;, &#x27;Croatian&#x27;),
+ (&#x27;hsb&#x27;, &#x27;Upper Sorbian&#x27;),
+ (&#x27;hu&#x27;, &#x27;Hungarian&#x27;),
+ (&#x27;hy&#x27;, &#x27;Armenian&#x27;),
+ (&#x27;ia&#x27;, &#x27;Interlingua&#x27;),
+ (&#x27;id&#x27;, &#x27;Indonesian&#x27;),
+ (&#x27;ig&#x27;, &#x27;Igbo&#x27;),
+ (&#x27;io&#x27;, &#x27;Ido&#x27;),
+ (&#x27;is&#x27;, &#x27;Icelandic&#x27;),
+ (&#x27;it&#x27;, &#x27;Italian&#x27;),
+ (&#x27;ja&#x27;, &#x27;Japanese&#x27;),
+ (&#x27;ka&#x27;, &#x27;Georgian&#x27;),
+ (&#x27;kab&#x27;, &#x27;Kabyle&#x27;),
+ (&#x27;kk&#x27;, &#x27;Kazakh&#x27;),
+ (&#x27;km&#x27;, &#x27;Khmer&#x27;),
+ (&#x27;kn&#x27;, &#x27;Kannada&#x27;),
+ (&#x27;ko&#x27;, &#x27;Korean&#x27;),
+ (&#x27;ky&#x27;, &#x27;Kyrgyz&#x27;),
+ (&#x27;lb&#x27;, &#x27;Luxembourgish&#x27;),
+ (&#x27;lt&#x27;, &#x27;Lithuanian&#x27;),
+ (&#x27;lv&#x27;, &#x27;Latvian&#x27;),
+ (&#x27;mk&#x27;, &#x27;Macedonian&#x27;),
+ (&#x27;ml&#x27;, &#x27;Malayalam&#x27;),
+ (&#x27;mn&#x27;, &#x27;Mongolian&#x27;),
+ (&#x27;mr&#x27;, &#x27;Marathi&#x27;),
+ (&#x27;ms&#x27;, &#x27;Malay&#x27;),
+ (&#x27;my&#x27;, &#x27;Burmese&#x27;),
+ (&#x27;nb&#x27;, &#x27;Norwegian Bokmål&#x27;),
+ (&#x27;ne&#x27;, &#x27;Nepali&#x27;),
+ (&#x27;nl&#x27;, &#x27;Dutch&#x27;),
+ (&#x27;nn&#x27;, &#x27;Norwegian Nynorsk&#x27;),
+ (&#x27;os&#x27;, &#x27;Ossetic&#x27;),
+ (&#x27;pa&#x27;, &#x27;Punjabi&#x27;),
+ (&#x27;pl&#x27;, &#x27;Polish&#x27;),
+ (&#x27;pt&#x27;, &#x27;Portuguese&#x27;),
+ (&#x27;pt-br&#x27;, &#x27;Brazilian Portuguese&#x27;),
+ (&#x27;ro&#x27;, &#x27;Romanian&#x27;),
+ (&#x27;ru&#x27;, &#x27;Russian&#x27;),
+ (&#x27;sk&#x27;, &#x27;Slovak&#x27;),
+ (&#x27;sl&#x27;, &#x27;Slovenian&#x27;),
+ (&#x27;sq&#x27;, &#x27;Albanian&#x27;),
+ (&#x27;sr&#x27;, &#x27;Serbian&#x27;),
+ (&#x27;sr-latn&#x27;, &#x27;Serbian Latin&#x27;),
+ (&#x27;sv&#x27;, &#x27;Swedish&#x27;),
+ (&#x27;sw&#x27;, &#x27;Swahili&#x27;),
+ (&#x27;ta&#x27;, &#x27;Tamil&#x27;),
+ (&#x27;te&#x27;, &#x27;Telugu&#x27;),
+ (&#x27;tg&#x27;, &#x27;Tajik&#x27;),
+ (&#x27;th&#x27;, &#x27;Thai&#x27;),
+ (&#x27;tk&#x27;, &#x27;Turkmen&#x27;),
+ (&#x27;tr&#x27;, &#x27;Turkish&#x27;),
+ (&#x27;tt&#x27;, &#x27;Tatar&#x27;),
+ (&#x27;udm&#x27;, &#x27;Udmurt&#x27;),
+ (&#x27;ug&#x27;, &#x27;Uyghur&#x27;),
+ (&#x27;uk&#x27;, &#x27;Ukrainian&#x27;),
+ (&#x27;ur&#x27;, &#x27;Urdu&#x27;),
+ (&#x27;uz&#x27;, &#x27;Uzbek&#x27;),
+ (&#x27;vi&#x27;, &#x27;Vietnamese&#x27;),
+ (&#x27;zh-hans&#x27;, &#x27;Simplified Chinese&#x27;),
+ (&#x27;zh-hant&#x27;, &#x27;Traditional Chinese&#x27;)]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGES_BIDI</td>
+          <td class="code"><pre>[&#x27;he&#x27;, &#x27;ar&#x27;, &#x27;ar-dz&#x27;, &#x27;ckb&#x27;, &#x27;fa&#x27;, &#x27;ug&#x27;, &#x27;ur&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_CODE</td>
+          <td class="code"><pre>&#x27;en-us&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_AGE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_NAME</td>
+          <td class="code"><pre>&#x27;django_language&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_PATH</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_SAMESITE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOCALE_PATHS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGGING</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGGING_CONFIG</td>
+          <td class="code"><pre>&#x27;logging.config.dictConfig&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGIN_REDIRECT_URL</td>
+          <td class="code"><pre>&#x27;/accounts/profile/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGIN_URL</td>
+          <td class="code"><pre>&#x27;/accounts/login/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGOUT_REDIRECT_URL</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MANAGERS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MEDIA_ROOT</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MEDIA_URL</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MESSAGE_STORAGE</td>
+          <td class="code"><pre>&#x27;django.contrib.messages.storage.fallback.FallbackStorage&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MIDDLEWARE</td>
+          <td class="code"><pre>[&#x27;corsheaders.middleware.CorsMiddleware&#x27;,
+ &#x27;django.middleware.common.CommonMiddleware&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MIGRATION_MODULES</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MONTH_DAY_FORMAT</td>
+          <td class="code"><pre>&#x27;F j&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>NUMBER_GROUPING</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PASSWORD_HASHERS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PASSWORD_RESET_TIMEOUT</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PREPEND_WWW</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REST_FRAMEWORK</td>
+          <td class="code"><pre>{&#x27;DEFAULT_AUTHENTICATION_CLASSES&#x27;: &#x27;********************&#x27;,
+ &#x27;DEFAULT_PERMISSION_CLASSES&#x27;: [&#x27;rest_framework.permissions.IsAuthenticated&#x27;]}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ROOT_URLCONF</td>
+          <td class="code"><pre>&#x27;taskboard.urls&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECRET_KEY</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECRET_KEY_FALLBACKS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_CONTENT_TYPE_NOSNIFF</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_CROSS_ORIGIN_OPENER_POLICY</td>
+          <td class="code"><pre>&#x27;same-origin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_INCLUDE_SUBDOMAINS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_PRELOAD</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_SECONDS</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_PROXY_SSL_HEADER</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_REDIRECT_EXEMPT</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_REFERRER_POLICY</td>
+          <td class="code"><pre>&#x27;same-origin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_SSL_HOST</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_SSL_REDIRECT</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_EMAIL</td>
+          <td class="code"><pre>&#x27;root@localhost&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_CACHE_ALIAS</td>
+          <td class="code"><pre>&#x27;default&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_AGE</td>
+          <td class="code"><pre>1209600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_NAME</td>
+          <td class="code"><pre>&#x27;sessionid&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_PATH</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_SAMESITE</td>
+          <td class="code"><pre>&#x27;Lax&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_ENGINE</td>
+          <td class="code"><pre>&#x27;django.contrib.sessions.backends.db&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_EXPIRE_AT_BROWSER_CLOSE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_FILE_PATH</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_SAVE_EVERY_REQUEST</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_SERIALIZER</td>
+          <td class="code"><pre>&#x27;django.contrib.sessions.serializers.JSONSerializer&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SETTINGS_MODULE</td>
+          <td class="code"><pre>&#x27;taskboard.settings&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHORT_DATETIME_FORMAT</td>
+          <td class="code"><pre>&#x27;m/d/Y P&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHORT_DATE_FORMAT</td>
+          <td class="code"><pre>&#x27;m/d/Y&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SIGNED_COOKIE_LEGACY_SALT_FALLBACK</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SIGNING_BACKEND</td>
+          <td class="code"><pre>&#x27;django.core.signing.TimestampSigner&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SILENCED_SYSTEM_CHECKS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SIMPLE_JWT</td>
+          <td class="code"><pre>{&#x27;ACCESS_TOKEN_LIFETIME&#x27;: &#x27;********************&#x27;,
+ &#x27;AUTH_HEADER_TYPES&#x27;: &#x27;********************&#x27;}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_DIRS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_FINDERS</td>
+          <td class="code"><pre>[&#x27;django.contrib.staticfiles.finders.FileSystemFinder&#x27;,
+ &#x27;django.contrib.staticfiles.finders.AppDirectoriesFinder&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATIC_ROOT</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATIC_URL</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STORAGES</td>
+          <td class="code"><pre>{&#x27;default&#x27;: {&#x27;BACKEND&#x27;: &#x27;django.core.files.storage.FileSystemStorage&#x27;},
+ &#x27;staticfiles&#x27;: {&#x27;BACKEND&#x27;: &#x27;django.contrib.staticfiles.storage.StaticFilesStorage&#x27;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMPLATES</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEST_NON_SERIALIZED_APPS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEST_RUNNER</td>
+          <td class="code"><pre>&#x27;django.test.runner.DiscoverRunner&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>THOUSAND_SEPARATOR</td>
+          <td class="code"><pre>&#x27;,&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_FORMAT</td>
+          <td class="code"><pre>&#x27;P&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#x27;%H:%M:%S&#x27;, &#x27;%H:%M:%S.%f&#x27;, &#x27;%H:%M&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_ZONE</td>
+          <td class="code"><pre>&#x27;UTC&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_I18N</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_THOUSAND_SEPARATOR</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_TZ</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_X_FORWARDED_HOST</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_X_FORWARDED_PORT</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>WSGI_APPLICATION</td>
+          <td class="code"><pre>&#x27;taskboard.wsgi.application&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>X_FRAME_OPTIONS</td>
+          <td class="code"><pre>&#x27;DENY&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>YEAR_MONTH_FORMAT</td>
+          <td class="code"><pre>&#x27;F Y&#x27;</pre></td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+</div>
+</main>
+
+
+  <footer id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in your
+      Django settings file. Change that to <code>False</code>, and Django will
+      display a standard page generated by the handler for this status code.
+    </p>
+  </footer>
+
+</body>
+</html>
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hcurl -X POST "http://localhost:8000/api/projects/$PID/export" -H "Authorization: Bearer $TOKEN"
+[K[A[43C                                                                                               [1B[K[A[43Cocal/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+[36mbackend-1  | [0m    cursor.execute(sql, params)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+[36mbackend-1  | [0m    return super().execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+[36mbackend-1  | [0m    return self._execute_with_wrappers(
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+[36mbackend-1  | [0m    return executor(sql, params, many, context)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+[36mbackend-1  | [0m    with self.db.wrap_database_errors:
+[36mbackend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+[36mbackend-1  | [0m    raise dj_exc_value.with_traceback(traceback) from exc_value
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mdjango.db.utils.ProgrammingError: column tasks.airtable_record_id does not exist
+[36mbackend-1  | [0mLINE 1: ..."title", "tasks"."description", "tasks"."status", "tasks"."a...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m[11/Sep/2026 21:16:35] "POST /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export HTTP/1.1" 500 144943
+ocal/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+[36mbackend-1  | [0m    cursor.execute(sql, params)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+[36mbackend-1  | [0m    return super().execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+[36mbackend-1  | [0m    return self._execute_with_wrappers(
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+[36mbackend-1  | [0m    return executor(sql, params, many, context)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+[36mbackend-1  | [0m    with self.db.wrap_database_errors:
+[36mbackend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+[36mbackend-1  | [0m    raise dj_exc_value.with_traceback(traceback) from exc_value
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mdjango.db.utils.ProgrammingError: column tasks.airtable_record_id does not exist
+[36mbackend-1  | [0mLINE 1: ..."title", "tasks"."description", "tasks"."status", "tasks"."a...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m[11/Sep/2026 21:16:35] "POST /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export HTTP/1.1" 500 144943
+^Z
+zsh: suspended  docker-compose logs backend -f
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose logs backend -f[30Dcurl -s -X POST http://localhost:8000/api/auth/login -H 'Content-Type: application/json' -d '{"email":"meera@taskboard.dev", "password": "password123"}'[152Ddocker-compose logs backend -f                                                                                                                          [122D[15Drestart backend[15Dlogs backend -f[15Dexec[9Cpython manage.py migrateakemigrations projects[?2004l
+No changes detected in app 'projects'
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose exec backend python manage.py makemigrations projects[53Dlogs[9C-f                                      [38D[30Dcurl -s -X POST http://localhost:8000/api/auth/login -H 'Content-Type: application/json' -d '{"email":"meera@taskboard.dev", "password": "password123"}'[152Ddocker-compose logs backend -f                                                                                                                          [122D[15Drestart backend[15Dlogs backend -f[15Dexec[9Cpython manage.py migrate[?2004l
+[36;1mOperations to perform:[0m
+[1m  Apply all migrations: [0mauth, contenttypes, projects, users
+[36;1mRunning migrations:[0m
+  Applying projects.0003_task_airtable_record_id...[32;1m OK[0m
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose exec backend python manage.py migrateakemigrations projects[53Dlogs[9C-f                                      [38D[30Dcurl -s -X POST http://localhost:8000/api/auth/login -H 'Content-Type: application/json' -d '{"email":"meera@taskboard.dev", "password": "password123"}'[152Ddocker-compose logs backend -f                                                                                                                          [122D[30Dcurl -s -X POST http://localhost:8000/api/auth/login -H 'Content-Type: application/json' -d '{"email":"meera@taskboard.dev", "password": "password123"}'[152Ddocker-compose logs backend -f                                                                                                                          [122D[15Drestart backend[?2004l
+[?25l[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m2.4s[0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose restart backend[15Dexec backend python manage.py migrateakemigrations projects[53Dlogs[9C-f                                      [38D[?2004l
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mInternal Server Error: /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mpsycopg2.errors.UndefinedColumn: column tasks.airtable_record_id does not exist
+[36mbackend-1  | [0mLINE 1: ..."title", "tasks"."description", "tasks"."status", "tasks"."a...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mThe above exception was the direct cause of the following exception:
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+[36mbackend-1  | [0m    response = get_response(request)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+[36mbackend-1  | [0m    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+[36mbackend-1  | [0m    return view_func(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+[36mbackend-1  | [0m    return self.dispatch(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 526, in dispatch
+[36mbackend-1  | [0m    response = self.handle_exception(exc)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 474, in handle_exception
+[36mbackend-1  | [0m    self.raise_uncaught_exception(exc)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 485, in raise_uncaught_exception
+[36mbackend-1  | [0m    raise exc
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 523, in dispatch
+[36mbackend-1  | [0m    response = handler(request, *args, **kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/app/projects/views.py", line 244, in post
+[36mbackend-1  | [0m    for task in tasks:
+[36mbackend-1  | [0m                ^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 386, in __iter__
+[36mbackend-1  | [0m    self._fetch_all()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1954, in _fetch_all
+[36mbackend-1  | [0m    self._result_cache = list(self._iterable_class(self))
+[36mbackend-1  | [0m                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 93, in __iter__
+[36mbackend-1  | [0m    results = compiler.execute_sql(
+[36mbackend-1  |[36m[Kbackend-1 exited with code 0 (restarting)
+[0m[36mbackend-1  | [0mWatching for file changes with StatReloader
+ [0m              ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+[36mbackend-1  | [0m    cursor.execute(sql, params)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+[36mbackend-1  | [0m    return super().execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+[36mbackend-1  | [0m    return self._execute_with_wrappers(
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+[36mbackend-1  | [0m    return executor(sql, params, many, context)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+[36mbackend-1  | [0m    with self.db.wrap_database_errors:
+[36mbackend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+[36mbackend-1  | [0m    raise dj_exc_value.with_traceback(traceback) from exc_value
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mdjango.db.utils.ProgrammingError: column tasks.airtable_record_id does not exist
+[36mbackend-1  | [0mLINE 1: ..."title", "tasks"."description", "tasks"."status", "tasks"."a...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m[11/Sep/2026 21:16:35] "POST /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export HTTP/1.1" 500 144943
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+^Z
+zsh: suspended  docker-compose logs backend -f
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose logs backend -f[15Drestart backend[15Dexec backend python manage.py migrateakemigrations projects[?2004l
+No changes detected in app 'projects'
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose exec backend python manage.py makemigrations projects[53Dlogs[9C-f                                      [38D[15Drestart backend[15Dexec backend python manage.py migrate[?2004l
+[36;1mOperations to perform:[0m
+[1m  Apply all migrations: [0mauth, contenttypes, projects, users
+[36;1mRunning migrations:[0m
+  No migrations to apply.
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose exec backend python manage.py migrateakemigrations projects[53Dlogs[9C-f                                      [38D[15Drestart backend[?2004l
+[?25l[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.1s[0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose restart backend[15Dexec backend python manage.py migrateakemigrations projects[53Dlogs[9C-f                                      [38D[?2004l
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mInternal Server Error: /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mpsycopg2.errors.UndefinedColumn: column tasks.airtable_record_id does not exist
+[36mbackend-1  | [0mLINE 1: ..."title", "tasks"."description", "tasks"."status", "tasks"."a...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mThe above exception was the direct cause of the following exception:
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+[36mbackend-1  | [0m    response = get_response(request)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+[36mbackend-1  | [0m    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+[36mbackend-1  | [0m    return view_func(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+[36mbackend-1  | [0m    return self.dispatch(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 526, in dispatch
+[36mbackend-1  | [0m    response = self.handle_exception(exc)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 474, in handle_exception
+[36mbackend-1  | [0m    self.raise_uncaught_exception(exc)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 485, in raise_uncaught_exception
+[36mbackend-1  | [0m    raise exc
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 523, in dispatch
+[36mbackend-1  | [0m    response = handler(request, *args, **kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/app/projects/views.py", line 244, in post
+[36mbackend-1  | [0m    for task in tasks:
+[36mbackend-1  | [0m                ^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 386, in __iter__
+[36mbackend-1  | [0m    self._fetch_all()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1954, in _fetch_all
+[36mbackend-1  | [0m    self._result_cache = list(self._iterable_class(self))
+[36mbackend-1  | [0m                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 93, in __iter__
+[36mbackend-1  | [0m    results = compiler.execute_sql(
+[36mbackend-1  | [0m              ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+[36mbackend-1  | [0m    cursor.execute(sql, params)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+[36mbackend-1  | [0m    return super().execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, [36m[Kbackend-1 exited with code 0 (restarting)
+[0m[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0m[11/Sep/2026 21:21:12] "POST /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export HTTP/1.1" 200 26
+in execute
+[36mbackend-1  | [0m    return self._execute_with_wrappers(
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+[36mbackend-1  | [0m    return executor(sql, params, many, context)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+[36mbackend-1  | [0m    with self.db.wrap_database_errors:
+[36mbackend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+[36mbackend-1  | [0m    raise dj_exc_value.with_traceback(traceback) from exc_value
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mdjango.db.utils.ProgrammingError: column tasks.airtable_record_id does not exist
+[36mbackend-1  | [0mLINE 1: ..."title", "tasks"."description", "tasks"."status", "tasks"."a...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m[11/Sep/2026 21:16:35] "POST /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export HTTP/1.1" 500 144943
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0m[11/Sep/2026 21:21:12] "POST /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export HTTP/1.1" 200 26
+curl -X POST "http://localhost:8000/api/projects/$PID/export" -H "Authorization: Bearer $TOKEN"[1B[K[K[?2004l
+{"exported":0,"failed":[]}[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mcurl -X POST "http://localhost:8000/api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export" \[27m
+[7m  -H "Authorization: Bearer $TOKEN"[27m[K[A[8C[27mc[27mu[27mr[27ml[27m [27m-[27mX[27m [27mP[27mO[27mS[27mT[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m/[27m8[27m9[27m5[27mf[27m5[27ma[27m8[27me[27m-[27m1[27m7[27m7[27m1[27m-[27m4[27me[27ma[27m9[27m-[27m8[27m5[27m3[27m5[27m-[27m0[27m4[27mc[27m1[27m9[27m6[27m7[27me[27m6[27me[27m4[27mb[27m/[27me[27mx[27mp[27mo[27mr[27mt[27m"[27m [27m\[1B[27m [27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[?2004l
+[36mbackend-1  | [0m[11/Sep/2026 21:22:41] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 1045
+[36mbackend-1  | [0m[11/Sep/2026 21:22:41] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 1045
+{"exported":0,"failed":[{"task_id":"0b72878d-a1b7-4a51-878b-4ab0518e5f5c","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/PdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"fe76192f-b2db-4f0c-9488-b58b9e3975f7","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/PdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"c6dc038e-d341-40ad-be10-94cbfd12a242","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/PdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"5230cb70-42a4-429d-97bf-ec238b47684a","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/PdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"3af8ba1e-d380-49b9-88d9-f4c28fb95e4a","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/PdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"}]}[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m[11/Sep/2026 21:24:44] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 1045
+[36mbackend-1  | [0m[11/Sep/2026 21:24:44] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 1045
+curl -X POST "http://localhost:8000/api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export" \
+  -H "Authorization: Bearer $TOKEN"[K[?2004l
+{"exported":0,"failed":[{"task_id":"0b72878d-a1b7-4a51-878b-4ab0518e5f5c","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/PdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"fe76192f-b2db-4f0c-9488-b58b9e3975f7","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/PdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"c6dc038e-d341-40ad-be10-94cbfd12a242","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/PdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"5230cb70-42a4-429d-97bf-ec238b47684a","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/PdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"3af8ba1e-d380-49b9-88d9-f4c28fb95e4a","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/PdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"}]}[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h^Z
+zsh: suspended  docker-compose logs backend -f
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose logs backend -f[15Drestart backend[15Dexec backend python manage.py migrateakemigrations projects[?2004l
+No changes detected in app 'projects'
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose exec backend python manage.py makemigrations projects[53Dlogs[9C-f                                      [38D[15Dexec[9Cpython manage.py makemigrations projects[53Dlogs[9C-f                                      [38D[15Drestart backend[15Dexec backend python manage.py migrate[?2004l
+[36;1mOperations to perform:[0m
+[1m  Apply all migrations: [0mauth, contenttypes, projects, users
+[36;1mRunning migrations:[0m
+  No migrations to apply.
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose exec backend python manage.py migrateakemigrations projects[53Dlogs[9C-f                                      [38D[15Dexec[9Cpython manage.py makemigrations projects[22Digrate                [16Dakemigrations projects[53Dlogs[9C-f                                      [38D[15Drestart backend[?2004l
+[?25l[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.3s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠼[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.4s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠴[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.5s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠦[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.6s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠧[0m Container q-taskboard-backend-1 Restarting               [36m[Kbackend-1 exited with code 0 (restarting)
+[0m[36mbackend-1  | [0mWatching for file changes with StatReloader
+                                                                                                                                            [34m0.7s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠇[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.8s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠏[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m0.9s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠋[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.0s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠙[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.1s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠹[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.2s[0m
+[?25h[?25l[2A[0G[+] restart 0/1
+ [33m⠸[0m Container q-taskboard-backend-1 Restarting                                                                                                                                                           [34m1.3s[0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose restart backend[15Dexec backend python manage.py migrateakemigrations projects[53Dlogs[9C-f                                      [38D[?2004l
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0mInternal Server Error: /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mpsycopg2.errors.UndefinedColumn: column tasks.airtable_record_id does not exist
+[36mbackend-1  | [0mLINE 1: ..."title", "tasks"."description", "tasks"."status", "tasks"."a...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mThe above exception was the direct cause of the following exception:
+[36mbackend-1  | [0m
+[36mbackend-1  | [0mTraceback (most recent call last):
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/exception.py", line 55, in inner
+[36mbackend-1  | [0m    response = get_response(request)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/core/handlers/base.py", line 197, in _get_response
+[36mbackend-1  | [0m    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+[36mbackend-1  | [0m    return view_func(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/views/generic/base.py", line 105, in view
+[36mbackend-1  | [0m    return self.dispatch(request, *args, **kwargs)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 526, in dispatch
+[36mbackend-1  | [0m    response = self.handle_exception(exc)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 474, in handle_exception
+[36mbackend-1  | [0m    self.raise_uncaught_exception(exc)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 485, in raise_uncaught_exception
+[36mbackend-1  | [0m    raise exc
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/rest_framework/views.py", line 523, in dispatch
+[36mbackend-1  | [0m    response = handler(request, *args, **kwargs)
+[36mbackend-1  | [0m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/app/projects/views.py", line 244, in post
+[36mbackend-1  | [0m    for task in tasks:
+[36mbackend-1  | [0m                ^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 386, in __iter__
+[36mbackend-1  | [0m    self._fetch_all()
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 1954, in _fetch_all
+[36mbackend-1  | [0m    self._result_cache = list(self._iterable_class(self))
+[36mbackend-1  | [0m                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/models/query.py", line 93, in __iter__
+[36mbackend-1  | [0m    results = compiler.execute_sql(
+[36mbackend-1  | [0m              ^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+[36mbackend-1  | [0m    cursor.execute(sql, params)
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 122, in execute
+[36mbackend-1  | [0m    return super().execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 79, in execute
+[36mbackend-1  | [0m    return self._execute_with_wrappers(
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+[36mbackend-1  | [0m    return executor(sql, params, many, context)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 100, in _execute
+[36mbackend-1  | [0m    with self.db.wrap_database_errors:
+[36mbackend-1  | [0m         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/utils.py", line 91, in __exit__
+[36mbackend-1  | [0m    raise dj_exc_value.with_traceback(traceback) from exc_value
+[36mbackend-1  | [0m  File "/usr/local/lib/python3.12/site-packages/django/db/backends/utils.py", line 105, in _execute
+[36mbackend-1  | [0m    return self.cursor.execute(sql, params)
+[36mbackend-1  | [0m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[36mbackend-1  | [0mdjango.db.utils.ProgrammingError: column tasks.airtable_record_id does not exist
+[36mbackend-1  | [0mLINE 1: ..."title", "tasks"."description", "tasks"."status", "tasks"."a...
+[36mbackend-1  | [0m                                                             ^
+[36mbackend-1  | [0m
+[36mbackend-1  | [0m[11/Sep/2026 21:16:35] "POST /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export HTTP/1.1" 500 144943
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0m[11/Sep/2026 21:21:12] "POST /api/projects/1b557d3e-738d-47f7-9ed2-b616ab2371d9/export HTTP/1.1" 200 26
+[36mbackend-1  | [0m[11/Sep/2026 21:22:41] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 1045
+[36mbackend-1  | [0m[11/Sep/2026 21:24:44] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 1045
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+curl -X POST "http://localhost:8000/api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export" \
+  -H "Authorization: Bearer $TOKEN"[K[?2004l
+{"exported":0,"failed":[{"task_id":"0b72878d-a1b7-4a51-878b-4ab0518e5f5c","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/PdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"fe76192f-b2db-4f0c-9488-b58b9e3975f7","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/PdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"c6dc038e-d341-40ad-be10-94cbfd12a242","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/PdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"5230cb70-42a4-429d-97bf-ec238b47684a","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/PdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"3af8ba1e-d380-49b9-88d9-f4c28fb95e4a","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/PdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"}]}[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0m[11/Sep/2026 21:25:29] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 1045
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0m[11/Sep/2026 21:25:29] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 1045
+^Z
+zsh: suspended  docker-compose logs backend -f
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mdocker-compose up -d --force-recreate backend[27m[45D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27mu[27mp[27m [27m-[27md[27m [27m-[27m-[27mf[27mo[27mr[27mc[27me[27m-[27mr[27me[27mc[27mr[27me[27ma[27mt[27me[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[?2004l
+[?25l[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠋[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.0s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠙[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.1s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠹[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.2s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠸[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.3s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠼[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.4s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠴[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.5s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠦[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.6s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠧[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.7s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠇[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.8s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠏[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.9s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠋[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m1.0s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠙[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m1.1s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠹[0m Container q-taskboard-backend-1 Starting                                                                                                                                                             [34m1.2s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠸[0m Container q-taskboard-backend-1 Starting                                                                                                                                                             [34m1.3s[0m
+[?25h[?25l[3A[0G[+] up 2/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1 [32mStarted[0m                                                                                                                                                              [34m1.4s[0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose up -d --force-recreate backend[30Dlogs backend -f               [15D[?2004l
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+curl -X POST "http://localhost:8000/api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export" \
+  -H "Authorization: Bearer $TOKEN"[K[?2004l
+{"exported":0,"failed":[{"task_id":"0b72878d-a1b7-4a51-878b-4ab0518e5f5c","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"fe76192f-b2db-4f0c-9488-b58b9e3975f7","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"c6dc038e-d341-40ad-be10-94cbfd12a242","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"5230cb70-42a4-429d-97bf-ec238b47684a","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"3af8ba1e-d380-49b9-88d9-f4c28fb95e4a","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"}]}[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36m[Kbackend-1 has been recreated
+[0m[36m[Kbackend-1 exited with code 0
+[0m[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0m[11/Sep/2026 21:26:28] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 1060
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0m[11/Sep/2026 21:26:28] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 1060
+[7mdocker-compose up -d --force-recreate backend[27m[45D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27mu[27mp[27m [27m-[27md[27m [27m-[27m-[27mf[27mo[27mr[27mc[27me[27m-[27mr[27me[27mc[27mr[27me[27ma[27mt[27me[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[?2004l
+[?25l[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠋[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.1s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠙[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.2s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠹[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.3s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠸[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.4s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠼[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.5s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠴[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.6s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠦[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.7s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠧[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.8s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠇[0m Container q-taskboard-backend-1 Starting                                                                                                                                                             [34m0.9s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠏[0m Container q-taskboard-backend-1 Starting                                                                                                                                                             [34m1.0s[0m
+[?25h[?25l[3A[0G[+] up 2/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1 [32mStarted[0m                                                                                                                                                              [34m1.0s[0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36m[Kbackend-1 has been recreated
+[0m[36m[Kbackend-1 exited with code 0
+[0m[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36m[Kbackend-1 has been recreated
+[0m[36m[Kbackend-1 exited with code 0
+[0m[36mbackend-1  | [0mWatching for file changes with StatReloader
+^Z
+zsh: suspended  docker-compose logs backend -f
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose logs backend -f[15Dup -d --force-recreate backend[30Dlogs backend -f               [15D[?2004l
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0m[11/Sep/2026 21:28:22] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 1060
+docker-compose up -d --force-recreate backend[45Dcurl -X POST "http://localhost:8000/api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export" \
+  -H "Authorization: Bearer $TOKEN"[K[?2004l
+{"exported":0,"failed":[{"task_id":"0b72878d-a1b7-4a51-878b-4ab0518e5f5c","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"fe76192f-b2db-4f0c-9488-b58b9e3975f7","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"c6dc038e-d341-40ad-be10-94cbfd12a242","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"5230cb70-42a4-429d-97bf-ec238b47684a","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"3af8ba1e-d380-49b9-88d9-f4c28fb95e4a","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"}]}[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0m[11/Sep/2026 21:28:22] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 1060
+^Z
+zsh: suspended  docker-compose logs backend -f
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mpawangoel@Pawans-MacBook-Air q-taskboard % docker-compose up -d --force-recreate backend[27m
+[7m[+] up 2/2[27m[K
+[7m ✔ Container q-taskboard-db-1      Running                                                                                                                                                              0.0s[27m [K
+[7m ✔ Container q-taskboard-backend-1 Started                                                                                                                                                              1.0s[27m [K
+[7mpawangoel@Pawans-MacBook-Air q-taskboard % curl -X POST "http://localhost:8000/api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export" \[27m[K
+[7m  -H "Authorization: Bearer $TOKEN"[27m[K
+[7m{"exported":0,"failed":[{"task_id":"0b72878d-a1b7-4a51-878b-4ab0518e5f5c","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/[7mT[7masks', \"'NOT_FOUND'\")"},{"task_id":"fe76192f-b2db-4f0c-9488-b58b9e3975f7","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiI[7mE[7mV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"c6dc038e-d341-40ad-be10-94cbfd12a242","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7[7mt[7miIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"5230cb70-42a4-429d-97bf-ec238b47684a","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzA[7mQ[7mP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"3af8ba1e-d380-49b9-88d9-f4c28fb95e4a","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYu[7mv[7mzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"}]}%                                                                                                                                                                   [7mp[7mawangoel@Pawans-MacBook-Air q-taskboard % [27m[K
+[K[15A[43C[27mp[27ma[27mw[27ma[27mn[27mg[27mo[27me[27ml[27m@[27mP[27ma[27mw[27ma[27mn[27ms[27m-[27mM[27ma[27mc[27mB[27mo[27mo[27mk[27m-[27mA[27mi[27mr[27m [27mq[27m-[27mt[27ma[27ms[27mk[27mb[27mo[27ma[27mr[27md[27m [27m%[27m [27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27mu[27mp[27m [27m-[27md[27m [27m-[27m-[27mf[27mo[27mr[27mc[27me[27m-[27mr[27me[27mc[27mr[27me[27ma[27mt[27me[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[1B[27m[[27m+[27m][27m [27mu[27mp[27m [27m2[27m/[27m2[1B[27m [27m✔[27m [27mC[27mo[27mn[27mt[27ma[27mi[27mn[27me[27mr[27m [27mq[27m-[27mt[27ma[27ms[27mk[27mb[27mo[27ma[27mr[27md[27m-[27md[27mb[27m-[27m1[27m [27m [27m [27m [27m [27m [27mR[27mu[27mn[27mn[27mi[27mn[27mg[27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m0[27m.[27m0[27ms [1B[27m [27m✔[27m [27mC[27mo[27mn[27mt[27ma[27mi[27mn[27me[27mr[27m [27mq[27m-[27mt[27ma[27ms[27mk[27mb[27mo[27ma[27mr[27md[27m-[27mb[27ma[27mc[27mk[27me[27mn[27md[27m-[27m1[27m [27mS[27mt[27ma[27mr[27mt[27me[27md[27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m1[27m.[27m0[27ms [1B[27mp[27ma[27mw[27ma[27mn[27mg[27mo[27me[27ml[27m@[27mP[27ma[27mw[27ma[27mn[27ms[27m-[27mM[27ma[27mc[27mB[27mo[27mo[27mk[27m-[27mA[27mi[27mr[27m [27mq[27m-[27mt[27ma[27ms[27mk[27mb[27mo[27ma[27mr[27md[27m [27m%[27m [27mc[27mu[27mr[27ml[27m [27m-[27mX[27m [27mP[27mO[27mS[27mT[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m/[27m8[27m9[27m5[27mf[27m5[27ma[27m8[27me[27m-[27m1[27m7[27m7[27m1[27m-[27m4[27me[27ma[27m9[27m-[27m8[27m5[27m3[27m5[27m-[27m0[27m4[27mc[27m1[27m9[27m6[27m7[27me[27m6[27me[27m4[27mb[27m/[27me[27mx[27mp[27mo[27mr[27mt[27m"[27m [27m\[1B[27m [27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[1B[27m{[27m"[27me[27mx[27mp[27mo[27mr[27mt[27me[27md[27m"[27m:[27m0[27m,[27m"[27mf[27ma[27mi[27ml[27me[27md[27m"[27m:[27m[[27m{[27m"[27mt[27ma[27ms[27mk[27m_[27mi[27md[27m"[27m:[27m"[27m0[27mb[27m7[27m2[27m8[27m7[27m8[27md[27m-[27ma[27m1[27mb[27m7[27m-[27m4[27ma[27m5[27m1[27m-[27m8[27m7[27m8[27mb[27m-[27m4[27ma[27mb[27m0[27m5[27m1[27m8[27me[27m5[27mf[27m5[27mc[27m"[27m,[27m"[27me[27mr[27mr[27mo[27mr[27m"[27m:[27m"[27m([27m'[27m4[27m0[27m4[27m [27mC[27ml[27mi[27me[27mn[27mt[27m [27mE[27mr[27mr[27mo[27mr[27m:[27m [27mN[27mo[27mt[27m [27mF[27mo[27mu[27mn[27md[27m [27mf[27mo[27mr[27m [27mu[27mr[27ml[27m:[27m [27mh[27mt[27mt[27mp[27ms[27m:[27m/[27m/[27ma[27mp[27mi[27m.[27ma[27mi[27mr[27mt[27ma[27mb[27ml[27me[27m.[27mc[27mo[27mm[27m/[27mv[27m0[27m/[27ma[27mp[27mp[27mP[27md[27mO[27mA[27mY[27mp[27mj[27ml[27mn[27m0[27mr[27mi[27mO[27m4[27m/[27mt[27mb[27ml[27mu[27mc[27mk[27mZ[27m8[27m3[27md[27m6[27m4[27my[27ma[27mY[27mj[27mo[27m/[27mv[27mi[27mw[27mo[27mY[27mu[27mv[27mz[27mA[27mQ[27mP[27m7[27mt[27mi[27mI[27mE[27mV[27m/T[27ma[27ms[27mk[27ms[27m'[27m,[27m [27m\[27m"[27m'[27mN[27mO[27mT[27m_[27mF[27mO[27mU[27mN[27mD[27m'[27m\[27m"[27m)[27m"[27m}[27m,[27m{[27m"[27mt[27ma[27ms[27mk[27m_[27mi[27md[27m"[27m:[27m"[27mf[27me[27m7[27m6[27m1[27m9[27m2[27mf[27m-[27mb[27m2[27md[27mb[27m-[27m4[27mf[27m0[27mc[27m-[27m9[27m4[27m8[27m8[27m-[27mb[27m5[27m8[27mb[27m9[27me[27m3[27m9[27m7[27m5[27mf[27m7[27m"[27m,[27m"[27me[27mr[27mr[27mo[27mr[27m"[27m:[27m"[27m([27m'[27m4[27m0[27m4[27m [27mC[27ml[27mi[27me[27mn[27mt[27m [27mE[27mr[27mr[27mo[27mr[27m:[27m [27mN[27mo[27mt[27m [27mF[27mo[27mu[27mn[27md[27m [27mf[27mo[27mr[27m [27mu[27mr[27ml[27m:[27m [27mh[27mt[27mt[27mp[27ms[27m:[27m/[27m/[27ma[27mp[27mi[27m.[27ma[27mi[27mr[27mt[27ma[27mb[27ml[27me[27m.[27mc[27mo[27mm[27m/[27mv[27m0[27m/[27ma[27mp[27mp[27mP[27md[27mO[27mA[27mY[27mp[27mj[27ml[27mn[27m0[27mr[27mi[27mO[27m4[27m/[27mt[27mb[27ml[27mu[27mc[27mk[27mZ[27m8[27m3[27md[27m6[27m4[27my[27ma[27mY[27mj[27mo[27m/[27mv[27mi[27mw[27mo[27mY[27mu[27mv[27mz[27mA[27mQ[27mP[27m7[27mt[27mi[27mIE[27mV[27m/[27mT[27ma[27ms[27mk[27ms[27m'[27m,[27m [27m\[27m"[27m'[27mN[27mO[27mT[27m_[27mF[27mO[27mU[27mN[27mD[27m'[27m\[27m"[27m)[27m"[27m}[27m,[27m{[27m"[27mt[27ma[27ms[27mk[27m_[27mi[27md[27m"[27m:[27m"[27mc[27m6[27md[27mc[27m0[27m3[27m8[27me[27m-[27md[27m3[27m4[27m1[27m-[27m4[27m0[27ma[27md[27m-[27mb[27me[27m1[27m0[27m-[27m9[27m4[27mc[27mb[27mf[27md[27m1[27m2[27ma[27m2[27m4[27m2[27m"[27m,[27m"[27me[27mr[27mr[27mo[27mr[27m"[27m:[27m"[27m([27m'[27m4[27m0[27m4[27m [27mC[27ml[27mi[27me[27mn[27mt[27m [27mE[27mr[27mr[27mo[27mr[27m:[27m [27mN[27mo[27mt[27m [27mF[27mo[27mu[27mn[27md[27m [27mf[27mo[27mr[27m [27mu[27mr[27ml[27m:[27m [27mh[27mt[27mt[27mp[27ms[27m:[27m/[27m/[27ma[27mp[27mi[27m.[27ma[27mi[27mr[27mt[27ma[27mb[27ml[27me[27m.[27mc[27mo[27mm[27m/[27mv[27m0[27m/[27ma[27mp[27mp[27mP[27md[27mO[27mA[27mY[27mp[27mj[27ml[27mn[27m0[27mr[27mi[27mO[27m4[27m/[27mt[27mb[27ml[27mu[27mc[27mk[27mZ[27m8[27m3[27md[27m6[27m4[27my[27ma[27mY[27mj[27mo[27m/[27mv[27mi[27mw[27mo[27mY[27mu[27mv[27mz[27mA[27mQ[27mP[27m7t[27mi[27mI[27mE[27mV[27m/[27mT[27ma[27ms[27mk[27ms[27m'[27m,[27m [27m\[27m"[27m'[27mN[27mO[27mT[27m_[27mF[27mO[27mU[27mN[27mD[27m'[27m\[27m"[27m)[27m"[27m}[27m,[27m{[27m"[27mt[27ma[27ms[27mk[27m_[27mi[27md[27m"[27m:[27m"[27m5[27m2[27m3[27m0[27mc[27mb[27m7[27m0[27m-[27m4[27m2[27ma[27m4[27m-[27m4[27m2[27m9[27md[27m-[27m9[27m7[27mb[27mf[27m-[27me[27mc[27m2[27m3[27m8[27mb[27m4[27m7[27m6[27m8[27m4[27ma[27m"[27m,[27m"[27me[27mr[27mr[27mo[27mr[27m"[27m:[27m"[27m([27m'[27m4[27m0[27m4[27m [27mC[27ml[27mi[27me[27mn[27mt[27m [27mE[27mr[27mr[27mo[27mr[27m:[27m [27mN[27mo[27mt[27m [27mF[27mo[27mu[27mn[27md[27m [27mf[27mo[27mr[27m [27mu[27mr[27ml[27m:[27m [27mh[27mt[27mt[27mp[27ms[27m:[27m/[27m/[27ma[27mp[27mi[27m.[27ma[27mi[27mr[27mt[27ma[27mb[27ml[27me[27m.[27mc[27mo[27mm[27m/[27mv[27m0[27m/[27ma[27mp[27mp[27mP[27md[27mO[27mA[27mY[27mp[27mj[27ml[27mn[27m0[27mr[27mi[27mO[27m4[27m/[27mt[27mb[27ml[27mu[27mc[27mk[27mZ[27m8[27m3[27md[27m6[27m4[27my[27ma[27mY[27mj[27mo[27m/[27mv[27mi[27mw[27mo[27mY[27mu[27mv[27mz[27mAQ[27mP[27m7[27mt[27mi[27mI[27mE[27mV[27m/[27mT[27ma[27ms[27mk[27ms[27m'[27m,[27m [27m\[27m"[27m'[27mN[27mO[27mT[27m_[27mF[27mO[27mU[27mN[27mD[27m'[27m\[27m"[27m)[27m"[27m}[27m,[27m{[27m"[27mt[27ma[27ms[27mk[27m_[27mi[27md[27m"[27m:[27m"[27m3[27ma[27mf[27m8[27mb[27ma[27m1[27me[27m-[27md[27m3[27m8[27m0[27m-[27m4[27m9[27mb[27m9[27m-[27m8[27m8[27md[27m9[27m-[27mf[27m4[27mc[27m2[27m8[27mf[27mb[27m9[27m5[27me[27m4[27ma[27m"[27m,[27m"[27me[27mr[27mr[27mo[27mr[27m"[27m:[27m"[27m([27m'[27m4[27m0[27m4[27m [27mC[27ml[27mi[27me[27mn[27mt[27m [27mE[27mr[27mr[27mo[27mr[27m:[27m [27mN[27mo[27mt[27m [27mF[27mo[27mu[27mn[27md[27m [27mf[27mo[27mr[27m [27mu[27mr[27ml[27m:[27m [27mh[27mt[27mt[27mp[27ms[27m:[27m/[27m/[27ma[27mp[27mi[27m.[27ma[27mi[27mr[27mt[27ma[27mb[27ml[27me[27m.[27mc[27mo[27mm[27m/[27mv[27m0[27m/[27ma[27mp[27mp[27mP[27md[27mO[27mA[27mY[27mp[27mj[27ml[27mn[27m0[27mr[27mi[27mO[27m4[27m/[27mt[27mb[27ml[27mu[27mc[27mk[27mZ[27m8[27m3[27md[27m6[27m4[27my[27ma[27mY[27mj[27mo[27m/[27mv[27mi[27mw[27mo[27mY[27muv[27mz[27mA[27mQ[27mP[27m7[27mt[27mi[27mI[27mE[27mV[27m/[27mT[27ma[27ms[27mk[27ms[27m'[27m,[27m [27m\[27m"[27m'[27mN[27mO[27mT[27m_[27mF[27mO[27mU[27mN[27mD[27m'[27m\[27m"[27m)[27m"[27m}[27m][27m}[27m%[27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m [27m p[27ma[27mw[27ma[27mn[27mg[27mo[27me[27ml[27m@[27mP[27ma[27mw[27ma[27mn[27ms[27m-[27mM[27ma[27mc[27mB[27mo[27mo[27mk[27m-[27mA[27mi[27mr[27m [27mq[27m-[27mt[27ma[27ms[27mk[27mb[27mo[27ma[27mr[27md[27m [27m%[K[1B[K[7A[A[A[A[A[A[A[A[A[43C[43P[15Clogs backend -f                                                          [1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[15A[73C[30Dpawangoel@Pawans-MacBook-Air q-taskboard % docker-compose up -d --force-recreate backend[1B[+] up 2/2[K[1B ✔ Container q-taskboard-db-1      Running                                                                                                                                                              0.0s [K[1B ✔ Container q-taskboard-backend-1 Started                                                                                                                                                              1.0s [K[1Bpawangoel@Pawans-MacBook-Air q-taskboard % curl -X POST "http://localhost:8000/api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export" \[K[1B  -H "Authorization: Bearer $TOKEN"[K[1B{"exported":0,"failed":[{"task_id":"0b72878d-a1b7-4a51-878b-4ab0518e5f5c","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"fe76192f-b2db-4f0c-9488-b58b9e3975f7","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"c6dc038e-d341-40ad-be10-94cbfd12a242","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"5230cb70-42a4-429d-97bf-ec238b47684a","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"},{"task_id":"3af8ba1e-d380-49b9-88d9-f4c28fb95e4a","error":"('404 Client Error: Not Found for url: https://api.airtable.com/v0/appPdOAYpjln0riO4/tbluckZ83d64yaYjo/viwoYuvzAQP7tiIEV/Tasks', \"'NOT_FOUND'\")"}]}%                                                                                                                                                                   pawangoel@Pawans-MacBook-Air q-taskboard %[K[1B[K[K[7A[A[A[A[A[A[A[A[A[43C[43P[15Clogs backend -f                                                          [1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[1B[K[15A[73C                         d  [7mdocker-compose up -d --force-recreate backend[27m[45D[27md[27mo[27mc[27mk[27me[27mr[27m-[27mc[27mo[27mm[27mp[27mo[27ms[27me[27m [27mu[27mp[27m [27m-[27md[27m [27m-[27m-[27mf[27mo[27mr[27mc[27me[27m-[27mr[27me[27mc[27mr[27me[27ma[27mt[27me[27m [27mb[27ma[27mc[27mk[27me[27mn[27md[?2004l[1B[?25l[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠋[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.1s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠙[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.2s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠹[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.3s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠸[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.4s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠼[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.5s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠴[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.6s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠦[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.7s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠧[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.8s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠇[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m0.9s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠏[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m1.0s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠋[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m1.1s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠙[0m Container q-taskboard-backend-1 Recreate                                                                                                                                                             [34m1.2s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠹[0m Container q-taskboard-backend-1 Starting                                                                                                                                                             [34m1.3s[0m
+[?25h[?25l[3A[0G[+] up 1/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [33m⠸[0m Container q-taskboard-backend-1 Starting                                                                                                                                                             [34m1.4s[0m
+[?25h[?25l[3A[0G[+] up 2/2
+ [32m✔[0m Container q-taskboard-db-1      [32mRunning[0m                                                                                                                                                              [34m0.0s[0m
+ [32m✔[0m Container q-taskboard-backend-1 [32mStarted[0m                                                                                                                                                              [34m1.4s[0m
+[?25h[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004hdocker-compose up -d --force-recreate backend[30Dlogs backend -f           curl -X POST "http://localhost:8000/api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export" \
+  -H "Authorization: Bearer $TOKEN"[K[?2004l
+[36m[Kbackend-1 has been recreated
+[0m[36m[Kbackend-1 exited with code 0
+[0m[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0m[11/Sep/2026 21:30:42] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 26
+    [15D[?2004l
+[36mbackend-1  | [0mWatching for file changes with StatReloader
+[36mbackend-1  | [0m/usr/local/lib/python3.12/site-packages/jwt/api_jwt.py:368: InsecureKeyLengthWarning: The HMAC key is 20 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+[36mbackend-1  | [0m  decoded = self.decode_complete(
+[36mbackend-1  | [0m[11/Sep/2026 21:30:42] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 26
+{"exported":5,"failed":[]}[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[7mcurl -X POST "http://localhost:8000/api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export" \[27m
+[7m  -H "Authorization: Bearer $TOKEN"[27m[K[A[8C[27mc[27mu[27mr[27ml[27m [27m-[27mX[27m [27mP[27mO[27mS[27mT[27m [27m"[27mh[27mt[27mt[27mp[27m:[27m/[27m/[27ml[27mo[27mc[27ma[27ml[27mh[27mo[27ms[27mt[27m:[27m8[27m0[27m0[27m0[27m/[27ma[27mp[27mi[27m/[27mp[27mr[27mo[27mj[27me[27mc[27mt[27ms[27m/[27m8[27m9[27m5[27mf[27m5[27ma[27m8[27me[27m-[27m1[27m7[27m7[27m1[27m-[27m4[27me[27ma[27m9[27m-[27m8[27m5[27m3[27m5[27m-[27m0[27m4[27mc[27m1[27m9[27m6[27m7[27me[27m6[27me[27m4[27mb[27m/[27me[27mx[27mp[27mo[27mr[27mt[27m"[27m [27m\[1B[27m [27m [27m-[27mH[27m [27m"[27mA[27mu[27mt[27mh[27mo[27mr[27mi[27mz[27ma[27mt[27mi[27mo[27mn[27m:[27m [27mB[27me[27ma[27mr[27me[27mr[27m [27m$[27mT[27mO[27mK[27mE[27mN[27m"[?2004l
+{"exported":5,"failed":[]}[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m[11/Sep/2026 21:31:07] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 26
+[36mbackend-1  | [0m[11/Sep/2026 21:31:07] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 26
+[36mbackend-1  | [0m[11/Sep/2026 21:32:21] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 26
+curl -X POST "http://localhost:8000/api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export" \
+  -H "Authorization: Bearer $TOKEN"[K[?2004l
+{"exported":5,"failed":[]}[1m[7m%[27m[1m[0m                                                                                                                                                                                                            ]7;file://Pawans-MacBook-Air.local/Users/pawangoel/Documents/q-taskboard[0m[27m[24m[Jpawangoel@Pawans-MacBook-Air q-taskboard % [K[?2004h[36mbackend-1  | [0m[11/Sep/2026 21:32:21] "POST /api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export HTTP/1.1" 200 26
+[7m# save both screenshots into docs/airtable-run1.png and docs/airtable-run2.png[27m
+[7mgit add -A && git commit -m "feat: real Airtable export with idempotent upsert and retry handling"[27m[K[A[55D[27m#[27m [27ms[27ma[27mv[27me[27m [27mb[27mo[27mt[27mh[27m [27ms[27mc[27mr[27me[27me[27mn[27ms[27mh[27mo[27mt[27ms[27m [27mi[27mn[27mt[27mo[27m [27md[27mo[27mc[27ms[27m/[27ma[27mi[27mr[27mt[27ma[27mb[27ml[27me[27m-[27mr[27mu[27mn[27m1[27m.[27mp[27mn[27mg[27m [27ma[27mn[27md[27m [27md[27mo[27mc[27ms[27m/[27ma[27mi[27mr[27mt[27ma[27mb[27ml[27me[27m-[27mr[27mu[27mn[27m2[27m.[27mp[27mn[27mg[1B[27mg[27mi[27mt[27m [27ma[27md[27md[27m [27m-[27mA[27m [27m&[27m&[27m [27mg[27mi[27mt[27m [27mc[27mo[27mm[27mm[27mi[27mt[27m [27m-[27mm[27m [27m"[27mf[27me[27ma[27mt[27m:[27m [27mr[27me[27ma[27ml[27m [27mA[27mi[27mr[27mt[27ma[27mb[27ml[27me[27m [27me[27mx[27mp[27mo[27mr[27mt[27m [27mw[27mi[27mt[27mh[27m [27mi[27md[27me[27mm[27mp[27mo[27mt[27me[27mn[27mt[27m [27mu[27mp[27ms[27me[27mr[27mt[27m [27ma[27mn[27md[27m [27mr[27me[27mt[27mr[27my[27m [27mh[27ma[27mn[27md[27ml[27mi[27mn[27mg[27m"[A[23C[1B[23D[A[23C[78Dcurl -X POST "http://localhost:8000/api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export" \[1B  -H "Authorization: Bearer $TOKEN"                                                               [63D[A[103C[1B[103D[A[103C[1B[103D[A[103C[1B[103D[A[103C[95Ddocker-compose up -d --force-recreate backend                                                  [1B[K[A[88C[45Dcurl -X POST "http://localhost:8000/api/projects/895f5a8e-1771-4ea9-8535-04c1967e6e4b/export" \[1B  -H "Authorization: Bearer $TOKEN"[K[A[8Cdocker-compose up -d --force-recreate backend                                                  [1B[K[A[88C                                       d  
